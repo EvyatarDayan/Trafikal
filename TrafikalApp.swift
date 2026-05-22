@@ -9,6 +9,7 @@ import UIKit
 @main
 struct TrafikalApp: App {
     private let catalog = SignCatalog.shared
+    private let testHistory = TestHistoryStore.shared
 
     init() {
         let background = UIColor.systemGroupedBackground
@@ -26,6 +27,7 @@ struct TrafikalApp: App {
         WindowGroup {
             ContentView()
                 .environment(catalog)
+                .environment(testHistory)
         }
     }
 }

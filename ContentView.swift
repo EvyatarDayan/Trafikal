@@ -7,10 +7,10 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @State private var selectedTab = 0
+    @State private var selectedTab = 2
 
     private let menuHeight: CGFloat = 40
-    private let menuButtonSpacing: CGFloat = -32
+    private let menuButtonSpacing: CGFloat = -40
 
     var body: some View {
         GeometryReader { geometry in
@@ -41,11 +41,13 @@ struct ContentView: View {
         case 1:
             NavigationStack { CategoryListView() }
         case 2:
-            NavigationStack { QuizView() }
+            NavigationStack { HomeTabView() }
         case 3:
+            NavigationStack { TestsTabView() }
+        case 4:
             NavigationStack { SettingsView() }
         default:
-            NavigationStack { StudyTabRoot() }
+            NavigationStack { HomeTabView() }
         }
     }
 
@@ -79,17 +81,24 @@ struct ContentView: View {
                 )
 
                 TabBarButton(
-                    icon: "questionmark.circle.fill",
-                    label: "Quiz",
+                    icon: "house.fill",
+                    label: "Home",
                     isSelected: selectedTab == 2,
                     action: { selectedTab = 2 }
                 )
 
                 TabBarButton(
-                    icon: "gearshape.fill",
-                    label: "Settings",
+                    icon: "list.clipboard.fill",
+                    label: "Tests",
                     isSelected: selectedTab == 3,
                     action: { selectedTab = 3 }
+                )
+
+                TabBarButton(
+                    icon: "gearshape.fill",
+                    label: "Settings",
+                    isSelected: selectedTab == 4,
+                    action: { selectedTab = 4 }
                 )
             }
             .frame(width: width, height: menuHeight)
@@ -101,4 +110,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environment(SignCatalog.shared)
+        .environment(TestHistoryStore.shared)
 }

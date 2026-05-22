@@ -7,6 +7,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
+    @Environment(TestHistoryStore.self) private var historyStore
+
+    @State private var showClearHistoryConfirmation = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -23,6 +26,10 @@ struct SettingsView: View {
                     darkModeRow
                 }
 
+                Section("Test history") {
+                    clearHistoryRow
+                }
+
                 Section {
                     Text("")
                         .frame(height: 30)
@@ -36,6 +43,14 @@ struct SettingsView: View {
         }
         .appRootScreen()
         .background(Theme.screenBackground)
+        .alert("Clear history?", isPresented: $showClearHistoryConfirmation) {
+            Button("Cancel", role: .cancel) {}
+            Button("Clear", role: .destructive) {
+                historyStore.clearAll()
+            }
+        } message: {
+            Text("This will permanently delete all completed test results. This cannot be undone.")
+        }
     }
 
     private var pageHeader: some View {
@@ -56,17 +71,61 @@ struct SettingsView: View {
     }
 
     private var darkModeRow: some View {
+        settingsRow(
+            icon: "moon.fill",
+            iconColor: .purple,
+            title: "Dark mode",
+            subtitle: "Toggle appearance"
+        ) {
+            Toggle("", isOn: $isDarkMode)
+                .labelsHidden()
+                .scaleEffect(0.72, anchor: .trailing)
+        }
+    }
+
+    private var clearHistorySubtitle: String {
+        if historyStore.testsCompleted == 0 {
+            return "No completed tests saved"
+        }
+        let count = historyStore.testsCompleted
+        return "Remove \(count) saved test\(count == 1 ? "" : "s")"
+    }
+
+    private var clearHistoryRow: some View {
+        Button {
+            showClearHistoryConfirmation = true
+        } label: {
+            settingsRow(
+                icon: "trash",
+                iconColor: .red,
+                title: "Clear history",
+                subtitle: clearHistorySubtitle
+            ) {
+                EmptyView()
+            }
+        }
+        .buttonStyle(.plain)
+        .disabled(historyStore.testsCompleted == 0)
+    }
+
+    private func settingsRow<Trailing: View>(
+        icon: String,
+        iconColor: Color,
+        title: String,
+        subtitle: String,
+        @ViewBuilder trailing: () -> Trailing
+    ) -> some View {
         HStack(spacing: 12) {
-            Image(systemName: "moon.fill")
+            Image(systemName: icon)
                 .font(.title2)
-                .foregroundStyle(.purple)
+                .foregroundStyle(iconColor)
                 .frame(width: 30)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Dark mode")
+                Text(title)
                     .font(.body)
                     .foregroundStyle(.primary)
-                Text("Toggle appearance")
+                Text(subtitle)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
@@ -74,13 +133,12 @@ struct SettingsView: View {
 
             Spacer()
 
-            Toggle("", isOn: $isDarkMode)
-                .labelsHidden()
-                .scaleEffect(0.72, anchor: .trailing)
+            trailing()
         }
     }
 }
 
 #Preview {
     SettingsView()
+        .environment(TestHistoryStore.shared)
 }

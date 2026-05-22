@@ -8,6 +8,7 @@ import SwiftUI
 struct StudyCardView: View {
     private let horizontalInset: CGFloat = 20
     private let meaningTextInset: CGFloat = 36
+    private let meaningFadeHeight: CGFloat = 40
 
     let signs: [Sign]
     let startIndex: Int
@@ -44,7 +45,7 @@ struct StudyCardView: View {
 
                     sectionDivider
 
-                    meaningSection
+                    meaningSection(height: middleHeight)
                         .frame(width: geometry.size.width, height: middleHeight)
 
                     sectionDivider
@@ -87,35 +88,52 @@ struct StudyCardView: View {
         .padding(.vertical, 12)
     }
 
-    private var meaningSection: some View {
-        ScrollView {
-            meaningContent
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.bottom, 16)
+    private func meaningSection(height: CGFloat) -> some View {
+        ZStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(sign.meaning)
+                        .font(.body)
+                        .foregroundStyle(.primary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, meaningTextInset)
+
+                    if let tip = sign.examTip, !tip.isEmpty {
+                        Label(tip, systemImage: "lightbulb.fill")
+                            .font(.callout)
+                            .foregroundStyle(.orange)
+                            .padding(.horizontal, horizontalInset)
+                    }
+                }
+                .frame(maxWidth: .infinity, minHeight: height, alignment: .center)
+                .padding(.vertical, meaningFadeHeight * 0.65)
+            }
+
+            VStack(spacing: 0) {
+                meaningEdgeFade(edge: .top)
+                Spacer(minLength: 0)
+                meaningEdgeFade(edge: .bottom)
+            }
+            .allowsHitTesting(false)
         }
+        .frame(height: height)
+        .background(Theme.screenBackground)
         .id(sign.id)
     }
 
-    private var meaningContent: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(sign.meaning)
-                .font(.body)
-                .foregroundStyle(.primary)
-                .padding(.horizontal, meaningTextInset)
-                .padding(.top, 28)
+    private enum MeaningFadeEdge {
+        case top, bottom
+    }
 
-            if let tip = sign.examTip, !tip.isEmpty {
-                Label(tip, systemImage: "lightbulb.fill")
-                    .font(.callout)
-                    .foregroundStyle(.orange)
-                    .padding(.horizontal, horizontalInset)
-            }
-
-            if !sign.keywords.isEmpty {
-                FlowTagsView(tags: sign.keywords)
-                    .padding(.horizontal, horizontalInset)
-            }
-        }
+    private func meaningEdgeFade(edge: MeaningFadeEdge) -> some View {
+        LinearGradient(
+            colors: edge == .top
+                ? [Theme.screenBackground, Theme.screenBackground.opacity(0)]
+                : [Theme.screenBackground.opacity(0), Theme.screenBackground],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+        .frame(height: meaningFadeHeight)
     }
 
     private var navigationSection: some View {
@@ -149,20 +167,3 @@ struct StudyCardView: View {
     }
 }
 
-private struct FlowTagsView: View {
-    let tags: [String]
-
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                ForEach(tags, id: \.self) { tag in
-                    Text(tag)
-                        .font(.caption)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 4)
-                        .background(.thinMaterial, in: Capsule())
-                }
-            }
-        }
-    }
-}

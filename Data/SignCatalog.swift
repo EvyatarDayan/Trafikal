@@ -50,4 +50,13 @@ final class SignCatalog {
     var shuffledForQuiz: [Sign] {
         signs.shuffled()
     }
+
+    /// Same sign all day for every user (deterministic from date + catalog).
+    func signOfToday(on date: Date = Date(), calendar: Calendar = .current) -> Sign? {
+        guard !signs.isEmpty else { return nil }
+        let day = calendar.ordinality(of: .day, in: .year, for: date) ?? 1
+        let year = calendar.component(.year, from: date)
+        let index = (year * 366 + day) % signs.count
+        return signs[index]
+    }
 }
