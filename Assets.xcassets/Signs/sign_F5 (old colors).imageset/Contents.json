@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "sign_F5 (old colors).png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "filename": "sign_F5 (old colors)@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "sign_F5 (old colors)@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

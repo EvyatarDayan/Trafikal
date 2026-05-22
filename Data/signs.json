@@ -1,0 +1,6905 @@
+{
+  "signs": [
+    {
+      "code": "A1-1",
+      "category": "warning",
+      "imageName": "sign_A1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Triangle with red border = warning.",
+      "name": "Dangerous curve",
+      "meaning": "The road curves and visibility may be limited. Slow down before the curve and be ready for oncoming traffic or obstacles.",
+      "keywords": [
+        "curve",
+        "speed"
+      ]
+    },
+    {
+      "code": "A1-2",
+      "category": "warning",
+      "name": "A1",
+      "meaning": "A1 (Warning\u2014Dangerous curve) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about a dangerous curve, and indicates the direction of said curve. The variant A1-2 indicates a curve to the right.",
+      "keywords": [
+        "a1",
+        "warning",
+        "dangerous",
+        "curve",
+        "swedish",
+        "road",
+        "sign",
+        "belonging"
+      ],
+      "imageName": "sign_A1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A11",
+      "category": "warning",
+      "name": "A11",
+      "meaning": "A11 (Warning\u2014Stone\u2010chips) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about a risk of stone\u2010chips. The sign shall not be used on gravel roads or similar roads where stone\u2010chips are a common occurrence.",
+      "keywords": [
+        "a11",
+        "warning",
+        "stone",
+        "chips",
+        "swedish",
+        "road",
+        "sign",
+        "belonging"
+      ],
+      "imageName": "sign_A11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A12-1",
+      "category": "warning",
+      "name": "A12",
+      "meaning": "A12 (Warning\u2014Rockfall) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about a risk of rockfall and indicates that rocks may be present on the road due to rockfall. The symbol shall be adjusted according to the local conditions of whichever place the sign has been mounted at. The variant A12-1 indicates that potential rockfall would come from the right side of the road.",
+      "keywords": [
+        "a12",
+        "warning",
+        "rockfall",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A12-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A12-2",
+      "category": "warning",
+      "name": "A12",
+      "meaning": "A12 (Warning\u2014Rockfall) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about a risk of rockfall and indicates that rocks may be present on the road due to rockfall. The symbol shall be adjusted according to the local conditions of whichever place the sign has been mounted at. The variant A12-2 indicates that potential rockfall would come from the left side of the road.",
+      "keywords": [
+        "a12",
+        "warning",
+        "rockfall",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A12-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A13",
+      "category": "warning",
+      "name": "A13",
+      "meaning": "A13 (Warning\u2014Pedestrian crossing) is a Swedish road sign belonging to the category of warning signs (group A). No closer provisions are given in the road sign ordinance ( SFS 2007:90 ).",
+      "keywords": [
+        "a13",
+        "warning",
+        "pedestrian",
+        "crossing",
+        "swedish",
+        "road",
+        "sign",
+        "belonging"
+      ],
+      "imageName": "sign_A13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A14",
+      "category": "warning",
+      "name": "A14",
+      "meaning": "A14 (Warning\u2014Pedestrians) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a stretch of road where pedestrians often cross or are present on or near the road.",
+      "keywords": [
+        "a14",
+        "warning",
+        "pedestrians",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A15",
+      "category": "warning",
+      "name": "Warning for children",
+      "meaning": "Warning for children. (The sign indicates a stretch of road where children often cross or stay on or by the road.)",
+      "keywords": [
+        "a15",
+        "warning",
+        "for",
+        "children",
+        "the",
+        "sign",
+        "indicates",
+        "stretch"
+      ],
+      "imageName": "sign_A15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A16",
+      "category": "warning",
+      "name": "A16",
+      "meaning": "A16 (Warning\u2014Cyclers and moped drivers) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a stretch of road where cyclers or moped drivers often cross or drive into the road.",
+      "keywords": [
+        "a16",
+        "warning",
+        "cyclers",
+        "and",
+        "moped",
+        "drivers",
+        "swedish",
+        "road"
+      ],
+      "imageName": "sign_A16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A17",
+      "category": "warning",
+      "name": "A17",
+      "meaning": "A17 (Warning\u2014Skiers) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a place where skiers often cross or frequent the road.",
+      "keywords": [
+        "a17",
+        "warning",
+        "skiers",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A18",
+      "category": "warning",
+      "name": "A18",
+      "meaning": "A18 (Warning\u2014Riders) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a stretch of road where riders often cross or frequent the road.",
+      "keywords": [
+        "a18",
+        "warning",
+        "riders",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-3",
+      "category": "warning",
+      "name": "Warning for cattle",
+      "meaning": "Warning for cattle. (Sign A19 Warning for animals indicates a place or stretch of road where there is a special risk of animals on or by the road. Different symbols may appear on the sign.)",
+      "keywords": [
+        "a19",
+        "warning",
+        "for",
+        "cattle",
+        "sign",
+        "animals",
+        "indicates",
+        "place"
+      ],
+      "imageName": "sign_A19-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-4",
+      "category": "warning",
+      "name": "Warning for horses",
+      "meaning": "Warning for horses. (Sign A19 Warning for animals indicates a place or stretch of road where there is a special risk of animals on or by the road. Different symbols may appear on the sign.)",
+      "keywords": [
+        "a19",
+        "warning",
+        "for",
+        "horses",
+        "sign",
+        "animals",
+        "indicates",
+        "place"
+      ],
+      "imageName": "sign_A19-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-5",
+      "category": "warning",
+      "name": "Warning for reindeer",
+      "meaning": "Warning for reindeer. (Sign A19 Warning for animals indicates a place or stretch of road where there is a special risk of animals on or by the road. Different symbols may appear on the sign.)",
+      "keywords": [
+        "a19",
+        "warning",
+        "for",
+        "reindeer",
+        "sign",
+        "animals",
+        "indicates",
+        "place"
+      ],
+      "imageName": "sign_A19-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-6",
+      "category": "warning",
+      "name": "Warning for sheep",
+      "meaning": "Warning for sheep. (Sign A19 Warning for animals indicates a place or stretch of road where there is a special risk of animals on or by the road. Different symbols may appear on the sign.)",
+      "keywords": [
+        "a19",
+        "warning",
+        "for",
+        "sheep",
+        "sign",
+        "animals",
+        "indicates",
+        "place"
+      ],
+      "imageName": "sign_A19-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-7",
+      "category": "warning",
+      "name": "Warning for wild boar",
+      "meaning": "Warning for wild boar. (Sign A19 Warning for animals indicates a place or stretch of road where there is a special risk of animals on or by the road. Different symbols may appear on the sign.)",
+      "keywords": [
+        "a19",
+        "warning",
+        "for",
+        "wild",
+        "boar",
+        "sign",
+        "animals",
+        "indicates"
+      ],
+      "imageName": "sign_A19-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A2-1",
+      "category": "warning",
+      "name": "A2",
+      "meaning": "A2 (Warning\u2014Multiple dangerous curves) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about multiple dangerous curves, and indicates the direction of the first dangerous curve. The variant A2-1 indicates that the first curve is to the left.",
+      "keywords": [
+        "a2",
+        "warning",
+        "multiple",
+        "dangerous",
+        "curves",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A2-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A2-2",
+      "category": "warning",
+      "name": "A2",
+      "meaning": "A2 (Warning\u2014Multiple dangerous curves) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about multiple dangerous curves, and indicates the direction of the first dangerous curve. The variant A2-2 indicates that the first curve is to the right.",
+      "keywords": [
+        "a2",
+        "warning",
+        "multiple",
+        "dangerous",
+        "curves",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A2-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A23-1",
+      "category": "warning",
+      "name": "A23",
+      "meaning": "A23 (Warning\u2014Low flying aeroplanes) is a Swedish road sign, belonging to the category of warning signs (group A). No closer provisions are given in the road sign ordinance ( SFS 2007:90 ).",
+      "keywords": [
+        "a23",
+        "warning",
+        "low",
+        "flying",
+        "aeroplanes",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A23-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A23-2",
+      "category": "warning",
+      "name": "A23",
+      "meaning": "A23 (Warning\u2014Low flying aeroplanes) is a Swedish road sign, belonging to the category of warning signs (group A). No closer provisions are given in the road sign ordinance ( SFS 2007:90 ).",
+      "keywords": [
+        "a23",
+        "warning",
+        "low",
+        "flying",
+        "aeroplanes",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A23-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A24-1",
+      "category": "warning",
+      "name": "A24",
+      "meaning": "A24 (Warning\u2014Side wind) is a Swedish road sign belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a stretch of road where strong side wind is a common occurrence. The symbol shall be adjusted according to the local conditions of whichever place the sign has been mounted at. The variant A24-1 indicates that potential side wind would come from the right.",
+      "keywords": [
+        "a24",
+        "warning",
+        "side",
+        "wind",
+        "swedish",
+        "road",
+        "sign",
+        "belonging"
+      ],
+      "imageName": "sign_A24-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A24-2",
+      "category": "warning",
+      "name": "A24",
+      "meaning": "A24 (Warning\u2014Side wind) is a Swedish road sign belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a stretch of road where strong side wind is a common occurrence. The symbol shall be adjusted according to the local conditions of whichever place the sign has been mounted at. The variant A24-2 indicates that potential side wind would come from the left.",
+      "keywords": [
+        "a24",
+        "warning",
+        "side",
+        "wind",
+        "swedish",
+        "road",
+        "sign",
+        "belonging"
+      ],
+      "imageName": "sign_A24-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A25",
+      "category": "warning",
+      "name": "Warning for oncoming traffic",
+      "meaning": "Warning for oncoming traffic. (The sign indicates that a carriageway with one-way traffic turns into a carriageway with traffic in both directions.)",
+      "keywords": [
+        "a25",
+        "warning",
+        "for",
+        "oncoming",
+        "traffic",
+        "the",
+        "sign",
+        "indicates"
+      ],
+      "imageName": "sign_A25",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A26",
+      "category": "warning",
+      "name": "Warning for a tunnel",
+      "meaning": "Warning for a tunnel.",
+      "keywords": [
+        "a26",
+        "warning",
+        "for",
+        "tunnel"
+      ],
+      "imageName": "sign_A26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A27",
+      "category": "warning",
+      "name": "A27",
+      "meaning": "A27 (Warning\u2014Weak road edge or high carriageway edge) is a Swedish road sign belonging to the category of warning signs (group A). No closer provisions are given in the road sign ordinance ( SFS 2007:90 ).",
+      "keywords": [
+        "a27",
+        "warning",
+        "weak",
+        "road",
+        "edge",
+        "high",
+        "carriageway",
+        "swedish"
+      ],
+      "imageName": "sign_A27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A28",
+      "category": "warning",
+      "name": "Warning for a road junction",
+      "meaning": "Warning for a road junction.",
+      "keywords": [
+        "a28",
+        "warning",
+        "for",
+        "road",
+        "junction"
+      ],
+      "imageName": "sign_A28",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-10",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-11",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-12",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-13",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-14",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-15",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-16",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-17",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-18",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-19",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-2",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-20",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-21",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-3",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-4",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-5",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-6",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-7",
+      "category": "warning",
+      "name": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop",
+      "meaning": "Warning for a road junction where drivers of vehicles on the connecting road must give way or stop.",
+      "keywords": [
+        "a29",
+        "warning",
+        "for",
+        "road",
+        "junction",
+        "where",
+        "drivers",
+        "vehicles"
+      ],
+      "imageName": "sign_A29-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-8",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-9",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A29-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A3",
+      "category": "warning",
+      "name": "A3",
+      "meaning": "A3 (Warning\u2014Descent) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about a steep descent. The number indicates the gradient as a percentage and shall be adjusted according to the local conditions.",
+      "keywords": [
+        "a3",
+        "warning",
+        "descent",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "category"
+      ],
+      "imageName": "sign_A3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A33",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a33",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A33",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A34",
+      "category": "warning",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "a34",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_A34",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A35",
+      "category": "warning",
+      "name": "Warning for a railway crossing with barriers",
+      "meaning": "Warning for a railway crossing with barriers. (The sign indicates a level crossing with a railway or tramway where there are safety barriers.)",
+      "keywords": [
+        "a35",
+        "warning",
+        "for",
+        "railway",
+        "crossing",
+        "with",
+        "barriers",
+        "the"
+      ],
+      "imageName": "sign_A35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A36",
+      "category": "warning",
+      "name": "Warning for a railway crossing without barriers",
+      "meaning": "Warning for a railway crossing without barriers. (The sign indicates a level crossing with a railway or tramway where there are no safety barriers.)",
+      "keywords": [
+        "a36",
+        "warning",
+        "for",
+        "railway",
+        "crossing",
+        "without",
+        "barriers",
+        "the"
+      ],
+      "imageName": "sign_A36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A37",
+      "category": "warning",
+      "name": "Sweden road sign: Warning signs - Korsning med sp\u00e5rv\u00e4g",
+      "meaning": "Sweden road sign: Warning signs - Korsning med sp\u00e5rv\u00e4g",
+      "keywords": [
+        "a37",
+        "sweden",
+        "road",
+        "sign",
+        "warning",
+        "signs",
+        "korsning",
+        "med"
+      ],
+      "imageName": "sign_A37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A4",
+      "category": "warning",
+      "imageName": "sign_A4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Intersection",
+      "meaning": "Intersection with another road. Be prepared for cross traffic and adjust your speed.",
+      "keywords": [
+        "intersection"
+      ]
+    },
+    {
+      "code": "A41",
+      "category": "warning",
+      "name": "Sweden road sign: Warning signs - Varning f\u00f6r olycka ",
+      "meaning": "Sweden road sign: Warning signs - Varning f\u00f6r olycka .",
+      "keywords": [
+        "a41",
+        "sweden",
+        "road",
+        "sign",
+        "warning",
+        "signs",
+        "varning",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_A41",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-1",
+      "category": "warning",
+      "name": "A5",
+      "meaning": "A5 (Warning\u2014Narrowing road) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates that the road or path narrows. The symbol shall be adjusted according to the local conditions. The variant A5-1 indicates that the road or path narrows from both sides.",
+      "keywords": [
+        "a5",
+        "warning",
+        "narrowing",
+        "road",
+        "swedish",
+        "sign",
+        "belonging",
+        "category"
+      ],
+      "imageName": "sign_A5-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-2",
+      "category": "warning",
+      "name": "A5",
+      "meaning": "A5 (Warning\u2014Narrowing road) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates that the road or path narrows. The symbol shall be adjusted according to the local conditions. The variant A5-2 indicates that the road or path narrows from the right.",
+      "keywords": [
+        "a5",
+        "warning",
+        "narrowing",
+        "road",
+        "swedish",
+        "sign",
+        "belonging",
+        "category"
+      ],
+      "imageName": "sign_A5-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-3",
+      "category": "warning",
+      "name": "A5",
+      "meaning": "A5 (Warning\u2014Narrowing road) is a Swedish road sign belonging to category A (Warnings signs). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates that the road or path narrows. The symbol shall be adjusted according to the local conditions. The variant A5-3 indicates that the road or path narrows from the left.",
+      "keywords": [
+        "a5",
+        "warning",
+        "narrowing",
+        "road",
+        "swedish",
+        "sign",
+        "belonging",
+        "category"
+      ],
+      "imageName": "sign_A5-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A6",
+      "category": "warning",
+      "name": "A6",
+      "meaning": "A6 (Warning\u2014Bridge) is a Swedish road sign belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign warns about an opening bridge.",
+      "keywords": [
+        "a6",
+        "warning",
+        "bridge",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A7",
+      "category": "warning",
+      "name": "A7",
+      "meaning": "A7 (Warning\u2014Quay) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates a place where the road ends against water.",
+      "keywords": [
+        "a7",
+        "warning",
+        "quay",
+        "swedish",
+        "road",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A8",
+      "category": "warning",
+      "name": "A8",
+      "meaning": "A8 (Warning\u2014Uneven road) is a Swedish road sign, belonging to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The sign indicates that the roadway is uneven or damaged to such a degree that it is appropriate to travel at a lower speed than would otherwise have been the case.",
+      "keywords": [
+        "a8",
+        "warning",
+        "uneven",
+        "road",
+        "swedish",
+        "sign",
+        "belonging",
+        "the"
+      ],
+      "imageName": "sign_A8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A9-1",
+      "category": "warning",
+      "name": "A9",
+      "meaning": "A9 (Warning\u2014Speed impediment) is a common designation for two Swedish road signs which belong to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The signs warn about bumps or dips which have been installed as a speed reduction measure. The variant A9-1 indicates (a) bump(s).",
+      "keywords": [
+        "a9",
+        "warning",
+        "speed",
+        "impediment",
+        "common",
+        "designation",
+        "for",
+        "two"
+      ],
+      "imageName": "sign_A9-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A9-2",
+      "category": "warning",
+      "name": "A9",
+      "meaning": "A9 (Warning\u2014Speed impediment) is a common designation for two Swedish road signs which belong to the category of warning signs (group A). Closer provisions are given in the road sign ordinance ( SFS 2007:90 ): The signs warn about bumps or dips which have been installed as a speed reduction measure. The variant A9-2 indicates (a) dip(s).",
+      "keywords": [
+        "a9",
+        "warning",
+        "speed",
+        "impediment",
+        "common",
+        "designation",
+        "for",
+        "two"
+      ],
+      "imageName": "sign_A9-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B3-1",
+      "category": "priority",
+      "name": "Sweden road sign: Information signs - \u00d6verg\u00e5ngsst\u00e4lle",
+      "meaning": "Sweden road sign: Information signs - \u00d6verg\u00e5ngsst\u00e4lle",
+      "keywords": [
+        "b3",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "\u00f6verg\u00e5ngsst\u00e4lle"
+      ],
+      "imageName": "sign_B3-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B3-2",
+      "category": "priority",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "b3",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_B3-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B4",
+      "category": "priority",
+      "imageName": "sign_B4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Yellow diamond = priority road, not give way.",
+      "name": "Priority road",
+      "meaning": "You have priority at the next intersection unless otherwise indicated. Traffic on side roads must give way.",
+      "keywords": [
+        "priority",
+        "main road"
+      ]
+    },
+    {
+      "code": "B5",
+      "category": "priority",
+      "name": "Priority road ends",
+      "meaning": "Priority road ends.",
+      "keywords": [
+        "b5",
+        "priority",
+        "road",
+        "ends"
+      ],
+      "imageName": "sign_B5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B6",
+      "category": "priority",
+      "name": "Give way to oncoming traffic",
+      "meaning": "Give way to oncoming traffic.",
+      "keywords": [
+        "b6",
+        "give",
+        "way",
+        "oncoming",
+        "traffic"
+      ],
+      "imageName": "sign_B6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B7",
+      "category": "priority",
+      "name": "Oncoming traffic must give way",
+      "meaning": "Oncoming traffic must give way.",
+      "keywords": [
+        "b7",
+        "oncoming",
+        "traffic",
+        "must",
+        "give",
+        "way"
+      ],
+      "imageName": "sign_B7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B8",
+      "category": "priority",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "b8",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_B8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C1",
+      "category": "prohibition",
+      "imageName": "sign_C1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Red circle = prohibition.",
+      "name": "No entry for vehicles",
+      "meaning": "No entry for vehicles in the direction of travel. Cycles and mopeds may be exempt if shown on a supplementary plate.",
+      "keywords": [
+        "prohibition",
+        "entry"
+      ]
+    },
+    {
+      "code": "C10",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot cykel- och mopedtrafik",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot cykel- och mopedtrafik",
+      "keywords": [
+        "c10",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C11",
+      "category": "prohibition",
+      "name": "A Swedish road sign",
+      "meaning": "A Swedish road sign",
+      "keywords": [
+        "c11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C12",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med h\u00e4stfordon",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med h\u00e4stfordon",
+      "keywords": [
+        "c12",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C13",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med terr\u00e4ngmotorfordon och terr\u00e4ngsl\u00e4p",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med terr\u00e4ngmotorfordon och terr\u00e4ngsl\u00e4p",
+      "keywords": [
+        "c13",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C14",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot ridning",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot ridning",
+      "keywords": [
+        "c14",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C15",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot g\u00e5ngtrafik",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot g\u00e5ngtrafik",
+      "keywords": [
+        "c15",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C16",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad fordonsbredd",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad fordonsbredd",
+      "keywords": [
+        "c16",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "fordonsbredd"
+      ],
+      "imageName": "sign_C16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C17",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad fordonsh\u00f6jd",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad fordonsh\u00f6jd",
+      "keywords": [
+        "c17",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "fordonsh\u00f6jd"
+      ],
+      "imageName": "sign_C17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C18",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad l\u00e4ngd p\u00e5 fordon eller fordonst\u00e5g",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad l\u00e4ngd p\u00e5 fordon eller fordonst\u00e5g",
+      "keywords": [
+        "c18",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "l\u00e4ngd"
+      ],
+      "imageName": "sign_C18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C19",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Minsta avst\u00e5nd mellan motordrivna fordon",
+      "meaning": "Sweden road sign: Prohibitory signs - Minsta avst\u00e5nd mellan motordrivna fordon",
+      "keywords": [
+        "c19",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "minsta",
+        "avst\u00e5nd"
+      ],
+      "imageName": "sign_C19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C2",
+      "category": "prohibition",
+      "name": "All vehicles prohibited",
+      "meaning": "All vehicles prohibited.",
+      "keywords": [
+        "c2",
+        "all",
+        "vehicles",
+        "prohibited"
+      ],
+      "imageName": "sign_C2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C20",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad bruttovikt p\u00e5 fordon",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad bruttovikt p\u00e5 fordon",
+      "keywords": [
+        "c20",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "bruttovikt"
+      ],
+      "imageName": "sign_C20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C21",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad bruttovikt p\u00e5 fordon eller fordonst\u00e5g eller b\u00e4righetsklass f\u00f6r v\u00e4g",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad bruttovikt p\u00e5 fordon eller fordonst\u00e5g eller b\u00e4righetsklass f\u00f6r v\u00e4g",
+      "keywords": [
+        "c21",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "bruttovikt"
+      ],
+      "imageName": "sign_C21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C22-1",
+      "category": "prohibition",
+      "name": "Swedish Prohibitory sign",
+      "meaning": "Swedish Prohibitory sign",
+      "keywords": [
+        "c22",
+        "swedish",
+        "prohibitory",
+        "sign"
+      ],
+      "imageName": "sign_C22-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C22-2",
+      "category": "prohibition",
+      "name": "Swedish Prohibitory sign",
+      "meaning": "Swedish Prohibitory sign",
+      "keywords": [
+        "c22",
+        "swedish",
+        "prohibitory",
+        "sign"
+      ],
+      "imageName": "sign_C22-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C23",
+      "category": "prohibition",
+      "name": "Weight limit per axle",
+      "meaning": "Weight limit per axle.",
+      "keywords": [
+        "c23",
+        "weight",
+        "limit",
+        "per",
+        "axle"
+      ],
+      "imageName": "sign_C23",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C24",
+      "category": "prohibition",
+      "name": "Weight limit per tandem axle",
+      "meaning": "Weight limit per tandem axle.",
+      "keywords": [
+        "c24",
+        "weight",
+        "limit",
+        "per",
+        "tandem",
+        "axle"
+      ],
+      "imageName": "sign_C24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C25-1",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud att sv\u00e4nga, v\u00e4nstersv\u00e4ng",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud att sv\u00e4nga, v\u00e4nstersv\u00e4ng",
+      "keywords": [
+        "c25",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "att"
+      ],
+      "imageName": "sign_C25-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C25-2",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud att sv\u00e4nga, h\u00f6gersv\u00e4ng",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud att sv\u00e4nga, h\u00f6gersv\u00e4ng",
+      "keywords": [
+        "c25",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "att"
+      ],
+      "imageName": "sign_C25-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C26",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot v\u00e4ndning p\u00e5 v\u00e4g",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot v\u00e4ndning p\u00e5 v\u00e4g (U-sv\u00e4ng)",
+      "keywords": [
+        "c26",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C27",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Omk\u00f6rning f\u00f6rbjuden",
+      "meaning": "Sweden road sign: Prohibitory signs - Omk\u00f6rning f\u00f6rbjuden",
+      "keywords": [
+        "c27",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "omk\u00f6rning",
+        "f\u00f6rbjuden"
+      ],
+      "imageName": "sign_C27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C28",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Slut p\u00e5 omk\u00f6rningsf\u00f6rbud",
+      "meaning": "Sweden road sign: Prohibitory signs - Slut p\u00e5 omk\u00f6rningsf\u00f6rbud",
+      "keywords": [
+        "c28",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "slut",
+        "omk\u00f6rningsf\u00f6rbud"
+      ],
+      "imageName": "sign_C28",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C29",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Omk\u00f6rning med lastbil f\u00f6rbjuden",
+      "meaning": "Sweden road sign: Prohibitory signs - Omk\u00f6rning med lastbil f\u00f6rbjuden",
+      "keywords": [
+        "c29",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "omk\u00f6rning",
+        "med"
+      ],
+      "imageName": "sign_C29",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C3",
+      "category": "prohibition",
+      "name": "A Swedish road sign",
+      "meaning": "A Swedish road sign",
+      "keywords": [
+        "c3",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C30",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Slut p\u00e5 omk\u00f6rningsf\u00f6rbud f\u00f6r lastbil",
+      "meaning": "Sweden road sign: Prohibitory signs - Slut p\u00e5 omk\u00f6rningsf\u00f6rbud f\u00f6r lastbil",
+      "keywords": [
+        "c30",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "slut",
+        "omk\u00f6rningsf\u00f6rbud"
+      ],
+      "imageName": "sign_C30",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-10",
+      "category": "prohibition",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign.",
+      "keywords": [
+        "c31",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C31-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-11",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "keywords": [
+        "c31",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "hastighet"
+      ],
+      "imageName": "sign_C31-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-12",
+      "category": "prohibition",
+      "name": "Swedish prohibitory road sign , 120 km/h speed limit sign in Sweden",
+      "meaning": "Swedish prohibitory road sign , 120 km/h speed limit sign in Sweden",
+      "keywords": [
+        "c31",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign",
+        "speed",
+        "limit",
+        "sweden"
+      ],
+      "imageName": "sign_C31-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-3",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "keywords": [
+        "c31",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "hastighet"
+      ],
+      "imageName": "sign_C31-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-4",
+      "category": "prohibition",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign.",
+      "keywords": [
+        "c31",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C31-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-5",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "keywords": [
+        "c31",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "hastighet"
+      ],
+      "imageName": "sign_C31-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-6",
+      "category": "prohibition",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign.",
+      "keywords": [
+        "c31",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C31-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-7",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "meaning": "Sweden road sign: Prohibitory signs - Begr\u00e4nsad hastighet",
+      "keywords": [
+        "c31",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "begr\u00e4nsad",
+        "hastighet"
+      ],
+      "imageName": "sign_C31-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-8",
+      "category": "prohibition",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign.",
+      "keywords": [
+        "c31",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C31-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-9",
+      "category": "prohibition",
+      "imageName": "sign_C31-9",
+      "numericValue": 50,
+      "valueUnit": "km/h",
+      "relatedCodes": [
+        "C32-9"
+      ],
+      "difficulty": 1,
+      "examTip": "The number is the maximum speed, not a recommendation.",
+      "name": "Speed limit",
+      "meaning": "You must not drive faster than the number shown (km/h). Applies until another sign ends the limit or the zone ends.",
+      "keywords": [
+        "speed",
+        "km/h"
+      ]
+    },
+    {
+      "code": "C32-10",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-11",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-3",
+      "category": "prohibition",
+      "name": "Swedish Roadsign",
+      "meaning": "Swedish Roadsign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "roadsign"
+      ],
+      "imageName": "sign_C32-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-4",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-5",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-6",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-7",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-8",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c32",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C32-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-9",
+      "category": "prohibition",
+      "imageName": "sign_C32-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [
+        "C31-9"
+      ],
+      "difficulty": 1,
+      "examTip": "Black stripe through the number = end of limit.",
+      "name": "End of speed limit",
+      "meaning": "The previous speed limit no longer applies. Follow the default rules for the type of road.",
+      "keywords": [
+        "speed",
+        "end"
+      ]
+    },
+    {
+      "code": "C33-1",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - Stopp vid tull",
+      "meaning": "Sweden road sign: Prohibitory signs - Stopp vid tull (danska) . Passing without stopping prohibited road sign with the word \"customs\" in two languages: \"TULL\" and \"TOLD\".",
+      "keywords": [
+        "c33",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "stopp",
+        "vid"
+      ],
+      "imageName": "sign_C33-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-2",
+      "category": "prohibition",
+      "name": "Stopp vid tull",
+      "meaning": "Stopp vid tull (norska)",
+      "keywords": [
+        "c33",
+        "stopp",
+        "vid",
+        "tull",
+        "norska"
+      ],
+      "imageName": "sign_C33-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-3",
+      "category": "prohibition",
+      "name": "Stopp vid tull",
+      "meaning": "Stopp vid tull (finska)",
+      "keywords": [
+        "c33",
+        "stopp",
+        "vid",
+        "tull",
+        "finska"
+      ],
+      "imageName": "sign_C33-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-4",
+      "category": "prohibition",
+      "name": "Stopp vid tull",
+      "meaning": "Stopp vid tull (tyska)",
+      "keywords": [
+        "c33",
+        "stopp",
+        "vid",
+        "tull",
+        "tyska"
+      ],
+      "imageName": "sign_C33-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-1",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c34",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C34-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c34",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C34-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-3",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c34",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C34-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-4",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c34",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C34-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-5",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign (\"Stopp \u2013 Vakt\" means \"Stop \u2013 security guard\")",
+      "keywords": [
+        "c34",
+        "swedish",
+        "road",
+        "sign",
+        "stopp",
+        "vakt",
+        "means",
+        "stop"
+      ],
+      "imageName": "sign_C34-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C35",
+      "category": "prohibition",
+      "name": "Parking of vehicles prohibited",
+      "meaning": "Parking of vehicles prohibited.",
+      "keywords": [
+        "c35",
+        "parking",
+        "vehicles",
+        "prohibited"
+      ],
+      "imageName": "sign_C35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C36",
+      "category": "prohibition",
+      "name": "Parking of vehicles prohibited on odd-numbered dates",
+      "meaning": "Parking of vehicles prohibited on odd-numbered dates.",
+      "keywords": [
+        "c36",
+        "parking",
+        "vehicles",
+        "prohibited",
+        "odd",
+        "numbered",
+        "dates"
+      ],
+      "imageName": "sign_C36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C37",
+      "category": "prohibition",
+      "name": "Parking of vehicles prohibited on even-numbered dates",
+      "meaning": "Parking of vehicles prohibited on even-numbered dates.",
+      "keywords": [
+        "c37",
+        "parking",
+        "vehicles",
+        "prohibited",
+        "even",
+        "numbered",
+        "dates"
+      ],
+      "imageName": "sign_C37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C38",
+      "category": "prohibition",
+      "name": "Date-based parking",
+      "meaning": "Date-based parking. (Parking of vehicles prohibited on even-numbered days on the side of the road with even-numbered addresses and on odd-numbered days on the side of the road with odd-numbered addresses.)",
+      "keywords": [
+        "c38",
+        "date",
+        "based",
+        "parking",
+        "vehicles",
+        "prohibited",
+        "even",
+        "numbered"
+      ],
+      "imageName": "sign_C38",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C39",
+      "category": "prohibition",
+      "name": "Stopping and parking of vehicles prohibited",
+      "meaning": "Stopping and parking of vehicles prohibited.",
+      "keywords": [
+        "c39",
+        "stopping",
+        "and",
+        "parking",
+        "vehicles",
+        "prohibited"
+      ],
+      "imageName": "sign_C39",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C4",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motordrivet fordon som har flera hjul \u00e4n tv\u00e5",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motordrivet fordon som har flera hjul \u00e4n tv\u00e5",
+      "keywords": [
+        "c4",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-1",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-3",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-4",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-5",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-6",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c40",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C40-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-1",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-3",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-4",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-5",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-6",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c41",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C41-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C42-1",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c42",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C42-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C42-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c42",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C42-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C43-1",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c43",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C43-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C43-2",
+      "category": "prohibition",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "c43",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_C43-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C44",
+      "category": "prohibition",
+      "name": "Swedish roadsign, studded tires prohibited",
+      "meaning": "Swedish roadsign, studded tires prohibited",
+      "keywords": [
+        "c44",
+        "swedish",
+        "roadsign",
+        "studded",
+        "tires",
+        "prohibited"
+      ],
+      "imageName": "sign_C44",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C5",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motorcykel och moped klass 1",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motorcykel och moped klass 1",
+      "keywords": [
+        "c5",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C6",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motordrivet fordon med tillkopplad sl\u00e4pvagn",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med motordrivet fordon med tillkopplad sl\u00e4pvagn",
+      "keywords": [
+        "c6",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C7",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med lastbil",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med lastbil",
+      "keywords": [
+        "c7",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C8",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med traktor och motorredskap",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot trafik med traktor och motorredskap",
+      "keywords": [
+        "c8",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C9",
+      "category": "prohibition",
+      "name": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot fordon lastade med farligt gods",
+      "meaning": "Sweden road sign: Prohibitory signs - F\u00f6rbud mot fordon lastade med farligt gods",
+      "keywords": [
+        "c9",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "f\u00f6rbud",
+        "mot"
+      ],
+      "imageName": "sign_C9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-1",
+      "category": "mandatory",
+      "imageName": "sign_D1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Blue circle = mandatory instruction, not prohibition.",
+      "name": "Mandatory direction straight ahead",
+      "meaning": "You must follow the direction of the arrow. Often used at junctions or in one-way sections.",
+      "keywords": [
+        "mandatory",
+        "straight"
+      ]
+    },
+    {
+      "code": "D1-2",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6ger",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6ger",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-3",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-4",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, v\u00e4nstersv\u00e4ng",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, v\u00e4nstersv\u00e4ng",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-5",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6gersv\u00e4ng",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6gersv\u00e4ng",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-6",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram eller v\u00e4nstersv\u00e4ng",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram eller v\u00e4nstersv\u00e4ng",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-7",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram eller h\u00f6gersv\u00e4ng",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, rakt fram eller h\u00f6gersv\u00e4ng",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-8",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6ger- eller v\u00e4nstersv\u00e4ng",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rriktning, h\u00f6ger- eller v\u00e4nstersv\u00e4ng",
+      "keywords": [
+        "d1",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rriktning"
+      ],
+      "imageName": "sign_D1-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D10",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - B\u00f6rjan p\u00e5 k\u00f6rf\u00e4lt f\u00f6r fordon i linjetrafik",
+      "meaning": "Sweden road sign: Mandatory signs - B\u00f6rjan p\u00e5 k\u00f6rf\u00e4lt f\u00f6r fordon i linjetrafik",
+      "keywords": [
+        "d10",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "b\u00f6rjan",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_D10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D11-1",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - Slut p\u00e5 k\u00f6rf\u00e4lt f\u00f6r fordon i linjetrafik",
+      "meaning": "Sweden road sign: Mandatory signs - Slut p\u00e5 k\u00f6rf\u00e4lt f\u00f6r fordon i linjetrafik",
+      "keywords": [
+        "d11",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "slut",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_D11-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D2-1",
+      "category": "mandatory",
+      "imageName": "sign_D2-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Mandatory direction right",
+      "meaning": "You must turn right as shown. Other directions are prohibited unless a supplementary plate allows an exception.",
+      "keywords": [
+        "mandatory",
+        "right"
+      ]
+    },
+    {
+      "code": "D2-2",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rbana, v\u00e4nster",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rbana, v\u00e4nster",
+      "keywords": [
+        "d2",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rbana"
+      ],
+      "imageName": "sign_D2-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D2-3",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rbana, h\u00f6ger eller v\u00e4nster",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden k\u00f6rbana, h\u00f6ger eller v\u00e4nster",
+      "keywords": [
+        "d2",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "k\u00f6rbana"
+      ],
+      "imageName": "sign_D2-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D3",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - Cirkulationsplats",
+      "meaning": "Sweden road sign: Mandatory signs - Cirkulationsplats",
+      "keywords": [
+        "d3",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "cirkulationsplats"
+      ],
+      "imageName": "sign_D3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D4",
+      "category": "mandatory",
+      "imageName": "sign_D4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Cycle lane",
+      "meaning": "Cyclists must use the cycle lane. Other vehicles are normally not allowed to drive there.",
+      "keywords": [
+        "cycle",
+        "mandatory"
+      ]
+    },
+    {
+      "code": "D5",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana",
+      "keywords": [
+        "d5",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "g\u00e5ngbana"
+      ],
+      "imageName": "sign_D5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D6",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ng-, cykel- och mopedbana",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ng-, cykel- och mopedbana (gemensam bana)",
+      "keywords": [
+        "d6",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "g\u00e5ng"
+      ],
+      "imageName": "sign_D6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D7-1",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana och cykel- och mopedbana",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana och cykel- och mopedbana",
+      "keywords": [
+        "d7",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "g\u00e5ngbana"
+      ],
+      "imageName": "sign_D7-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D7-2",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana och cykel- och mopedbana",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden g\u00e5ngbana och cykel- och mopedbana",
+      "keywords": [
+        "d7",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "g\u00e5ngbana"
+      ],
+      "imageName": "sign_D7-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D8",
+      "category": "mandatory",
+      "name": "Sweden road sign: Mandatory signs - P\u00e5bjuden ridv\u00e4g",
+      "meaning": "Sweden road sign: Mandatory signs - P\u00e5bjuden ridv\u00e4g",
+      "keywords": [
+        "d8",
+        "sweden",
+        "road",
+        "sign",
+        "mandatory",
+        "signs",
+        "p\u00e5bjuden",
+        "ridv\u00e4g"
+      ],
+      "imageName": "sign_D8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D9",
+      "category": "mandatory",
+      "name": "Snowmobile sign",
+      "meaning": "Snowmobile sign (Sweden)",
+      "keywords": [
+        "d9",
+        "snowmobile",
+        "sign",
+        "sweden"
+      ],
+      "imageName": "sign_D9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E10",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - G\u00e5rdsgata upph\u00f6r",
+      "meaning": "Sweden road sign: Information signs - G\u00e5rdsgata upph\u00f6r",
+      "keywords": [
+        "e10",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "g\u00e5rdsgata",
+        "upph\u00f6r"
+      ],
+      "imageName": "sign_E10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - L\u00e5gfartsv\u00e4g",
+      "meaning": "Sweden road sign: Information signs - L\u00e5gfartsv\u00e4g",
+      "keywords": [
+        "e11",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "l\u00e5gfartsv\u00e4g"
+      ],
+      "imageName": "sign_E11-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-5",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-8",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e11",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E11-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - L\u00e5gfartsv\u00e4g upph\u00f6r",
+      "meaning": "Sweden road sign: Information signs - L\u00e5gfartsv\u00e4g upph\u00f6r",
+      "keywords": [
+        "e12",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "l\u00e5gfartsv\u00e4g",
+        "upph\u00f6r"
+      ],
+      "imageName": "sign_E12-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-5",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-8",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e12",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E12-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-11",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-3",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-5",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Rekommenderad h\u00f6gsta hastighet",
+      "meaning": "Sweden road sign: Information signs - Rekommenderad h\u00f6gsta hastighet",
+      "keywords": [
+        "e13",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "rekommenderad",
+        "h\u00f6gsta"
+      ],
+      "imageName": "sign_E13-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-8",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E13-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E14",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Rekommenderad h\u00f6gsta hastighet upph\u00f6r",
+      "meaning": "Sweden road sign: Information signs - Rekommenderad h\u00f6gsta hastighet upph\u00f6r",
+      "keywords": [
+        "e14",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "rekommenderad",
+        "h\u00f6gsta"
+      ],
+      "imageName": "sign_E14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E15",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e15",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Enkelriktad trafik",
+      "meaning": "Sweden road sign: Information signs - Enkelriktad trafik",
+      "keywords": [
+        "e16",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "enkelriktad",
+        "trafik"
+      ],
+      "imageName": "sign_E16-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-1-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "e16",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E16-1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e16",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E16-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - \u00c5terv\u00e4ndsv\u00e4g",
+      "meaning": "Sweden road sign: Information signs - \u00c5terv\u00e4ndsv\u00e4g",
+      "keywords": [
+        "e17",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "\u00e5terv\u00e4ndsv\u00e4g"
+      ],
+      "imageName": "sign_E17-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e17",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E17-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-3",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e17",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E17-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e17",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E17-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E18",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - M\u00f6tesplats",
+      "meaning": "Sweden road sign: Information signs - M\u00f6tesplats",
+      "keywords": [
+        "e18",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "m\u00f6tesplats"
+      ],
+      "imageName": "sign_E18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E19",
+      "category": "information",
+      "imageName": "sign_E19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Pedestrian street",
+      "meaning": "Pedestrian street where pedestrians have priority. Vehicles may only drive if explicitly allowed and at low speed.",
+      "keywords": [
+        "pedestrian",
+        "street"
+      ]
+    },
+    {
+      "code": "E20-1",
+      "category": "information",
+      "name": "Zone with a prohibition of parking of vehicles",
+      "meaning": "Zone with a prohibition of parking of vehicles.",
+      "keywords": [
+        "e20",
+        "zone",
+        "with",
+        "prohibition",
+        "parking",
+        "vehicles"
+      ],
+      "imageName": "sign_E20-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-11",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-12",
+      "category": "information",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-13",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-14",
+      "category": "information",
+      "name": "Zone with date-based parking",
+      "meaning": "Zone with date-based parking. (Parking of vehicles prohibited on even-numbered days on the side of the road with even-numbered addresses and on odd-numbered days on the side of the road with odd-numbered addresses.)",
+      "keywords": [
+        "e20",
+        "zone",
+        "with",
+        "date",
+        "based",
+        "parking",
+        "vehicles",
+        "prohibited"
+      ],
+      "imageName": "sign_E20-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-15",
+      "category": "information",
+      "name": "Zone with a prohibition of stopping and parking of vehicles",
+      "meaning": "Zone with a prohibition of stopping and parking of vehicles.",
+      "keywords": [
+        "e20",
+        "zone",
+        "with",
+        "prohibition",
+        "stopping",
+        "and",
+        "parking",
+        "vehicles"
+      ],
+      "imageName": "sign_E20-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-16",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-2",
+      "category": "information",
+      "name": "Zone with a prohibition of vehicular traffic",
+      "meaning": "Zone with a prohibition of vehicular traffic.",
+      "keywords": [
+        "e20",
+        "zone",
+        "with",
+        "prohibition",
+        "vehicular",
+        "traffic"
+      ],
+      "imageName": "sign_E20-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-3",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-5",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-8",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e20",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E20-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-1",
+      "category": "information",
+      "name": "Sweden road sign: Prohibitory signs - Slut p\u00e5 zon med stoppf\u00f6rbud",
+      "meaning": "Sweden road sign: Prohibitory signs - Slut p\u00e5 zon med stoppf\u00f6rbud",
+      "keywords": [
+        "e21",
+        "sweden",
+        "road",
+        "sign",
+        "prohibitory",
+        "signs",
+        "slut",
+        "zon"
+      ],
+      "imageName": "sign_E21-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-11",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-12",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-13",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-14",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-15",
+      "category": "information",
+      "name": "Swedish prohibitory road sign",
+      "meaning": "Swedish prohibitory road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "prohibitory",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-16",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-3",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-5",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-8",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "e21",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_E21-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E22",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, buss",
+      "meaning": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, buss",
+      "keywords": [
+        "e22",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "m\u00e4rken",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_E22",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E23",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Taxistation",
+      "meaning": "Sweden road sign: Information signs - Taxistation",
+      "keywords": [
+        "e23",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "taxistation"
+      ],
+      "imageName": "sign_E23",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E24",
+      "category": "information",
+      "name": "Swedish traffic sign giving information",
+      "meaning": "Swedish traffic sign giving information",
+      "keywords": [
+        "e24",
+        "swedish",
+        "traffic",
+        "sign",
+        "giving",
+        "information"
+      ],
+      "imageName": "sign_E24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E25",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Betalv\u00e4g",
+      "meaning": "Sweden road sign: Information signs - Betalv\u00e4g",
+      "keywords": [
+        "e25",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "betalv\u00e4g"
+      ],
+      "imageName": "sign_E25",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E26",
+      "category": "information",
+      "name": "Swedish traffic sign giving information",
+      "meaning": "Swedish traffic sign giving information",
+      "keywords": [
+        "e26",
+        "swedish",
+        "traffic",
+        "sign",
+        "giving",
+        "information"
+      ],
+      "imageName": "sign_E26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E27",
+      "category": "information",
+      "name": "Swedish traffic sign giving information",
+      "meaning": "Swedish traffic sign giving information",
+      "keywords": [
+        "e27",
+        "swedish",
+        "traffic",
+        "sign",
+        "giving",
+        "information"
+      ],
+      "imageName": "sign_E27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E28-1",
+      "category": "information",
+      "name": "Swedish emergency exit sign",
+      "meaning": "Swedish emergency exit sign.",
+      "keywords": [
+        "e28",
+        "swedish",
+        "emergency",
+        "exit",
+        "sign"
+      ],
+      "imageName": "sign_E28-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E28-2",
+      "category": "information",
+      "name": "Swedish emergency exit sign",
+      "meaning": "Swedish emergency exit sign.",
+      "keywords": [
+        "e28",
+        "swedish",
+        "emergency",
+        "exit",
+        "sign"
+      ],
+      "imageName": "sign_E28-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E29-1",
+      "category": "information",
+      "name": "Swedish emergency exit sign",
+      "meaning": "Swedish emergency exit sign.",
+      "keywords": [
+        "e29",
+        "swedish",
+        "emergency",
+        "exit",
+        "sign"
+      ],
+      "imageName": "sign_E29-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E29-2",
+      "category": "information",
+      "name": "Swedish emergency exit sign",
+      "meaning": "Swedish emergency exit sign.",
+      "keywords": [
+        "e29",
+        "swedish",
+        "emergency",
+        "exit",
+        "sign"
+      ],
+      "imageName": "sign_E29-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E6",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - T\u00e4ttbebyggt omr\u00e5de upph\u00f6r",
+      "meaning": "Sweden road sign: Information signs - T\u00e4ttbebyggt omr\u00e5de upph\u00f6r",
+      "keywords": [
+        "e6",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "t\u00e4ttbebyggt",
+        "omr\u00e5de"
+      ],
+      "imageName": "sign_E6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E7",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - G\u00e5gata",
+      "meaning": "Sweden road sign: Information signs - G\u00e5gata",
+      "keywords": [
+        "e7",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "g\u00e5gata"
+      ],
+      "imageName": "sign_E7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E8",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - G\u00e5gata upph\u00f6r",
+      "meaning": "Sweden road sign: Information signs - G\u00e5gata upph\u00f6r",
+      "keywords": [
+        "e8",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "g\u00e5gata",
+        "upph\u00f6r"
+      ],
+      "imageName": "sign_E8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E9",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - G\u00e5rdsgata",
+      "meaning": "Sweden road sign: Information signs - G\u00e5rdsgata",
+      "keywords": [
+        "e9",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "g\u00e5rdsgata"
+      ],
+      "imageName": "sign_E9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F1-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Orienteringstavla",
+      "meaning": "Sweden road sign: Information signs - Orienteringstavla",
+      "keywords": [
+        "f1",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "orienteringstavla"
+      ],
+      "imageName": "sign_F1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F10",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Ortnamnsm\u00e4rke",
+      "meaning": "Sweden road sign: Information signs - Ortnamnsm\u00e4rke",
+      "keywords": [
+        "f10",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "ortnamnsm\u00e4rke"
+      ],
+      "imageName": "sign_F10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F13",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Avst\u00e5ndstavla",
+      "meaning": "Sweden road sign: Information signs - Avst\u00e5ndstavla",
+      "keywords": [
+        "f13",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "avst\u00e5ndstavla"
+      ],
+      "imageName": "sign_F13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke, europav\u00e4g",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke, europav\u00e4g",
+      "keywords": [
+        "f14",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gnummerm\u00e4rke",
+        "europav\u00e4g"
+      ],
+      "imageName": "sign_F14-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke, andra riksv\u00e4gar \u00e4n europav\u00e4gar samt l\u00e4nsv\u00e4gar med nummer 100-499",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke, andra riksv\u00e4gar \u00e4n europav\u00e4gar samt l\u00e4nsv\u00e4gar med nummer 100-499",
+      "keywords": [
+        "f14",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gnummerm\u00e4rke",
+        "andra"
+      ],
+      "imageName": "sign_F14-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-4",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gvisning fram till numrerad v\u00e4g",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gvisning fram till numrerad v\u00e4g",
+      "keywords": [
+        "f14",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gvisning",
+        "fram"
+      ],
+      "imageName": "sign_F14-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F15",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke vid omledning av trafiken",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gnummerm\u00e4rke vid omledning av trafiken",
+      "keywords": [
+        "f15",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gnummerm\u00e4rke",
+        "vid"
+      ],
+      "imageName": "sign_F15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F17",
+      "category": "information",
+      "name": "Left road merging with the right one",
+      "meaning": "Left road merging with the right one (Swedish road sign)",
+      "keywords": [
+        "f17",
+        "left",
+        "road",
+        "merging",
+        "with",
+        "the",
+        "right",
+        "one"
+      ],
+      "imageName": "sign_F17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F2",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Orienteringstavla vid f\u00f6rbjuden v\u00e4nstersv\u00e4ng",
+      "meaning": "Sweden road sign: Information signs - Orienteringstavla vid f\u00f6rbjuden v\u00e4nstersv\u00e4ng",
+      "keywords": [
+        "f2",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "orienteringstavla",
+        "vid"
+      ],
+      "imageName": "sign_F2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F21",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt f\u00f6re v\u00e4gkorsning",
+      "meaning": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt f\u00f6re v\u00e4gkorsning",
+      "keywords": [
+        "f21",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "upplysning",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_F21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F24-1",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "f24",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_F24-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F25-3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "meaning": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "keywords": [
+        "f25",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "upplysning",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_F25-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F26-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "meaning": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "keywords": [
+        "f26",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "upplysning",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_F26-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F26-2",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "meaning": "Sweden road sign: Information signs - Upplysning om k\u00f6rf\u00e4lt, visst k\u00f6rf\u00e4lt har st\u00e4ngts av eller hinder kan f\u00f6religga",
+      "keywords": [
+        "f26",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "upplysning",
+        "k\u00f6rf\u00e4lt"
+      ],
+      "imageName": "sign_F26-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F27",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Trafikplatsnumrering",
+      "meaning": "Sweden road sign: Information signs - Trafikplatsnumrering",
+      "keywords": [
+        "f27",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "trafikplatsnumrering"
+      ],
+      "imageName": "sign_F27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F29",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign",
+      "keywords": [
+        "f29",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_F29",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F30",
+      "category": "information",
+      "name": "Swedish road sign for local road around city centre",
+      "meaning": "Swedish road sign for local road around city centre",
+      "keywords": [
+        "f30",
+        "swedish",
+        "road",
+        "sign",
+        "for",
+        "local",
+        "around",
+        "city"
+      ],
+      "imageName": "sign_F30",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F31-1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, lastbil",
+      "meaning": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, lastbil",
+      "keywords": [
+        "f31",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "m\u00e4rken",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_F31-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F31-5",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, personbil",
+      "meaning": "Sweden road sign: Information signs - M\u00e4rken f\u00f6r vissa \u00e4ndam\u00e5l, personbil",
+      "keywords": [
+        "f31",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "m\u00e4rken",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_F31-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F32",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Lokaliseringsm\u00e4rke f\u00f6r farligt gods",
+      "meaning": "Sweden road sign: Information signs - Lokaliseringsm\u00e4rke f\u00f6r farligt gods",
+      "keywords": [
+        "f32",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "lokaliseringsm\u00e4rke",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_F32",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F34",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gvisare",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gvisare",
+      "keywords": [
+        "f34",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gvisare"
+      ],
+      "imageName": "sign_F34",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F35",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Orienteringstavlor",
+      "meaning": "Sweden road sign: Information signs - Orienteringstavlor",
+      "keywords": [
+        "f35",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "orienteringstavlor"
+      ],
+      "imageName": "sign_F35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F36",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Ortnamnsm\u00e4rke",
+      "meaning": "Sweden road sign: Information signs - Ortnamnsm\u00e4rke",
+      "keywords": [
+        "f36",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "ortnamnsm\u00e4rke"
+      ],
+      "imageName": "sign_F36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F37",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Avst\u00e5ndstavla",
+      "meaning": "Sweden road sign: Information signs - Avst\u00e5ndstavla",
+      "keywords": [
+        "f37",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "avst\u00e5ndstavla"
+      ],
+      "imageName": "sign_F37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F38",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Cykelledsm\u00e4rke",
+      "meaning": "Sweden road sign: Information signs - Cykelledsm\u00e4rke",
+      "keywords": [
+        "f38",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "cykelledsm\u00e4rke"
+      ],
+      "imageName": "sign_F38",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F4",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - F\u00f6rberedande upplysning om avfart fr\u00e5n annan v\u00e4g \u00e4n motorv\u00e4g eller motortrafikled",
+      "meaning": "Sweden road sign: Information signs - F\u00f6rberedande upplysning om avfart fr\u00e5n annan v\u00e4g \u00e4n motorv\u00e4g eller motortrafikled",
+      "keywords": [
+        "f4",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "f\u00f6rberedande",
+        "upplysning"
+      ],
+      "imageName": "sign_F4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F5 (old colors)",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - V\u00e4gvisare f\u00f6r allm\u00e4n v\u00e4g",
+      "meaning": "Sweden road sign: Information signs - V\u00e4gvisare f\u00f6r allm\u00e4n v\u00e4g",
+      "keywords": [
+        "f5 (old colors)",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "v\u00e4gvisare",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_F5 (old colors)",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F6",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Tabellv\u00e4gvisare",
+      "meaning": "Sweden road sign: Information signs - Tabellv\u00e4gvisare",
+      "keywords": [
+        "f6",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "tabellv\u00e4gvisare"
+      ],
+      "imageName": "sign_F6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F7",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Avfartsvisare",
+      "meaning": "Sweden road sign: Information signs - Avfartsvisare",
+      "keywords": [
+        "f7",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "avfartsvisare"
+      ],
+      "imageName": "sign_F7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F9",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Samlingsm\u00e4rke",
+      "meaning": "Sweden road sign: Information signs - Samlingsm\u00e4rke",
+      "keywords": [
+        "f9",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "samlingsm\u00e4rke"
+      ],
+      "imageName": "sign_F9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G1",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Post",
+      "meaning": "Sweden road sign: Information signs - Post",
+      "keywords": [
+        "g1",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "post"
+      ],
+      "imageName": "sign_G1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G10",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "g10",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_G10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G11",
+      "category": "information",
+      "name": "F\u00e4rja",
+      "meaning": "F\u00e4rja",
+      "keywords": [
+        "g11",
+        "f\u00e4rja"
+      ],
+      "imageName": "sign_G11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G12",
+      "category": "information",
+      "name": "Personf\u00e4rja",
+      "meaning": "Personf\u00e4rja",
+      "keywords": [
+        "g12",
+        "personf\u00e4rja"
+      ],
+      "imageName": "sign_G12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G2",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Telefonautomat",
+      "meaning": "Sweden road sign: Information signs - Telefonautomat",
+      "keywords": [
+        "g2",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "telefonautomat"
+      ],
+      "imageName": "sign_G2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Radiostation f\u00f6r v\u00e4gtrafikinformation",
+      "meaning": "Sweden road sign: Information signs - Radiostation f\u00f6r v\u00e4gtrafikinformation",
+      "keywords": [
+        "g3",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "radiostation",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_G3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G4",
+      "category": "information",
+      "name": "Hospital with emergency facilities",
+      "meaning": "Hospital with emergency facilities.",
+      "keywords": [
+        "g4",
+        "hospital",
+        "with",
+        "emergency",
+        "facilities"
+      ],
+      "imageName": "sign_G4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G5",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Industriomr\u00e5de",
+      "meaning": "Sweden road sign: Information signs - Industriomr\u00e5de",
+      "keywords": [
+        "g5",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "industriomr\u00e5de"
+      ],
+      "imageName": "sign_G5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G6",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "g6",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_G6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G7",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "g7",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_G7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G9",
+      "category": "information",
+      "name": "Swedish traffic sign giving information",
+      "meaning": "Swedish traffic sign giving information",
+      "keywords": [
+        "g9",
+        "swedish",
+        "traffic",
+        "sign",
+        "giving",
+        "information"
+      ],
+      "imageName": "sign_G9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H10",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Stugby",
+      "meaning": "Sweden road sign: Information signs - Stugby",
+      "keywords": [
+        "h10",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "stugby"
+      ],
+      "imageName": "sign_H10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H11",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Campingplats",
+      "meaning": "Sweden road sign: Information signs - Campingplats",
+      "keywords": [
+        "h11",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "campingplats"
+      ],
+      "imageName": "sign_H11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H12",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Uppst\u00e4llningsplats f\u00f6r husvagnar",
+      "meaning": "Sweden road sign: Information signs - Uppst\u00e4llningsplats f\u00f6r husvagnar",
+      "keywords": [
+        "h12",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "uppst\u00e4llningsplats",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_H12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H13",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Rastplats",
+      "meaning": "Sweden road sign: Information signs - Rastplats",
+      "keywords": [
+        "h13",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "rastplats"
+      ],
+      "imageName": "sign_H13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H14",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Toalett",
+      "meaning": "Sweden road sign: Information signs - Toalett",
+      "keywords": [
+        "h14",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "toalett"
+      ],
+      "imageName": "sign_H14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H15",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Badplats",
+      "meaning": "Sweden road sign: Information signs - Badplats",
+      "keywords": [
+        "h15",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "badplats"
+      ],
+      "imageName": "sign_H15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H16",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Friluftsomr\u00e5de",
+      "meaning": "Sweden road sign: Information signs - Friluftsomr\u00e5de",
+      "keywords": [
+        "h16",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "friluftsomr\u00e5de"
+      ],
+      "imageName": "sign_H16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H17",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Vandringsled",
+      "meaning": "Sweden road sign: Information signs - Vandringsled",
+      "keywords": [
+        "h17",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "vandringsled"
+      ],
+      "imageName": "sign_H17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H19",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Sl\u00e4plift",
+      "meaning": "Sweden road sign: Information signs - Sl\u00e4plift",
+      "keywords": [
+        "h19",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "sl\u00e4plift"
+      ],
+      "imageName": "sign_H19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H2",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Verkstad",
+      "meaning": "Sweden road sign: Information signs - Verkstad",
+      "keywords": [
+        "h2",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "verkstad"
+      ],
+      "imageName": "sign_H2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H20",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Golfbana",
+      "meaning": "Sweden road sign: Information signs - Golfbana",
+      "keywords": [
+        "h20",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "golfbana"
+      ],
+      "imageName": "sign_H20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H21",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - F\u00f6rs\u00e4ljningsst\u00e4lle f\u00f6r fiskekort",
+      "meaning": "Sweden road sign: Information signs - F\u00f6rs\u00e4ljningsst\u00e4lle f\u00f6r fiskekort",
+      "keywords": [
+        "h21",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "f\u00f6rs\u00e4ljningsst\u00e4lle",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_H21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H3",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Bensinstation",
+      "meaning": "Sweden road sign: Information signs - Bensinstation",
+      "keywords": [
+        "h3",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "bensinstation"
+      ],
+      "imageName": "sign_H3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H5",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Servering",
+      "meaning": "Sweden road sign: Information signs - Servering",
+      "keywords": [
+        "h5",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "servering"
+      ],
+      "imageName": "sign_H5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H8",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Vandrarhem",
+      "meaning": "Sweden road sign: Information signs - Vandrarhem",
+      "keywords": [
+        "h8",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "vandrarhem"
+      ],
+      "imageName": "sign_H8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H9",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "h9",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_H9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I2",
+      "category": "information",
+      "name": "Sweden road sign: Information signs - Turistomr\u00e5de",
+      "meaning": "Sweden road sign: Information signs - Turistomr\u00e5de",
+      "keywords": [
+        "i2",
+        "sweden",
+        "road",
+        "sign",
+        "information",
+        "signs",
+        "turistomr\u00e5de"
+      ],
+      "imageName": "sign_I2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I3",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "i3",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_I3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I4",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "i4",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_I4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "j2",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_J2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J3-1",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "j3",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_J3-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J3-2",
+      "category": "information",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "j3",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_J3-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "P6",
+      "category": "additional",
+      "name": "Sweden road sign: Signals by policemen - Kontroll",
+      "meaning": "Sweden road sign: Signals by policemen - Kontroll",
+      "keywords": [
+        "p6",
+        "sweden",
+        "road",
+        "sign",
+        "signals",
+        "policemen",
+        "kontroll"
+      ],
+      "imageName": "sign_P6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "P7",
+      "category": "additional",
+      "name": "Sweden road sign: Signals by policemen - F\u00f6rberedande upplysning om kontroll",
+      "meaning": "Sweden road sign: Signals by policemen - F\u00f6rberedande upplysning om kontroll",
+      "keywords": [
+        "p7",
+        "sweden",
+        "road",
+        "sign",
+        "signals",
+        "policemen",
+        "f\u00f6rberedande",
+        "upplysning"
+      ],
+      "imageName": "sign_P7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T10",
+      "category": "additional",
+      "name": "Supplementary plate indicating persons with hearing impairment",
+      "meaning": "Supplementary plate indicating persons with hearing impairment.",
+      "keywords": [
+        "t10",
+        "supplementary",
+        "plate",
+        "indicating",
+        "persons",
+        "with",
+        "hearing",
+        "impairment"
+      ],
+      "imageName": "sign_T10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T13",
+      "category": "additional",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "t13",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_T13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T14",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Flerv\u00e4gsstopp;",
+      "meaning": "Sweden road sign: Additional panels - Flerv\u00e4gsstopp;",
+      "keywords": [
+        "t14",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "flerv\u00e4gsstopp"
+      ],
+      "imageName": "sign_T14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T2",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Avst\u00e5nd till",
+      "meaning": "Sweden road sign: Additional panels - Avst\u00e5nd till",
+      "keywords": [
+        "t2",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "avst\u00e5nd",
+        "till"
+      ],
+      "imageName": "sign_T2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-1",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "meaning": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "keywords": [
+        "t21",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "uppst\u00e4llning",
+        "fordon"
+      ],
+      "imageName": "sign_T21-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-2",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "meaning": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "keywords": [
+        "t21",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "uppst\u00e4llning",
+        "fordon"
+      ],
+      "imageName": "sign_T21-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-3",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "meaning": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "keywords": [
+        "t21",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "uppst\u00e4llning",
+        "fordon"
+      ],
+      "imageName": "sign_T21-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-4",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "meaning": "Sweden road sign: Additional panels - Uppst\u00e4llning av fordon",
+      "keywords": [
+        "t21",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "uppst\u00e4llning",
+        "fordon"
+      ],
+      "imageName": "sign_T21-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-1",
+      "category": "additional",
+      "name": "No vehicle that may cause large explosion",
+      "meaning": "No vehicle that may cause large explosion",
+      "keywords": [
+        "t23",
+        "vehicle",
+        "that",
+        "may",
+        "cause",
+        "large",
+        "explosion"
+      ],
+      "imageName": "sign_T23-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-2",
+      "category": "additional",
+      "name": "No vehicle that may cause a very large explosion or large toxic release",
+      "meaning": "No vehicle that may cause a very large explosion or large toxic release",
+      "keywords": [
+        "t23",
+        "vehicle",
+        "that",
+        "may",
+        "cause",
+        "very",
+        "large",
+        "explosion"
+      ],
+      "imageName": "sign_T23-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-3",
+      "category": "additional",
+      "name": "No vehicle that may cause a very large explosion, large explosion, large toxic release, or large fire",
+      "meaning": "No vehicle that may cause a very large explosion, large explosion, large toxic release, or large fire",
+      "keywords": [
+        "t23",
+        "vehicle",
+        "that",
+        "may",
+        "cause",
+        "very",
+        "large",
+        "explosion"
+      ],
+      "imageName": "sign_T23-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-4",
+      "category": "additional",
+      "name": "No vehicle that carries any dangerous cargo, with some exceptions",
+      "meaning": "No vehicle that carries any dangerous cargo, with some exceptions.",
+      "keywords": [
+        "t23",
+        "vehicle",
+        "that",
+        "carries",
+        "any",
+        "dangerous",
+        "cargo",
+        "with"
+      ],
+      "imageName": "sign_T23-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T24",
+      "category": "additional",
+      "name": "Swedish road sign",
+      "meaning": "Swedish road sign.",
+      "keywords": [
+        "t24",
+        "swedish",
+        "road",
+        "sign"
+      ],
+      "imageName": "sign_T24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T3",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Avst\u00e5nd till stoppskyldighet",
+      "meaning": "Sweden road sign: Additional panels - Avst\u00e5nd till stoppskyldighet",
+      "keywords": [
+        "t3",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "avst\u00e5nd",
+        "till"
+      ],
+      "imageName": "sign_T3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T4",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Fri bredd",
+      "meaning": "Sweden road sign: Additional panels - Fri bredd",
+      "keywords": [
+        "t4",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "fri",
+        "bredd"
+      ],
+      "imageName": "sign_T4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T5",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Totalvikt",
+      "meaning": "Sweden road sign: Additional panels - Totalvikt",
+      "keywords": [
+        "t5",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "totalvikt"
+      ],
+      "imageName": "sign_T5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T6",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Klockslag f\u00f6r f\u00f6rbuds giltighet",
+      "meaning": "Sweden road sign: Additional panels - Klockslag f\u00f6r f\u00f6rbuds giltighet",
+      "keywords": [
+        "t6",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "klockslag",
+        "f\u00f6r"
+      ],
+      "imageName": "sign_T6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T7-1",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Parkering under viss tid",
+      "meaning": "Sweden road sign: Additional panels - Parkering under viss tid",
+      "keywords": [
+        "t7",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "parkering",
+        "under"
+      ],
+      "imageName": "sign_T7-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T7-2",
+      "category": "additional",
+      "name": "Sweden road sign: Additional panels - Parkeringsf\u00f6rbud under viss tid",
+      "meaning": "Sweden road sign: Additional panels - Parkeringsf\u00f6rbud under viss tid",
+      "keywords": [
+        "t7",
+        "sweden",
+        "road",
+        "sign",
+        "additional",
+        "panels",
+        "parkeringsf\u00f6rbud",
+        "under"
+      ],
+      "imageName": "sign_T7-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T9",
+      "category": "additional",
+      "imageName": "sign_T9",
+      "numericValue": 150,
+      "valueUnit": "m",
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Supplementary plates modify the sign above or beside them.",
+      "name": "Distance to sign",
+      "meaning": "Shows the distance to the sign this plate applies to. The number is in metres unless otherwise stated.",
+      "keywords": [
+        "distance",
+        "supplementary"
+      ]
+    }
+  ]
+}
