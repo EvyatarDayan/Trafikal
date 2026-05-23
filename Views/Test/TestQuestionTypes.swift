@@ -11,14 +11,24 @@ struct QuizQuestion: Identifiable {
     let options: [QuizOption]
 
     static func make(correct: Sign, from pool: [Sign]) -> QuizQuestion {
-        var usedTitles = Set([correct.name])
-        var wrong: [Sign] = []
-        for candidate in pool.filter({ $0.id != correct.id }).shuffled() {
-            guard !usedTitles.contains(candidate.name) else { continue }
-            usedTitles.insert(candidate.name)
-            wrong.append(candidate)
-            if wrong.count == 3 { break }
-        }
+        let wrong = pool
+            .filter { $0.id != correct.id }
+            .shuffled()
+            .reduce(into: [Sign]()) { result, sign in
+                guard result.count < 3 else { return }
+                guard !result.contains(where: { $0.name == sign.name }), sign.name != correct.name else { return }
+                result.append(sign)
+            }
+
+        return buildQuestion(correct: correct, wrong: wrong)
+    }
+
+    static func makeSmart(correct: Sign, from pool: [Sign]) -> QuizQuestion {
+        let wrong = QuizDistractorPicker.selectWrongAnswers(correct: correct, from: pool, count: 3)
+        return buildQuestion(correct: correct, wrong: wrong)
+    }
+
+    private static func buildQuestion(correct: Sign, wrong: [Sign]) -> QuizQuestion {
         let options = ([correct] + wrong).shuffled().map { sign in
             QuizOption(id: sign.id, title: sign.name)
         }

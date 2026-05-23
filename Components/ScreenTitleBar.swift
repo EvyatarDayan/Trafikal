@@ -9,6 +9,7 @@ struct ScreenTitleBar: View {
     let title: String
     var subtitle: String?
     var showsBackButton: Bool = false
+    var onBack: (() -> Void)? = nil
 
     @Environment(\.dismiss) private var dismiss
 
@@ -30,7 +31,11 @@ struct ScreenTitleBar: View {
             if showsBackButton {
                 HStack {
                     Button {
-                        dismiss()
+                        if let onBack {
+                            onBack()
+                        } else {
+                            dismiss()
+                        }
                     } label: {
                         Image(systemName: "chevron.left")
                             .font(.body.weight(.semibold))

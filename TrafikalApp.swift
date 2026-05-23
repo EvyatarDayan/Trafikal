@@ -9,6 +9,7 @@ import UIKit
 @main
 struct TrafikalApp: App {
     private let catalog = SignCatalog.shared
+    private let theoryCatalog = TheoryQuestionCatalog.shared
     private let testHistory = TestHistoryStore.shared
 
     init() {
@@ -27,7 +28,10 @@ struct TrafikalApp: App {
         WindowGroup {
             ContentView()
                 .environment(catalog)
+                .environment(theoryCatalog)
                 .environment(testHistory)
+                .environment(TestSessionStore.shared)
+                .environment(TheoryQuestionSessionStore.shared)
         }
     }
 }

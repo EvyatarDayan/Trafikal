@@ -8,6 +8,10 @@ import SwiftUI
 struct HomeTabView: View {
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
+    @Environment(\.colorScheme) private var colorScheme
+
+    private let horizontalPadding: CGFloat = 24
+    private let cardCornerRadius: CGFloat = 16
 
     private var signOfToday: Sign? {
         catalog.signOfToday()
@@ -18,12 +22,14 @@ struct HomeTabView: View {
             pageHeader
 
             ScrollView {
-                VStack(spacing: 16) {
+                VStack(spacing: 28) {
                     signOfTodaySection
                     testStatisticsSection
                     comingSoonSection
                 }
-                .padding()
+                .padding(.horizontal, horizontalPadding)
+                .padding(.top, 8)
+                .padding(.bottom, 24)
             }
         }
         .appRootScreen()
@@ -31,80 +37,106 @@ struct HomeTabView: View {
     }
 
     private var pageHeader: some View {
-        VStack(spacing: 4) {
-            Text("Home")
-                .font(.title2)
-                .fontWeight(.semibold)
-                .frame(maxWidth: .infinity, alignment: .center)
-            Text("Your daily sign and test progress")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .frame(maxWidth: .infinity, alignment: .center)
-        }
-        .padding(.horizontal)
-        .padding(.top, 15)
-        .padding(.bottom, 8)
+        GradientBrandText(text: "Trafikal", font: .system(size: 40, weight: .bold))
+            .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.horizontal, horizontalPadding)
+            .padding(.top, 15)
+            .padding(.bottom, 8)
+    }
+
+    private var signOfTodayDateLabel: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter.string(from: Date())
     }
 
     @ViewBuilder
     private var signOfTodaySection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Sign of today")
-                .font(.headline)
+        VStack(spacing: 14) {
+            Text("🔥 Sign of today — \(signOfTodayDateLabel)")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .frame(maxWidth: .infinity, alignment: .center)
 
             if let error = catalog.loadError {
-                HomeCard {
+                HomeFeaturedCard(cornerRadius: cardCornerRadius) {
                     Text(error)
                         .font(.subheadline)
                         .foregroundStyle(.red)
+                        .frame(maxWidth: .infinity)
                 }
             } else if let sign = signOfToday {
-                HomeCard {
-                    VStack(spacing: 16) {
-                        SignImageView(sign: sign, maxSide: 120)
-
-                        VStack(spacing: 6) {
-                            Text(sign.code)
-                                .font(.caption.bold())
-                                .foregroundStyle(sign.category.accentColor)
-                            Text(sign.name)
-                                .font(.title3.bold())
-                                .multilineTextAlignment(.center)
-                            Text(sign.meaning)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-                                .multilineTextAlignment(.center)
-                                .lineLimit(4)
-                        }
-
-                        NavigationLink {
-                            StudyCardView(signs: [sign])
-                        } label: {
-                            Text("Study this sign")
-                                .font(.subheadline.weight(.semibold))
-                                .frame(maxWidth: .infinity)
-                        }
-                        .buttonStyle(.borderedProminent)
-                    }
-                    .frame(maxWidth: .infinity)
+                HomeFeaturedCard(cornerRadius: cardCornerRadius) {
+                    signOfTodayCardContent(sign: sign)
                 }
             } else {
-                HomeCard {
+                HomeFeaturedCard(cornerRadius: cardCornerRadius) {
                     Text("No signs loaded yet.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity)
                 }
             }
         }
     }
 
+    private func signOfTodayCardContent(sign: Sign) -> some View {
+        VStack(spacing: 0) {
+            VStack(spacing: 14) {
+                SignImageView(sign: sign, maxSide: 100)
+
+                VStack(spacing: 6) {
+                    Text(sign.code)
+                        .font(.caption.bold())
+                        .foregroundStyle(sign.category.accentColor)
+
+                    Text(sign.name)
+                        .font(.title3.bold())
+                        .foregroundStyle(Color(red: 0.15, green: 0.4, blue: 0.9))
+                        .multilineTextAlignment(.center)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.top, 4)
+            .padding(.bottom, 16)
+
+            Rectangle()
+                .fill(Color(.separator).opacity(0.35))
+                .frame(height: 1)
+
+            VStack(alignment: .leading, spacing: 12) {
+                Text(sign.meaning)
+                    .font(.subheadline)
+                    .foregroundStyle(.primary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(14)
+                    .background(
+                        Color(.secondarySystemBackground),
+                        in: RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    )
+
+                HStack {
+                    Spacer()
+                    NavigationLink {
+                        StudyCardView(signs: [sign])
+                    } label: {
+                        Text("Study this sign")
+                    }
+                    .buttonStyle(PrimaryActionButtonStyle())
+                    Spacer()
+                }
+            }
+            .padding(.top, 16)
+        }
+    }
+
     @ViewBuilder
     private var testStatisticsSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Test statistics")
-                .font(.headline)
+        VStack(spacing: 14) {
+            GradientBrandText(text: "Test statistics", font: .title3.bold())
+                .frame(maxWidth: .infinity, alignment: .center)
 
-            HomeCard {
+            HomeCard(elevated: true, cornerRadius: cardCornerRadius) {
                 if historyStore.testsCompleted == 0 {
                     VStack(spacing: 8) {
                         Image(systemName: "list.clipboard")
@@ -154,11 +186,17 @@ struct HomeTabView: View {
     }
 
     private var comingSoonSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("More")
-                .font(.headline)
+        VStack(spacing: 12) {
+            GradientBrandText(text: "Keep learning", font: .title3.bold())
+                .frame(maxWidth: .infinity, alignment: .center)
 
-            HomeCard {
+            Text("Explore Swedish road signs with study cards, categories, and practice tests — all available offline.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 8)
+
+            HomeCard(elevated: false, cornerRadius: cardCornerRadius) {
                 HStack(spacing: 12) {
                     Image(systemName: "sparkles")
                         .font(.title3)
@@ -194,8 +232,29 @@ struct HomeTabView: View {
     }
 }
 
+private struct HomeFeaturedCard<Content: View>: View {
+    @Environment(\.colorScheme) private var colorScheme
+    var cornerRadius: CGFloat = 16
+    @ViewBuilder let content: Content
+
+    private var cardBackground: Color {
+        colorScheme == .light ? Color(.systemBackground) : Color(.secondarySystemBackground)
+    }
+
+    var body: some View {
+        content
+            .padding(20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(cardBackground, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .shadow(color: .black.opacity(colorScheme == .light ? 0.14 : 0.35), radius: 18, x: 0, y: 8)
+            .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: 2)
+    }
+}
+
 private struct HomeCard<Content: View>: View {
     @Environment(\.colorScheme) private var colorScheme
+    var elevated: Bool = false
+    var cornerRadius: CGFloat = 12
     @ViewBuilder let content: Content
 
     private var cardBackground: Color {
@@ -206,8 +265,13 @@ private struct HomeCard<Content: View>: View {
         content
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(cardBackground, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-            .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: 1)
+            .background(cardBackground, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .shadow(
+                color: .black.opacity(elevated ? (colorScheme == .light ? 0.1 : 0.28) : 0.05),
+                radius: elevated ? 12 : 4,
+                x: 0,
+                y: elevated ? 5 : 1
+            )
     }
 }
 

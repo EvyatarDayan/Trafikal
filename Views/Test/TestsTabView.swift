@@ -6,100 +6,124 @@
 import SwiftUI
 
 struct TestsTabView: View {
+    @Environment(SignCatalog.self) private var catalog
+    @Environment(TestHistoryStore.self) private var historyStore
+    @Environment(TestSessionStore.self) private var sessionStore
+
     @State private var showTestSession = false
     @State private var showHistory = false
 
-    private let contentMaxWidth: CGFloat = 320
+    private let buttonWidth: CGFloat = 280
+    private let accentBlue = Color.accentColor
+    private let heroGray = Color(.darkGray)
 
     var body: some View {
-        VStack(spacing: 0) {
-            ZStack {
-                ScreenTitleBar(title: "Tests")
-
-                HStack {
-                    Button {
-                        showHistory = true
-                    } label: {
-                        Text("History")
-                            .font(.caption.weight(.medium))
-                            .foregroundStyle(.blue)
-                    }
-
-                    Spacer()
-                }
-                .padding(.horizontal, 16)
-                .padding(.top, 14)
+        Group {
+            if showTestSession {
+                TestSessionView(isPresented: $showTestSession)
+            } else {
+                startScreen
             }
-
-            VStack(spacing: 0) {
-                Spacer(minLength: 0)
-
-                VStack(spacing: 24) {
-                    VStack(spacing: 12) {
-                        Text("Test yourself")
-                            .font(.title3.weight(.semibold))
-                            .multilineTextAlignment(.center)
-
-                        Text(introductionText)
-                            .font(.body)
-                            .foregroundStyle(.secondary)
-                            .multilineTextAlignment(.center)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-
-                    VStack(alignment: .leading, spacing: 10) {
-                        introBullet("Each test has 10 questions about Swedish road signs.")
-                        introBullet("You will see a sign and pick its meaning from four answers.")
-                        introBullet("After each question you can see if you were right or wrong.")
-                        introBullet("Completed tests are saved in History so you can track your progress.")
-                    }
-                    .frame(maxWidth: contentMaxWidth, alignment: .leading)
-
-                    Button {
-                        showTestSession = true
-                    } label: {
-                        Text("Start new test")
-                            .font(.headline)
-                            .frame(minWidth: 200)
-                            .padding(.horizontal, 28)
-                            .padding(.vertical, 18)
-                    }
-                    .buttonStyle(.borderedProminent)
-                }
-                .frame(maxWidth: contentMaxWidth)
-                .frame(maxWidth: .infinity)
-                .padding(.horizontal, 24)
-
-                Spacer(minLength: 0)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .appRootScreen()
         .appScreenBackground()
-        .navigationDestination(isPresented: $showTestSession) {
-            TestSessionView()
+        .onAppear {
+            resumeSessionIfNeeded()
         }
         .navigationDestination(isPresented: $showHistory) {
             HistoryView()
         }
     }
 
-    private var introductionText: String {
-        "In this section you can test your skills on traffic signs. "
-            + "Questions are drawn from the full sign catalog, so every test is a little different."
+    private var startScreen: some View {
+        ScrollView {
+            VStack(spacing: 0) {
+                Spacer(minLength: 28)
+
+                Text("Test")
+                    .font(.largeTitle.weight(.bold))
+                    .foregroundStyle(heroGray)
+
+                testHeroIcon
+                    .padding(.top, 20)
+                    .padding(.bottom, 24)
+
+                Text(instructionText)
+                    .font(.body)
+                    .foregroundStyle(.primary)
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(4)
+                    .padding(.horizontal, 36)
+
+                VStack(spacing: 12) {
+                    Button {
+                        sessionStore.startTest(catalog: catalog)
+                        showTestSession = true
+                    } label: {
+                        Text("Start new test")
+                    }
+                    .buttonStyle(PrimaryActionButtonStyle(width: buttonWidth))
+
+                    Button {
+                        showHistory = true
+                    } label: {
+                        Text("Previous tests")
+                    }
+                    .buttonStyle(SecondaryActionButtonStyle(width: buttonWidth, tint: accentBlue))
+                }
+                .padding(.top, 28)
+
+                if let last = historyStore.lastEntry {
+                    lastTestSection(entry: last)
+                        .padding(.top, 44)
+                }
+
+                Spacer(minLength: 32)
+            }
+            .frame(maxWidth: .infinity)
+        }
     }
 
-    private func introBullet(_ text: String) -> some View {
-        HStack(alignment: .top, spacing: 10) {
-            Image(systemName: "checkmark.circle.fill")
-                .font(.subheadline)
-                .foregroundStyle(.blue)
-                .padding(.top, 2)
-            Text(text)
-                .font(.subheadline)
-                .foregroundStyle(.primary)
-                .fixedSize(horizontal: false, vertical: true)
+    private func resumeSessionIfNeeded() {
+        if sessionStore.finished {
+            sessionStore.clear()
+        } else if sessionStore.hasResumableSession {
+            showTestSession = true
         }
+    }
+
+    private var testHeroIcon: some View {
+        ZStack(alignment: .bottomTrailing) {
+            Image(systemName: "list.clipboard")
+                .font(.system(size: 76, weight: .light))
+                .foregroundStyle(heroGray)
+
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 30))
+                .foregroundStyle(heroGray)
+                .background(Circle().fill(Color(.systemGroupedBackground)).padding(2))
+                .offset(x: 10, y: 10)
+        }
+    }
+
+    private var instructionText: String {
+        "Answer 10 random sign questions.\nCheck your result after each answer.\nGood luck!"
+    }
+
+    private func lastTestSection(entry: TestHistoryEntry) -> some View {
+        VStack(spacing: 18) {
+            Text("Your last test \(formattedTestDate(entry.date))")
+                .font(.body.weight(.medium))
+                .foregroundStyle(.primary)
+
+            TestScoreRingView(percent: entry.percentCorrect)
+        }
+    }
+
+    private func formattedTestDate(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter.string(from: date)
     }
 }
 
@@ -109,4 +133,5 @@ struct TestsTabView: View {
     }
     .environment(SignCatalog.shared)
     .environment(TestHistoryStore.shared)
+    .environment(TestSessionStore.shared)
 }

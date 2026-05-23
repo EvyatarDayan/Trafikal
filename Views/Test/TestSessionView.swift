@@ -6,30 +6,28 @@
 import SwiftUI
 
 struct TestSessionView: View {
-    private let questionsPerTest = 10
+    @Binding var isPresented: Bool
 
-    @Environment(\.dismiss) private var dismiss
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
-
-    @State private var questions: [QuizQuestion] = []
-    @State private var currentIndex = 0
-    @State private var selectedID: String?
-    @State private var score = 0
-    @State private var finished = false
-    @State private var didRecordCurrentTest = false
-    @State private var didStart = false
+    @Environment(TestSessionStore.self) private var sessionStore
 
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
-                ScreenTitleBar(title: "Test", showsBackButton: !finished)
+                ScreenTitleBar(
+                    title: "Test",
+                    showsBackButton: !sessionStore.finished,
+                    onBack: { isPresented = false }
+                )
 
-                if !questions.isEmpty, !finished {
+                if !sessionStore.questions.isEmpty, !sessionStore.finished {
                     HStack {
                         Spacer()
-                        Button("Start over") { startTest() }
-                            .font(.caption.weight(.medium))
+                        Button("Start over") {
+                            sessionStore.restartTest(catalog: catalog)
+                        }
+                        .font(.caption.weight(.medium))
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 14)
@@ -39,9 +37,12 @@ struct TestSessionView: View {
             Group {
                 if let error = catalog.loadError {
                     ContentUnavailableView("No signs", systemImage: "exclamationmark.triangle", description: Text(error))
-                } else if !didStart || (questions.isEmpty && !finished) {
+                } else if sessionStore.questions.isEmpty, !sessionStore.finished {
                     ProgressView("Preparing test…")
-                } else if finished {
+                        .task {
+                            sessionStore.startTest(catalog: catalog)
+                        }
+                } else if sessionStore.finished {
                     testResult
                 } else {
                     activeTest
@@ -50,25 +51,23 @@ struct TestSessionView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .appScreenBackground()
-        .onAppear {
-            guard !didStart else { return }
-            didStart = true
-            startTest()
-        }
-        .onChange(of: finished) { _, isFinished in
+        .onChange(of: sessionStore.finished) { _, isFinished in
             if isFinished {
-                recordCompletedTestIfNeeded()
+                sessionStore.recordIfNeeded(historyStore: historyStore)
             }
         }
     }
 
     private var activeTest: some View {
-        let question = questions[currentIndex]
+        let question = sessionStore.questions[sessionStore.currentIndex]
 
         return VStack(alignment: .leading, spacing: 20) {
             VStack(spacing: 6) {
-                ProgressView(value: Double(currentIndex + 1), total: Double(questions.count))
-                Text("\(currentIndex + 1)/\(questions.count)")
+                ProgressView(
+                    value: Double(sessionStore.currentIndex + 1),
+                    total: Double(sessionStore.questions.count)
+                )
+                Text("\(sessionStore.currentIndex + 1)/\(sessionStore.questions.count)")
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity)
@@ -93,16 +92,16 @@ struct TestSessionView: View {
                         title: option.title,
                         state: optionState(for: option, question: question)
                     ) {
-                        select(option: option, question: question)
+                        sessionStore.select(optionID: option.id, for: question)
                     }
-                    .disabled(selectedID != nil)
+                    .disabled(sessionStore.selectedID != nil)
                 }
             }
             .padding(.horizontal)
 
-            if selectedID != nil {
-                Button(currentIndex < questions.count - 1 ? "Next question" : "Show results") {
-                    advance()
+            if sessionStore.selectedID != nil {
+                Button(sessionStore.currentIndex < sessionStore.questions.count - 1 ? "Next question" : "Show results") {
+                    sessionStore.advance()
                 }
                 .buttonStyle(.borderedProminent)
                 .frame(maxWidth: .infinity)
@@ -118,16 +117,19 @@ struct TestSessionView: View {
         VStack(spacing: 28) {
             Spacer()
 
-            TestResultsPieChart(correct: score, total: questions.count)
+            TestResultsPieChart(correct: sessionStore.score, total: sessionStore.questions.count)
 
             HStack(spacing: 20) {
-                legendDot(color: .green, label: "Correct (\(score))")
-                legendDot(color: .red.opacity(0.85), label: "Incorrect (\(questions.count - score))")
+                legendDot(color: .green, label: "Correct (\(sessionStore.score))")
+                legendDot(
+                    color: .red.opacity(0.85),
+                    label: "Incorrect (\(sessionStore.questions.count - sessionStore.score))"
+                )
             }
             .font(.caption)
             .foregroundStyle(.secondary)
 
-            Text("You got \(score) out of \(questions.count) correct.")
+            Text("You got \(sessionStore.score) out of \(sessionStore.questions.count) correct.")
                 .font(.largeTitle.weight(.bold))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
@@ -135,7 +137,8 @@ struct TestSessionView: View {
             Spacer()
 
             Button("End this test") {
-                dismiss()
+                sessionStore.clear()
+                isPresented = false
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
@@ -156,49 +159,9 @@ struct TestSessionView: View {
     }
 
     private func optionState(for option: QuizOption, question: QuizQuestion) -> QuizOptionState {
-        guard let selectedID else { return .neutral }
+        guard let selectedID = sessionStore.selectedID else { return .neutral }
         if option.id == question.correct.id { return .correct }
         if option.id == selectedID { return .incorrect }
         return .neutral
-    }
-
-    private func select(option: QuizOption, question: QuizQuestion) {
-        selectedID = option.id
-        if option.id == question.correct.id {
-            score += 1
-        }
-    }
-
-    private func advance() {
-        if currentIndex < questions.count - 1 {
-            currentIndex += 1
-            selectedID = nil
-        } else {
-            finished = true
-        }
-    }
-
-    private func startTest() {
-        let pool = catalog.shuffledForQuiz
-        let count = min(questionsPerTest, pool.count)
-        guard count >= 2 else {
-            questions = []
-            return
-        }
-
-        questions = pool.prefix(count).map { sign in
-            QuizQuestion.make(correct: sign, from: pool)
-        }
-        currentIndex = 0
-        selectedID = nil
-        score = 0
-        finished = false
-        didRecordCurrentTest = false
-    }
-
-    private func recordCompletedTestIfNeeded() {
-        guard !didRecordCurrentTest, !questions.isEmpty else { return }
-        historyStore.record(score: score, totalQuestions: questions.count)
-        didRecordCurrentTest = true
     }
 }

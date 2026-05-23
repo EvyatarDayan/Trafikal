@@ -45,6 +45,8 @@ struct ContentView: View {
         case 3:
             NavigationStack { TestsTabView() }
         case 4:
+            NavigationStack { QuestionsTabView() }
+        case 5:
             NavigationStack { SettingsView() }
         default:
             NavigationStack { HomeTabView() }
@@ -95,10 +97,17 @@ struct ContentView: View {
                 )
 
                 TabBarButton(
-                    icon: "gearshape.fill",
-                    label: "Settings",
+                    icon: "text.book.closed.fill",
+                    label: "Questions",
                     isSelected: selectedTab == 4,
                     action: { selectedTab = 4 }
+                )
+
+                TabBarButton(
+                    icon: "gearshape.fill",
+                    label: "Settings",
+                    isSelected: selectedTab == 5,
+                    action: { selectedTab = 5 }
                 )
             }
             .frame(width: width, height: menuHeight)
@@ -111,4 +120,7 @@ struct ContentView: View {
     ContentView()
         .environment(SignCatalog.shared)
         .environment(TestHistoryStore.shared)
+        .environment(TestSessionStore.shared)
+        .environment(TheoryQuestionCatalog.shared)
+        .environment(TheoryQuestionSessionStore.shared)
 }
