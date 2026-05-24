@@ -12,14 +12,25 @@ final class TheoryQuestionCatalog {
 
     private(set) var questions: [TheoryQuestion] = []
     private(set) var loadError: String?
+    private(set) var language: AppLanguage = .english
 
     private init() {
+        let raw = UserDefaults.standard.string(forKey: AppLanguage.storageKey)
+        language = AppLanguage(rawValue: raw ?? "") ?? .english
+        load()
+    }
+
+    func reload(language: AppLanguage) {
+        self.language = language
         load()
     }
 
     func load() {
-        guard let url = Bundle.main.url(forResource: "theory-questions", withExtension: "json") else {
-            loadError = "theory-questions.json is missing from the app bundle."
+        let resource = language == .swedish ? "theory-questions-sv" : "theory-questions"
+        let fallback = language == .swedish ? "theory-questions" : nil
+
+        guard let url = bundleURL(resource: resource, fallback: fallback) else {
+            loadError = LocalizationManager.shared.text(.errorTheoryMissing)
             questions = []
             return
         }
@@ -29,9 +40,19 @@ final class TheoryQuestionCatalog {
             questions = try JSONDecoder().decode([TheoryQuestion].self, from: data)
             loadError = nil
         } catch {
-            loadError = "Could not load theory questions: \(error.localizedDescription)"
+            loadError = LocalizationManager.shared.text(.errorTheoryLoad, error.localizedDescription)
             questions = []
         }
+    }
+
+    private func bundleURL(resource: String, fallback: String?) -> URL? {
+        if let url = Bundle.main.url(forResource: resource, withExtension: "json") {
+            return url
+        }
+        if let fallback, let url = Bundle.main.url(forResource: fallback, withExtension: "json") {
+            return url
+        }
+        return nil
     }
 
     var shuffledForQuiz: [TheoryQuestion] {

@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct CategoryListView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
 
     private let columns = [
@@ -15,7 +16,7 @@ struct CategoryListView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ScreenTitleBar(title: "Categories")
+            ScreenTitleBar(title: l10n.text(.categoriesTitle))
 
             GeometryReader { geometry in
                 ScrollView {
@@ -26,7 +27,7 @@ struct CategoryListView: View {
                                 let count = catalog.count(for: category)
                                 if count > 0 {
                                     NavigationLink(value: category) {
-                                        CategoryCard(category: category, count: count)
+                                        CategoryCard(category: category, count: count, l10n: l10n)
                                     }
                                     .buttonStyle(.plain)
                                 }
@@ -50,6 +51,7 @@ struct CategoryListView: View {
 private struct CategoryCard: View {
     let category: SignCategory
     let count: Int
+    let l10n: LocalizationManager
 
     var body: some View {
         VStack(spacing: 12) {
@@ -70,7 +72,7 @@ private struct CategoryCard: View {
 
             Spacer(minLength: 0)
 
-            Text("\(count) signs")
+            Text(l10n.text(.categoriesSignCount, count))
                 .font(.caption.bold())
                 .foregroundStyle(.secondary)
         }

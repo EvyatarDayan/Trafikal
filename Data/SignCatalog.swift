@@ -12,14 +12,25 @@ final class SignCatalog {
 
     private(set) var signs: [Sign] = []
     private(set) var loadError: String?
+    private(set) var language: AppLanguage = .english
 
     private init() {
+        let raw = UserDefaults.standard.string(forKey: AppLanguage.storageKey)
+        language = AppLanguage(rawValue: raw ?? "") ?? .english
+        load()
+    }
+
+    func reload(language: AppLanguage) {
+        self.language = language
         load()
     }
 
     func load() {
-        guard let url = Bundle.main.url(forResource: "signs", withExtension: "json") else {
-            loadError = "signs.json is missing from the app bundle."
+        let resource = language == .swedish ? "signs-sv" : "signs"
+        let fallback = language == .swedish ? "signs" : nil
+
+        guard let url = bundleURL(resource: resource, fallback: fallback) else {
+            loadError = LocalizationManager.shared.text(.errorSignsMissing)
             signs = []
             return
         }
@@ -30,9 +41,19 @@ final class SignCatalog {
             signs = bundle.signs.sorted { $0.code < $1.code }
             loadError = nil
         } catch {
-            loadError = "Could not load signs: \(error.localizedDescription)"
+            loadError = LocalizationManager.shared.text(.errorSignsLoad, error.localizedDescription)
             signs = []
         }
+    }
+
+    private func bundleURL(resource: String, fallback: String?) -> URL? {
+        if let url = Bundle.main.url(forResource: resource, withExtension: "json") {
+            return url
+        }
+        if let fallback, let url = Bundle.main.url(forResource: fallback, withExtension: "json") {
+            return url
+        }
+        return nil
     }
 
     func signs(in category: SignCategory) -> [Sign] {

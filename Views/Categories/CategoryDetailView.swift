@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
     let category: SignCategory
 
@@ -78,7 +79,7 @@ struct CategoryDetailView: View {
         HStack(spacing: 8) {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(.secondary)
-            TextField("Search by code or name", text: $searchText)
+            TextField(l10n.text(.categoriesSearch), text: $searchText)
                 .textFieldStyle(.plain)
                 .autocorrectionDisabled()
         }

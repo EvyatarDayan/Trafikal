@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @AppStorage("isDarkMode") private var isDarkMode = false
     @State private var selectedTab = 2
 
@@ -70,42 +71,42 @@ struct ContentView: View {
             HStack(spacing: menuButtonSpacing) {
                 TabBarButton(
                     icon: "book.fill",
-                    label: "Study",
+                    label: l10n.text(.tabStudy),
                     isSelected: selectedTab == 0,
                     action: { selectedTab = 0 }
                 )
 
                 TabBarButton(
                     icon: "square.grid.2x2.fill",
-                    label: "Categories",
+                    label: l10n.text(.tabCategories),
                     isSelected: selectedTab == 1,
                     action: { selectedTab = 1 }
                 )
 
                 TabBarButton(
                     icon: "house.fill",
-                    label: "Home",
+                    label: l10n.text(.tabHome),
                     isSelected: selectedTab == 2,
                     action: { selectedTab = 2 }
                 )
 
                 TabBarButton(
-                    icon: "list.clipboard.fill",
-                    label: "Tests",
+                    icon: "signpost.right.fill",
+                    label: l10n.text(.tabSigns),
                     isSelected: selectedTab == 3,
                     action: { selectedTab = 3 }
                 )
 
                 TabBarButton(
                     icon: "text.book.closed.fill",
-                    label: "Questions",
+                    label: l10n.text(.tabQuestions),
                     isSelected: selectedTab == 4,
                     action: { selectedTab = 4 }
                 )
 
                 TabBarButton(
                     icon: "gearshape.fill",
-                    label: "Settings",
+                    label: l10n.text(.tabSettings),
                     isSelected: selectedTab == 5,
                     action: { selectedTab = 5 }
                 )
@@ -123,4 +124,5 @@ struct ContentView: View {
         .environment(TestSessionStore.shared)
         .environment(TheoryQuestionCatalog.shared)
         .environment(TheoryQuestionSessionStore.shared)
+        .environment(LocalizationManager.shared)
 }

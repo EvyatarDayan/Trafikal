@@ -8,14 +8,16 @@ import SwiftUI
 struct TheoryQuestionSessionView: View {
     @Binding var isPresented: Bool
 
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(TheoryQuestionCatalog.self) private var catalog
+    @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TheoryQuestionSessionStore.self) private var sessionStore
 
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
                 ScreenTitleBar(
-                    title: "Questions",
+                    title: l10n.text(.questionsTitle),
                     showsBackButton: !sessionStore.finished,
                     onBack: { isPresented = false }
                 )
@@ -23,7 +25,7 @@ struct TheoryQuestionSessionView: View {
                 if !sessionStore.questions.isEmpty, !sessionStore.finished {
                     HStack {
                         Spacer()
-                        Button("Start over") {
+                        Button(l10n.text(.questionsStartOver)) {
                             sessionStore.restartSession(catalog: catalog)
                         }
                         .font(.caption.weight(.medium))
@@ -36,15 +38,10 @@ struct TheoryQuestionSessionView: View {
             Group {
                 if let error = catalog.loadError {
                     ContentUnavailableView(
-                        "No questions",
+                        l10n.text(.questionsNoQuestions),
                         systemImage: "exclamationmark.triangle",
                         description: Text(error)
                     )
-                } else if sessionStore.questions.isEmpty, !sessionStore.finished {
-                    ProgressView("Preparing questions…")
-                        .task {
-                            sessionStore.startSession(catalog: catalog)
-                        }
                 } else if sessionStore.finished {
                     sessionResult
                 } else {
@@ -54,6 +51,11 @@ struct TheoryQuestionSessionView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .appScreenBackground()
+        .onChange(of: sessionStore.finished) { _, isFinished in
+            if isFinished {
+                sessionStore.recordIfNeeded(historyStore: historyStore)
+            }
+        }
     }
 
     private var activeQuestion: some View {
@@ -118,8 +120,8 @@ struct TheoryQuestionSessionView: View {
 
                     Button(
                         sessionStore.currentIndex < sessionStore.questions.count - 1
-                            ? "Next question"
-                            : "Show results"
+                            ? l10n.text(.testNextQuestion)
+                            : l10n.text(.testShowResults)
                     ) {
                         sessionStore.advance()
                     }
@@ -140,23 +142,23 @@ struct TheoryQuestionSessionView: View {
             TestResultsPieChart(correct: sessionStore.score, total: sessionStore.questions.count)
 
             HStack(spacing: 20) {
-                legendDot(color: .green, label: "Correct (\(sessionStore.score))")
+                legendDot(color: .green, label: l10n.text(.testCorrectCount, sessionStore.score))
                 legendDot(
                     color: .red.opacity(0.85),
-                    label: "Incorrect (\(sessionStore.questions.count - sessionStore.score))"
+                    label: l10n.text(.testIncorrectCount, sessionStore.questions.count - sessionStore.score)
                 )
             }
             .font(.caption)
             .foregroundStyle(.secondary)
 
-            Text("You got \(sessionStore.score) out of \(sessionStore.questions.count) correct.")
+            Text(l10n.text(.testScoreSummary, sessionStore.score, sessionStore.questions.count))
                 .font(.largeTitle.weight(.bold))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
 
             Spacer()
 
-            Button("End this test") {
+            Button(l10n.text(.questionsEnd)) {
                 sessionStore.clear()
                 isPresented = false
             }

@@ -17,6 +17,7 @@ final class TheoryQuestionSessionStore {
     private(set) var selectedID: String?
     private(set) var score = 0
     private(set) var finished = false
+    private(set) var didRecordCurrentSession = false
 
     var hasResumableSession: Bool {
         !questions.isEmpty && !finished
@@ -37,6 +38,7 @@ final class TheoryQuestionSessionStore {
         selectedID = nil
         score = 0
         finished = false
+        didRecordCurrentSession = false
     }
 
     func restartSession(catalog: TheoryQuestionCatalog) {
@@ -49,6 +51,13 @@ final class TheoryQuestionSessionStore {
         selectedID = nil
         score = 0
         finished = false
+        didRecordCurrentSession = false
+    }
+
+    func recordIfNeeded(historyStore: TestHistoryStore) {
+        guard finished, !didRecordCurrentSession, !questions.isEmpty else { return }
+        historyStore.record(score: score, totalQuestions: questions.count, kind: .questions)
+        didRecordCurrentSession = true
     }
 
     func select(optionID: String, for question: TheoryQuizQuestion) {

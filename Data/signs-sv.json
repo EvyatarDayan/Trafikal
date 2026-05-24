@@ -1,0 +1,6739 @@
+{
+  "signs": [
+    {
+      "code": "A1-1",
+      "category": "warning",
+      "imageName": "sign_A1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Triangel med röd kant = varning.",
+      "name": "Farlig kurva",
+      "meaning": "Vägkurvorna och sikten kan vara begränsad. Sakta ner innan kurvan och var redo för mötande trafik eller hinder. Denna variant indikerar en kurva till vänster.",
+      "keywords": [
+        "dangerous",
+        "curve",
+        "curves",
+        "visibility",
+        "limited",
+        "slow",
+        "down",
+        "ready"
+      ]
+    },
+    {
+      "code": "A1-2",
+      "category": "warning",
+      "name": "Farlig kurva",
+      "meaning": "Denna skylt varnar för farlig kurva. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar en kurva till höger.",
+      "keywords": [
+        "dangerous",
+        "curve",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A11",
+      "category": "warning",
+      "name": "Lösa spån",
+      "meaning": "Denna skylt varnar för löst spån. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "loose",
+        "chippings",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A12-1",
+      "category": "warning",
+      "name": "Fallande stenar eller skräp framför dig",
+      "meaning": "Denna skylt varnar för fallande stenar eller skräp framför dig. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att potentiellt stenfall skulle komma från höger sida av vägen.",
+      "keywords": [
+        "falling",
+        "rocks",
+        "debris",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared"
+      ],
+      "imageName": "sign_A12-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A12-2",
+      "category": "warning",
+      "name": "Fallande stenar eller skräp framför dig",
+      "meaning": "Denna skylt varnar för fallande stenar eller skräp framför dig. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att potentiellt stenfall skulle komma från vänster sida av vägen.",
+      "keywords": [
+        "falling",
+        "rocks",
+        "debris",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared"
+      ],
+      "imageName": "sign_A12-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A13",
+      "category": "warning",
+      "name": "Övergångsställe framför",
+      "meaning": "Denna skylt varnar för övergångsställe framför. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "pedestrian",
+        "crossing",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A14",
+      "category": "warning",
+      "name": "Varning för fotgängare",
+      "meaning": "Denna skylt varnar för fotgängare. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "pedestrian",
+        "warning",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A15",
+      "category": "warning",
+      "name": "Barn",
+      "meaning": "Denna skylt varnar för barn. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "children",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A16",
+      "category": "warning",
+      "name": "Cyklister och mopedister",
+      "meaning": "Denna skylt varnar för cyklister och mopedister. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "cyclists",
+        "moped",
+        "riders",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A17",
+      "category": "warning",
+      "name": "Skidåkare",
+      "meaning": "Denna skylt varnar för skidåkare. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "skiers",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A18",
+      "category": "warning",
+      "name": "Ryttare",
+      "meaning": "Denna skylt varnar för ryttare. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "horse",
+        "riders",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-3",
+      "category": "warning",
+      "name": "Djur",
+      "meaning": "Olyckor med älg (älg) Olyckor med älg är den farligaste typen av viltolycka. Anledningen till detta är att älgens kropp, som väger runt 700 kg, är i höjd med bilens vindruta. Vid en frontalkrock är risken stor att älgen hamnar inne i bilen och skadar passagerarna. När en älg har börjat korsa vägen kommer den med all sannolikhet fortsätta rakt fram. Det är därför bäst att gå bakom älgen, om du ska välja vilken väg du ska",
+      "keywords": [
+        "animals",
+        "accidents",
+        "involving",
+        "moose",
+        "most",
+        "dangerous",
+        "type",
+        "wildlife"
+      ],
+      "imageName": "sign_A19-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-4",
+      "category": "warning",
+      "name": "Djur",
+      "meaning": "Olyckor med älg (älg) Olyckor med älg är den farligaste typen av viltolycka. Anledningen till detta är att älgens kropp, som väger runt 700 kg, är i höjd med bilens vindruta. Vid en frontalkrock är risken stor att älgen hamnar inne i bilen och skadar passagerarna. När en älg har börjat korsa vägen kommer den med all sannolikhet fortsätta rakt fram. Det är därför bäst att gå bakom älgen, om du ska välja vilken väg du ska",
+      "keywords": [
+        "animals",
+        "accidents",
+        "involving",
+        "moose",
+        "most",
+        "dangerous",
+        "type",
+        "wildlife"
+      ],
+      "imageName": "sign_A19-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-5",
+      "category": "warning",
+      "name": "Djur",
+      "meaning": "Olyckor med älg (älg) Olyckor med älg är den farligaste typen av viltolycka. Anledningen till detta är att älgens kropp, som väger runt 700 kg, är i höjd med bilens vindruta. Vid en frontalkrock är risken stor att älgen hamnar inne i bilen och skadar passagerarna. När en älg har börjat korsa vägen kommer den med all sannolikhet fortsätta rakt fram. Det är därför bäst att gå bakom älgen, om du ska välja vilken väg du ska",
+      "keywords": [
+        "animals",
+        "accidents",
+        "involving",
+        "moose",
+        "most",
+        "dangerous",
+        "type",
+        "wildlife"
+      ],
+      "imageName": "sign_A19-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-6",
+      "category": "warning",
+      "name": "Djur",
+      "meaning": "Olyckor med älg (älg) Olyckor med älg är den farligaste typen av viltolycka. Anledningen till detta är att älgens kropp, som väger runt 700 kg, är i höjd med bilens vindruta. Vid en frontalkrock är risken stor att älgen hamnar inne i bilen och skadar passagerarna. När en älg har börjat korsa vägen kommer den med all sannolikhet fortsätta rakt fram. Det är därför bäst att gå bakom älgen, om du ska välja vilken väg du ska",
+      "keywords": [
+        "animals",
+        "accidents",
+        "involving",
+        "moose",
+        "most",
+        "dangerous",
+        "type",
+        "wildlife"
+      ],
+      "imageName": "sign_A19-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A19-7",
+      "category": "warning",
+      "name": "Djur",
+      "meaning": "Olyckor med älg (älg) Olyckor med älg är den farligaste typen av viltolycka. Anledningen till detta är att älgens kropp, som väger runt 700 kg, är i höjd med bilens vindruta. Vid en frontalkrock är risken stor att älgen hamnar inne i bilen och skadar passagerarna. När en älg har börjat korsa vägen kommer den med all sannolikhet fortsätta rakt fram. Det är därför bäst att gå bakom älgen, om du ska välja vilken väg du ska",
+      "keywords": [
+        "animals",
+        "accidents",
+        "involving",
+        "moose",
+        "most",
+        "dangerous",
+        "type",
+        "wildlife"
+      ],
+      "imageName": "sign_A19-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A2-1",
+      "category": "warning",
+      "name": "Flera farliga kurvor framåt",
+      "meaning": "Denna skylt varnar för flera farliga kurvor framåt. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att den första kurvan är till vänster.",
+      "keywords": [
+        "multiple",
+        "dangerous",
+        "curves",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared"
+      ],
+      "imageName": "sign_A2-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A2-2",
+      "category": "warning",
+      "name": "Flera farliga kurvor framåt",
+      "meaning": "Denna skylt varnar för flera farliga kurvor framåt. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att den första kurvan är till höger.",
+      "keywords": [
+        "multiple",
+        "dangerous",
+        "curves",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared"
+      ],
+      "imageName": "sign_A2-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A23-1",
+      "category": "warning",
+      "name": "Lågt flygande flygplan",
+      "meaning": "Denna skylt varnar för lågtflygande flygplan. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "flying",
+        "aircraft",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A23-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A23-2",
+      "category": "warning",
+      "name": "Lågt flygande flygplan",
+      "meaning": "Denna skylt varnar för lågtflygande flygplan. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "flying",
+        "aircraft",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A23-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A24-1",
+      "category": "warning",
+      "name": "Akta dig för farlig sidvind",
+      "meaning": "Denna skylt varnar för akta dig för farlig sidvind. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att potentiell sidovind skulle komma från höger.",
+      "keywords": [
+        "beware",
+        "dangerous",
+        "crosswinds",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A24-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A24-2",
+      "category": "warning",
+      "name": "Akta dig för farlig sidvind",
+      "meaning": "Denna skylt varnar för akta dig för farlig sidvind. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att potentiell sidovind skulle komma från vänster.",
+      "keywords": [
+        "beware",
+        "dangerous",
+        "crosswinds",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A24-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A25",
+      "category": "warning",
+      "name": "Akta dig för dubbelriktad trafik framför dig",
+      "meaning": "Denna skylt varnar för akta dig för dubbelriktad trafik framför dig. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "beware",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A25",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A26",
+      "category": "warning",
+      "name": "Tunnel",
+      "meaning": "Denna skylt varnar för tunnel. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "tunnel",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A27",
+      "category": "warning",
+      "name": "Mjuk kant eller hög körvägskant",
+      "meaning": "Denna skylt varnar för mjuk kant eller hög körvägskant. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "soft",
+        "verge",
+        "high",
+        "carriageway",
+        "edge",
+        "warns",
+        "adjust",
+        "speed"
+      ],
+      "imageName": "sign_A27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A28",
+      "category": "warning",
+      "name": "Korsning",
+      "meaning": "Förtydligar att prioritet till höger-regeln gäller i korsningen. Skylten används vid svåra korsningar; regeln gäller fortfarande på många ställen utan denna skylt.",
+      "keywords": [
+        "junction",
+        "clarifies",
+        "priority",
+        "right",
+        "rule",
+        "applies",
+        "used",
+        "difficult"
+      ],
+      "imageName": "sign_A28",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-10",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-11",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-12",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-13",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-14",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-15",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-16",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-17",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-18",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-19",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-2",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-20",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-21",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-3",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-4",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-5",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-6",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-7",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-8",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A29-9",
+      "category": "warning",
+      "name": "Varning för en korsning där trafikanter på en anslutande väg är väjnings- eller stanna",
+      "meaning": "Denna skylt varnar för varning för en korsning där trafikanter på en anslutande väg är väjningspliktiga eller stanna. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "warning",
+        "junction",
+        "users",
+        "connecting",
+        "obliged",
+        "give",
+        "stop",
+        "warns"
+      ],
+      "imageName": "sign_A29-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A3",
+      "category": "warning",
+      "name": "Brant backe nedåt",
+      "meaning": "Denna skylt varnar för brant backe nedåt. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "steep",
+        "hill",
+        "downwards",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A33",
+      "category": "warning",
+      "name": "Terrängskotertrafik",
+      "meaning": "Denna skylt varnar för terrängtrafik med skoter. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "scooter",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A33",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A34",
+      "category": "warning",
+      "name": "Sannolikt köer",
+      "meaning": "Denna skylt varnar för troliga köer. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "queues",
+        "likely",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A34",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A35",
+      "category": "warning",
+      "name": "Plankorsning med grindar",
+      "meaning": "Denna skylt varnar för plankorsning med grindar. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "level",
+        "crossing",
+        "gates",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A36",
+      "category": "warning",
+      "name": "Plankorsning utan grindar",
+      "meaning": "Denna skylt varnar för plankorsning utan grindar. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "level",
+        "crossing",
+        "without",
+        "gates",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared"
+      ],
+      "imageName": "sign_A36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A37",
+      "category": "warning",
+      "name": "Korsning med spårvägslinje",
+      "meaning": "Denna skylt varnar för korsning med spårvägslinje. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "junction",
+        "tramway",
+        "line",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A4",
+      "category": "warning",
+      "imageName": "sign_A4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Brant lutning",
+      "meaning": "Denna skylt varnar för brant lutning. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "steep",
+        "incline",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ]
+    },
+    {
+      "code": "A41",
+      "category": "warning",
+      "name": "Olycka",
+      "meaning": "Denna skylt varnar för olycka. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "accident",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A41",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-1",
+      "category": "warning",
+      "name": "Vägen smalnar av",
+      "meaning": "Denna skylt varnar för att vägen smalnar av. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att vägen eller stigen smalnar av från båda sidor.",
+      "keywords": [
+        "narrows",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead",
+        "variant"
+      ],
+      "imageName": "sign_A5-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-2",
+      "category": "warning",
+      "name": "Vägen smalnar av",
+      "meaning": "Denna skylt varnar för att vägen smalnar av. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att vägen eller stigen smalnar av från höger.",
+      "keywords": [
+        "narrows",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead",
+        "variant"
+      ],
+      "imageName": "sign_A5-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A5-3",
+      "category": "warning",
+      "name": "Vägen smalnar av",
+      "meaning": "Denna skylt varnar för att vägen smalnar av. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar att vägen eller stigen smalnar av från vänster.",
+      "keywords": [
+        "narrows",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard",
+        "ahead",
+        "variant"
+      ],
+      "imageName": "sign_A5-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A6",
+      "category": "warning",
+      "name": "Öppning eller svängbro",
+      "meaning": "Denna skylt varnar för öppning eller svängbro. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "opening",
+        "swing",
+        "bridge",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A7",
+      "category": "warning",
+      "name": "Kajkant eller flodstrand",
+      "meaning": "Denna skylt varnar för kajkant eller flodstrand. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "quayside",
+        "river",
+        "bank",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A8",
+      "category": "warning",
+      "name": "Ojämn väg framåt",
+      "meaning": "Denna skylt varnar för ojämn väg framåt. Justera din hastighet och var beredd på faran framför dig.",
+      "keywords": [
+        "uneven",
+        "ahead",
+        "warns",
+        "adjust",
+        "speed",
+        "prepared",
+        "hazard"
+      ],
+      "imageName": "sign_A8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A9-1",
+      "category": "warning",
+      "name": "Varning för farthinder",
+      "meaning": "Denna skylt varnar för farthinder. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar (en) bula.",
+      "keywords": [
+        "speed",
+        "bump",
+        "warning",
+        "warns",
+        "adjust",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A9-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "A9-2",
+      "category": "warning",
+      "name": "Varning för farthinder",
+      "meaning": "Denna skylt varnar för farthinder. Justera din hastighet och var beredd på faran framför dig. Denna variant indikerar (en) dopp(ar).",
+      "keywords": [
+        "speed",
+        "bump",
+        "warning",
+        "warns",
+        "adjust",
+        "prepared",
+        "hazard",
+        "ahead"
+      ],
+      "imageName": "sign_A9-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B3-1",
+      "category": "priority",
+      "name": "Övergångsställe",
+      "meaning": "Markerar ett kontrollerat övergångsställe. Förare ska väja för fotgängare som har klivit upp på övergångsstället eller ska göra det och ska tydligt visa uppsåt att ge vika genom att sänka hastigheten eller stanna i god tid.",
+      "keywords": [
+        "pedestrian",
+        "crossing",
+        "marks",
+        "controlled",
+        "give",
+        "pedestrians",
+        "stepped",
+        "onto"
+      ],
+      "imageName": "sign_B3-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B3-2",
+      "category": "priority",
+      "name": "Övergångsställe",
+      "meaning": "Markerar ett kontrollerat övergångsställe. Förare ska väja för fotgängare som har klivit upp på övergångsstället eller ska göra det och ska tydligt visa uppsåt att ge vika genom att sänka hastigheten eller stanna i god tid.",
+      "keywords": [
+        "pedestrian",
+        "crossing",
+        "marks",
+        "controlled",
+        "give",
+        "pedestrians",
+        "stepped",
+        "onto"
+      ],
+      "imageName": "sign_B3-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B4",
+      "category": "priority",
+      "imageName": "sign_B4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Gul diamant = prioriterad väg, inte vika.",
+      "name": "Prioriterad väg",
+      "meaning": "All trafik som kommer in på den prioriterade vägen ska ge vika för fordon som redan finns på den. Skylten är normalt placerad efter varje korsning så att förare som ansluter sig också ser den. Den slutar där en skylt med prioriterad väg slutar (B5) visas.",
+      "keywords": [
+        "priority",
+        "entering",
+        "give",
+        "vehicles",
+        "already",
+        "placed",
+        "each",
+        "junction"
+      ]
+    },
+    {
+      "code": "B5",
+      "category": "priority",
+      "name": "Prioriterad väg slutar",
+      "meaning": "Indikerar att den prioriterade vägen slutar. Reglerna för vanliga vägar gäller igen; du har inte längre automatisk prioritet vid korsningar om inte en annan regel eller skylt säger det.",
+      "keywords": [
+        "priority",
+        "ends",
+        "rules",
+        "ordinary",
+        "roads",
+        "apply",
+        "again",
+        "longer"
+      ],
+      "imageName": "sign_B5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B6",
+      "category": "priority",
+      "name": "Prioritet för mötande fordon",
+      "meaning": "Denna prioritetsskylt indikerar: prioritet för mötande fordon.",
+      "keywords": [
+        "priority",
+        "oncoming",
+        "vehicles"
+      ],
+      "imageName": "sign_B6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B7",
+      "category": "priority",
+      "name": "Prioritet framför mötande fordon",
+      "meaning": "Denna prioritetsskylt indikerar: prioritet framför mötande fordon.",
+      "keywords": [
+        "priority",
+        "over",
+        "oncoming",
+        "vehicles"
+      ],
+      "imageName": "sign_B7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "B8",
+      "category": "priority",
+      "name": "Cykelöverfart",
+      "meaning": "Markerar en cykelöverfart. Förare har väjningsplikt för cyklister och mopedister klass II på eller på väg in på övergångsstället. Samma regler gäller för elskotrar där det är relevant.",
+      "keywords": [
+        "bicycle",
+        "crossing",
+        "marks",
+        "obligation",
+        "give",
+        "cyclists",
+        "class",
+        "moped"
+      ],
+      "imageName": "sign_B8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C1",
+      "category": "prohibition",
+      "imageName": "sign_C1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Röd cirkel = förbud.",
+      "name": "Inget inträde",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen inresa. Du måste följa denna regel.",
+      "keywords": [
+        "entry",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ]
+    },
+    {
+      "code": "C10",
+      "category": "prohibition",
+      "name": "Inga cyklar eller klass II mopeder",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga cyklar eller klass II mopeder. Du måste följa denna regel.",
+      "keywords": [
+        "bicycles",
+        "class",
+        "mopeds",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C11",
+      "category": "prohibition",
+      "name": "Inga klass II mopeder",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga klass II mopeder. Du måste följa denna regel.",
+      "keywords": [
+        "class",
+        "mopeds",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C12",
+      "category": "prohibition",
+      "name": "Inga hästdragna fordon",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga hästdragna fordon. Du måste följa denna regel.",
+      "keywords": [
+        "horse",
+        "drawn",
+        "vehicles",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C13",
+      "category": "prohibition",
+      "name": "Inga terrängmotorfordon eller terrängsläp",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga terrängmotorfordon eller terrängsläp. Du måste följa denna regel.",
+      "keywords": [
+        "motor",
+        "vehicles",
+        "trailers",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C14",
+      "category": "prohibition",
+      "name": "Ingen ridning",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen ridning. Du måste följa denna regel.",
+      "keywords": [
+        "horse",
+        "riding",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C15",
+      "category": "prohibition",
+      "name": "Inga fotgängare",
+      "meaning": "Risker förknippade med motorvägar Motorvägar är i allmänhet säkra att köra på. Det finns dock några risker som du bör vara särskilt uppmärksam på: Förvrängd uppfattning om hastighet efter utgång (fartblindhet). Flera fordonskollisioner på grund av otillräckligt avstånd mellan fordon. Monoton körning kan leda till singelolyckor. I våta förhållanden ökar risken för vattenplaning med hastigheten.",
+      "keywords": [
+        "pedestrians",
+        "risks",
+        "associated",
+        "motorways",
+        "generally",
+        "safe",
+        "drive",
+        "however"
+      ],
+      "imageName": "sign_C15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C16",
+      "category": "prohibition",
+      "name": "Begränsad fordonsbredd",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad fordonsbredd. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "vehicle",
+        "width",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C17",
+      "category": "prohibition",
+      "name": "Begränsad fordonshöjd",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad fordonshöjd. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "vehicle",
+        "height",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C18",
+      "category": "prohibition",
+      "name": "Begränsad fordonslängd",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad fordonslängd. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "vehicle",
+        "length",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C19",
+      "category": "prohibition",
+      "name": "Minsta avstånd mellan motorfordon",
+      "meaning": "Denna skylt förbjuder eller begränsar: minsta avstånd mellan motorfordon. Du måste följa denna regel.",
+      "keywords": [
+        "minimum",
+        "distance",
+        "between",
+        "motor",
+        "vehicles",
+        "prohibits",
+        "restricts",
+        "follow"
+      ],
+      "imageName": "sign_C19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C2",
+      "category": "prohibition",
+      "name": "Inga fordon",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga fordon. Du måste följa denna regel.",
+      "keywords": [
+        "vehicles",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C20",
+      "category": "prohibition",
+      "name": "Begränsad totalvikt på fordonet",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad bruttovikt av fordon. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "gross",
+        "weight",
+        "vehicle",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C21",
+      "category": "prohibition",
+      "name": "Begränsad totalvikt för fordon och fordonskombination",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad bruttovikt för fordon och fordonskombination. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "gross",
+        "weight",
+        "vehicle",
+        "combination",
+        "prohibits",
+        "restricts",
+        "follow"
+      ],
+      "imageName": "sign_C21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C22-1",
+      "category": "prohibition",
+      "name": "Bärkapacitetsklassificering",
+      "meaning": "Denna skylt förbjuder eller begränsar: klassificering av bärförmåga. Du måste följa denna regel.",
+      "keywords": [
+        "carrying",
+        "capacity",
+        "classification",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C22-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C22-2",
+      "category": "prohibition",
+      "name": "Bärkapacitetsklassificering",
+      "meaning": "Denna skylt förbjuder eller begränsar: klassificering av bärförmåga. Du måste följa denna regel.",
+      "keywords": [
+        "carrying",
+        "capacity",
+        "classification",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C22-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C23",
+      "category": "prohibition",
+      "name": "Begränsad vikt på en axel",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad vikt på en axel. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "weight",
+        "axle",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C23",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C24",
+      "category": "prohibition",
+      "name": "Begränsad vikt på tandemaxel",
+      "meaning": "Denna skylt förbjuder eller begränsar: begränsad vikt på tandemaxel. Du måste följa denna regel.",
+      "keywords": [
+        "restricted",
+        "weight",
+        "tandem",
+        "axle",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C25-1",
+      "category": "prohibition",
+      "name": "Ingen vänster/högersväng vid korsningen",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen vänster/högersväng vid korsningen. Du måste följa denna regel. Denna variant indikerar faran på vänster sida.",
+      "keywords": [
+        "left",
+        "right",
+        "turn",
+        "junction",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C25-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C25-2",
+      "category": "prohibition",
+      "name": "Ingen vänster/högersväng vid korsningen",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen vänster/högersväng vid korsningen. Du måste följa denna regel. Denna variant indikerar faran på höger sida.",
+      "keywords": [
+        "left",
+        "right",
+        "turn",
+        "junction",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C25-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C26",
+      "category": "prohibition",
+      "name": "Ingen U-sväng",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen U-sväng. Du måste följa denna regel.",
+      "keywords": [
+        "turn",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C27",
+      "category": "prohibition",
+      "name": "Ingen omkörning",
+      "meaning": "Där skylten Ingen omkörning visas. Där det finns risk för fara. Om någon bakom dig kör om dig eller är på väg att göra det. Om du riskerar att fastna i motsatt körfält (t.ex. på grund av en lång que i ditt körfält). Om bilen du tänker köra om visar vänster. Undantag: Tillåtet att passera till höger. Om du skulle behöva korsa mittlinjen och det finns mötande trafik. Om du skulle behöva korsa mittlinjen och det är begränsad sikt. I samband med okontrollerade övergångsställen, cykelpassager och cykelöverfarter. Undantag: Passering i låg hastighet (så att du kan stanna) är tillåten om det finns mer än ett körfält i din riktning och något av följande villkor är uppfyllt: Filerna har olika destinationer. Det är tung kö i alla körfält. Det sker i en korsning. På höger sida. Undantag 1: Tillåtet om banorna har olika destinationer. Undantag 2: Tillåtet om det är stor köbildning i alla körfält. Undantag 3: Tillåtet om fordonen står i separata filer i en korsning. Undantag 4: Tillåtet om hastighetsbegränsningen inte är högre än 70 km/h och det finns minst två markerade körfält i",
+      "keywords": [
+        "overtaking",
+        "displayed",
+        "there",
+        "risk",
+        "endangerment",
+        "someone",
+        "behind",
+        "getting"
+      ],
+      "imageName": "sign_C27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C28",
+      "category": "prohibition",
+      "name": "Inga omkörningar slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen omkörning slutar. Du måste följa denna regel.",
+      "keywords": [
+        "overtaking",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C28",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C29",
+      "category": "prohibition",
+      "name": "Ingen omkörning med tung lastbil",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen omkörning med tung lastbil. Du måste följa denna regel.",
+      "keywords": [
+        "overtaking",
+        "heavy",
+        "truck",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C29",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C3",
+      "category": "prohibition",
+      "name": "Inga andra motorfordon än mopeder klass II",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga andra motorfordon än mopeder av klass II. Du måste följa denna regel.",
+      "keywords": [
+        "motor",
+        "vehicles",
+        "class",
+        "mopeds",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C30",
+      "category": "prohibition",
+      "name": "Ingen omkörning med tung lastbil slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen omkörning med en tung lastbil slutar. Du måste följa denna regel.",
+      "keywords": [
+        "overtaking",
+        "heavy",
+        "truck",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C30",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-10",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-11",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-12",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-3",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-4",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-5",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-6",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-7",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-8",
+      "category": "prohibition",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ],
+      "imageName": "sign_C31-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C31-9",
+      "category": "prohibition",
+      "imageName": "sign_C31-9",
+      "numericValue": 50,
+      "valueUnit": "km/h",
+      "relatedCodes": [
+        "C32-9"
+      ],
+      "difficulty": 1,
+      "examTip": "Siffran är maxhastigheten, inte en rekommendation.",
+      "name": "Hastighetsbegränsning",
+      "meaning": "Maxhastighet i km/h. Du får inte överskrida det antal som visas förrän en annan skylt avslutar gränsen eller du lämnar den reglerade zonen.",
+      "keywords": [
+        "speed",
+        "limit",
+        "maximum",
+        "exceed",
+        "number",
+        "shown",
+        "until",
+        "another"
+      ]
+    },
+    {
+      "code": "C32-10",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-11",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-2",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-3",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-4",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-5",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-6",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-7",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-8",
+      "category": "prohibition",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C32-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C32-9",
+      "category": "prohibition",
+      "imageName": "sign_C32-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [
+        "C31-9"
+      ],
+      "difficulty": 1,
+      "examTip": "Svart rand genom numret = slutet av gränsen.",
+      "name": "Den tillfälliga hastighetsbegränsningen upphör",
+      "meaning": "Denna skylt förbjuder eller begränsar: den tillfälliga hastighetsbegränsningen upphör. Du måste följa denna regel.",
+      "keywords": [
+        "temporary",
+        "speed",
+        "limit",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ]
+    },
+    {
+      "code": "C33-1",
+      "category": "prohibition",
+      "name": "Stanna vid tullstället",
+      "meaning": "Denna skylt förbjuder eller begränsar: stanna vid tullstället. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "customs",
+        "point",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C33-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-2",
+      "category": "prohibition",
+      "name": "Stanna vid tullstället",
+      "meaning": "Denna skylt förbjuder eller begränsar: stanna vid tullstället. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "customs",
+        "point",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C33-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-3",
+      "category": "prohibition",
+      "name": "Stanna vid tullstället",
+      "meaning": "Denna skylt förbjuder eller begränsar: stanna vid tullstället. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "customs",
+        "point",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C33-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C33-4",
+      "category": "prohibition",
+      "name": "Stanna vid tullstället",
+      "meaning": "Denna skylt förbjuder eller begränsar: stanna vid tullstället. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "customs",
+        "point",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C33-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-1",
+      "category": "prohibition",
+      "name": "Stoppa för ett uttalat syfte",
+      "meaning": "Denna skylt förbjuder eller begränsar: stoppa för ett angivet syfte. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "stated",
+        "purpose",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C34-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-2",
+      "category": "prohibition",
+      "name": "Stoppa för ett uttalat syfte",
+      "meaning": "Denna skylt förbjuder eller begränsar: stoppa för ett angivet syfte. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "stated",
+        "purpose",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C34-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-3",
+      "category": "prohibition",
+      "name": "Stoppa för ett uttalat syfte",
+      "meaning": "Denna skylt förbjuder eller begränsar: stoppa för ett angivet syfte. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "stated",
+        "purpose",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C34-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-4",
+      "category": "prohibition",
+      "name": "Stoppa för ett uttalat syfte",
+      "meaning": "Denna skylt förbjuder eller begränsar: stoppa för ett angivet syfte. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "stated",
+        "purpose",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C34-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C34-5",
+      "category": "prohibition",
+      "name": "Stoppa för ett uttalat syfte",
+      "meaning": "Denna skylt förbjuder eller begränsar: stoppa för ett angivet syfte. Du måste följa denna regel.",
+      "keywords": [
+        "stop",
+        "stated",
+        "purpose",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C34-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C35",
+      "category": "prohibition",
+      "name": "Ingen parkering",
+      "meaning": "Ingen parkering (parkeringsförbud) På platser där det är förbjudet att stanna, är parkering alltid där skylten parkeringsförbud visas. På en bruten gul linje.",
+      "keywords": [
+        "parking",
+        "prohibition",
+        "places",
+        "stopping",
+        "prohibited",
+        "always",
+        "displayed",
+        "broken"
+      ],
+      "imageName": "sign_C35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C36",
+      "category": "prohibition",
+      "name": "Ingen parkering på udda datum",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen parkering på udda datum. Du måste följa denna regel.",
+      "keywords": [
+        "parking",
+        "numbered",
+        "dates",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C37",
+      "category": "prohibition",
+      "name": "Ingen parkering på jämna datum",
+      "meaning": "Denna skylt förbjuder eller begränsar: ingen parkering på jämna datum. Du måste följa denna regel.",
+      "keywords": [
+        "parking",
+        "even",
+        "numbered",
+        "dates",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C38",
+      "category": "prohibition",
+      "name": "Datum parkering",
+      "meaning": "Måndag anges. Det innebär att det är förbjudet att parkera även om måndagen är offentlig",
+      "keywords": [
+        "date",
+        "parking",
+        "monday",
+        "indicated",
+        "means",
+        "prohibited",
+        "park",
+        "even"
+      ],
+      "imageName": "sign_C38",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C39",
+      "category": "prohibition",
+      "name": "Ingen stopp eller parkering",
+      "meaning": "Ingen stopp eller parkering Där skylten Ingen stopp eller parkering visas. På en heldragen gul linje. Där det skapar en trafikfara eller onödigt hinder. Vid en korsning och inom 10 meter från korsningen. Där du skymmer sikten (topp på en kulle, en kurva). Där du skymmer vägskyltar. I en gångtunnel eller en tunnel. På en väg där det finns en heldragen mittlinje på din sida, om det är mindre än 3 meter mellan din bil och linjen. I en rondell. I en kollektivtrafikfil. I en cykelbana. I en förbjuden zon. I korsningen mellan en väg och en järnväg eller spårväg. På en motorväg eller ren väg. På offentliga platser som är off-road (t.ex. gräs) inom tätort.",
+      "keywords": [
+        "stopping",
+        "parking",
+        "displayed",
+        "solid",
+        "yellow",
+        "line",
+        "creates",
+        "hazard"
+      ],
+      "imageName": "sign_C39",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C4",
+      "category": "prohibition",
+      "name": "Inga motorfordon med fler än två hjul",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga motorfordon med mer än två hjul. Du måste följa denna regel.",
+      "keywords": [
+        "motor",
+        "vehicles",
+        "wheels",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-1",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-2",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-3",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-4",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-5",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C40-6",
+      "category": "prohibition",
+      "name": "Målmedvetet läge",
+      "meaning": "Denna skylt förbjuder eller begränsar: ändamålsenlig plats. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C40-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-1",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-2",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-3",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-4",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-5",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C41-6",
+      "category": "prohibition",
+      "name": "Målmedvetet läge slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: målmedveten plats slutar. Du måste följa denna regel.",
+      "keywords": [
+        "purposeful",
+        "location",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C41-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C42-1",
+      "category": "prohibition",
+      "name": "Vändplats",
+      "meaning": "Denna skylt förbjuder eller begränsar: vändplats. Du måste följa denna regel.",
+      "keywords": [
+        "turning",
+        "area",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C42-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C42-2",
+      "category": "prohibition",
+      "name": "Vändplats",
+      "meaning": "Denna skylt förbjuder eller begränsar: vändplats. Du måste följa denna regel.",
+      "keywords": [
+        "turning",
+        "area",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C42-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C43-1",
+      "category": "prohibition",
+      "name": "Vändytan slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: vändområdet slutar. Du måste följa denna regel.",
+      "keywords": [
+        "turning",
+        "area",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C43-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C43-2",
+      "category": "prohibition",
+      "name": "Vändytan slutar",
+      "meaning": "Denna skylt förbjuder eller begränsar: vändområdet slutar. Du måste följa denna regel.",
+      "keywords": [
+        "turning",
+        "area",
+        "ends",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C43-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C44",
+      "category": "prohibition",
+      "name": "Ingen trafik med andra motorfordon med dubbdäck än mopeder klass II",
+      "meaning": "Dubbdäck och människors hälsa Dubbarna river upp partiklar som är farliga för människors hälsa. Detta är den viktigaste anledningen till förbudet mot dubbdäck mellan 16 april–30 september om inte rådande eller förväntade väglag är vintrigt. På vissa vägsträckor i storstäder är luftkvaliteten så dålig att dubbdäck är helt förbjudna. Detta förbud är markerat med vägskylt och gäller även under vintern.",
+      "keywords": [
+        "motor",
+        "vehicles",
+        "studded",
+        "tyres",
+        "class",
+        "mopeds",
+        "human",
+        "health"
+      ],
+      "imageName": "sign_C44",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C5",
+      "category": "prohibition",
+      "name": "Inga motorcyklar eller klass I-mopeder",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga motorcyklar eller klass I-mopeder. Du måste följa denna regel.",
+      "keywords": [
+        "motorcycles",
+        "class",
+        "mopeds",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C6",
+      "category": "prohibition",
+      "name": "Inga motorfordon med anslutet släp",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga motorfordon med anslutet släp. Du måste följa denna regel.",
+      "keywords": [
+        "motor",
+        "vehicles",
+        "connected",
+        "trailer",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C7",
+      "category": "prohibition",
+      "name": "Inga tunga lastbilar",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga tunga lastbilar. Du måste följa denna regel.",
+      "keywords": [
+        "heavy",
+        "trucks",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C8",
+      "category": "prohibition",
+      "name": "Inga traktorer eller klass II motoriserad utrustning",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga traktorer eller klass II motoriserad utrustning. Du måste följa denna regel.",
+      "keywords": [
+        "tractors",
+        "class",
+        "motorised",
+        "equipment",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "C9",
+      "category": "prohibition",
+      "name": "Inga fordon som transporterar farligt gods",
+      "meaning": "Denna skylt förbjuder eller begränsar: inga fordon som transporterar farligt gods. Du måste följa denna regel.",
+      "keywords": [
+        "vehicles",
+        "carrying",
+        "dangerous",
+        "goods",
+        "prohibits",
+        "restricts",
+        "follow",
+        "rule"
+      ],
+      "imageName": "sign_C9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-1",
+      "category": "mandatory",
+      "imageName": "sign_D1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Blå cirkel = obligatorisk instruktion, inte förbud.",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ]
+    },
+    {
+      "code": "D1-2",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-3",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-4",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-5",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-6",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-7",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D1-8",
+      "category": "mandatory",
+      "name": "Riktning som ska följas",
+      "meaning": "Denna obligatoriska skylt kräver: riktningen ska följas. Du måste följa.",
+      "keywords": [
+        "direction",
+        "followed",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D1-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D10",
+      "category": "mandatory",
+      "name": "Reserverad körbana eller körbana för kollektivtrafikfordon m.m.",
+      "meaning": "Kollektivtrafikfil (bussfil) Syftet med kollektivtrafikfiler är att säkerställa att bussar inte fastnar i köer, vilket skulle försena dem. Även cyklar och klass II-mopeder (ej EU-mopeder klass I) får använda ett kollektivtrafikfil som ligger till höger i färdriktningen. Om några andra fordon tillåts köra kollektivtrafikfilen anges detta på en extra tavla. Du får korsa ett kollektivtrafikfil, till exempel om du ska från A till B: Trafikriktningen i ett vändbart körfält kan ändras efter behov. På eftermiddagen kommer många trafikanter att åka hem från jobbet och det är då praktiskt att ha ett extra körfält för trafik som lämnar centrum. Vändbara körfält är mycket sällsynta.",
+      "keywords": [
+        "reserved",
+        "lane",
+        "carriageway",
+        "public",
+        "transport",
+        "vehicles",
+        "purpose",
+        "lanes"
+      ],
+      "imageName": "sign_D10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D11-1",
+      "category": "mandatory",
+      "name": "Reserverad körbana, körfält, väg eller genomfartsled slutar",
+      "meaning": "Denna obligatoriska skylt kräver: reserverad körbana, körfält, väg eller genomfartsled. Du måste följa.",
+      "keywords": [
+        "reserved",
+        "carriageway",
+        "lane",
+        "thoroughfare",
+        "ends",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D11-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D2-1",
+      "category": "mandatory",
+      "imageName": "sign_D2-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Håll vänster/höger",
+      "meaning": "Denna obligatoriska skylt kräver: håll vänster/höger. Du måste följa.",
+      "keywords": [
+        "keep",
+        "left",
+        "right",
+        "mandatory",
+        "requires",
+        "comply"
+      ]
+    },
+    {
+      "code": "D2-2",
+      "category": "mandatory",
+      "name": "Håll vänster/höger",
+      "meaning": "Denna obligatoriska skylt kräver: håll vänster/höger. Du måste följa. Denna variant indikerar faran på höger sida.",
+      "keywords": [
+        "keep",
+        "left",
+        "right",
+        "mandatory",
+        "requires",
+        "comply",
+        "variant",
+        "hazard"
+      ],
+      "imageName": "sign_D2-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D2-3",
+      "category": "mandatory",
+      "name": "Håll vänster/höger",
+      "meaning": "Denna obligatoriska skylt kräver: håll vänster/höger. Du måste följa.",
+      "keywords": [
+        "keep",
+        "left",
+        "right",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D2-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D3",
+      "category": "mandatory",
+      "name": "Rondell",
+      "meaning": "Du kör in i en rondell och måste väja för alla fordon som redan cirkulerar på den.",
+      "keywords": [
+        "roundabout",
+        "entering",
+        "give",
+        "vehicles",
+        "already",
+        "circulating"
+      ],
+      "imageName": "sign_D3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D4",
+      "category": "mandatory",
+      "imageName": "sign_D4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Cykelväg",
+      "meaning": "Markerar en obligatorisk cykelväg. Cyklister måste använda den; andra fordon får inte köra på den om inte en tilläggsskylt tillåter undantag.",
+      "keywords": [
+        "bicycle",
+        "path",
+        "marks",
+        "mandatory",
+        "cyclists",
+        "vehicles",
+        "drive",
+        "unless"
+      ]
+    },
+    {
+      "code": "D5",
+      "category": "mandatory",
+      "name": "Gångstig",
+      "meaning": "Förare har väjningsplikt för fotgängare på gångvägen. Saknar en standardiserad design. Är ibland (men inte alltid) märkt med Gångstigsskylten. Att korsa en gångväg på en vanlig väg för biltrafik är sällsynt, då en sådan vägutformning skulle vara farlig för fotgängare. Gångstigar korsas ofta vid in-/utfart från en fastighet. Detta är en knutpunkt för normal biltrafik. Korsningens utformning (t.ex. vägytan och avsaknad av upphöjd mark) gör det tydligt att gångvägen inte korsar vägen. Fotgängare som kommer från gångvägen (röda pilar) får endast korsa vägen om det är möjligt utan att det orsakar fara eller hinder för trafiken. Var dock försiktig och tänk på att fotgängare är oskyddade trafikanter.",
+      "keywords": [
+        "footpath",
+        "obligation",
+        "give",
+        "pedestrians",
+        "lacks",
+        "standardised",
+        "design",
+        "sometimes"
+      ],
+      "imageName": "sign_D5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D6",
+      "category": "mandatory",
+      "name": "Obligatorisk väg för fotgängare, cyklister och mopedförare",
+      "meaning": "Denna obligatoriska skylt kräver: obligatorisk väg för fotgängare, cyklister och mopedförare. Du måste följa.",
+      "keywords": [
+        "compulsory",
+        "path",
+        "pedestrians",
+        "cyclists",
+        "moped",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D7-1",
+      "category": "mandatory",
+      "name": "Obligatoriska stigar för fotgängare, cyklister och mopedförare",
+      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? – Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på – Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
+      "keywords": [
+        "compulsory",
+        "paths",
+        "pedestrians",
+        "cyclists",
+        "moped",
+        "clarification",
+        "crossing",
+        "bicycle"
+      ],
+      "imageName": "sign_D7-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D7-2",
+      "category": "mandatory",
+      "name": "Obligatoriska stigar för fotgängare, cyklister och mopedförare",
+      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? – Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på – Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
+      "keywords": [
+        "compulsory",
+        "paths",
+        "pedestrians",
+        "cyclists",
+        "moped",
+        "clarification",
+        "crossing",
+        "bicycle"
+      ],
+      "imageName": "sign_D7-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D8",
+      "category": "mandatory",
+      "name": "Stig för ryttare till häst",
+      "meaning": "Denna obligatoriska skylt kräver: stig för ryttare till häst. Du måste följa.",
+      "keywords": [
+        "path",
+        "rider",
+        "horseback",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "D9",
+      "category": "mandatory",
+      "name": "Obligatorisk väg för terrängmotorfordon och terrängsläp",
+      "meaning": "Denna obligatoriska skylt kräver: obligatorisk väg för terrängmotorfordon och terrängsläp. Du måste följa.",
+      "keywords": [
+        "compulsory",
+        "route",
+        "motor",
+        "vehicles",
+        "trailers",
+        "mandatory",
+        "requires",
+        "comply"
+      ],
+      "imageName": "sign_D9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E10",
+      "category": "information",
+      "name": "Hemmazonen upphör",
+      "meaning": "Detta tecken indikerar: hemmazonen slutar.",
+      "keywords": [
+        "home",
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-10",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-2",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-3",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-4",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-5",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-6",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-7",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-8",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E11-9",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "appropriate",
+        "drive",
+        "faster",
+        "shown",
+        "advisory"
+      ],
+      "imageName": "sign_E11-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-10",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-2",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-3",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-4",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-5",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-6",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-7",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-8",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E12-9",
+      "category": "information",
+      "name": "Rekommenderad lägre hastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad lägre hastighet slutar.",
+      "keywords": [
+        "recommended",
+        "lower",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E12-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-10",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-11",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-2",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-3",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-4",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-5",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-6",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-7",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-8",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E13-9",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed"
+      ],
+      "imageName": "sign_E13-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E14",
+      "category": "information",
+      "name": "Rekommenderad maxhastighet slutar",
+      "meaning": "Denna skylt indikerar: rekommenderad maxhastighet slutar.",
+      "keywords": [
+        "recommended",
+        "maximum",
+        "speed",
+        "ends"
+      ],
+      "imageName": "sign_E14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E15",
+      "category": "information",
+      "name": "Slår ihop körfält",
+      "meaning": "Denna skylt indikerar: sammanslagna körfält.",
+      "keywords": [
+        "merging",
+        "lanes"
+      ],
+      "imageName": "sign_E15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-1",
+      "category": "information",
+      "name": "Enkelriktad trafik",
+      "meaning": "Denna skylt anger: enkelriktad trafik.",
+      "keywords": [
+        "one-way"
+      ],
+      "imageName": "sign_E16-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-1-2",
+      "category": "information",
+      "name": "Enkelriktad trafik",
+      "meaning": "Denna skylt anger: enkelriktad trafik.",
+      "keywords": [
+        "one-way"
+      ],
+      "imageName": "sign_E16-1-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E16-2",
+      "category": "information",
+      "name": "Enkelriktad trafik",
+      "meaning": "Denna skylt anger: enkelriktad trafik.",
+      "keywords": [
+        "one-way"
+      ],
+      "imageName": "sign_E16-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-1",
+      "category": "information",
+      "name": "Ingen genomfartsväg",
+      "meaning": "Denna skylt indikerar: ingen genomfartsväg.",
+      "keywords": [
+        "through"
+      ],
+      "imageName": "sign_E17-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-2",
+      "category": "information",
+      "name": "Ingen genomfartsväg",
+      "meaning": "Denna skylt indikerar: ingen genomfartsväg.",
+      "keywords": [
+        "through"
+      ],
+      "imageName": "sign_E17-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-3",
+      "category": "information",
+      "name": "Ingen genomfartsväg",
+      "meaning": "Denna skylt indikerar: ingen genomfartsväg.",
+      "keywords": [
+        "through"
+      ],
+      "imageName": "sign_E17-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E17-4",
+      "category": "information",
+      "name": "Ingen genomfartsväg",
+      "meaning": "Denna skylt indikerar: ingen genomfartsväg.",
+      "keywords": [
+        "through"
+      ],
+      "imageName": "sign_E17-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E18",
+      "category": "information",
+      "name": "Passerande plats",
+      "meaning": "Möta mötande trafik på en smal väg Grundregeln är att man ska hålla till höger för att ha så stor säkerhetsmarginal som möjligt. Den första bilen som anländer till förbipasseringsplatsen ska stanna, oavsett på vilken sida förbipasseringsplatsen befinner sig. Om det finns ett hinder på vägen ska den bil vars sida hindret står på stanna och låta mötande trafik passera. Kör långsamt. Vägarbetarna ska göra sitt jobb samtidigt som de håller ett öga på Tillfälliga orange vägskyltar och gula vägmarkeringar prioriteras framför Du närmar dig ett område med vägarbeten. Håll en låg hastighet och var särskilt uppmärksam. Markeringen för hinder på sidan (vägskylt X3) är placerad så att de gula panelerna lutar nedåt på den sida där trafiken ska färdas.",
+      "keywords": [
+        "passing",
+        "place",
+        "meeting",
+        "oncoming",
+        "narrow",
+        "basic",
+        "rule",
+        "should"
+      ],
+      "imageName": "sign_E18",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E19",
+      "category": "information",
+      "imageName": "sign_E19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null,
+      "name": "Parkering",
+      "meaning": "Mer om stopp och parkering En enda blå parkeringsskylt innebär att parkering är tillåten max 24 timmar på vardagar. På lördagar (inklusive dagar före helgdagar) och söndagar (inklusive helgdagar) finns ingen tidsbegränsning. Observera att det ofta finns ytterligare paneler som anger en tidsgräns. En parkeringsskiva är ett alternativ till en parkeringsbiljett. En extra panel indikerar användningen av en parkeringsskiva. Ställ in parkeringsskivan på din ankomsttid (närmaste efterföljande halvtimme). Ankomsttiden är när du kommer till parkeringsplatsen och börjar parkera, inte när du tänker komma tillbaka för att hämta bilen. Börja parkera 13.02 – ställ p-skivan på 13.30. Börja parkera 14.40 – ställ p-skivan på 15.00. Det är förbjudet att lämna bilnycklarna i en parkerad bil. Det ska till exempel vara omöjligt för ett barn att starta bilen och orsaka en olycka. På sommaren kan det bli väldigt varmt i bilen. Lämna aldrig barn eller husdjur ensamma i en parkerad bil under sommaren.",
+      "keywords": [
+        "parking",
+        "stopping",
+        "single",
+        "blue",
+        "means",
+        "permitted",
+        "maximum",
+        "hours"
+      ]
+    },
+    {
+      "code": "E20-1",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-10",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-11",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-12",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-13",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-14",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-15",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-16",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-2",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-3",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-4",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-5",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-6",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-7",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-8",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E20-9",
+      "category": "information",
+      "name": "Zonskylt",
+      "meaning": "Fordonet kan bogseras bort om det är parkerat där det är osäkert, blockerar trafiken eller hindrar vägunderhållet. Ställs/parkeras där det inte är tillåtet. Är inte lämplig för trafik (t.ex. körförbud, vrak eller obetalda skulder).",
+      "keywords": [
+        "zone",
+        "vehicle",
+        "towed",
+        "away",
+        "parked",
+        "unsafe",
+        "blocks",
+        "hinders"
+      ],
+      "imageName": "sign_E20-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-1",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-10",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-11",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-12",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-13",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-14",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-15",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-16",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-2",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-3",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-4",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-5",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-6",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-7",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-8",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E21-9",
+      "category": "information",
+      "name": "Zonen slutar",
+      "meaning": "Denna skylt indikerar: zonen slutar.",
+      "keywords": [
+        "zone",
+        "ends"
+      ],
+      "imageName": "sign_E21-9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E22",
+      "category": "information",
+      "name": "Busshållplats",
+      "meaning": "Denna skylt indikerar: busshållplats.",
+      "keywords": [
+        "stop"
+      ],
+      "imageName": "sign_E22",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E23",
+      "category": "information",
+      "name": "Taxi",
+      "meaning": "Denna skylt indikerar: taxi.",
+      "keywords": [
+        "taxi"
+      ],
+      "imageName": "sign_E23",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E24",
+      "category": "information",
+      "name": "Automatisk trafikövervakning",
+      "meaning": "Denna skylt indikerar: automatisk trafikövervakning.",
+      "keywords": [
+        "automatic",
+        "surveillance"
+      ],
+      "imageName": "sign_E24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E25",
+      "category": "information",
+      "name": "Vägavgift",
+      "meaning": "Denna skylt indikerar: vägavgift.",
+      "keywords": [
+        "charge"
+      ],
+      "imageName": "sign_E25",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E26",
+      "category": "information",
+      "name": "Tunnel",
+      "meaning": "Denna skylt indikerar: tunnel.",
+      "keywords": [
+        "tunnel"
+      ],
+      "imageName": "sign_E26",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E27",
+      "category": "information",
+      "name": "Nödskyddsområde",
+      "meaning": "Denna skylt indikerar: nödskyddsområde.",
+      "keywords": [
+        "emergency",
+        "refuge",
+        "area"
+      ],
+      "imageName": "sign_E27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E28-1",
+      "category": "information",
+      "name": "Nödutgång",
+      "meaning": "Denna skylt indikerar: nödutgång.",
+      "keywords": [
+        "emergency",
+        "exit"
+      ],
+      "imageName": "sign_E28-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E28-2",
+      "category": "information",
+      "name": "Nödutgång",
+      "meaning": "Denna skylt indikerar: nödutgång.",
+      "keywords": [
+        "emergency",
+        "exit"
+      ],
+      "imageName": "sign_E28-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E29-1",
+      "category": "information",
+      "name": "Nödutgångsväg",
+      "meaning": "Denna skylt indikerar: nödutgångsväg.",
+      "keywords": [
+        "emergency",
+        "exit",
+        "route"
+      ],
+      "imageName": "sign_E29-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E29-2",
+      "category": "information",
+      "name": "Nödutgångsväg",
+      "meaning": "Denna skylt indikerar: nödutgångsväg.",
+      "keywords": [
+        "emergency",
+        "exit",
+        "route"
+      ],
+      "imageName": "sign_E29-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E6",
+      "category": "information",
+      "name": "Bebyggd yta slutar",
+      "meaning": "Denna skylt indikerar: bebyggelse slutar.",
+      "keywords": [
+        "built",
+        "area",
+        "ends"
+      ],
+      "imageName": "sign_E6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E7",
+      "category": "information",
+      "name": "Gågata",
+      "meaning": "Markerar en gågata med strängare gränser än en hemmazon. Endast väsentlig trafik är tillåten, såsom leveranser och räddningstjänst. Du får endast delta med ett giltigt skäl.",
+      "keywords": [
+        "pedestrian",
+        "street",
+        "marks",
+        "stricter",
+        "limits",
+        "home",
+        "zone",
+        "only"
+      ],
+      "imageName": "sign_E7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E8",
+      "category": "information",
+      "name": "Gågatan slutar",
+      "meaning": "Denna skylt indikerar: gågatan slutar.",
+      "keywords": [
+        "pedestrian",
+        "street",
+        "ends"
+      ],
+      "imageName": "sign_E8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "E9",
+      "category": "information",
+      "name": "Hemmazon",
+      "meaning": "Markerar en hemmazon (gångfartsområde). Förare måste ge vika för fotgängare och anpassa hastigheten; gångtakt är ofta lämpligt när fotgängare är i närheten.",
+      "keywords": [
+        "home",
+        "zone",
+        "marks",
+        "ngfartsomr",
+        "give",
+        "pedestrians",
+        "adapt",
+        "speed"
+      ],
+      "imageName": "sign_E9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F1-1",
+      "category": "information",
+      "name": "Riktningsskylt",
+      "meaning": "Denna skylt indikerar: riktningsskylt.",
+      "keywords": [
+        "direction"
+      ],
+      "imageName": "sign_F1-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F10",
+      "category": "information",
+      "name": "Ortnamn",
+      "meaning": "Denna skylt anger: ortnamn.",
+      "keywords": [
+        "place",
+        "name"
+      ],
+      "imageName": "sign_F10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F13",
+      "category": "information",
+      "name": "Avstånd tecken",
+      "meaning": "Denna skylt indikerar: avståndstecken.",
+      "keywords": [
+        "distance"
+      ],
+      "imageName": "sign_F13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-1",
+      "category": "information",
+      "name": "Vägnummer",
+      "meaning": "Denna skylt anger: vägnummer.",
+      "keywords": [
+        "number"
+      ],
+      "imageName": "sign_F14-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-3",
+      "category": "information",
+      "name": "Vägnummer",
+      "meaning": "Denna skylt anger: vägnummer.",
+      "keywords": [
+        "number"
+      ],
+      "imageName": "sign_F14-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F14-4",
+      "category": "information",
+      "name": "Vägnummer",
+      "meaning": "Denna skylt anger: vägnummer.",
+      "keywords": [
+        "number"
+      ],
+      "imageName": "sign_F14-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F15",
+      "category": "information",
+      "name": "Avledning",
+      "meaning": "Detta tecken indikerar: avledning.",
+      "keywords": [
+        "diversion"
+      ],
+      "imageName": "sign_F15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F17",
+      "category": "information",
+      "name": "Banan slutar",
+      "meaning": "Denna skylt indikerar: körfältet slutar.",
+      "keywords": [
+        "lane",
+        "ends"
+      ],
+      "imageName": "sign_F17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F2",
+      "category": "information",
+      "name": "Vägbeskrivningsskylt när korsningssväng är förbjuden",
+      "meaning": "Denna skylt indikerar: vägvisningsskylt när korsningssväng är förbjuden.",
+      "keywords": [
+        "direction",
+        "junction",
+        "turn",
+        "prohibited"
+      ],
+      "imageName": "sign_F2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F21",
+      "category": "information",
+      "name": "Körfältsindelning före korsning",
+      "meaning": "Denna skylt anger: fildelning före korsning.",
+      "keywords": [
+        "lane",
+        "division",
+        "junction"
+      ],
+      "imageName": "sign_F21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F24-1",
+      "category": "information",
+      "name": "Riktning under avledning",
+      "meaning": "Denna skylt indikerar: riktning under avledning.",
+      "keywords": [
+        "direction",
+        "during",
+        "diversion"
+      ],
+      "imageName": "sign_F24-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F25-3",
+      "category": "information",
+      "name": "Banan slutar",
+      "meaning": "Denna skylt indikerar: körfältet slutar.",
+      "keywords": [
+        "lane",
+        "ends"
+      ],
+      "imageName": "sign_F25-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F26-1",
+      "category": "information",
+      "name": "Körfält stängt",
+      "meaning": "Denna skylt indikerar: körfält stängt.",
+      "keywords": [
+        "lane",
+        "closed"
+      ],
+      "imageName": "sign_F26-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F26-2",
+      "category": "information",
+      "name": "Körfält stängt",
+      "meaning": "Denna skylt indikerar: körfält stängt.",
+      "keywords": [
+        "lane",
+        "closed"
+      ],
+      "imageName": "sign_F26-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F27",
+      "category": "information",
+      "name": "Växlingsnummer",
+      "meaning": "Denna skylt indikerar: bytesnummer.",
+      "keywords": [
+        "interchange",
+        "number"
+      ],
+      "imageName": "sign_F27",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F29",
+      "category": "information",
+      "name": "Parkera och åka",
+      "meaning": "Denna skylt indikerar: parkera och åka.",
+      "keywords": [
+        "park",
+        "ride"
+      ],
+      "imageName": "sign_F29",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F30",
+      "category": "information",
+      "name": "Local loop",
+      "meaning": "Detta tecken indikerar: accessnät.",
+      "keywords": [
+        "local",
+        "loop"
+      ],
+      "imageName": "sign_F30",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F31-1",
+      "category": "information",
+      "name": "Skylt för vissa typer av fordon eller kategori av trafikanter",
+      "meaning": "Denna skylt anger: skylt för vissa typer av fordon eller kategori av trafikanter.",
+      "keywords": [
+        "certain",
+        "types",
+        "vehicle",
+        "category",
+        "user"
+      ],
+      "imageName": "sign_F31-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F31-5",
+      "category": "information",
+      "name": "Skylt för vissa typer av fordon eller kategori av trafikanter",
+      "meaning": "Denna skylt anger: skylt för vissa typer av fordon eller kategori av trafikanter.",
+      "keywords": [
+        "certain",
+        "types",
+        "vehicle",
+        "category",
+        "user"
+      ],
+      "imageName": "sign_F31-5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F32",
+      "category": "information",
+      "name": "Farligt gods",
+      "meaning": "Denna skylt indikerar: farligt gods.",
+      "keywords": [
+        "dangerous",
+        "goods"
+      ],
+      "imageName": "sign_F32",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F34",
+      "category": "information",
+      "name": "Riktningsskylt",
+      "meaning": "Denna skylt indikerar: riktningsskylt.",
+      "keywords": [
+        "direction"
+      ],
+      "imageName": "sign_F34",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F35",
+      "category": "information",
+      "name": "Riktningsskylt",
+      "meaning": "Denna skylt indikerar: riktningsskylt.",
+      "keywords": [
+        "direction"
+      ],
+      "imageName": "sign_F35",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F36",
+      "category": "information",
+      "name": "Ortnamn",
+      "meaning": "Denna skylt anger: ortnamn.",
+      "keywords": [
+        "place",
+        "name"
+      ],
+      "imageName": "sign_F36",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F37",
+      "category": "information",
+      "name": "Avstånd tecken",
+      "meaning": "Denna skylt indikerar: avståndstecken.",
+      "keywords": [
+        "distance"
+      ],
+      "imageName": "sign_F37",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F38",
+      "category": "information",
+      "name": "Cykelväg",
+      "meaning": "Denna skylt anger: cykelväg.",
+      "keywords": [
+        "bicycle",
+        "route"
+      ],
+      "imageName": "sign_F38",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F4",
+      "category": "information",
+      "name": "Utgångsskylt",
+      "meaning": "Denna skylt indikerar: utgångsskylt.",
+      "keywords": [
+        "exit"
+      ],
+      "imageName": "sign_F4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F5 (old colors)",
+      "category": "information",
+      "name": "Riktningsskylt",
+      "meaning": "Denna skylt indikerar: riktningsskylt.",
+      "keywords": [
+        "direction"
+      ],
+      "imageName": "sign_F5 (old colors)",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F6",
+      "category": "information",
+      "name": "Riktningsskylt",
+      "meaning": "Denna skylt indikerar: riktningsskylt.",
+      "keywords": [
+        "direction"
+      ],
+      "imageName": "sign_F6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F7",
+      "category": "information",
+      "name": "Riktnings- och utgångsskylt",
+      "meaning": "Denna skylt indikerar: riktnings- och utgångsskylt.",
+      "keywords": [
+        "direction",
+        "exit"
+      ],
+      "imageName": "sign_F7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "F9",
+      "category": "information",
+      "name": "Samlingsskylt för vägbeskrivningar",
+      "meaning": "Denna skylt indikerar: samlingsskylt för vägbeskrivningar.",
+      "keywords": [
+        "collective",
+        "route",
+        "directions"
+      ],
+      "imageName": "sign_F9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G1",
+      "category": "information",
+      "name": "postkontor",
+      "meaning": "Denna skylt anger: postkontor.",
+      "keywords": [
+        "postal",
+        "office"
+      ],
+      "imageName": "sign_G1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G10",
+      "category": "information",
+      "name": "Kommersiella område",
+      "meaning": "Denna skylt indikerar: kommersiellt område.",
+      "keywords": [
+        "commercial",
+        "area"
+      ],
+      "imageName": "sign_G10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G11",
+      "category": "information",
+      "name": "Färja",
+      "meaning": "Denna skylt indikerar: färja.",
+      "keywords": [
+        "ferry"
+      ],
+      "imageName": "sign_G11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G12",
+      "category": "information",
+      "name": "Passagerarfärja",
+      "meaning": "Denna skylt indikerar: passagerarfärja.",
+      "keywords": [
+        "passenger",
+        "ferry"
+      ],
+      "imageName": "sign_G12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G2",
+      "category": "information",
+      "name": "Nödtelefon",
+      "meaning": "Denna skylt indikerar: nödtelefon.",
+      "keywords": [
+        "emergency",
+        "telephone"
+      ],
+      "imageName": "sign_G2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G3",
+      "category": "information",
+      "name": "Radiostation för trafikinformation",
+      "meaning": "Denna skylt indikerar: radiostation för trafikinformation.",
+      "keywords": [
+        "radio",
+        "station",
+        "information"
+      ],
+      "imageName": "sign_G3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G4",
+      "category": "information",
+      "name": "Sjukhus",
+      "meaning": "Detta tecken indikerar: sjukhus.",
+      "keywords": [
+        "hospital"
+      ],
+      "imageName": "sign_G4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G5",
+      "category": "information",
+      "name": "Industriområde",
+      "meaning": "Denna skylt anger: industriområde.",
+      "keywords": [
+        "industrial",
+        "area"
+      ],
+      "imageName": "sign_G5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G6",
+      "category": "information",
+      "name": "Tågstation",
+      "meaning": "Denna skylt indikerar: järnvägsstation.",
+      "keywords": [
+        "railway",
+        "station"
+      ],
+      "imageName": "sign_G6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G7",
+      "category": "information",
+      "name": "Busstation",
+      "meaning": "Denna skylt indikerar: busstation.",
+      "keywords": [
+        "station"
+      ],
+      "imageName": "sign_G7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "G9",
+      "category": "information",
+      "name": "Brandsläckare",
+      "meaning": "Denna skylt indikerar: brandsläckare.",
+      "keywords": [
+        "fire",
+        "extinguisher"
+      ],
+      "imageName": "sign_G9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H10",
+      "category": "information",
+      "name": "Stuga",
+      "meaning": "Denna skylt indikerar: stuga.",
+      "keywords": [
+        "cottage"
+      ],
+      "imageName": "sign_H10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H11",
+      "category": "information",
+      "name": "Lägerplats",
+      "meaning": "Denna skylt anger: campingplats.",
+      "keywords": [
+        "camp",
+        "site"
+      ],
+      "imageName": "sign_H11",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H12",
+      "category": "information",
+      "name": "Husvagnsplats",
+      "meaning": "Denna skylt anger: husvagnsplats.",
+      "keywords": [
+        "caravan",
+        "site"
+      ],
+      "imageName": "sign_H12",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H13",
+      "category": "information",
+      "name": "Picknickområde",
+      "meaning": "Denna skylt indikerar: picknickområde.",
+      "keywords": [
+        "picnic",
+        "area"
+      ],
+      "imageName": "sign_H13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H14",
+      "category": "information",
+      "name": "Toaletter",
+      "meaning": "Denna skylt indikerar: toaletter.",
+      "keywords": [
+        "toilets"
+      ],
+      "imageName": "sign_H14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H15",
+      "category": "information",
+      "name": "Badstrand",
+      "meaning": "Denna skylt anger: badstrand.",
+      "keywords": [
+        "bathing",
+        "beach"
+      ],
+      "imageName": "sign_H15",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H16",
+      "category": "information",
+      "name": "Rekreationsområde",
+      "meaning": "Denna skylt anger: rekreationsområde.",
+      "keywords": [
+        "recreational",
+        "area"
+      ],
+      "imageName": "sign_H16",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H17",
+      "category": "information",
+      "name": "Vandringsled",
+      "meaning": "Denna skylt indikerar: vandringsled.",
+      "keywords": [
+        "hiking",
+        "trail"
+      ],
+      "imageName": "sign_H17",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H19",
+      "category": "information",
+      "name": "Skidsläp",
+      "meaning": "Denna skylt indikerar: skiddrag.",
+      "keywords": [
+        "ski"
+      ],
+      "imageName": "sign_H19",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H2",
+      "category": "information",
+      "name": "Fordonsverkstad",
+      "meaning": "Denna skylt indikerar: fordonsverkstad.",
+      "keywords": [
+        "vehicle",
+        "workshop"
+      ],
+      "imageName": "sign_H2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H20",
+      "category": "information",
+      "name": "Golfbana",
+      "meaning": "Denna skylt indikerar: golfbana.",
+      "keywords": [
+        "golf",
+        "course"
+      ],
+      "imageName": "sign_H20",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H21",
+      "category": "information",
+      "name": "Fiskekort till salu",
+      "meaning": "Denna skylt anger: fiskekort till salu.",
+      "keywords": [
+        "fishing",
+        "licences",
+        "sale"
+      ],
+      "imageName": "sign_H21",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H3",
+      "category": "information",
+      "name": "Bränsle",
+      "meaning": "Detta tecken indikerar: bränsle.",
+      "keywords": [
+        "fuel"
+      ],
+      "imageName": "sign_H3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H5",
+      "category": "information",
+      "name": "Lättare förfriskningar",
+      "meaning": "Denna skylt anger: lätta förfriskningar.",
+      "keywords": [
+        "light",
+        "refreshments"
+      ],
+      "imageName": "sign_H5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H8",
+      "category": "information",
+      "name": "Vandrarhem",
+      "meaning": "Denna skylt indikerar: vandrarhem.",
+      "keywords": [
+        "hostel"
+      ],
+      "imageName": "sign_H8",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "H9",
+      "category": "information",
+      "name": "Stugby",
+      "meaning": "Denna skylt indikerar: semesterby.",
+      "keywords": [
+        "holiday",
+        "village"
+      ],
+      "imageName": "sign_H9",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I2",
+      "category": "information",
+      "name": "Sverige vägskylt: Informationsskyltar - Turistområde",
+      "meaning": "Sverige vägskylt: Informationsskyltar - Turistområde",
+      "keywords": [
+        "sweden",
+        "information",
+        "signs",
+        "turistomr"
+      ],
+      "imageName": "sign_I2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I3",
+      "category": "information",
+      "name": "Landmärke",
+      "meaning": "Denna skylt indikerar: landmärke.",
+      "keywords": [
+        "landmark"
+      ],
+      "imageName": "sign_I3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "I4",
+      "category": "information",
+      "name": "Världsarv",
+      "meaning": "Denna skylt indikerar: världsarv.",
+      "keywords": [
+        "world",
+        "heritage"
+      ],
+      "imageName": "sign_I4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J2",
+      "category": "information",
+      "name": "Informationsskylt",
+      "meaning": "Denna skylt indikerar: informationsskylt.",
+      "keywords": [
+        "information"
+      ],
+      "imageName": "sign_J2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J3-1",
+      "category": "information",
+      "name": "Fara, hög spänning",
+      "meaning": "Detta tecken indikerar: fara, hög spänning.",
+      "keywords": [
+        "danger",
+        "high",
+        "voltage"
+      ],
+      "imageName": "sign_J3-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "J3-2",
+      "category": "information",
+      "name": "Fara, hög spänning",
+      "meaning": "Detta tecken indikerar: fara, hög spänning.",
+      "keywords": [
+        "danger",
+        "high",
+        "voltage"
+      ],
+      "imageName": "sign_J3-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "P6",
+      "category": "additional",
+      "name": "Sverige vägmärke: Signaler av poliser - Kontroll",
+      "meaning": "Sverige vägmärke: Signaler av poliser - Kontroll",
+      "keywords": [
+        "sweden",
+        "signals",
+        "policemen",
+        "kontroll"
+      ],
+      "imageName": "sign_P6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "P7",
+      "category": "additional",
+      "name": "Sverige vägmärke: Signaler av poliser - Förberedande upplysning om kontroll",
+      "meaning": "Sverige vägmärke: Signaler av poliser - Förberedande upplysning om kontroll",
+      "keywords": [
+        "sweden",
+        "signals",
+        "policemen",
+        "rberedande",
+        "upplysning",
+        "kontroll"
+      ],
+      "imageName": "sign_P7",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T10",
+      "category": "additional",
+      "name": "Hörselskada",
+      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen – varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
+      "keywords": [
+        "hearing",
+        "impaired",
+        "stop",
+        "visually",
+        "person",
+        "pedestrian",
+        "crossing",
+        "good"
+      ],
+      "imageName": "sign_T10",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T13",
+      "category": "additional",
+      "name": "All-roads ger vika",
+      "meaning": "All-roads ger vika. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "roads",
+        "give",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T13",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T14",
+      "category": "additional",
+      "name": "Alla vägar stannar",
+      "meaning": "Alla vägar stannar. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "roads",
+        "stop",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T14",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T2",
+      "category": "additional",
+      "name": "Avstånd",
+      "meaning": "Avstånd. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "distance",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-1",
+      "category": "additional",
+      "name": "Placering av fordon",
+      "meaning": "Placering av fordon. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "positioning",
+        "vehicles",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T21-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-2",
+      "category": "additional",
+      "name": "Placering av fordon",
+      "meaning": "Placering av fordon. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "positioning",
+        "vehicles",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T21-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-3",
+      "category": "additional",
+      "name": "Placering av fordon",
+      "meaning": "Placering av fordon. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "positioning",
+        "vehicles",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T21-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T21-4",
+      "category": "additional",
+      "name": "Placering av fordon",
+      "meaning": "Placering av fordon. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "positioning",
+        "vehicles",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T21-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-1",
+      "category": "additional",
+      "name": "Tunnelkategori",
+      "meaning": "Tunnelkategori. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "tunnel",
+        "category",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T23-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-2",
+      "category": "additional",
+      "name": "Tunnelkategori",
+      "meaning": "Tunnelkategori. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "tunnel",
+        "category",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T23-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-3",
+      "category": "additional",
+      "name": "Tunnelkategori",
+      "meaning": "Tunnelkategori. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "tunnel",
+        "category",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T23-3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T23-4",
+      "category": "additional",
+      "name": "Tunnelkategori",
+      "meaning": "Tunnelkategori. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "tunnel",
+        "category",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T23-4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T24",
+      "category": "additional",
+      "name": "Laddstation",
+      "meaning": "Laddstation. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "charging",
+        "station",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T24",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T3",
+      "category": "additional",
+      "name": "Avstånd till obligatorisk hållplats",
+      "meaning": "Avstånd till obligatorisk hållplats. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "distance",
+        "mandatory",
+        "stop",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T3",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T4",
+      "category": "additional",
+      "name": "Säker bredd",
+      "meaning": "Säker bredd. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "safe",
+        "width",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T4",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T5",
+      "category": "additional",
+      "name": "Totalvikt",
+      "meaning": "Totalvikt. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "total",
+        "weight",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T5",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T6",
+      "category": "additional",
+      "name": "Tidsangivelse",
+      "meaning": "Tidsangivelse. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "time",
+        "indication",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T6",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T7-1",
+      "category": "additional",
+      "name": "Inaktiverad",
+      "meaning": "Inaktiverad. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "disabled",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T7-1",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T7-2",
+      "category": "additional",
+      "name": "Inaktiverad",
+      "meaning": "Inaktiverad. Läs tillsammans med huvudskylten.",
+      "keywords": [
+        "disabled",
+        "supplementary",
+        "panel",
+        "read",
+        "together",
+        "main"
+      ],
+      "imageName": "sign_T7-2",
+      "numericValue": null,
+      "valueUnit": null,
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": null
+    },
+    {
+      "code": "T9",
+      "category": "additional",
+      "imageName": "sign_T9",
+      "numericValue": 150,
+      "valueUnit": "m",
+      "relatedCodes": [],
+      "difficulty": 1,
+      "examTip": "Tilläggsskyltar modifierar skylten ovanför eller bredvid dem.",
+      "name": "Synskadad",
+      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen – varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
+      "keywords": [
+        "visually",
+        "impaired",
+        "stop",
+        "person",
+        "pedestrian",
+        "crossing",
+        "good",
+        "time"
+      ]
+    }
+  ]
+}

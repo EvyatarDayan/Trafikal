@@ -8,6 +8,7 @@ import SwiftUI
 struct TestSessionView: View {
     @Binding var isPresented: Bool
 
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TestSessionStore.self) private var sessionStore
@@ -16,7 +17,7 @@ struct TestSessionView: View {
         VStack(spacing: 0) {
             ZStack {
                 ScreenTitleBar(
-                    title: "Test",
+                    title: l10n.text(.signsTitle),
                     showsBackButton: !sessionStore.finished,
                     onBack: { isPresented = false }
                 )
@@ -24,7 +25,7 @@ struct TestSessionView: View {
                 if !sessionStore.questions.isEmpty, !sessionStore.finished {
                     HStack {
                         Spacer()
-                        Button("Start over") {
+                        Button(l10n.text(.signsStartOver)) {
                             sessionStore.restartTest(catalog: catalog)
                         }
                         .font(.caption.weight(.medium))
@@ -36,9 +37,13 @@ struct TestSessionView: View {
 
             Group {
                 if let error = catalog.loadError {
-                    ContentUnavailableView("No signs", systemImage: "exclamationmark.triangle", description: Text(error))
+                    ContentUnavailableView(
+                        l10n.text(.signsNoSigns),
+                        systemImage: "exclamationmark.triangle",
+                        description: Text(error)
+                    )
                 } else if sessionStore.questions.isEmpty, !sessionStore.finished {
-                    ProgressView("Preparing test…")
+                    ProgressView(l10n.text(.signsPreparing))
                         .task {
                             sessionStore.startTest(catalog: catalog)
                         }
@@ -74,7 +79,7 @@ struct TestSessionView: View {
             }
             .padding(.horizontal)
 
-            Text("What does this sign mean?")
+            Text(l10n.text(.signsWhatDoesSignMean))
                 .font(.headline)
                 .padding(.horizontal)
 
@@ -100,7 +105,11 @@ struct TestSessionView: View {
             .padding(.horizontal)
 
             if sessionStore.selectedID != nil {
-                Button(sessionStore.currentIndex < sessionStore.questions.count - 1 ? "Next question" : "Show results") {
+                Button(
+                    sessionStore.currentIndex < sessionStore.questions.count - 1
+                        ? l10n.text(.testNextQuestion)
+                        : l10n.text(.testShowResults)
+                ) {
                     sessionStore.advance()
                 }
                 .buttonStyle(.borderedProminent)
@@ -120,23 +129,23 @@ struct TestSessionView: View {
             TestResultsPieChart(correct: sessionStore.score, total: sessionStore.questions.count)
 
             HStack(spacing: 20) {
-                legendDot(color: .green, label: "Correct (\(sessionStore.score))")
+                legendDot(color: .green, label: l10n.text(.testCorrectCount, sessionStore.score))
                 legendDot(
                     color: .red.opacity(0.85),
-                    label: "Incorrect (\(sessionStore.questions.count - sessionStore.score))"
+                    label: l10n.text(.testIncorrectCount, sessionStore.questions.count - sessionStore.score)
                 )
             }
             .font(.caption)
             .foregroundStyle(.secondary)
 
-            Text("You got \(sessionStore.score) out of \(sessionStore.questions.count) correct.")
+            Text(l10n.text(.testScoreSummary, sessionStore.score, sessionStore.questions.count))
                 .font(.largeTitle.weight(.bold))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
 
             Spacer()
 
-            Button("End this test") {
+            Button(l10n.text(.signsEnd)) {
                 sessionStore.clear()
                 isPresented = false
             }

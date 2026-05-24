@@ -11,6 +11,7 @@ struct TrafikalApp: App {
     private let catalog = SignCatalog.shared
     private let theoryCatalog = TheoryQuestionCatalog.shared
     private let testHistory = TestHistoryStore.shared
+    private let localization = LocalizationManager.shared
 
     init() {
         let background = UIColor.systemGroupedBackground
@@ -30,6 +31,7 @@ struct TrafikalApp: App {
                 .environment(catalog)
                 .environment(theoryCatalog)
                 .environment(testHistory)
+                .environment(localization)
                 .environment(TestSessionStore.shared)
                 .environment(TheoryQuestionSessionStore.shared)
         }

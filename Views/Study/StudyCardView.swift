@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct StudyCardView: View {
+    @Environment(LocalizationManager.self) private var l10n
+
     private let horizontalInset: CGFloat = 20
     private let meaningTextInset: CGFloat = 36
     private let meaningFadeHeight: CGFloat = 40
@@ -28,8 +30,8 @@ struct StudyCardView: View {
     var body: some View {
         VStack(spacing: 0) {
             ScreenTitleBar(
-                title: "Study",
-                subtitle: "\(index + 1) of \(signs.count)",
+                title: l10n.text(.studyTitle),
+                subtitle: l10n.text(.studyOf, index + 1, signs.count),
                 showsBackButton: true
             )
 
@@ -138,14 +140,14 @@ struct StudyCardView: View {
 
     private var navigationSection: some View {
         HStack(spacing: 16) {
-            Button("Previous") {
+            Button(l10n.text(.studyPrevious)) {
                 previous()
             }
             .buttonStyle(.borderedProminent)
             .disabled(index == 0)
             .frame(maxWidth: .infinity)
 
-            Button("Next") {
+            Button(l10n.text(.studyNext)) {
                 next()
             }
             .buttonStyle(.borderedProminent)

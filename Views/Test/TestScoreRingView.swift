@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct TestScoreRingView: View {
+    @Environment(LocalizationManager.self) private var l10n
+
     let percent: Int
 
     private var progress: CGFloat {
@@ -29,7 +31,7 @@ struct TestScoreRingView: View {
                 Text("\(percent)%")
                     .font(.system(size: 34, weight: .bold))
                     .foregroundStyle(.primary)
-                Text("Success")
+                Text(l10n.text(.commonSuccess))
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -41,4 +43,5 @@ struct TestScoreRingView: View {
 #Preview {
     TestScoreRingView(percent: 80)
         .padding()
+        .environment(LocalizationManager.shared)
 }

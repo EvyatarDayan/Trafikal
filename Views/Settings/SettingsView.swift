@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @AppStorage("isDarkMode") private var isDarkMode = false
     @Environment(TestHistoryStore.self) private var historyStore
 
@@ -22,11 +23,12 @@ struct SettingsView: View {
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
 
-                Section("Preferences") {
+                Section(l10n.text(.settingsPreferences)) {
+                    languageRow
                     darkModeRow
                 }
 
-                Section("Test history") {
+                Section(l10n.text(.settingsTestHistory)) {
                     clearHistoryRow
                 }
 
@@ -43,23 +45,23 @@ struct SettingsView: View {
         }
         .appRootScreen()
         .background(Theme.screenBackground)
-        .alert("Clear history?", isPresented: $showClearHistoryConfirmation) {
-            Button("Cancel", role: .cancel) {}
-            Button("Clear", role: .destructive) {
+        .alert(l10n.text(.settingsClearAlertTitle), isPresented: $showClearHistoryConfirmation) {
+            Button(l10n.text(.settingsCancel), role: .cancel) {}
+            Button(l10n.text(.settingsClear), role: .destructive) {
                 historyStore.clearAll()
             }
         } message: {
-            Text("This will permanently delete all completed test results. This cannot be undone.")
+            Text(l10n.text(.settingsClearAlertMessage))
         }
     }
 
     private var pageHeader: some View {
         VStack(spacing: 4) {
-            Text("Settings")
+            Text(l10n.text(.settingsTitle))
                 .font(.title2)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .center)
-            Text("Customize your app preferences")
+            Text(l10n.text(.settingsSubtitle))
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: .infinity, alignment: .center)
@@ -70,12 +72,61 @@ struct SettingsView: View {
         .background(Theme.screenBackground)
     }
 
+    private var languageRow: some View {
+        HStack(alignment: .center, spacing: 12) {
+            Image(systemName: "globe")
+                .font(.title2)
+                .foregroundStyle(.blue)
+                .frame(width: 30)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(l10n.text(.settingsLanguage))
+                    .font(.body)
+                    .foregroundStyle(.primary)
+                Text(l10n.text(.settingsLanguageSubtitle))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            languageMenuControl
+        }
+    }
+
+    private var languageMenuControl: some View {
+        Menu {
+            ForEach(AppLanguage.allCases) { language in
+                Button {
+                    l10n.setLanguage(language)
+                } label: {
+                    if l10n.language == language {
+                        Label(language.pickerLabel, systemImage: "checkmark")
+                    } else {
+                        Text(language.pickerLabel)
+                    }
+                }
+            }
+        } label: {
+            HStack(spacing: 6) {
+                Text(l10n.language.flagEmoji)
+                    .frame(width: 28, alignment: .center)
+                Text(l10n.language.nativeDisplayName)
+                    .frame(width: 72, alignment: .leading)
+            }
+            .font(.body)
+            .foregroundStyle(.primary)
+        }
+        .menuIndicator(.hidden)
+        .frame(width: 106, alignment: .leading)
+    }
+
     private var darkModeRow: some View {
         settingsRow(
             icon: "moon.fill",
             iconColor: .purple,
-            title: "Dark mode",
-            subtitle: "Toggle appearance"
+            title: l10n.text(.settingsDarkMode),
+            subtitle: l10n.text(.settingsDarkModeSubtitle)
         ) {
             Toggle("", isOn: $isDarkMode)
                 .labelsHidden()
@@ -85,10 +136,13 @@ struct SettingsView: View {
 
     private var clearHistorySubtitle: String {
         if historyStore.testsCompleted == 0 {
-            return "No completed tests saved"
+            return l10n.text(.settingsNoTestsSaved)
         }
         let count = historyStore.testsCompleted
-        return "Remove \(count) saved test\(count == 1 ? "" : "s")"
+        if count == 1 {
+            return l10n.text(.settingsRemoveTestsOne)
+        }
+        return l10n.text(.settingsRemoveTests, count)
     }
 
     private var clearHistoryRow: some View {
@@ -98,7 +152,7 @@ struct SettingsView: View {
             settingsRow(
                 icon: "trash",
                 iconColor: .red,
-                title: "Clear history",
+                title: l10n.text(.settingsClearHistory),
                 subtitle: clearHistorySubtitle
             ) {
                 EmptyView()
@@ -141,4 +195,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .environment(TestHistoryStore.shared)
+        .environment(LocalizationManager.shared)
 }

@@ -7,6 +7,8 @@ import Charts
 import SwiftUI
 
 struct TestResultsPieChart: View {
+    @Environment(LocalizationManager.self) private var l10n
+
     let correct: Int
     let total: Int
 
@@ -43,7 +45,7 @@ struct TestResultsPieChart: View {
             VStack(spacing: 2) {
                 Text("\(percentCorrect)%")
                     .font(.title.bold())
-                Text("correct")
+                Text(l10n.text(.testCorrectLabel))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

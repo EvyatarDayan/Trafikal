@@ -15,26 +15,14 @@ enum SignCategory: String, Codable, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    @MainActor
     var title: String {
-        switch self {
-        case .warning: "Warning"
-        case .priority: "Priority"
-        case .prohibition: "Prohibition"
-        case .mandatory: "Mandatory"
-        case .information: "Information"
-        case .additional: "Supplementary"
-        }
+        localizedTitle(using: LocalizationManager.shared)
     }
 
+    @MainActor
     var subtitle: String {
-        switch self {
-        case .warning: "Series A"
-        case .priority: "Series B"
-        case .prohibition: "Series C"
-        case .mandatory: "Series D"
-        case .information: "Series E"
-        case .additional: "Under A–E"
-        }
+        localizedSubtitle(using: LocalizationManager.shared)
     }
 
     var systemImage: String {

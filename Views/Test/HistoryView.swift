@@ -6,29 +6,59 @@
 import SwiftUI
 
 struct HistoryView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(\.colorScheme) private var colorScheme
     @Environment(TestHistoryStore.self) private var historyStore
 
+    let initialFilter: HistoryFilter
+
+    @State private var filter: HistoryFilter
     @State private var selectedEntry: TestHistoryEntry?
+
+    init(initialFilter: HistoryFilter = .all) {
+        self.initialFilter = initialFilter
+        _filter = State(initialValue: initialFilter)
+    }
+
+    private var filteredEntries: [TestHistoryEntry] {
+        historyStore.entries(filter: filter)
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             ScreenTitleBar(
-                title: "History",
-                subtitle: "Completed tests",
+                title: l10n.text(.historyTitle),
+                subtitle: l10n.text(.historyCompletedTests),
                 showsBackButton: true
             )
 
+            Picker("", selection: $filter) {
+                ForEach(HistoryFilter.allCases) { option in
+                    Text(option.label(using: l10n)).tag(option)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+            .padding(.bottom, 12)
+
             if historyStore.entries.isEmpty {
-                emptyState
+                emptyState(
+                    title: l10n.text(.historyEmptyTitle),
+                    message: l10n.text(.historyEmptyMessage)
+                )
+            } else if filteredEntries.isEmpty {
+                emptyState(
+                    title: l10n.text(.historyEmptyFilteredTitle),
+                    message: l10n.text(.historyEmptyFilteredMessage)
+                )
             } else {
                 ScrollView {
                     LazyVStack(spacing: 12) {
-                        ForEach(historyStore.entries) { entry in
+                        ForEach(filteredEntries) { entry in
                             Button {
                                 selectedEntry = entry
                             } label: {
-                                TestHistoryRowView(entry: entry, colorScheme: colorScheme)
+                                TestHistoryRowView(entry: entry, colorScheme: colorScheme, l10n: l10n)
                             }
                             .buttonStyle(.plain)
                         }
@@ -40,19 +70,19 @@ struct HistoryView: View {
         .appScreenBackground()
         .toolbar(.hidden, for: .navigationBar)
         .sheet(item: $selectedEntry) { entry in
-            TestHistoryDetailSheet(entry: entry)
+            TestHistoryDetailSheet(entry: entry, l10n: l10n)
         }
     }
 
-    private var emptyState: some View {
+    private func emptyState(title: String, message: String) -> some View {
         VStack(spacing: 12) {
             Spacer()
             Image(systemName: "clock.arrow.circlepath")
                 .font(.system(size: 44))
                 .foregroundStyle(.secondary)
-            Text("No tests yet")
+            Text(title)
                 .font(.headline)
-            Text("Finish a practice test and your score will appear here.")
+            Text(message)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -66,6 +96,7 @@ struct HistoryView: View {
 private struct TestHistoryRowView: View {
     let entry: TestHistoryEntry
     let colorScheme: ColorScheme
+    let l10n: LocalizationManager
 
     private var rowBackground: Color {
         colorScheme == .light ? Color(.systemBackground) : Color(.systemGray6)
@@ -76,12 +107,12 @@ private struct TestHistoryRowView: View {
             scoreBadge
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("Road sign test")
+                Text(entry.title(using: l10n))
                     .font(.headline)
                     .foregroundStyle(.primary)
                     .lineLimit(1)
 
-                Text(entry.detail)
+                Text(entry.detail(using: l10n))
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
@@ -116,6 +147,7 @@ private struct TestHistoryRowView: View {
 
     private func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = l10n.locale
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         return formatter.string(from: date)
@@ -123,6 +155,7 @@ private struct TestHistoryRowView: View {
 
     private func formattedTime(_ date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = l10n.locale
         formatter.dateStyle = .none
         formatter.timeStyle = .short
         return formatter.string(from: date)
@@ -132,9 +165,11 @@ private struct TestHistoryRowView: View {
 private struct TestHistoryDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
     let entry: TestHistoryEntry
+    let l10n: LocalizationManager
 
     private var formattedDateTime: String {
         let formatter = DateFormatter()
+        formatter.locale = l10n.locale
         formatter.dateStyle = .long
         formatter.timeStyle = .short
         return formatter.string(from: entry.date)
@@ -144,7 +179,7 @@ private struct TestHistoryDetailSheet: View {
         VStack(spacing: 16) {
             ScrollView {
                 VStack(spacing: 14) {
-                    Text("Road sign test")
+                    Text(entry.title(using: l10n))
                         .font(.title3.weight(.semibold))
                         .multilineTextAlignment(.center)
 
@@ -153,11 +188,11 @@ private struct TestHistoryDetailSheet: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 1)
 
-                    Text(entry.detail)
+                    Text(entry.detail(using: l10n))
                         .font(.title2.weight(.bold))
                         .multilineTextAlignment(.center)
 
-                    Text("\(entry.percentCorrect)% correct")
+                    Text(l10n.text(.historyPercentCorrect, entry.percentCorrect))
                         .font(.headline)
                         .foregroundStyle(.secondary)
 
@@ -169,7 +204,7 @@ private struct TestHistoryDetailSheet: View {
                 .frame(maxWidth: .infinity)
             }
 
-            Button("Got it") {
+            Button(l10n.text(.historyGotIt)) {
                 dismiss()
             }
             .buttonStyle(.borderedProminent)
@@ -188,4 +223,5 @@ private struct TestHistoryDetailSheet: View {
         HistoryView()
     }
     .environment(TestHistoryStore.shared)
+    .environment(LocalizationManager.shared)
 }

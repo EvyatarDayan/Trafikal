@@ -78,7 +78,7 @@ final class TestSessionStore {
 
     func recordIfNeeded(historyStore: TestHistoryStore) {
         guard finished, !didRecordCurrentTest, !questions.isEmpty else { return }
-        historyStore.record(score: score, totalQuestions: questions.count)
+        historyStore.record(score: score, totalQuestions: questions.count, kind: .signs)
         didRecordCurrentTest = true
     }
 }

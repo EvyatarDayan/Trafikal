@@ -7,11 +7,12 @@ import SwiftUI
 
 /// Study tab root content (list of practice options).
 struct StudyTabRoot: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
 
     var body: some View {
         VStack(spacing: 0) {
-            ScreenTitleBar(title: "Study")
+            ScreenTitleBar(title: l10n.text(.studyTitle))
 
             List {
                 if let error = catalog.loadError {
@@ -27,9 +28,9 @@ struct StudyTabRoot: View {
                     } label: {
                         Label {
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("All traffic signs")
+                                Text(l10n.text(.studyAllSigns))
                                     .font(.headline)
-                                Text("\(catalog.signs.count) cards in order")
+                                Text(l10n.text(.studyCardsInOrder, catalog.signs.count))
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                             }
@@ -39,20 +40,20 @@ struct StudyTabRoot: View {
                         }
                     }
                 } header: {
-                    Text("Practice")
+                    Text(l10n.text(.studyPractice))
                 } footer: {
-                    Text("Move between cards and tap to reveal the meaning. \(catalog.signs.count) signs with official diagrams.")
+                    Text(l10n.text(.studyPracticeFooter, catalog.signs.count))
                 }
 
                 Section {
                     NavigationLink {
                         AboutSignImagesView()
                     } label: {
-                        Label("About sign images", systemImage: "info.circle")
+                        Label(l10n.text(.studyAboutImages), systemImage: "info.circle")
                     }
                 }
 
-                Section("Quick start by category") {
+                Section(l10n.text(.studyQuickStart)) {
                     ForEach(SignCategory.allCases) { category in
                         let items = catalog.signs(in: category)
                         if !items.isEmpty {

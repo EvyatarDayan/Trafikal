@@ -33,23 +33,48 @@ final class TestHistoryStore {
 
     var testsCompleted: Int { entries.count }
 
-    var lastEntry: TestHistoryEntry? { entries.first }
+    func testsCompleted(kind: QuizHistoryKind) -> Int {
+        entries.filter { $0.kind == kind }.count
+    }
 
-    /// Average percent correct over the most recent tests (up to 5).
-    var averagePercentRecent: Int? {
-        let recent = Array(entries.prefix(5))
+    func lastEntry(kind: QuizHistoryKind? = nil) -> TestHistoryEntry? {
+        if let kind {
+            return entries.first { $0.kind == kind }
+        }
+        return entries.first
+    }
+
+    func entries(filter: HistoryFilter) -> [TestHistoryEntry] {
+        entries.filter { filter.matches($0.kind) }
+    }
+
+    /// Average percent correct over the most recent entries (up to 5).
+    func averagePercentRecent(kind: QuizHistoryKind? = nil) -> Int? {
+        let pool: [TestHistoryEntry]
+        if let kind {
+            pool = entries.filter { $0.kind == kind }
+        } else {
+            pool = entries
+        }
+        let recent = Array(pool.prefix(5))
         guard !recent.isEmpty else { return nil }
         let sum = recent.reduce(0) { $0 + $1.percentCorrect }
         return sum / recent.count
     }
 
-    var bestPercent: Int? {
-        entries.map(\.percentCorrect).max()
+    func bestPercent(kind: QuizHistoryKind? = nil) -> Int? {
+        let pool: [TestHistoryEntry]
+        if let kind {
+            pool = entries.filter { $0.kind == kind }
+        } else {
+            pool = entries
+        }
+        return pool.map(\.percentCorrect).max()
     }
 
-    func record(score: Int, totalQuestions: Int) {
+    func record(score: Int, totalQuestions: Int, kind: QuizHistoryKind) {
         guard totalQuestions > 0 else { return }
-        let entry = TestHistoryEntry(score: score, totalQuestions: totalQuestions)
+        let entry = TestHistoryEntry(score: score, totalQuestions: totalQuestions, kind: kind)
         entries.insert(entry, at: 0)
         save()
     }

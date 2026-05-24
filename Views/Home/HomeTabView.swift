@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(\.colorScheme) private var colorScheme
@@ -53,7 +54,7 @@ struct HomeTabView: View {
     @ViewBuilder
     private var signOfTodaySection: some View {
         VStack(spacing: 14) {
-            Text("🔥 Sign of today — \(signOfTodayDateLabel)")
+            Text("🔥 \(l10n.text(.homeSignOfToday, signOfTodayDateLabel))")
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: .infinity, alignment: .center)
@@ -71,7 +72,7 @@ struct HomeTabView: View {
                 }
             } else {
                 HomeFeaturedCard(cornerRadius: cardCornerRadius) {
-                    Text("No signs loaded yet.")
+                    Text(l10n.text(.homeNoSignsLoaded))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity)
@@ -120,7 +121,7 @@ struct HomeTabView: View {
                     NavigationLink {
                         StudyCardView(signs: [sign])
                     } label: {
-                        Text("Study this sign")
+                        Text(l10n.text(.homeStudyThisSign))
                     }
                     .buttonStyle(PrimaryActionButtonStyle())
                     Spacer()
@@ -133,7 +134,7 @@ struct HomeTabView: View {
     @ViewBuilder
     private var testStatisticsSection: some View {
         VStack(spacing: 14) {
-            GradientBrandText(text: "Test statistics", font: .title3.bold())
+            GradientBrandText(text: l10n.text(.homeTestStatistics), font: .title3.bold())
                 .frame(maxWidth: .infinity, alignment: .center)
 
             HomeCard(elevated: true, cornerRadius: cardCornerRadius) {
@@ -142,9 +143,9 @@ struct HomeTabView: View {
                         Image(systemName: "list.clipboard")
                             .font(.title2)
                             .foregroundStyle(.secondary)
-                        Text("No tests completed yet")
+                        Text(l10n.text(.homeNoTestsYet))
                             .font(.subheadline.weight(.medium))
-                        Text("Take a practice test to see your stats here.")
+                        Text(l10n.text(.homeTakePracticeTest))
                             .font(.caption)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -153,30 +154,30 @@ struct HomeTabView: View {
                     .padding(.vertical, 8)
                 } else {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                        if let last = historyStore.lastEntry {
+                        if let last = historyStore.lastEntry() {
                             statTile(
-                                title: "Last test",
-                                value: last.detail,
+                                title: l10n.text(.homeLastTest),
+                                value: last.detail(using: l10n),
                                 subtitle: formattedDate(last.date)
                             )
                         }
-                        if let average = historyStore.averagePercentRecent {
+                        if let average = historyStore.averagePercentRecent() {
                             statTile(
-                                title: "Recent average",
+                                title: l10n.text(.homeRecentAverage),
                                 value: "\(average)%",
-                                subtitle: "Last \(min(5, historyStore.testsCompleted)) tests"
+                                subtitle: l10n.text(.homeLastNTests, min(5, historyStore.testsCompleted))
                             )
                         }
                         statTile(
-                            title: "Tests taken",
+                            title: l10n.text(.homeTestsTaken),
                             value: "\(historyStore.testsCompleted)",
-                            subtitle: "All time"
+                            subtitle: l10n.text(.homeAllTime)
                         )
-                        if let best = historyStore.bestPercent {
+                        if let best = historyStore.bestPercent() {
                             statTile(
-                                title: "Best score",
+                                title: l10n.text(.homeBestScore),
                                 value: "\(best)%",
-                                subtitle: "Personal best"
+                                subtitle: l10n.text(.homePersonalBest)
                             )
                         }
                     }
@@ -187,10 +188,10 @@ struct HomeTabView: View {
 
     private var comingSoonSection: some View {
         VStack(spacing: 12) {
-            GradientBrandText(text: "Keep learning", font: .title3.bold())
+            GradientBrandText(text: l10n.text(.homeKeepLearning), font: .title3.bold())
                 .frame(maxWidth: .infinity, alignment: .center)
 
-            Text("Explore Swedish road signs with study cards, categories, and practice tests — all available offline.")
+            Text(l10n.text(.homeExploreDescription))
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -201,7 +202,7 @@ struct HomeTabView: View {
                     Image(systemName: "sparkles")
                         .font(.title3)
                         .foregroundStyle(.secondary)
-                    Text("Tips, streaks, and goals are coming soon.")
+                    Text(l10n.text(.homeComingSoon))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
@@ -226,6 +227,7 @@ struct HomeTabView: View {
 
     private func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = l10n.locale
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         return formatter.string(from: date)
@@ -281,4 +283,5 @@ private struct HomeCard<Content: View>: View {
     }
     .environment(SignCatalog.shared)
     .environment(TestHistoryStore.shared)
+    .environment(LocalizationManager.shared)
 }

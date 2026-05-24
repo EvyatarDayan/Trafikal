@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct TestsTabView: View {
+    @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TestSessionStore.self) private var sessionStore
@@ -30,8 +31,16 @@ struct TestsTabView: View {
         .onAppear {
             resumeSessionIfNeeded()
         }
+        .onDisappear {
+            dismissFinishedSessionIfNeeded()
+        }
+        .onChange(of: showTestSession) { _, isShowing in
+            if !isShowing {
+                dismissFinishedSessionIfNeeded()
+            }
+        }
         .navigationDestination(isPresented: $showHistory) {
-            HistoryView()
+            HistoryView(initialFilter: .signs)
         }
     }
 
@@ -40,7 +49,7 @@ struct TestsTabView: View {
             VStack(spacing: 0) {
                 Spacer(minLength: 28)
 
-                Text("Test")
+                Text(l10n.text(.signsTitle))
                     .font(.largeTitle.weight(.bold))
                     .foregroundStyle(heroGray)
 
@@ -48,7 +57,7 @@ struct TestsTabView: View {
                     .padding(.top, 20)
                     .padding(.bottom, 24)
 
-                Text(instructionText)
+                Text(l10n.text(.signsInstructions))
                     .font(.body)
                     .foregroundStyle(.primary)
                     .multilineTextAlignment(.center)
@@ -60,20 +69,20 @@ struct TestsTabView: View {
                         sessionStore.startTest(catalog: catalog)
                         showTestSession = true
                     } label: {
-                        Text("Start new test")
+                        Text(l10n.text(.signsStartNew))
                     }
                     .buttonStyle(PrimaryActionButtonStyle(width: buttonWidth))
 
                     Button {
                         showHistory = true
                     } label: {
-                        Text("Previous tests")
+                        Text(l10n.text(.signsPreviousResults))
                     }
                     .buttonStyle(SecondaryActionButtonStyle(width: buttonWidth, tint: accentBlue))
                 }
                 .padding(.top, 28)
 
-                if let last = historyStore.lastEntry {
+                if let last = historyStore.lastEntry(kind: .signs) {
                     lastTestSection(entry: last)
                         .padding(.top, 44)
                 }
@@ -86,15 +95,23 @@ struct TestsTabView: View {
 
     private func resumeSessionIfNeeded() {
         if sessionStore.finished {
-            sessionStore.clear()
+            dismissFinishedSessionIfNeeded()
         } else if sessionStore.hasResumableSession {
             showTestSession = true
+        } else {
+            showTestSession = false
         }
+    }
+
+    private func dismissFinishedSessionIfNeeded() {
+        guard sessionStore.finished else { return }
+        sessionStore.clear()
+        showTestSession = false
     }
 
     private var testHeroIcon: some View {
         ZStack(alignment: .bottomTrailing) {
-            Image(systemName: "list.clipboard")
+            Image(systemName: "signpost.right")
                 .font(.system(size: 76, weight: .light))
                 .foregroundStyle(heroGray)
 
@@ -106,13 +123,9 @@ struct TestsTabView: View {
         }
     }
 
-    private var instructionText: String {
-        "Answer 10 random sign questions.\nCheck your result after each answer.\nGood luck!"
-    }
-
     private func lastTestSection(entry: TestHistoryEntry) -> some View {
         VStack(spacing: 18) {
-            Text("Your last test \(formattedTestDate(entry.date))")
+            Text(l10n.text(.signsYourLastQuiz, formattedTestDate(entry.date)))
                 .font(.body.weight(.medium))
                 .foregroundStyle(.primary)
 
@@ -122,6 +135,7 @@ struct TestsTabView: View {
 
     private func formattedTestDate(_ date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = l10n.locale
         formatter.dateFormat = "dd/MM/yyyy"
         return formatter.string(from: date)
     }
@@ -134,4 +148,5 @@ struct TestsTabView: View {
     .environment(SignCatalog.shared)
     .environment(TestHistoryStore.shared)
     .environment(TestSessionStore.shared)
+    .environment(LocalizationManager.shared)
 }
