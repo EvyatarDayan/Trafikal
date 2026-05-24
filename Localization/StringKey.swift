@@ -11,6 +11,7 @@ enum StringKey: String, CaseIterable {
     case tabStudy = "tab.study"
     case tabCategories = "tab.categories"
     case tabHome = "tab.home"
+    case tabTests = "tab.tests"
     case tabSigns = "tab.signs"
     case tabQuestions = "tab.questions"
     case tabSettings = "tab.settings"
@@ -64,7 +65,7 @@ enum StringKey: String, CaseIterable {
     case categoryAdditionalTitle = "category.additional.title"
     case categoryAdditionalSubtitle = "category.additional.subtitle"
 
-    // Sign quiz (Signs tab)
+    // Sign test (Signs tab)
     case signsTitle = "signs.title"
     case signsInstructions = "signs.instructions"
     case signsStartNew = "signs.start_new"
@@ -76,6 +77,9 @@ enum StringKey: String, CaseIterable {
     case signsWhatDoesSignMean = "signs.what_does_sign_mean"
     case signsEnd = "signs.end"
     case signsRoadSignQuiz = "signs.road_sign_quiz"
+
+    // Tests hub
+    case testsTitle = "tests.title"
     case testNextQuestion = "test.next_question"
     case testShowResults = "test.show_results"
     case testCorrectCount = "test.correct_count"

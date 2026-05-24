@@ -46,8 +46,6 @@ struct ContentView: View {
         case 3:
             NavigationStack { TestsTabView() }
         case 4:
-            NavigationStack { QuestionsTabView() }
-        case 5:
             NavigationStack { SettingsView() }
         default:
             NavigationStack { HomeTabView() }
@@ -91,24 +89,17 @@ struct ContentView: View {
                 )
 
                 TabBarButton(
-                    icon: "signpost.right.fill",
-                    label: l10n.text(.tabSigns),
+                    icon: "list.clipboard.fill",
+                    label: l10n.text(.tabTests),
                     isSelected: selectedTab == 3,
                     action: { selectedTab = 3 }
                 )
 
                 TabBarButton(
-                    icon: "text.book.closed.fill",
-                    label: l10n.text(.tabQuestions),
-                    isSelected: selectedTab == 4,
-                    action: { selectedTab = 4 }
-                )
-
-                TabBarButton(
                     icon: "gearshape.fill",
                     label: l10n.text(.tabSettings),
-                    isSelected: selectedTab == 5,
-                    action: { selectedTab = 5 }
+                    isSelected: selectedTab == 4,
+                    action: { selectedTab = 4 }
                 )
             }
             .frame(width: width, height: menuHeight)

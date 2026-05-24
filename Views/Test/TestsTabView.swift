@@ -5,13 +5,24 @@
 
 import SwiftUI
 
+private enum TestTabMode: String, CaseIterable, Identifiable {
+    case signs
+    case questions
+
+    var id: String { rawValue }
+}
+
 struct TestsTabView: View {
     @Environment(LocalizationManager.self) private var l10n
-    @Environment(SignCatalog.self) private var catalog
+    @Environment(SignCatalog.self) private var signCatalog
+    @Environment(TheoryQuestionCatalog.self) private var theoryCatalog
     @Environment(TestHistoryStore.self) private var historyStore
-    @Environment(TestSessionStore.self) private var sessionStore
+    @Environment(TestSessionStore.self) private var signSessionStore
+    @Environment(TheoryQuestionSessionStore.self) private var questionSessionStore
 
-    @State private var showTestSession = false
+    @State private var mode: TestTabMode = .signs
+    @State private var showSignSession = false
+    @State private var showQuestionSession = false
     @State private var showHistory = false
 
     private let buttonWidth: CGFloat = 280
@@ -20,8 +31,10 @@ struct TestsTabView: View {
 
     var body: some View {
         Group {
-            if showTestSession {
-                TestSessionView(isPresented: $showTestSession)
+            if showSignSession {
+                TestSessionView(isPresented: $showSignSession)
+            } else if showQuestionSession {
+                TheoryQuestionSessionView(isPresented: $showQuestionSession)
             } else {
                 startScreen
             }
@@ -32,15 +45,23 @@ struct TestsTabView: View {
             resumeSessionIfNeeded()
         }
         .onDisappear {
-            dismissFinishedSessionIfNeeded()
+            dismissFinishedSessionsIfNeeded()
         }
-        .onChange(of: showTestSession) { _, isShowing in
+        .onChange(of: showSignSession) { _, isShowing in
             if !isShowing {
-                dismissFinishedSessionIfNeeded()
+                dismissFinishedSignSessionIfNeeded()
             }
         }
+        .onChange(of: showQuestionSession) { _, isShowing in
+            if !isShowing {
+                dismissFinishedQuestionSessionIfNeeded()
+            }
+        }
+        .onChange(of: mode) { _, _ in
+            resumeSessionIfNeeded()
+        }
         .navigationDestination(isPresented: $showHistory) {
-            HistoryView(initialFilter: .signs)
+            HistoryView(initialFilter: mode == .signs ? .signs : .questions)
         }
     }
 
@@ -49,15 +70,17 @@ struct TestsTabView: View {
             VStack(spacing: 0) {
                 Spacer(minLength: 28)
 
-                Text(l10n.text(.signsTitle))
+                Text(l10n.text(.testsTitle))
                     .font(.largeTitle.weight(.bold))
                     .foregroundStyle(heroGray)
 
-                testHeroIcon
+                modePicker
                     .padding(.top, 20)
-                    .padding(.bottom, 24)
+                    .padding(.bottom, 25)
+                    .padding(.horizontal, 36)
 
-                Text(l10n.text(.signsInstructions))
+                instructionsText
+                    .padding(.top, 24)
                     .font(.body)
                     .foregroundStyle(.primary)
                     .multilineTextAlignment(.center)
@@ -66,10 +89,9 @@ struct TestsTabView: View {
 
                 VStack(spacing: 12) {
                     Button {
-                        sessionStore.startTest(catalog: catalog)
-                        showTestSession = true
+                        startNewQuiz()
                     } label: {
-                        Text(l10n.text(.signsStartNew))
+                        Text(startButtonTitle)
                     }
                     .buttonStyle(PrimaryActionButtonStyle(width: buttonWidth))
 
@@ -80,10 +102,10 @@ struct TestsTabView: View {
                     }
                     .buttonStyle(SecondaryActionButtonStyle(width: buttonWidth, tint: accentBlue))
                 }
-                .padding(.top, 28)
+                .padding(.top, 40)
 
-                if let last = historyStore.lastEntry(kind: .signs) {
-                    lastTestSection(entry: last)
+                if let last = historyStore.lastEntry(kind: historyKind) {
+                    lastQuizSection(entry: last)
                         .padding(.top, 44)
                 }
 
@@ -93,47 +115,116 @@ struct TestsTabView: View {
         }
     }
 
+    private var modePicker: some View {
+        Picker("", selection: $mode) {
+            Text(l10n.text(.tabSigns)).tag(TestTabMode.signs)
+            Text(l10n.text(.tabQuestions)).tag(TestTabMode.questions)
+        }
+        .pickerStyle(.segmented)
+    }
+
+    private var instructionsText: Text {
+        let markdown: String
+        switch mode {
+        case .signs:
+            markdown = l10n.text(.signsInstructions)
+        case .questions:
+            markdown = l10n.text(.questionsInstructions)
+        }
+
+        if let attributed = try? AttributedString(
+            markdown: markdown,
+            options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace)
+        ) {
+            return Text(attributed)
+        }
+
+        return Text(markdown)
+    }
+
+    private var startButtonTitle: String {
+        switch mode {
+        case .signs:
+            l10n.text(.signsStartNew)
+        case .questions:
+            l10n.text(.questionsStartNew)
+        }
+    }
+
+    private var historyKind: QuizHistoryKind {
+        mode == .signs ? .signs : .questions
+    }
+
+    private func startNewQuiz() {
+        switch mode {
+        case .signs:
+            signSessionStore.startTest(catalog: signCatalog)
+            showSignSession = true
+        case .questions:
+            questionSessionStore.startSession(catalog: theoryCatalog)
+            showQuestionSession = true
+        }
+    }
+
     private func resumeSessionIfNeeded() {
-        if sessionStore.finished {
-            dismissFinishedSessionIfNeeded()
-        } else if sessionStore.hasResumableSession {
-            showTestSession = true
-        } else {
-            showTestSession = false
+        dismissFinishedSessionsIfNeeded()
+
+        switch mode {
+        case .signs:
+            showQuestionSession = false
+            if signSessionStore.hasResumableSession {
+                showSignSession = true
+            } else {
+                showSignSession = false
+            }
+        case .questions:
+            showSignSession = false
+            if questionSessionStore.hasResumableSession {
+                showQuestionSession = true
+            } else {
+                showQuestionSession = false
+            }
         }
     }
 
-    private func dismissFinishedSessionIfNeeded() {
-        guard sessionStore.finished else { return }
-        sessionStore.clear()
-        showTestSession = false
+    private func dismissFinishedSessionsIfNeeded() {
+        dismissFinishedSignSessionIfNeeded()
+        dismissFinishedQuestionSessionIfNeeded()
     }
 
-    private var testHeroIcon: some View {
-        ZStack(alignment: .bottomTrailing) {
-            Image(systemName: "signpost.right")
-                .font(.system(size: 76, weight: .light))
-                .foregroundStyle(heroGray)
-
-            Image(systemName: "checkmark.circle.fill")
-                .font(.system(size: 30))
-                .foregroundStyle(heroGray)
-                .background(Circle().fill(Color(.systemGroupedBackground)).padding(2))
-                .offset(x: 10, y: 10)
-        }
+    private func dismissFinishedSignSessionIfNeeded() {
+        guard signSessionStore.finished else { return }
+        signSessionStore.clear()
+        showSignSession = false
     }
 
-    private func lastTestSection(entry: TestHistoryEntry) -> some View {
+    private func dismissFinishedQuestionSessionIfNeeded() {
+        guard questionSessionStore.finished else { return }
+        questionSessionStore.clear()
+        showQuestionSession = false
+    }
+
+    private func lastQuizSection(entry: TestHistoryEntry) -> some View {
         VStack(spacing: 18) {
-            Text(l10n.text(.signsYourLastQuiz, formattedTestDate(entry.date)))
+            Text(lastQuizLabel(for: entry.date))
                 .font(.body.weight(.medium))
                 .foregroundStyle(.primary)
 
             TestScoreRingView(percent: entry.percentCorrect)
+                .padding(.top, 28)
         }
     }
 
-    private func formattedTestDate(_ date: Date) -> String {
+    private func lastQuizLabel(for date: Date) -> String {
+        switch mode {
+        case .signs:
+            l10n.text(.signsYourLastQuiz, formattedDate(date))
+        case .questions:
+            l10n.text(.questionsYourLastQuiz, formattedDate(date))
+        }
+    }
+
+    private func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.locale = l10n.locale
         formatter.dateFormat = "dd/MM/yyyy"
@@ -146,7 +237,9 @@ struct TestsTabView: View {
         TestsTabView()
     }
     .environment(SignCatalog.shared)
+    .environment(TheoryQuestionCatalog.shared)
     .environment(TestHistoryStore.shared)
     .environment(TestSessionStore.shared)
+    .environment(TheoryQuestionSessionStore.shared)
     .environment(LocalizationManager.shared)
 }
