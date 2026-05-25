@@ -8,8 +8,7 @@ import SwiftUI
 struct StudyCardView: View {
     @Environment(LocalizationManager.self) private var l10n
 
-    private let horizontalInset: CGFloat = 20
-    private let meaningTextInset: CGFloat = 36
+    private let signImageMaxSide: CGFloat = 200
     private let meaningFadeHeight: CGFloat = 40
 
     let signs: [Sign]
@@ -27,6 +26,10 @@ struct StudyCardView: View {
         signs[index]
     }
 
+    private var meaningPanelBackground: Color {
+        Color(.systemGray6)
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             ScreenTitleBar(
@@ -35,92 +38,70 @@ struct StudyCardView: View {
                 showsBackButton: true
             )
 
-            GeometryReader { geometry in
-                let topHeight = geometry.size.height * 0.4
-                let middleHeight = geometry.size.height * 0.4
-                let bottomHeight = geometry.size.height * 0.2
-                let signImageSide = min(geometry.size.width * 0.55, topHeight * 0.55)
+            signCard
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.top, 12)
+                .padding(.bottom, ListCardStyle.rowSpacing)
 
-                VStack(spacing: 0) {
-                    signSection(imageSide: signImageSide)
-                        .frame(width: geometry.size.width, height: topHeight)
+            meaningPanel
+                .frame(maxHeight: .infinity, alignment: .top)
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.bottom, 8)
 
-                    sectionDivider
-
-                    meaningSection(height: middleHeight)
-                        .frame(width: geometry.size.width, height: middleHeight)
-
-                    sectionDivider
-
-                    navigationSection
-                        .frame(width: geometry.size.width, height: bottomHeight)
-                }
-            }
+            navigationSection
+                .frame(height: 72)
+                .background(Theme.screenBackground)
         }
         .toolbar(.hidden, for: .navigationBar)
         .appScreenBackground()
-    }
-
-    private var sectionDivider: some View {
-        Rectangle()
-            .fill(Color.black.opacity(0.35))
-            .frame(height: 3)
-            .padding(.horizontal, horizontalInset)
-    }
-
-    private func signSection(imageSide: CGFloat) -> some View {
-        VStack(spacing: 12) {
-            SignImageView(sign: sign, maxSide: imageSide)
-
-            VStack(spacing: 6) {
-                Text(sign.code)
-                    .font(.caption.bold())
-                    .foregroundStyle(sign.category.accentColor)
-
-                Text(sign.name)
-                    .font(.title2.bold())
-                    .multilineTextAlignment(.center)
-                    .lineLimit(3)
-                    .minimumScaleFactor(0.85)
-                    .padding(.horizontal, 16)
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-    }
-
-    private func meaningSection(height: CGFloat) -> some View {
-        ZStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(sign.meaning)
-                        .font(.body)
-                        .foregroundStyle(.primary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, meaningTextInset)
-
-                    if let tip = sign.examTip, !tip.isEmpty {
-                        Label(tip, systemImage: "lightbulb.fill")
-                            .font(.callout)
-                            .foregroundStyle(.orange)
-                            .padding(.horizontal, horizontalInset)
-                    }
-                }
-                .frame(maxWidth: .infinity, minHeight: height, alignment: .center)
-                .padding(.vertical, meaningFadeHeight * 0.65)
-            }
-
-            VStack(spacing: 0) {
-                meaningEdgeFade(edge: .top)
-                Spacer(minLength: 0)
-                meaningEdgeFade(edge: .bottom)
-            }
-            .allowsHitTesting(false)
-        }
-        .frame(height: height)
-        .background(Theme.screenBackground)
         .id(sign.id)
+    }
+
+    private var signCard: some View {
+        SignSummaryCard(sign: sign, maxImageSide: signImageMaxSide)
+    }
+
+    private var meaningPanel: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text(l10n.text(.studyMeaning))
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+                .padding(.bottom, 8)
+
+            ZStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(sign.meaning)
+                            .font(.title3)
+                            .foregroundStyle(.primary)
+                            .fixedSize(horizontal: false, vertical: true)
+
+                        if let tip = sign.examTip, !tip.isEmpty {
+                            Label(tip, systemImage: "lightbulb.fill")
+                                .font(.body)
+                                .foregroundStyle(.orange)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, meaningFadeHeight * 0.65)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .scrollContentBackground(.hidden)
+                .id(sign.id)
+
+                VStack(spacing: 0) {
+                    meaningEdgeFade(edge: .top)
+                    Spacer(minLength: 0)
+                    meaningEdgeFade(edge: .bottom)
+                }
+                .allowsHitTesting(false)
+            }
+            .padding(.bottom, 16)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(meaningPanelBackground, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private enum MeaningFadeEdge {
@@ -130,8 +111,8 @@ struct StudyCardView: View {
     private func meaningEdgeFade(edge: MeaningFadeEdge) -> some View {
         LinearGradient(
             colors: edge == .top
-                ? [Theme.screenBackground, Theme.screenBackground.opacity(0)]
-                : [Theme.screenBackground.opacity(0), Theme.screenBackground],
+                ? [meaningPanelBackground, meaningPanelBackground.opacity(0)]
+                : [meaningPanelBackground.opacity(0), meaningPanelBackground],
             startPoint: .top,
             endPoint: .bottom
         )
@@ -155,7 +136,6 @@ struct StudyCardView: View {
             .frame(maxWidth: .infinity)
         }
         .padding(.horizontal, 24)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     private func next() {
@@ -168,4 +148,3 @@ struct StudyCardView: View {
         index -= 1
     }
 }
-

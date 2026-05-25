@@ -12,6 +12,12 @@ private enum TestTabMode: String, CaseIterable, Identifiable {
     var id: String { rawValue }
 }
 
+private enum TestQuestionCount: Int, CaseIterable {
+    case ten = 10
+    case thirty = 30
+    case sixtyFive = 65
+}
+
 struct TestsTabView: View {
     @Environment(LocalizationManager.self) private var l10n
     @Environment(SignCatalog.self) private var signCatalog
@@ -21,6 +27,7 @@ struct TestsTabView: View {
     @Environment(TheoryQuestionSessionStore.self) private var questionSessionStore
 
     @State private var mode: TestTabMode = .signs
+    @State private var selectedQuestionCount: TestQuestionCount = .ten
     @State private var showSignSession = false
     @State private var showQuestionSession = false
     @State private var showHistory = false
@@ -76,11 +83,12 @@ struct TestsTabView: View {
 
                 modePicker
                     .padding(.top, 20)
-                    .padding(.bottom, 25)
+                    .padding(.bottom, 25    )
                     .padding(.horizontal, 36)
 
                 instructionsText
-                    .padding(.top, 24)
+                    .padding(.top, 10)
+                    .padding(.bottom, 8)
                     .font(.body)
                     .foregroundStyle(.primary)
                     .multilineTextAlignment(.center)
@@ -88,6 +96,9 @@ struct TestsTabView: View {
                     .padding(.horizontal, 36)
 
                 VStack(spacing: 12) {
+                    questionCountPicker
+                        .padding(.bottom, 12)
+
                     Button {
                         startNewQuiz()
                     } label: {
@@ -102,7 +113,7 @@ struct TestsTabView: View {
                     }
                     .buttonStyle(SecondaryActionButtonStyle(width: buttonWidth, tint: accentBlue))
                 }
-                .padding(.top, 40)
+                .padding(.top, 25)
 
                 if let last = historyStore.lastEntry(kind: historyKind) {
                     lastQuizSection(entry: last)
@@ -123,13 +134,40 @@ struct TestsTabView: View {
         .pickerStyle(.segmented)
     }
 
+    private var questionCountPicker: some View {
+        HStack(spacing: 10) {
+            ForEach(TestQuestionCount.allCases, id: \.rawValue) { count in
+                let isSelected = selectedQuestionCount == count
+                Button {
+                    selectedQuestionCount = count
+                } label: {
+                    Text("\(count.rawValue)")
+                        .font(.subheadline.weight(.semibold))
+                        .frame(minWidth: 48)
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 4)
+                        .foregroundStyle(isSelected ? Color.white : Color.primary)
+                        .background(
+                            isSelected ? accentBlue : Color(.systemGray5),
+                            in: RoundedRectangle(
+                                cornerRadius: ListCardStyle.cornerRadius,
+                                style: .continuous
+                            )
+                        )
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+
     private var instructionsText: Text {
+        let count = selectedQuestionCount.rawValue
         let markdown: String
         switch mode {
         case .signs:
-            markdown = l10n.text(.signsInstructions)
+            markdown = l10n.text(.signsInstructions, count)
         case .questions:
-            markdown = l10n.text(.questionsInstructions)
+            markdown = l10n.text(.questionsInstructions, count)
         }
 
         if let attributed = try? AttributedString(
@@ -156,12 +194,13 @@ struct TestsTabView: View {
     }
 
     private func startNewQuiz() {
+        let count = selectedQuestionCount.rawValue
         switch mode {
         case .signs:
-            signSessionStore.startTest(catalog: signCatalog)
+            signSessionStore.startTest(catalog: signCatalog, questionCount: count)
             showSignSession = true
         case .questions:
-            questionSessionStore.startSession(catalog: theoryCatalog)
+            questionSessionStore.startSession(catalog: theoryCatalog, questionCount: count)
             showQuestionSession = true
         }
     }

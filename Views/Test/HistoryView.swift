@@ -98,6 +98,8 @@ private struct TestHistoryRowView: View {
     let colorScheme: ColorScheme
     let l10n: LocalizationManager
 
+    private let cornerRadius: CGFloat = 12
+
     private var rowBackground: Color {
         colorScheme == .light ? Color(.systemBackground) : Color(.systemGray6)
     }
@@ -130,18 +132,18 @@ private struct TestHistoryRowView: View {
             }
         }
         .padding()
-        .background(rowBackground, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .background(rowBackground, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
         .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: 1)
     }
 
     private var scoreBadge: some View {
         ZStack {
-            Circle()
-                .fill(entry.percentCorrect >= 70 ? Color.green.opacity(0.15) : Color.orange.opacity(0.15))
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .fill(TestScoreStyle.badgeBackground(for: entry.percentCorrect))
                 .frame(width: 50, height: 50)
             Text("\(entry.percentCorrect)%")
-                .font(.subheadline.weight(.bold))
-                .foregroundStyle(entry.percentCorrect >= 70 ? .green : .orange)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(TestScoreStyle.foregroundStyle(for: entry.percentCorrect))
         }
     }
 

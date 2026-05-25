@@ -10,9 +10,8 @@ import Foundation
 final class TheoryQuestionSessionStore {
     static let shared = TheoryQuestionSessionStore()
 
-    private let questionsPerSession = 10
-
     private(set) var questions: [TheoryQuizQuestion] = []
+    private(set) var questionsPerSession = 10
     private(set) var currentIndex = 0
     private(set) var selectedID: String?
     private(set) var score = 0
@@ -25,7 +24,8 @@ final class TheoryQuestionSessionStore {
 
     private init() {}
 
-    func startSession(catalog: TheoryQuestionCatalog) {
+    func startSession(catalog: TheoryQuestionCatalog, questionCount: Int = 10) {
+        questionsPerSession = questionCount
         let pool = catalog.shuffledForQuiz
         let count = min(questionsPerSession, pool.count)
         guard count >= 1 else {
@@ -42,7 +42,7 @@ final class TheoryQuestionSessionStore {
     }
 
     func restartSession(catalog: TheoryQuestionCatalog) {
-        startSession(catalog: catalog)
+        startSession(catalog: catalog, questionCount: questionsPerSession)
     }
 
     func clear() {

@@ -48,18 +48,29 @@ final class TestHistoryStore {
         entries.filter { filter.matches($0.kind) }
     }
 
-    /// Average percent correct over the most recent entries (up to 5).
-    func averagePercentRecent(kind: QuizHistoryKind? = nil) -> Int? {
+    /// Aggregated scores from the most recent completed tests (newest first).
+    func recentAggregate(limit: Int = 10, kind: QuizHistoryKind? = nil) -> RecentTestAggregate? {
         let pool: [TestHistoryEntry]
         if let kind {
             pool = entries.filter { $0.kind == kind }
         } else {
             pool = entries
         }
-        let recent = Array(pool.prefix(5))
+        let recent = Array(pool.prefix(limit))
         guard !recent.isEmpty else { return nil }
-        let sum = recent.reduce(0) { $0 + $1.percentCorrect }
-        return sum / recent.count
+
+        let correct = recent.reduce(0) { $0 + $1.score }
+        let totalQuestions = recent.reduce(0) { $0 + $1.totalQuestions }
+        return RecentTestAggregate(
+            testCount: recent.count,
+            correctCount: correct,
+            totalQuestions: totalQuestions
+        )
+    }
+
+    /// Average percent correct over the most recent entries (up to 5).
+    func averagePercentRecent(kind: QuizHistoryKind? = nil) -> Int? {
+        recentAggregate(limit: 5, kind: kind)?.averagePercent
     }
 
     func bestPercent(kind: QuizHistoryKind? = nil) -> Int? {

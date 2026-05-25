@@ -7,44 +7,57 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(\.colorScheme) private var colorScheme
     @AppStorage("isDarkMode") private var isDarkMode = false
+    @AppStorage("dailyNotificationEnabled") private var dailyNotificationEnabled = false
+    @AppStorage("dailyNotificationHour") private var dailyNotificationHour = 9
+    @AppStorage("dailyNotificationMinute") private var dailyNotificationMinute = 0
     @Environment(TestHistoryStore.self) private var historyStore
 
     @State private var showClearHistoryConfirmation = false
+    @State private var showingNotificationSettings = false
+
+    private var cardBackground: Color {
+        ListCardStyle.cardBackground(colorScheme: colorScheme)
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             pageHeader
 
-            Form {
-                Section {
-                    EmptyView()
-                }
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                        settingsSectionHeader(l10n.text(.settingsPreferences))
+                        settingsCard(darkModeRow)
+                        settingsCard(languageRow)
+                    }
 
-                Section(l10n.text(.settingsPreferences)) {
-                    languageRow
-                    darkModeRow
-                }
+                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                        settingsSectionHeader(l10n.text(.settingsNotificationsSection))
+                        settingsCard(notificationsRow)
+                    }
 
-                Section(l10n.text(.settingsTestHistory)) {
-                    clearHistoryRow
-                }
+                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                        settingsSectionHeader(l10n.text(.settingsTestHistory))
+                        settingsCard(clearHistoryRow)
+                    }
 
-                Section {
-                    Text("")
-                        .frame(height: 30)
+                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                        settingsSectionHeader(l10n.text(.settingsSupportSection))
+                        settingsCard(helpSupportRow)
+                        settingsCard(termsPrivacyRow)
+                        settingsCard(aboutRow)
+                    }
                 }
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.top, 8)
+                .padding(.bottom, 24)
             }
             .scrollContentBackground(.hidden)
-            .background(Theme.screenBackground)
         }
         .appRootScreen()
-        .background(Theme.screenBackground)
+        .appScreenBackground()
         .alert(l10n.text(.settingsClearAlertTitle), isPresented: $showClearHistoryConfirmation) {
             Button(l10n.text(.settingsCancel), role: .cancel) {}
             Button(l10n.text(.settingsClear), role: .destructive) {
@@ -53,6 +66,55 @@ struct SettingsView: View {
         } message: {
             Text(l10n.text(.settingsClearAlertMessage))
         }
+        .sheet(isPresented: $showingNotificationSettings) {
+            NotificationScheduleView()
+        }
+    }
+
+    private var formattedNotificationTime: String {
+        var components = DateComponents()
+        components.hour = dailyNotificationHour
+        components.minute = dailyNotificationMinute
+
+        guard let date = Calendar.current.date(from: components) else {
+            return String(format: "%02d:%02d", dailyNotificationHour, dailyNotificationMinute)
+        }
+
+        return date.formatted(date: .omitted, time: .shortened)
+    }
+
+    private var notificationsRow: some View {
+        Button {
+            showingNotificationSettings = true
+        } label: {
+            settingsRow(
+                icon: "bell.fill",
+                iconColor: .orange,
+                title: l10n.text(.settingsNotificationsScheduleTitle),
+                subtitle: l10n.text(.settingsNotificationsScheduleSubtitle)
+            ) {
+                HStack(spacing: 4) {
+                    Text(dailyNotificationEnabled ? formattedNotificationTime : l10n.text(.settingsNotificationsOff))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    settingsChevron
+                }
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func settingsSectionHeader(_ title: String) -> some View {
+        Text(title.uppercased())
+            .font(.footnote.weight(.semibold))
+            .foregroundStyle(.secondary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.leading, 4)
+    }
+
+    private func settingsCard<Content: View>(_ content: Content) -> some View {
+        content
+            .listCardStyle(background: cardBackground, colorScheme: colorScheme)
     }
 
     private var pageHeader: some View {
@@ -69,7 +131,6 @@ struct SettingsView: View {
         .padding(.horizontal)
         .padding(.top, 15)
         .padding(.bottom, 6)
-        .background(Theme.screenBackground)
     }
 
     private var languageRow: some View {
@@ -134,17 +195,6 @@ struct SettingsView: View {
         }
     }
 
-    private var clearHistorySubtitle: String {
-        if historyStore.testsCompleted == 0 {
-            return l10n.text(.settingsNoTestsSaved)
-        }
-        let count = historyStore.testsCompleted
-        if count == 1 {
-            return l10n.text(.settingsRemoveTestsOne)
-        }
-        return l10n.text(.settingsRemoveTests, count)
-    }
-
     private var clearHistoryRow: some View {
         Button {
             showClearHistoryConfirmation = true
@@ -153,13 +203,68 @@ struct SettingsView: View {
                 icon: "trash",
                 iconColor: .red,
                 title: l10n.text(.settingsClearHistory),
-                subtitle: clearHistorySubtitle
+                subtitle: l10n.text(.settingsClearHistorySubtitle)
             ) {
                 EmptyView()
             }
         }
         .buttonStyle(.plain)
         .disabled(historyStore.testsCompleted == 0)
+        .opacity(historyStore.testsCompleted == 0 ? 0.5 : 1)
+    }
+
+    private var helpSupportRow: some View {
+        NavigationLink {
+            HelpSupportView()
+        } label: {
+            settingsRow(
+                icon: "questionmark.circle",
+                iconColor: .blue,
+                title: l10n.text(.settingsSupportHelpTitle),
+                subtitle: l10n.text(.settingsSupportHelpSubtitle)
+            ) {
+                settingsChevron
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var termsPrivacyRow: some View {
+        NavigationLink {
+            TermsPrivacyView()
+        } label: {
+            settingsRow(
+                icon: "doc.text",
+                iconColor: .orange,
+                title: l10n.text(.settingsSupportTermsTitle),
+                subtitle: l10n.text(.settingsSupportTermsSubtitle)
+            ) {
+                settingsChevron
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var aboutRow: some View {
+        NavigationLink {
+            AboutView()
+        } label: {
+            settingsRow(
+                icon: "info.circle",
+                iconColor: .teal,
+                title: l10n.text(.settingsAboutRowTitle),
+                subtitle: l10n.text(.settingsAboutRowSubtitle)
+            ) {
+                settingsChevron
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var settingsChevron: some View {
+        Image(systemName: "chevron.right")
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(.tertiary)
     }
 
     private func settingsRow<Trailing: View>(
@@ -193,7 +298,9 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
-        .environment(TestHistoryStore.shared)
-        .environment(LocalizationManager.shared)
+    NavigationStack {
+        SettingsView()
+    }
+    .environment(TestHistoryStore.shared)
+    .environment(LocalizationManager.shared)
 }

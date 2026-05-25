@@ -38,9 +38,9 @@ struct ContentView: View {
     private var tabContent: some View {
         switch selectedTab {
         case 0:
-            NavigationStack { StudyTabRoot() }
+            NavigationStack { SignsTabRoot() }
         case 1:
-            NavigationStack { CategoryListView() }
+            NavigationStack { QuestionsTabRoot() }
         case 2:
             NavigationStack { HomeTabView() }
         case 3:
@@ -68,15 +68,15 @@ struct ContentView: View {
 
             HStack(spacing: menuButtonSpacing) {
                 TabBarButton(
-                    icon: "book.fill",
+                    icon: "signpost.right.fill",
                     label: l10n.text(.tabStudy),
                     isSelected: selectedTab == 0,
                     action: { selectedTab = 0 }
                 )
 
                 TabBarButton(
-                    icon: "square.grid.2x2.fill",
-                    label: l10n.text(.tabCategories),
+                    icon: "text.book.closed.fill",
+                    label: l10n.text(.tabQuestions),
                     isSelected: selectedTab == 1,
                     action: { selectedTab = 1 }
                 )

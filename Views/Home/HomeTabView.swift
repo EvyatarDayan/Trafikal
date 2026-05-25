@@ -14,8 +14,15 @@ struct HomeTabView: View {
     private let horizontalPadding: CGFloat = 24
     private let cardCornerRadius: CGFloat = 16
 
+    // TEMP: remove with `temporaryRandomSignButton` when done testing sign-of-the-day.
+    @State private var signOfTodayOverride: Sign?
+
     private var signOfToday: Sign? {
-        catalog.signOfToday()
+        signOfTodayOverride ?? catalog.signOfToday()
+    }
+
+    private var recentTenTests: RecentTestAggregate? {
+        historyStore.recentAggregate(limit: 10)
     }
 
     var body: some View {
@@ -26,7 +33,6 @@ struct HomeTabView: View {
                 VStack(spacing: 28) {
                     signOfTodaySection
                     testStatisticsSection
-                    comingSoonSection
                 }
                 .padding(.horizontal, horizontalPadding)
                 .padding(.top, 8)
@@ -38,26 +44,49 @@ struct HomeTabView: View {
     }
 
     private var pageHeader: some View {
-        GradientBrandText(text: "Trafikal", font: .system(size: 40, weight: .bold))
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.horizontal, horizontalPadding)
-            .padding(.top, 15)
-            .padding(.bottom, 8)
+        ZStack(alignment: .topLeading) {
+            homeTitle("Trafikal", font: .system(size: 40, weight: .bold))
+                .padding(.top, 13)
+
+            temporaryRandomSignButton
+        }
+        .padding(.horizontal, horizontalPadding)
+        .padding(.top, 15)
+        .padding(.bottom, 8)
     }
 
-    private var signOfTodayDateLabel: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        return formatter.string(from: Date())
+    /// TEMP: debug control for sign-of-the-day — delete when no longer needed.
+    private var temporaryRandomSignButton: some View {
+        Button {
+            pickRandomSignOfToday()
+        } label: {
+            Image(systemName: "dice.fill")
+                .font(.body.weight(.semibold))
+        }
+        .buttonStyle(.bordered)
+        .accessibilityLabel("Random sign of the day")
+    }
+
+    private func pickRandomSignOfToday() {
+        guard !catalog.signs.isEmpty else { return }
+        var pool = catalog.signs
+        if pool.count > 1, let current = signOfToday {
+            pool = pool.filter { $0.id != current.id }
+        }
+        signOfTodayOverride = pool.randomElement()
+    }
+
+    private func homeTitle(_ text: String, font: Font) -> some View {
+        Text(text)
+            .font(font)
+            .foregroundStyle(.primary)
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 
     @ViewBuilder
     private var signOfTodaySection: some View {
         VStack(spacing: 14) {
-            Text("🔥 \(l10n.text(.homeSignOfToday, signOfTodayDateLabel))")
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.secondary)
-                .frame(maxWidth: .infinity, alignment: .center)
+            homeTitle("🔥 \(l10n.text(.homeSignOfToday))", font: .title3.bold())
 
             if let error = catalog.loadError {
                 HomeFeaturedCard(cornerRadius: cardCornerRadius) {
@@ -67,9 +96,7 @@ struct HomeTabView: View {
                         .frame(maxWidth: .infinity)
                 }
             } else if let sign = signOfToday {
-                HomeFeaturedCard(cornerRadius: cardCornerRadius) {
-                    signOfTodayCardContent(sign: sign)
-                }
+                signOfTodayCardContent(sign: sign)
             } else {
                 HomeFeaturedCard(cornerRadius: cardCornerRadius) {
                     Text(l10n.text(.homeNoSignsLoaded))
@@ -82,60 +109,29 @@ struct HomeTabView: View {
     }
 
     private func signOfTodayCardContent(sign: Sign) -> some View {
-        VStack(spacing: 0) {
-            VStack(spacing: 14) {
-                SignImageView(sign: sign, maxSide: 100)
-
-                VStack(spacing: 6) {
-                    Text(sign.code)
-                        .font(.caption.bold())
-                        .foregroundStyle(sign.category.accentColor)
-
-                    Text(sign.name)
-                        .font(.title3.bold())
-                        .foregroundStyle(Color(red: 0.15, green: 0.4, blue: 0.9))
-                        .multilineTextAlignment(.center)
+        SignSummaryCard(sign: sign, maxImageSide: 150, nameLineLimit: 1, imageShadow: true)
+            .overlay(alignment: .topTrailing) {
+                NavigationLink {
+                    StudyCardView(signs: [sign])
+                } label: {
+                    Image("Info")
+                        .resizable()
+                        .renderingMode(.template)
+                        .scaledToFit()
+                        .frame(width: 22, height: 22)
+                        .foregroundStyle(Color.accentColor)
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel(l10n.text(.homeDetails))
+                .padding(ListCardStyle.rowHorizontalPadding)
+                .padding(.top, 6)
             }
-            .frame(maxWidth: .infinity)
-            .padding(.top, 4)
-            .padding(.bottom, 16)
-
-            Rectangle()
-                .fill(Color(.separator).opacity(0.35))
-                .frame(height: 1)
-
-            VStack(alignment: .leading, spacing: 12) {
-                Text(sign.meaning)
-                    .font(.subheadline)
-                    .foregroundStyle(.primary)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(14)
-                    .background(
-                        Color(.secondarySystemBackground),
-                        in: RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    )
-
-                HStack {
-                    Spacer()
-                    NavigationLink {
-                        StudyCardView(signs: [sign])
-                    } label: {
-                        Text(l10n.text(.homeStudyThisSign))
-                    }
-                    .buttonStyle(PrimaryActionButtonStyle())
-                    Spacer()
-                }
-            }
-            .padding(.top, 16)
-        }
     }
 
     @ViewBuilder
     private var testStatisticsSection: some View {
         VStack(spacing: 14) {
-            GradientBrandText(text: l10n.text(.homeTestStatistics), font: .title3.bold())
-                .frame(maxWidth: .infinity, alignment: .center)
+            homeTitle(l10n.text(.homeTestStatistics), font: .title3.bold())
 
             HomeCard(elevated: true, cornerRadius: cardCornerRadius) {
                 if historyStore.testsCompleted == 0 {
@@ -153,32 +149,40 @@ struct HomeTabView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
                 } else {
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                        if let last = historyStore.lastEntry() {
-                            statTile(
-                                title: l10n.text(.homeLastTest),
-                                value: last.detail(using: l10n),
-                                subtitle: formattedDate(last.date)
+                    VStack(spacing: 20) {
+                        if let recent = recentTenTests {
+                            TestResultsPieChart(
+                                correct: recent.correctCount,
+                                total: recent.totalQuestions,
+                                size: 180,
+                                dropShadow: true
                             )
+                            .frame(maxWidth: .infinity)
                         }
-                        if let average = historyStore.averagePercentRecent() {
+
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                            if let last = historyStore.lastEntry() {
+                                statTile(title: l10n.text(.homeLastTest)) {
+                                    Text("\(last.percentCorrect)%")
+                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: last.percentCorrect))
+                                }
+                            }
+                            if let recent = recentTenTests {
+                                statTile(title: l10n.text(.homeRecentAverage)) {
+                                    Text("\(recent.averagePercent)%")
+                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: recent.averagePercent))
+                                }
+                            }
                             statTile(
-                                title: l10n.text(.homeRecentAverage),
-                                value: "\(average)%",
-                                subtitle: l10n.text(.homeLastNTests, min(5, historyStore.testsCompleted))
+                                title: l10n.text(.homeTestsTaken),
+                                value: "\(historyStore.testsCompleted)"
                             )
-                        }
-                        statTile(
-                            title: l10n.text(.homeTestsTaken),
-                            value: "\(historyStore.testsCompleted)",
-                            subtitle: l10n.text(.homeAllTime)
-                        )
-                        if let best = historyStore.bestPercent() {
-                            statTile(
-                                title: l10n.text(.homeBestScore),
-                                value: "\(best)%",
-                                subtitle: l10n.text(.homePersonalBest)
-                            )
+                            if let best = historyStore.bestPercent() {
+                                statTile(title: l10n.text(.homeBestScore)) {
+                                    Text("\(best)%")
+                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: best))
+                                }
+                            }
                         }
                     }
                 }
@@ -186,51 +190,27 @@ struct HomeTabView: View {
         }
     }
 
-    private var comingSoonSection: some View {
-        VStack(spacing: 12) {
-            GradientBrandText(text: l10n.text(.homeKeepLearning), font: .title3.bold())
-                .frame(maxWidth: .infinity, alignment: .center)
-
-            Text(l10n.text(.homeExploreDescription))
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 8)
-
-            HomeCard(elevated: false, cornerRadius: cardCornerRadius) {
-                HStack(spacing: 12) {
-                    Image(systemName: "sparkles")
-                        .font(.title3)
-                        .foregroundStyle(.secondary)
-                    Text(l10n.text(.homeComingSoon))
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-            }
+    private func statTile(title: String, value: String) -> some View {
+        statTile(title: title) {
+            Text(value)
         }
     }
 
-    private func statTile(title: String, value: String, subtitle: String) -> some View {
+    private func statTile<Value: View>(title: String, @ViewBuilder value: () -> Value) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
                 .font(.caption)
                 .foregroundStyle(.secondary)
-            Text(value)
+            value()
                 .font(.title3.weight(.bold))
-            Text(subtitle)
-                .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-    }
-
-    private func formattedDate(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.locale = l10n.locale
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter.string(from: date)
+        .background(
+            Color(.systemGray5),
+            in: RoundedRectangle(cornerRadius: ListCardStyle.cornerRadius, style: .continuous)
+        )
     }
 }
 

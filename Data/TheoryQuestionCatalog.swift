@@ -58,4 +58,26 @@ final class TheoryQuestionCatalog {
     var shuffledForQuiz: [TheoryQuestion] {
         questions.shuffled()
     }
+
+    /// Distinct category names from the loaded question bank, largest categories first.
+    var categories: [String] {
+        var counts: [String: Int] = [:]
+        for question in questions {
+            counts[question.category, default: 0] += 1
+        }
+        return counts.keys.sorted { lhs, rhs in
+            let left = counts[lhs, default: 0]
+            let right = counts[rhs, default: 0]
+            if left != right { return left > right }
+            return lhs.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
+        }
+    }
+
+    func questions(in category: String) -> [TheoryQuestion] {
+        questions.filter { $0.category == category }
+    }
+
+    func count(in category: String) -> Int {
+        questions(in: category).count
+    }
 }

@@ -10,9 +10,8 @@ import Foundation
 final class TestSessionStore {
     static let shared = TestSessionStore()
 
-    private let questionsPerTest = 10
-
     private(set) var questions: [QuizQuestion] = []
+    private(set) var questionsPerTest = 10
     private(set) var currentIndex = 0
     private(set) var selectedID: String?
     private(set) var score = 0
@@ -26,7 +25,8 @@ final class TestSessionStore {
 
     private init() {}
 
-    func startTest(catalog: SignCatalog) {
+    func startTest(catalog: SignCatalog, questionCount: Int = 10) {
+        questionsPerTest = questionCount
         let pool = catalog.shuffledForQuiz
         let count = min(questionsPerTest, pool.count)
         guard count >= 2 else {
@@ -45,7 +45,7 @@ final class TestSessionStore {
     }
 
     func restartTest(catalog: SignCatalog) {
-        startTest(catalog: catalog)
+        startTest(catalog: catalog, questionCount: questionsPerTest)
     }
 
     func clear() {

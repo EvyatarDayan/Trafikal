@@ -53,3 +53,14 @@ struct TestHistoryEntry: Identifiable, Codable, Sendable, Hashable {
         return Int((Double(score) / Double(totalQuestions) * 100).rounded())
     }
 }
+
+struct RecentTestAggregate: Sendable {
+    let testCount: Int
+    let correctCount: Int
+    let totalQuestions: Int
+
+    var averagePercent: Int {
+        guard totalQuestions > 0 else { return 0 }
+        return Int((Double(correctCount) / Double(totalQuestions) * 100).rounded())
+    }
+}
