@@ -39,12 +39,6 @@ struct SignsTabRoot: View {
                     }
                     .buttonStyle(.plain)
 
-                    Text(l10n.text(.studyPracticeFooter, catalog.signs.count))
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                        .padding(.horizontal, ListCardStyle.horizontalPadding)
-                        .padding(.top, 4)
-
                     sectionHeader(l10n.text(.studyQuickStart))
 
                     ForEach(SignCategory.allCases) { category in

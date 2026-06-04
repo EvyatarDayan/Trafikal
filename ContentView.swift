@@ -8,6 +8,7 @@ import SwiftUI
 struct ContentView: View {
     @Environment(LocalizationManager.self) private var l10n
     @AppStorage("isDarkMode") private var isDarkMode = false
+    @State private var hasCompletedWelcome = false
     @State private var selectedTab = 2
 
     private let menuHeight: CGFloat = 40
@@ -19,19 +20,40 @@ struct ContentView: View {
                 Theme.screenBackground
                     .ignoresSafeArea()
 
-                VStack(spacing: 0) {
-                    tabContent
-                        .frame(
-                            width: geometry.size.width,
-                            height: geometry.size.height - menuHeight
-                        )
-                        .clipped()
+                if hasCompletedWelcome {
+                    VStack(spacing: 0) {
+                        tabContent
+                            .frame(
+                                width: geometry.size.width,
+                                height: geometry.size.height - menuHeight
+                            )
+                            .clipped()
 
-                    customTabBar(width: geometry.size.width, bottomInset: geometry.safeAreaInsets.bottom)
+                        customTabBar(width: geometry.size.width, bottomInset: geometry.safeAreaInsets.bottom)
+                    }
+                }
+
+                if !hasCompletedWelcome {
+                    WelcomeView(
+                        titlePrefix: l10n.text(.welcomeTitlePrefix),
+                        titleBrand: l10n.text(.welcomeTitleBrand),
+                        subtitle: l10n.text(.welcomeSubtitle),
+                        startTitle: l10n.text(.welcomeStart),
+                        logoImageName: "Trafical",
+                        onStart: completeWelcome
+                    )
+                    .transition(.opacity)
+                    .zIndex(1)
                 }
             }
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
+    }
+
+    private func completeWelcome() {
+        withAnimation(.easeOut(duration: 0.4)) {
+            hasCompletedWelcome = true
+        }
     }
 
     @ViewBuilder

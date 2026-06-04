@@ -249,8 +249,11 @@ struct TestsTabView: View {
                 .font(.body.weight(.medium))
                 .foregroundStyle(.primary)
 
-            TestScoreRingView(percent: entry.percentCorrect)
-                .padding(.top, 28)
+            TestResultsPieChart(
+                statisticsCorrect: entry.score,
+                total: entry.totalQuestions
+            )
+            .padding(.top, 12)
         }
     }
 

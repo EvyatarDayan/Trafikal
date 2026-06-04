@@ -44,6 +44,8 @@ struct TheoryQuestionSessionView: View {
                     )
                 } else if sessionStore.finished {
                     sessionResult
+                } else if sessionStore.questions.isEmpty {
+                    Color.clear
                 } else {
                     activeQuestion
                 }
@@ -139,7 +141,10 @@ struct TheoryQuestionSessionView: View {
         VStack(spacing: 28) {
             Spacer()
 
-            TestResultsPieChart(correct: sessionStore.score, total: sessionStore.questions.count)
+            TestResultsPieChart(
+                statisticsCorrect: sessionStore.score,
+                total: sessionStore.questions.count
+            )
 
             HStack(spacing: 20) {
                 legendDot(color: .green, label: l10n.text(.testCorrectCount, sessionStore.score))
@@ -159,7 +164,6 @@ struct TheoryQuestionSessionView: View {
             Spacer()
 
             Button(l10n.text(.questionsEnd)) {
-                sessionStore.clear()
                 isPresented = false
             }
             .buttonStyle(.borderedProminent)

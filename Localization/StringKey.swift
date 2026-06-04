@@ -16,6 +16,12 @@ enum StringKey: String, CaseIterable {
     case tabQuestions = "tab.questions"
     case tabSettings = "tab.settings"
 
+    // Welcome
+    case welcomeTitlePrefix = "welcome.title_prefix"
+    case welcomeTitleBrand = "welcome.title_brand"
+    case welcomeSubtitle = "welcome.subtitle"
+    case welcomeStart = "welcome.start"
+
     // Home
     case homeSignOfToday = "home.sign_of_today"
     case homeNoSignsLoaded = "home.no_signs_loaded"
@@ -40,7 +46,6 @@ enum StringKey: String, CaseIterable {
     case studyAllSigns = "study.all_signs"
     case studyCardsInOrder = "study.cards_in_order"
     case studyPractice = "study.practice"
-    case studyPracticeFooter = "study.practice_footer"
     case studyAboutImages = "study.about_images"
     case studyQuickStart = "study.quick_start"
     case studyPrevious = "study.previous"
@@ -94,8 +99,6 @@ enum StringKey: String, CaseIterable {
     case questionsAllQuestions = "questions.all_questions"
     case questionsCountFormat = "questions.count_format"
     case questionsBrowse = "questions.browse"
-    case questionsBrowseFooter = "questions.browse_footer"
-    case questionsByCategory = "questions.by_category"
     case questionsSearch = "questions.search"
     case questionsExplanation = "questions.explanation"
     case questionsInstructions = "questions.instructions"
@@ -124,7 +127,6 @@ enum StringKey: String, CaseIterable {
 
     // Settings
     case settingsTitle = "settings.title"
-    case settingsSubtitle = "settings.subtitle"
     case settingsPreferences = "settings.preferences"
     case settingsLanguage = "settings.language"
     case settingsLanguageSubtitle = "settings.language_subtitle"

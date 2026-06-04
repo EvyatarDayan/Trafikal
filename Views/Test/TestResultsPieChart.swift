@@ -16,6 +16,33 @@ struct TestResultsPieChart: View {
     var innerRadiusRatio: CGFloat = 0.70
     var dropShadow: Bool = false
 
+    /// Donut chart styling used on Home test statistics and session result screens.
+    static let statisticsSize: CGFloat = 180
+    static let statisticsDropShadow = true
+
+    init(
+        correct: Int,
+        total: Int,
+        size: CGFloat = 220,
+        innerRadiusRatio: CGFloat = 0.70,
+        dropShadow: Bool = false
+    ) {
+        self.correct = correct
+        self.total = total
+        self.size = size
+        self.innerRadiusRatio = innerRadiusRatio
+        self.dropShadow = dropShadow
+    }
+
+    init(statisticsCorrect correct: Int, total: Int) {
+        self.init(
+            correct: correct,
+            total: total,
+            size: Self.statisticsSize,
+            dropShadow: Self.statisticsDropShadow
+        )
+    }
+
     private var incorrect: Int { max(0, total - correct) }
 
     private var percentCorrect: Int {
@@ -68,6 +95,7 @@ struct TestResultsPieChart: View {
 }
 
 #Preview {
-    TestResultsPieChart(correct: 7, total: 10)
+    TestResultsPieChart(statisticsCorrect: 7, total: 10)
         .padding()
+        .environment(LocalizationManager.shared)
 }

@@ -8,6 +8,9 @@ import SwiftUI
 enum Theme {
     /// Light gray background used across the app (Settings-style grouped gray).
     static let screenBackground = Color(.systemGroupedBackground)
+
+    /// Welcome screen background (matches TakeItEasy welcome layout).
+    static let welcomeBackground = Color(red: 242 / 255, green: 242 / 255, blue: 247 / 255)
 }
 
 extension View {

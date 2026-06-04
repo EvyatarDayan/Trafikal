@@ -152,10 +152,8 @@ struct HomeTabView: View {
                     VStack(spacing: 20) {
                         if let recent = recentTenTests {
                             TestResultsPieChart(
-                                correct: recent.correctCount,
-                                total: recent.totalQuestions,
-                                size: 180,
-                                dropShadow: true
+                                statisticsCorrect: recent.correctCount,
+                                total: recent.totalQuestions
                             )
                             .frame(maxWidth: .infinity)
                         }

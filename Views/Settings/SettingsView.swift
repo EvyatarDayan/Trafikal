@@ -118,19 +118,13 @@ struct SettingsView: View {
     }
 
     private var pageHeader: some View {
-        VStack(spacing: 4) {
-            Text(l10n.text(.settingsTitle))
-                .font(.title2)
-                .fontWeight(.semibold)
-                .frame(maxWidth: .infinity, alignment: .center)
-            Text(l10n.text(.settingsSubtitle))
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .frame(maxWidth: .infinity, alignment: .center)
-        }
-        .padding(.horizontal)
-        .padding(.top, 15)
-        .padding(.bottom, 6)
+        Text(l10n.text(.settingsTitle))
+            .font(.title2)
+            .fontWeight(.semibold)
+            .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.horizontal)
+            .padding(.top, 15)
+            .padding(.bottom, 6)
     }
 
     private var languageRow: some View {

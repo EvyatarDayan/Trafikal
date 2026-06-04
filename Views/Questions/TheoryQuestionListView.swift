@@ -87,24 +87,24 @@ struct TheoryQuestionListView: View {
     }
 
     private func questionRow(_ question: TheoryQuestion) -> some View {
-        HStack(alignment: .top, spacing: 16) {
-            Text("\(question.id)")
-                .font(.caption.bold())
-                .foregroundStyle(.secondary)
-                .frame(width: 36, alignment: .leading)
+        HStack(alignment: .center, spacing: 16) {
+            Image(systemName: TheoryQuestionCategoryStyle.systemImage(for: question.category))
+                .font(.system(size: 36))
+                .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
+                .frame(width: 88, height: 88)
 
-            VStack(alignment: .leading, spacing: 6) {
-                Text(question.category)
-                    .font(.caption2.weight(.semibold))
-                    .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
-                    .lineLimit(1)
-                    .truncationMode(.tail)
-
+            VStack(alignment: .leading, spacing: 4) {
+                Text("\(question.id)")
+                    .font(.caption.bold())
+                    .foregroundStyle(.secondary)
                 Text(question.question)
                     .font(.body.weight(.medium))
                     .foregroundStyle(.primary)
-                    .lineLimit(3)
-                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                Text(question.category)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(2)
             }
 
             Spacer(minLength: 0)
@@ -112,7 +112,6 @@ struct TheoryQuestionListView: View {
             Image(systemName: "chevron.right")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.tertiary)
-                .padding(.top, 4)
         }
         .listCardStyle(background: cardBackground, colorScheme: colorScheme)
     }

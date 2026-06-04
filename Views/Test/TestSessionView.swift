@@ -13,6 +13,8 @@ struct TestSessionView: View {
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TestSessionStore.self) private var sessionStore
 
+    @State private var showingSignDetails = false
+
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
@@ -61,6 +63,9 @@ struct TestSessionView: View {
                 sessionStore.recordIfNeeded(historyStore: historyStore)
             }
         }
+        .onChange(of: sessionStore.currentIndex) { _, _ in
+            showingSignDetails = false
+        }
     }
 
     private var activeTest: some View {
@@ -86,9 +91,29 @@ struct TestSessionView: View {
             HStack {
                 Spacer()
                 SignImageView(sign: question.correct)
+                    .overlay(alignment: .trailing) {
+                        if sessionStore.selectedID != nil {
+                            Button {
+                                showingSignDetails = true
+                            } label: {
+                                Image("Info")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .scaledToFit()
+                                    .frame(width: 28, height: 28)
+                                    .foregroundStyle(Color.accentColor)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel(l10n.text(.homeDetails))
+                            .offset(x: 40)
+                        }
+                    }
                 Spacer()
             }
             .padding(.vertical)
+            .sheet(isPresented: $showingSignDetails) {
+                SignDetailSheet(sign: question.correct)
+            }
 
             VStack(spacing: 12) {
                 ForEach(Array(question.options.enumerated()), id: \.element.id) { index, option in
@@ -126,7 +151,10 @@ struct TestSessionView: View {
         VStack(spacing: 28) {
             Spacer()
 
-            TestResultsPieChart(correct: sessionStore.score, total: sessionStore.questions.count)
+            TestResultsPieChart(
+                statisticsCorrect: sessionStore.score,
+                total: sessionStore.questions.count
+            )
 
             HStack(spacing: 20) {
                 legendDot(color: .green, label: l10n.text(.testCorrectCount, sessionStore.score))
@@ -146,7 +174,6 @@ struct TestSessionView: View {
             Spacer()
 
             Button(l10n.text(.signsEnd)) {
-                sessionStore.clear()
                 isPresented = false
             }
             .buttonStyle(.borderedProminent)

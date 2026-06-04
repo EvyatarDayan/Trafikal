@@ -38,12 +38,7 @@ struct QuestionsTabRoot: View {
                     }
                     .buttonStyle(.plain)
 
-                    Text(l10n.text(.questionsBrowseFooter, catalog.questions.count))
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                        .padding(.top, 4)
-
-                    sectionHeader(l10n.text(.questionsByCategory))
+                    sectionHeader(l10n.text(.studyQuickStart))
 
                     ForEach(catalog.categories, id: \.self) { category in
                         let count = catalog.count(in: category)
@@ -76,18 +71,17 @@ struct QuestionsTabRoot: View {
             Image(systemName: "text.book.closed.fill")
                 .font(.title2)
                 .foregroundStyle(.tint)
-                .frame(width: 32)
+                .frame(width: 48, height: 48)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(l10n.text(.questionsAllQuestions))
-                    .font(.headline)
-                    .foregroundStyle(.primary)
-                Text(l10n.text(.questionsCountFormat, catalog.questions.count))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
+            Text(l10n.text(.questionsAllQuestions))
+                .font(.body.weight(.medium))
+                .foregroundStyle(.primary)
 
             Spacer(minLength: 0)
+
+            Text("\(catalog.questions.count)")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
 
             Image(systemName: "chevron.right")
                 .font(.caption.weight(.semibold))
@@ -101,7 +95,7 @@ struct QuestionsTabRoot: View {
             Image(systemName: TheoryQuestionCategoryStyle.systemImage(for: category))
                 .font(.title2)
                 .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: category))
-                .frame(width: 32)
+                .frame(width: 48, height: 48)
 
             Text(category)
                 .font(.body.weight(.medium))

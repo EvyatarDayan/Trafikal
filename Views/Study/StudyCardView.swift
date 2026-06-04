@@ -9,7 +9,6 @@ struct StudyCardView: View {
     @Environment(LocalizationManager.self) private var l10n
 
     private let signImageMaxSide: CGFloat = 200
-    private let meaningFadeHeight: CGFloat = 40
 
     let signs: [Sign]
     let startIndex: Int
@@ -43,7 +42,7 @@ struct StudyCardView: View {
                 .padding(.top, 12)
                 .padding(.bottom, ListCardStyle.rowSpacing)
 
-            meaningPanel
+            SignMeaningScrollPanel(sign: sign, background: meaningPanelBackground)
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.bottom, 8)
@@ -59,64 +58,6 @@ struct StudyCardView: View {
 
     private var signCard: some View {
         SignSummaryCard(sign: sign, maxImageSide: signImageMaxSide)
-    }
-
-    private var meaningPanel: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(l10n.text(.studyMeaning))
-                .font(.headline.weight(.semibold))
-                .foregroundStyle(.secondary)
-                .padding(.horizontal, 16)
-                .padding(.top, 16)
-                .padding(.bottom, 8)
-
-            ZStack {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text(sign.meaning)
-                            .font(.title3)
-                            .foregroundStyle(.primary)
-                            .fixedSize(horizontal: false, vertical: true)
-
-                        if let tip = sign.examTip, !tip.isEmpty {
-                            Label(tip, systemImage: "lightbulb.fill")
-                                .font(.body)
-                                .foregroundStyle(.orange)
-                        }
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, meaningFadeHeight * 0.65)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                .scrollContentBackground(.hidden)
-                .id(sign.id)
-
-                VStack(spacing: 0) {
-                    meaningEdgeFade(edge: .top)
-                    Spacer(minLength: 0)
-                    meaningEdgeFade(edge: .bottom)
-                }
-                .allowsHitTesting(false)
-            }
-            .padding(.bottom, 16)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(meaningPanelBackground, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-    }
-
-    private enum MeaningFadeEdge {
-        case top, bottom
-    }
-
-    private func meaningEdgeFade(edge: MeaningFadeEdge) -> some View {
-        LinearGradient(
-            colors: edge == .top
-                ? [meaningPanelBackground, meaningPanelBackground.opacity(0)]
-                : [meaningPanelBackground.opacity(0), meaningPanelBackground],
-            startPoint: .top,
-            endPoint: .bottom
-        )
-        .frame(height: meaningFadeHeight)
     }
 
     private var navigationSection: some View {
