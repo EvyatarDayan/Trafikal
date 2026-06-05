@@ -62,7 +62,7 @@
       "The vehicle that arrived first"
     ],
     "answer": "The vehicle coming from the right",
-    "explanation": "Chapter 3, Section 18: When two vehicle courses intersect, the driver has a duty to yield to vehicles approaching from the right, except where Sections 21–23 (e.g., exit from a property, roundabout rules) apply."
+    "explanation": "Chapter 3, Section 18: When two vehicle courses intersect, the driver has a duty to yield to vehicles approaching from the right, except where Sections 21-23 (e.g., exit from a property, roundabout rules) apply."
   },
   {
     "id": 6,
@@ -309,7 +309,7 @@
       "Yes, if you use hazard lights"
     ],
     "answer": "No, it is strictly prohibited",
-    "explanation": "Chapter 3, Section 46 and Chapter 9, Sections 1–2: Reversing and turning around are prohibited on motorways and motor traffic lanes under all circumstances."
+    "explanation": "Chapter 3, Section 46 and Chapter 9, Sections 1-2: Reversing and turning around are prohibited on motorways and motor traffic lanes under all circumstances."
   },
   {
     "id": 25,
@@ -335,7 +335,7 @@
       "The vehicle's load and condition"
     ],
     "answer": "Your own driving comfort",
-    "explanation": "Chapter 3, Section 14: Speed must be adapted to road, terrain, weather, visibility, vehicle condition and load, and general traffic conditions – not to personal comfort."
+    "explanation": "Chapter 3, Section 14: Speed must be adapted to road, terrain, weather, visibility, vehicle condition and load, and general traffic conditions - not to personal comfort."
   },
   {
     "id": 27,
@@ -374,7 +374,7 @@
       "0.8‰"
     ],
     "answer": "0.2‰",
-    "explanation": "The Swedish BAC limit is 0.2 per mille (0.02%). This is one of the strictest in the world – any detectable alcohol can lead to prosecution for drunk driving."
+    "explanation": "The Swedish BAC limit is 0.2 per mille (0.02%). This is one of the strictest in the world - any detectable alcohol can lead to prosecution for drunk driving."
   },
   {
     "id": 30,
@@ -530,7 +530,7 @@
       "Speed up to clear the intersection"
     ],
     "answer": "Proceed with caution and yield as if at an intersection with right-hand rule",
-    "explanation": "A flashing yellow light means the traffic light is out of order or switched off. You must treat the intersection as if it had no signals – follow road signs or, if none, the right-hand rule."
+    "explanation": "A flashing yellow light means the traffic light is out of order or switched off. You must treat the intersection as if it had no signals - follow road signs or, if none, the right-hand rule."
   },
   {
     "id": 42,
@@ -741,7 +741,7 @@
         "Priority over oncoming traffic"
       ],
       "answer": "Stop completely, then proceed only when safe",
-      "explanation": "A 'STOP' sign (triangular with red border – actually it's octagonal in Sweden, but the ordinance describes stop obligation) requires a full stop at the stop line. After stopping, you may proceed when safe. This is from Chapter 3, Section 19."
+      "explanation": "A 'STOP' sign (triangular with red border - actually it's octagonal in Sweden, but the ordinance describes stop obligation) requires a full stop at the stop line. After stopping, you may proceed when safe. This is from Chapter 3, Section 19."
     },
     {
       "id": 59,
@@ -814,7 +814,7 @@
       "question": "What is the highest permitted blood alcohol content for drivers of heavy vehicles (e.g., bus, lorry) in Sweden?",
       "options": ["0.0‰", "0.2‰", "0.5‰", "0.8‰"],
       "answer": "0.2‰",
-      "explanation": "The BAC limit for all motor vehicle drivers in Sweden, including heavy vehicles, is 0.2 per mille. There is no special higher limit for professional drivers – the same strict limit applies."
+      "explanation": "The BAC limit for all motor vehicle drivers in Sweden, including heavy vehicles, is 0.2 per mille. There is no special higher limit for professional drivers - the same strict limit applies."
     },
     {
       "id": 65,
@@ -939,7 +939,7 @@
         "Only if the vehicle is on fire"
       ],
       "answer": "Only when the vehicle is completely disabled and cannot be moved",
-      "explanation": "A warning triangle must be placed when a vehicle is stopped due to a breakdown or accident and cannot be moved to a safe location. It should be placed at least 50–100 metres behind the vehicle on a motorway."
+      "explanation": "A warning triangle must be placed when a vehicle is stopped due to a breakdown or accident and cannot be moved to a safe location. It should be placed at least 50-100 metres behind the vehicle on a motorway."
     },
     {
       "id": 75,
@@ -1215,7 +1215,7 @@
     {
       "id": 97,
       "category": "Traffic Rules",
-      "question": "When may you use studded tyres during summer months (May–September)?",
+      "question": "When may you use studded tyres during summer months (May-September)?",
       "options": [
         "Never",
         "Only if you are driving to a garage to have them removed",
@@ -2391,11 +2391,11 @@
         "question": "What does a blue circle with a white arrow pointing straight ahead mean?",
         "options": [
           "One-way street",
-          "Mandatory direction – straight ahead only",
+          "Mandatory direction - straight ahead only",
           "Priority road",
           "No entry"
         ],
-        "answer": "Mandatory direction – straight ahead only",
+        "answer": "Mandatory direction - straight ahead only",
         "explanation": "A blue circle with a white arrow indicates a mandatory direction of travel. Straight arrow means you must go straight."
       },
       {
@@ -2675,7 +2675,7 @@
             "No special requirements"
           ],
           "answer": "Both A and B",
-          "explanation": "Chapter 8, Section 1: When towing with a flexible device (rope), the distance between vehicles must be 4–6 metres, and the rope must be clearly marked (e.g., with a red flag)."
+          "explanation": "Chapter 8, Section 1: When towing with a flexible device (rope), the distance between vehicles must be 4-6 metres, and the rope must be clearly marked (e.g., with a red flag)."
         },
         {
           "id": 212,
@@ -2761,7 +2761,7 @@
             "Must wear a helmet and reflective vest"
           ],
           "answer": "Allowed if they follow pedestrian rules and stay on the left side",
-          "explanation": "Chapter 10, Section 7: Roller skaters and skateboarders are treated as pedestrians and must follow pedestrian rules – on roads without pavement, they should move on the left side."
+          "explanation": "Chapter 10, Section 7: Roller skaters and skateboarders are treated as pedestrians and must follow pedestrian rules - on roads without pavement, they should move on the left side."
         },
         {
           "id": 219,
@@ -2852,7 +2852,7 @@
             "End of speed limit 70 km/h"
           ],
           "answer": "Minimum speed 70 km/h",
-          "explanation": "Chapter 11, Section 4: A blue circle with a white number indicates a minimum permitted speed. Red border with blue interior and number is not standard; actually, minimum speed is blue circle. But the text says red circle? – Correction: Minimum speed sign is a blue circle with white number. No red border. So this question is tricky. To avoid confusion, we'll stick with standard: Blue circle = minimum speed."
+          "explanation": "Chapter 11, Section 4: A blue circle with a white number indicates a minimum permitted speed. Red border with blue interior and number is not standard; actually, minimum speed is blue circle. But the text says red circle? - Correction: Minimum speed sign is a blue circle with white number. No red border. So this question is tricky. To avoid confusion, we'll stick with standard: Blue circle = minimum speed."
         },
         {
           "id": 226,
@@ -2930,7 +2930,7 @@
             "No penalty if first offense"
           ],
           "answer": "Fine and possible driving licence suspension",
-          "explanation": "Under the Road Traffic Offenses Act, a BAC of 0.2–1.0‰ is considered drunk driving (rattfylleri) and results in a fine and licence suspension (usually 1–6 months)."
+          "explanation": "Under the Road Traffic Offenses Act, a BAC of 0.2-1.0‰ is considered drunk driving (rattfylleri) and results in a fine and licence suspension (usually 1-6 months)."
         },
         {
           "id": 232,
@@ -2990,11 +2990,11 @@
           "question": "What is the rule regarding driving through a flooded road?",
           "options": [
             "Proceed slowly if water is less than 10 cm deep",
-            "Never drive through flooded areas – it can be illegal and dangerous",
+            "Never drive through flooded areas - it can be illegal and dangerous",
             "Allowed if you have a 4x4",
             "Only with hazard lights on"
           ],
-          "answer": "Never drive through flooded areas – it can be illegal and dangerous",
+          "answer": "Never drive through flooded areas - it can be illegal and dangerous",
           "explanation": "The ordinance does not explicitly forbid driving through water, but Chapter 2, Section 1 requires caution. Driving through deep water can cause damage and is considered reckless if it leads to an accident."
         },
         {
@@ -3193,7 +3193,7 @@
           "question": "According to the ordinance, what is the maximum permitted vertical load on a towbar (hitch load)?",
           "options": ["50 kg", "75 kg", "100 kg", "Depends on the vehicle"],
           "answer": "Depends on the vehicle",
-          "explanation": "The maximum hitch load is specified by the vehicle manufacturer and must not be exceeded. It is typically between 50–100 kg for passenger cars."
+          "explanation": "The maximum hitch load is specified by the vehicle manufacturer and must not be exceeded. It is typically between 50-100 kg for passenger cars."
         },
         {
           "id": 253,
@@ -3201,11 +3201,11 @@
           "question": "What does the ordinance say about using winter tyres on only the front axle?",
           "options": [
             "Permitted only for rear-wheel drive cars",
-            "Prohibited – winter tyres must be fitted on all axles if used at all",
+            "Prohibited - winter tyres must be fitted on all axles if used at all",
             "Allowed, but only on front-wheel drive cars",
             "No restriction"
           ],
-          "answer": "Prohibited – winter tyres must be fitted on all axles if used at all",
+          "answer": "Prohibited - winter tyres must be fitted on all axles if used at all",
           "explanation": "The ordinance does not explicitly require all axles, but traffic safety rules (Chapter 3, Section 14) imply that mismatched tyres reduce stability. Police consider winter tyres on only one axle as unsafe."
         },
         {
@@ -3214,11 +3214,11 @@
           "question": "What is the rule regarding driving with a cracked brake light lens?",
           "options": [
             "Allowed if the bulb still works",
-            "Not allowed – the lens must be intact and not discolored",
+            "Not allowed - the lens must be intact and not discolored",
             "Allowed temporarily for 7 days",
             "No rule"
           ],
-          "answer": "Not allowed – the lens must be intact and not discolored",
+          "answer": "Not allowed - the lens must be intact and not discolored",
           "explanation": "Chapter 4, Section 5 requires lights to function properly. A cracked lens can allow water ingress and may change the light color or intensity, making it illegal."
         },
         {
@@ -3248,11 +3248,11 @@
           "question": "What is the rule regarding driving a car with a broken speedometer?",
           "options": [
             "Allowed if you know your speed from other means",
-            "Not allowed – the speedometer must be functional",
+            "Not allowed - the speedometer must be functional",
             "Allowed temporarily for up to 30 days",
             "Only prohibited on motorways"
           ],
-          "answer": "Not allowed – the speedometer must be functional",
+          "answer": "Not allowed - the speedometer must be functional",
           "explanation": "Chapter 4, Section 1 requires the vehicle to be in a roadworthy condition. A speedometer is mandatory equipment; driving without a working speedometer is illegal."
         },
         {
@@ -3308,11 +3308,11 @@
           "question": "What does the ordinance say about using high-beam headlights in fog?",
           "options": [
             "Permitted and recommended",
-            "Not permitted – dipped headlights or fog lights are better",
+            "Not permitted - dipped headlights or fog lights are better",
             "Allowed only on motorways",
             "Allowed only if no oncoming traffic"
           ],
-          "answer": "Not permitted – dipped headlights or fog lights are better",
+          "answer": "Not permitted - dipped headlights or fog lights are better",
           "explanation": "Using high beams in fog causes glare and reduces visibility due to back-scatter. Dipped headlights and front fog lights are recommended."
         },
         {
@@ -3342,11 +3342,11 @@
           "question": "What does the ordinance say about driving a car that emits excessive smoke?",
           "options": [
             "Allowed for up to 30 seconds",
-            "Prohibited – visible smoke for more than 5 seconds is illegal",
+            "Prohibited - visible smoke for more than 5 seconds is illegal",
             "Allowed if the smoke is white (steam)",
             "No restriction"
           ],
-          "answer": "Prohibited – visible smoke for more than 5 seconds is illegal",
+          "answer": "Prohibited - visible smoke for more than 5 seconds is illegal",
           "explanation": "Chapter 4, Section 11: The vehicle may not emit visible smoke for more than a few seconds (typically 5 seconds). Excessive smoke indicates a malfunction."
         },
         {
@@ -3360,7 +3360,7 @@
             "Use hazard lights instead"
           ],
           "answer": "Place it as far behind as safely possible, at least visible",
-          "explanation": "The general rule is 50–100 metres. If the road is too narrow, place it at a safe distance where it can be seen, typically before a bend."
+          "explanation": "The general rule is 50-100 metres. If the road is too narrow, place it at a safe distance where it can be seen, typically before a bend."
         },
         {
           "id": 267,
@@ -3389,11 +3389,11 @@
           "question": "What is the rule regarding driving a car with a missing bumper?",
           "options": [
             "Allowed if the bumper is not required for safety",
-            "Not allowed – the vehicle is considered defective",
+            "Not allowed - the vehicle is considered defective",
             "Allowed temporarily for 7 days",
             "Only prohibited on motorways"
           ],
-          "answer": "Not allowed – the vehicle is considered defective",
+          "answer": "Not allowed - the vehicle is considered defective",
           "explanation": "A bumper is part of the vehicle's safety equipment. Missing bumpers can cause injury to pedestrians and other vehicles, so the car is not roadworthy."
         },
         {
@@ -3423,11 +3423,11 @@
           "question": "What is the rule regarding driving a car with a cracked tail light (red) that still works?",
           "options": [
             "Legal if the light is visible",
-            "Illegal – the lens must be intact and uncoloured",
+            "Illegal - the lens must be intact and uncoloured",
             "Legal for up to 1 month",
             "Only illegal at night"
           ],
-          "answer": "Illegal – the lens must be intact and uncoloured",
+          "answer": "Illegal - the lens must be intact and uncoloured",
           "explanation": "A cracked lens may admit moisture and could change the light output. The vehicle inspection standard requires intact lenses for all lights."
         },
         {
@@ -3488,11 +3488,11 @@
           "question": "What does the ordinance say about driving through a red light that has just turned red?",
           "options": [
             "Permitted if you entered before it turned red",
-            "Prohibited – you must stop at the stop line even if it turns red while you are close",
+            "Prohibited - you must stop at the stop line even if it turns red while you are close",
             "Permitted if no other traffic is present",
             "Only prohibited for heavy vehicles"
           ],
-          "answer": "Prohibited – you must stop at the stop line even if it turns red while you are close",
+          "answer": "Prohibited - you must stop at the stop line even if it turns red while you are close",
           "explanation": "You must stop at a red light. If you cross the stop line after the light turns red, it's a violation, regardless of how close you were."
         },
         {
@@ -3501,11 +3501,11 @@
           "question": "What is the rule regarding flashing your headlights to warn other drivers of a speed camera?",
           "options": [
             "Legal",
-            "Illegal – considered a disturbance",
+            "Illegal - considered a disturbance",
             "Legal only in daylight",
             "Only illegal if you cause an accident"
           ],
-          "answer": "Illegal – considered a disturbance",
+          "answer": "Illegal - considered a disturbance",
           "explanation": "Flashing headlights to warn of a speed camera is considered a disturbance and can result in a fine for 'unnecessary use of lights' under Chapter 3, Section 12."
         },
         {
@@ -3540,11 +3540,11 @@
           "question": "What is the rule regarding the use of a GPS that shows live speed camera locations?",
           "options": [
             "Legal, as long as you don't use it to avoid cameras",
-            "Illegal – any device that warns of speed cameras is prohibited",
+            "Illegal - any device that warns of speed cameras is prohibited",
             "Legal only if the GPS does not beep",
             "Only illegal for professional drivers"
           ],
-          "answer": "Illegal – any device that warns of speed cameras is prohibited",
+          "answer": "Illegal - any device that warns of speed cameras is prohibited",
           "explanation": "The ordinance prohibits devices that alert to fixed speed cameras. GPS apps with speed camera warnings must have that feature disabled in Sweden."
         },
         {
@@ -3561,11 +3561,11 @@
           "question": "What does the ordinance say about driving with a mismatched tyre size on the same axle?",
           "options": [
             "Permitted if the difference is less than 5%",
-            "Prohibited – tyres on the same axle must be identical in size, type, and tread pattern",
+            "Prohibited - tyres on the same axle must be identical in size, type, and tread pattern",
             "Allowed for rear axle only",
             "No rule"
           ],
-          "answer": "Prohibited – tyres on the same axle must be identical in size, type, and tread pattern",
+          "answer": "Prohibited - tyres on the same axle must be identical in size, type, and tread pattern",
           "explanation": "Mismatched tyres on the same axle can cause handling issues. The Vehicle Equipment Regulation requires same size, construction, and tread pattern on each axle."
         },
         {
@@ -3595,11 +3595,11 @@
           "question": "What does the ordinance say about driving a car with a defective exhaust system that causes loud popping sounds?",
           "options": [
             "Allowed if the car passes inspection",
-            "Illegal – exhaust must not emit excessive noise",
+            "Illegal - exhaust must not emit excessive noise",
             "Allowed only during daytime",
             "No specific rule"
           ],
-          "answer": "Illegal – exhaust must not emit excessive noise",
+          "answer": "Illegal - exhaust must not emit excessive noise",
           "explanation": "Chapter 4, Section 10 requires the vehicle to meet noise limits. A defective exhaust producing popping sounds is likely over the limit and illegal."
         },
         {
@@ -3608,11 +3608,11 @@
           "question": "What is the rule regarding driving a car that is leaking oil on the road?",
           "options": [
             "Allowed as long as you top up oil",
-            "Illegal – leaking oil creates a hazard for other road users",
+            "Illegal - leaking oil creates a hazard for other road users",
             "Allowed for a short distance to a garage",
             "Only illegal if the leak is severe"
           ],
-          "answer": "Illegal – leaking oil creates a hazard for other road users",
+          "answer": "Illegal - leaking oil creates a hazard for other road users",
           "explanation": "Oil on the road reduces traction and is an environmental hazard. Driving a vehicle that is actively leaking oil is prohibited under Chapter 4, Section 1."
         },
         {
@@ -3634,11 +3634,11 @@
           "question": "What does the ordinance say about driving with a trailer that has a broken brake light?",
           "options": [
             "Allowed if the towing vehicle's lights are visible",
-            "Illegal – all required lights on the trailer must function",
+            "Illegal - all required lights on the trailer must function",
             "Allowed for up to 7 days",
             "Only illegal at night"
           ],
-          "answer": "Illegal – all required lights on the trailer must function",
+          "answer": "Illegal - all required lights on the trailer must function",
           "explanation": "Chapter 4, Section 5 applies to trailers as well. A trailer must have functioning brake lights, turn signals, and tail lights."
         },
         {
@@ -3686,11 +3686,11 @@
           "question": "What is the rule regarding driving a car with a broken horn?",
           "options": [
             "Allowed, as horn is not required",
-            "Not allowed – a functional horn is mandatory equipment",
+            "Not allowed - a functional horn is mandatory equipment",
             "Allowed if you use hand signals instead",
             "Only required for vehicles over 3.5 tonnes"
           ],
-          "answer": "Not allowed – a functional horn is mandatory equipment",
+          "answer": "Not allowed - a functional horn is mandatory equipment",
           "explanation": "A warning device (horn) is required on all motor vehicles under Chapter 4, Section 5. Driving without a functioning horn is illegal."
         },
         {
@@ -3881,11 +3881,11 @@
             "question": "What is the rule regarding driving while excessively tired (fatigued)?",
             "options": [
               "Allowed as long as you do not close your eyes",
-              "Prohibited – it is considered reckless driving",
+              "Prohibited - it is considered reckless driving",
               "Allowed if you drink coffee",
               "Only prohibited for professional drivers"
             ],
-            "answer": "Prohibited – it is considered reckless driving",
+            "answer": "Prohibited - it is considered reckless driving",
             "explanation": "Driving while excessively tired violates Chapter 2, Section 1 (duty of care). It can lead to penalties similar to drunk driving, especially if it causes an accident."
           },
           {
@@ -4087,11 +4087,11 @@
             "question": "What is the rule for using the rear fog light (dimbakljus) in good visibility?",
             "options": [
               "Allowed to increase visibility",
-              "Prohibited – it may dazzle following drivers",
+              "Prohibited - it may dazzle following drivers",
               "Allowed only on motorways",
               "Allowed only during daylight"
             ],
-            "answer": "Prohibited – it may dazzle following drivers",
+            "answer": "Prohibited - it may dazzle following drivers",
             "explanation": "Rear fog lights are extremely bright. Using them in normal visibility is illegal and can result in a fine. They are reserved for visibility under 100 metres."
           },
           {
@@ -4672,12 +4672,12 @@
             "category": "Miscellaneous",
             "question": "What is the rule regarding the use of a 'magnetic' red flashing light on a private car?",
             "options": [
-              "Prohibited – only emergency vehicles may display blue or red flashing lights",
+              "Prohibited - only emergency vehicles may display blue or red flashing lights",
               "Allowed for roadside assistance vehicles",
               "Allowed if you have a special permit",
               "Only allowed in rural areas"
             ],
-            "answer": "Prohibited – only emergency vehicles may display blue or red flashing lights",
+            "answer": "Prohibited - only emergency vehicles may display blue or red flashing lights",
             "explanation": "Red or blue flashing lights are reserved for police, ambulance, fire, and other authorised emergency vehicles. Private use is illegal."
           },
           {
@@ -4752,7 +4752,7 @@
             "options": [
               "Allowed if the pet is small",
               "Not recommended but legal unless it distracts the driver",
-              "Prohibited – pets must be restrained (harness, crate, or barrier)",
+              "Prohibited - pets must be restrained (harness, crate, or barrier)",
               "Only allowed for dogs"
             ],
             "answer": "Not recommended but legal unless it distracts the driver",
@@ -4803,11 +4803,11 @@
             "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
             "options": [
               "Legal, as side mirrors provide adequate rear view",
-              "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+              "Illegal - interior mirror is mandatory if the car was originally equipped with one",
               "Legal only for vans and trucks",
               "Only illegal if the car is used for towing"
             ],
-            "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+            "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
             "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
           },
           {
@@ -4934,7 +4934,7 @@
             "options": [
               "Allowed if the dog is small",
               "Not specifically prohibited, but could be considered a distraction",
-              "Prohibited – dog must be in the back",
+              "Prohibited - dog must be in the back",
               "Allowed only if the airbag is deactivated"
             ],
             "answer": "Not specifically prohibited, but could be considered a distraction",
@@ -5024,7 +5024,7 @@
             "question": "What does the ordinance say about driving a car with a broken odometer (distance counter)?",
             "options": [
               "Legal, as long as the speedometer works",
-              "Illegal – the odometer is mandatory equipment",
+              "Illegal - the odometer is mandatory equipment",
               "Legal but must be repaired within 1 year",
               "Only illegal if the car is leased"
             ],
@@ -5042,7 +5042,7 @@
               "To maintain a speed of at least 50 km/h"
             ],
             "answer": "To ensure no harm comes to any road user",
-            "explanation": "Chapter 2, Section 1 – the overarching duty of care: every road user must show consideration and exercise caution to prevent danger or harm. This is the fundamental principle."
+            "explanation": "Chapter 2, Section 1 - the overarching duty of care: every road user must show consideration and exercise caution to prevent danger or harm. This is the fundamental principle."
           },
             {
               "id": 401,
@@ -5180,11 +5180,11 @@
               "question": "What does the ordinance say about driving a vehicle that emits excessive smoke?",
               "options": [
                 "Allowed if it is a diesel",
-                "Not allowed – the vehicle must be repaired immediately",
+                "Not allowed - the vehicle must be repaired immediately",
                 "Allowed for up to 30 days",
                 "Only prohibited in built-up areas"
               ],
-              "answer": "Not allowed – the vehicle must be repaired immediately",
+              "answer": "Not allowed - the vehicle must be repaired immediately",
               "explanation": "Chapter 4, Section 11 prohibits visible smoke lasting more than a few seconds. Such a vehicle is not roadworthy and must be repaired."
             },
             {
@@ -5305,11 +5305,11 @@
               "question": "What does Chapter 3, Section 61 say about leaving a vehicle unattended with keys in the ignition?",
               "options": [
                 "Allowed in safe areas",
-                "Prohibited – you must remove the keys and lock the vehicle",
+                "Prohibited - you must remove the keys and lock the vehicle",
                 "Allowed if the vehicle is within sight",
                 "Only prohibited for commercial vehicles"
               ],
-              "answer": "Prohibited – you must remove the keys and lock the vehicle",
+              "answer": "Prohibited - you must remove the keys and lock the vehicle",
               "explanation": "Chapter 3, Section 61: When leaving a vehicle unattended, the driver must ensure it cannot be moved by an unauthorised person. This includes removing the ignition key."
             },
             {
@@ -5365,11 +5365,11 @@
               "question": "What does the ordinance say about driving with a trailer that has no brakes but exceeds the vehicle's recommended towing weight?",
               "options": [
                 "Allowed if you drive slowly",
-                "Illegal – the trailer must be within the vehicle's approved towing capacity",
+                "Illegal - the trailer must be within the vehicle's approved towing capacity",
                 "Allowed for trailers under 750 kg only",
                 "Only prohibited on motorways"
               ],
-              "answer": "Illegal – the trailer must be within the vehicle's approved towing capacity",
+              "answer": "Illegal - the trailer must be within the vehicle's approved towing capacity",
               "explanation": "Towing a trailer that exceeds the vehicle's maximum authorised towing weight (stated in registration documents) is illegal and dangerous, regardless of brake presence."
             },
             {
@@ -5378,11 +5378,11 @@
               "question": "What is the rule for a driver who accidentally passes a 'stop' sign without stopping?",
               "options": [
                 "No violation if no other traffic was present",
-                "Violation regardless of traffic – you must stop at the sign",
+                "Violation regardless of traffic - you must stop at the sign",
                 "Only a violation if a police officer sees it",
                 "Allowed if you slowed down to a crawl"
               ],
-              "answer": "Violation regardless of traffic – you must stop at the sign",
+              "answer": "Violation regardless of traffic - you must stop at the sign",
               "explanation": "A 'stop' sign requires a complete stop at the stop line, even if no other traffic is present. Rolling through is a violation and carries a fine."
             },
             {
@@ -5498,7 +5498,7 @@
                 "Studded tyres are prohibited for foreign vehicles"
               ],
               "answer": "Must follow the same seasonal restrictions as Swedish vehicles",
-              "explanation": "Foreign-registered vehicles must comply with Swedish studded tyre regulations (October 1 – April 15, or when winter conditions exist)."
+              "explanation": "Foreign-registered vehicles must comply with Swedish studded tyre regulations (October 1 - April 15, or when winter conditions exist)."
             },
             {
               "id": 438,
@@ -5540,11 +5540,11 @@
               "question": "What does Chapter 3, Section 76 say about using a vehicle to push another vehicle on a public road?",
               "options": [
                 "Permitted with a rigid tow bar",
-                "Prohibited – pushing is not allowed",
+                "Prohibited - pushing is not allowed",
                 "Allowed only in emergencies",
                 "Allowed for short distances only"
               ],
-              "answer": "Prohibited – pushing is not allowed",
+              "answer": "Prohibited - pushing is not allowed",
               "explanation": "Pushing a vehicle with another vehicle (e.g., bumper to bumper) is prohibited. Only towing with an approved tow bar or rope is permitted."
             },
             {
@@ -5672,12 +5672,12 @@
               "category": "Traffic Rules",
               "question": "What does the ordinance say about driving a car with a cracked or missing side mirror?",
               "options": [
-                "Illegal – both side mirrors must be intact and functional",
+                "Illegal - both side mirrors must be intact and functional",
                 "Legal if the interior rearview mirror works",
                 "Legal for up to 30 days",
                 "Only illegal if the car was originally equipped with side mirrors"
               ],
-              "answer": "Illegal – both side mirrors must be intact and functional",
+              "answer": "Illegal - both side mirrors must be intact and functional",
               "explanation": "All original mirrors must be present and functional. A cracked mirror that distorts vision is not acceptable. Missing side mirrors are a roadworthiness violation."
             },
             {
@@ -5698,12 +5698,12 @@
               "category": "Traffic Rules",
               "question": "What does the ordinance say about driving with a trailer that is longer than 12 metres (caravan)?",
               "options": [
-                "Illegal – maximum trailer length is 12 metres",
+                "Illegal - maximum trailer length is 12 metres",
                 "Legal if the combined length does not exceed 18.75 metres",
                 "Legal only with a special permit",
                 "Illegal for passenger cars, allowed for trucks"
               ],
-              "answer": "Illegal – maximum trailer length is 12 metres",
+              "answer": "Illegal - maximum trailer length is 12 metres",
               "explanation": "No trailer (including caravans) may exceed 12 metres in length. Combined with a passenger car, the total length may not exceed 18.75 metres."
             },
             {
@@ -5738,7 +5738,7 @@
               "question": "What does the ordinance say about driving with a child in the front seat without a booster seat if the child is over 135 cm tall?",
               "options": [
                 "Allowed, as the seatbelt will fit correctly",
-                "Not allowed – children under 15 must always use a booster",
+                "Not allowed - children under 15 must always use a booster",
                 "Allowed only if the child weighs more than 36 kg",
                 "Only allowed for short trips"
               ],
@@ -5803,11 +5803,11 @@
               "question": "What does Chapter 3, Section 80 say about driving with a faulty speedometer?",
               "options": [
                 "Legal as long as you estimate your speed",
-                "Illegal – the speedometer must be accurate within certain limits",
+                "Illegal - the speedometer must be accurate within certain limits",
                 "Legal for up to 30 days",
                 "Only illegal for commercial vehicles"
               ],
-              "answer": "Illegal – the speedometer must be accurate within certain limits",
+              "answer": "Illegal - the speedometer must be accurate within certain limits",
               "explanation": "A functioning speedometer is mandatory equipment. It must be accurate within +10% / -0% (i.e., must not under-read speed). A broken speedometer renders the vehicle unroadworthy."
             },
             {
@@ -5855,11 +5855,11 @@
               "question": "What is the rule for a driver who has a 'Learner' (L) sign displayed after passing the driving test?",
               "options": [
                 "Legal, but not required",
-                "Illegal – only learner drivers may display the L sign",
+                "Illegal - only learner drivers may display the L sign",
                 "Legal only for the first month",
                 "Only allowed for accompanied driving"
               ],
-              "answer": "Illegal – only learner drivers may display the L sign",
+              "answer": "Illegal - only learner drivers may display the L sign",
               "explanation": "Displaying an L sign when you are not a learner driver (i.e., have a full licence) is not illegal per se, but it can confuse other drivers and police. It is strongly discouraged and could be considered a disturbance."
             },
             {
@@ -5902,11 +5902,11 @@
               "question": "What is the rule for a driver who needs to reverse on a road because they missed a turn?",
               "options": [
                 "Reversing is allowed for short distances if no traffic is present",
-                "Reversing is prohibited – you must find a safe place to turn around",
+                "Reversing is prohibited - you must find a safe place to turn around",
                 "Allowed only on roads with speed limit under 50 km/h",
                 "Only allowed for emergency vehicles"
               ],
-              "answer": "Reversing is prohibited – you must find a safe place to turn around",
+              "answer": "Reversing is prohibited - you must find a safe place to turn around",
               "explanation": "Reversing to correct a wrong turn is prohibited because it creates danger. You must continue to a safe location (e.g., a driveway, parking lot) where you can turn around legally."
             },
             {
@@ -5915,7 +5915,7 @@
               "question": "What does the ordinance say about driving a car with a roof rack that is not in use (empty)?",
               "options": [
                 "Legal as long as it is properly attached",
-                "Illegal – must be removed when not in use to reduce noise and fuel consumption",
+                "Illegal - must be removed when not in use to reduce noise and fuel consumption",
                 "Legal only on motorways",
                 "Only illegal if it makes noise"
               ],
@@ -5954,11 +5954,11 @@
               "question": "What does the ordinance say about driving a car with a broken seatbelt buckle on the passenger seat?",
               "options": [
                 "Legal if no passenger is in that seat",
-                "Illegal – all seatbelt buckles must function regardless of occupancy",
+                "Illegal - all seatbelt buckles must function regardless of occupancy",
                 "Legal for up to 30 days",
                 "Only illegal if the car is used for transporting passengers"
               ],
-              "answer": "Illegal – all seatbelt buckles must function regardless of occupancy",
+              "answer": "Illegal - all seatbelt buckles must function regardless of occupancy",
               "explanation": "The vehicle is required to have functional seatbelts on all seats where they are fitted. A broken buckle makes the vehicle unroadworthy, even if the seat is empty."
             },
             {
@@ -5980,11 +5980,11 @@
               "question": "What does the ordinance say about driving a car with a cracked or broken high beam headlight?",
               "options": [
                 "Legal as long as dipped headlights work",
-                "Illegal – all headlights must be functional",
+                "Illegal - all headlights must be functional",
                 "Legal for up to 30 days",
                 "Only illegal at night"
               ],
-              "answer": "Illegal – all headlights must be functional",
+              "answer": "Illegal - all headlights must be functional",
               "explanation": "High beams are mandatory equipment. A broken high beam means the car does not meet lighting requirements and is not roadworthy, especially for night driving on unlit roads."
             },
             {
@@ -6019,11 +6019,11 @@
               "question": "What does the ordinance say about driving a car with a broken horn?",
               "options": [
                 "Legal for up to 30 days",
-                "Illegal – a functional horn is mandatory",
+                "Illegal - a functional horn is mandatory",
                 "Legal if you use hand signals instead",
                 "Only illegal for commercial vehicles"
               ],
-              "answer": "Illegal – a functional horn is mandatory",
+              "answer": "Illegal - a functional horn is mandatory",
               "explanation": "The horn is required equipment under Chapter 4. A broken horn means the vehicle fails the roadworthiness requirements."
             },
             {
@@ -6057,7 +6057,7 @@
               "category": "Traffic Rules",
               "question": "What does the ordinance say about driving a car with a missing jack or toolkit?",
               "options": [
-                "Illegal – must carry these items",
+                "Illegal - must carry these items",
                 "Legal, these are not mandatory",
                 "Only illegal for vehicles over 3.5 tonnes",
                 "Required only for vehicles with space-saver spare tyres"
@@ -6111,10 +6111,10 @@
               "options": [
                 "Allowed for up to 2 minutes",
                 "Allowed only for emergency vehicles",
-                "Not allowed – no stopping at all",
+                "Not allowed - no stopping at all",
                 "Allowed if the passenger is ready"
               ],
-              "answer": "Not allowed – no stopping at all",
+              "answer": "Not allowed - no stopping at all",
               "explanation": "A 'no stopping' sign (red circle with blue interior and red crossed lines) prohibits any stop, even briefly. You cannot pick up or drop off passengers there."
             },
             {
@@ -6162,11 +6162,11 @@
               "question": "What does the ordinance say about driving a car with a loose steering wheel?",
               "options": [
                 "Legal as long as you can steer",
-                "Illegal – excessive play in steering is a safety defect",
+                "Illegal - excessive play in steering is a safety defect",
                 "Legal for speeds under 50 km/h",
                 "Only illegal for vehicles over 10 years old"
               ],
-              "answer": "Illegal – excessive play in steering is a safety defect",
+              "answer": "Illegal - excessive play in steering is a safety defect",
               "explanation": "A loose steering wheel (excessive free play) makes the vehicle unroadworthy and dangerous. It violates Chapter 4, Section 2 (steering must be effective)."
             },
             {
@@ -6175,11 +6175,11 @@
               "question": "What is the rule for a driver who needs to make a U-turn on a road with a solid center line?",
               "options": [
                 "Allowed if no traffic is approaching",
-                "Prohibited – crossing a solid line for a U-turn is illegal",
+                "Prohibited - crossing a solid line for a U-turn is illegal",
                 "Allowed only at intersections",
                 "Allowed if you signal properly"
               ],
-              "answer": "Prohibited – crossing a solid line for a U-turn is illegal",
+              "answer": "Prohibited - crossing a solid line for a U-turn is illegal",
               "explanation": "Crossing a solid center line is prohibited. A U-turn requires crossing the line, so it is not allowed where a solid line is present. You must find a break in the line or an intersection."
             },
             {
@@ -6227,11 +6227,11 @@
               "question": "What does the ordinance say about driving a car with a malfunctioning anti-lock braking system (ABS)?",
               "options": [
                 "Legal if the regular brakes still work",
-                "Illegal – ABS is mandatory on all cars sold after 2004",
+                "Illegal - ABS is mandatory on all cars sold after 2004",
                 "Legal, but the warning light must not be on",
                 "Only illegal for commercial vehicles"
               ],
-              "answer": "Illegal – ABS is mandatory on all cars sold after 2004",
+              "answer": "Illegal - ABS is mandatory on all cars sold after 2004",
               "explanation": "For passenger cars first registered after 1 July 2004, ABS is mandatory. A malfunctioning ABS light means the car is not roadworthy."
             },
             {
@@ -6239,7 +6239,7 @@
               "category": "Traffic Rules",
               "question": "What is the rule for a driver who needs to turn into a property across a solid white line?",
               "options": [
-                "Not allowed – solid line prohibits crossing",
+                "Not allowed - solid line prohibits crossing",
                 "Allowed when turning into a driveway, with caution",
                 "Allowed only if no traffic is coming",
                 "Allowed only for emergency vehicles"
@@ -6384,7 +6384,7 @@
                 "options": [
                   "Only the driver of the emergency vehicle",
                   "The police officer in the vehicle",
-                  "No one – emergency vehicles must follow all rules",
+                  "No one - emergency vehicles must follow all rules",
                   "The driver, but only when using blue lights and siren"
                 ],
                 "answer": "The driver, but only when using blue lights and siren",
@@ -6487,11 +6487,11 @@
                 "question": "What does Chapter 3, Section 14a say about driving in a car with summer tyres on a snowy road?",
                 "options": [
                   "Legal but risky",
-                  "Illegal – tyres must be adapted to winter conditions from December 1 to March 31",
+                  "Illegal - tyres must be adapted to winter conditions from December 1 to March 31",
                   "Legal if you have chains",
                   "Only illegal on motorways"
                 ],
-                "answer": "Illegal – tyres must be adapted to winter conditions from December 1 to March 31",
+                "answer": "Illegal - tyres must be adapted to winter conditions from December 1 to March 31",
                 "explanation": "During winter conditions (snow, ice, slush) between December 1 and March 31, tyres must be winter tyres (M+S or studded). Summer tyres are not permitted during these conditions."
               },
               {
@@ -6500,11 +6500,11 @@
                 "question": "What is the rule for a driver approaching a 'pedestrian crossing with traffic lights' when the lights are not working?",
                 "options": [
                   "Stop and wait for a police officer",
-                  "Treat it as an uncontrolled pedestrian crossing – yield to pedestrians",
+                  "Treat it as an uncontrolled pedestrian crossing - yield to pedestrians",
                   "Proceed with caution but pedestrians must yield",
                   "Use the right-hand rule"
                 ],
-                "answer": "Treat it as an uncontrolled pedestrian crossing – yield to pedestrians",
+                "answer": "Treat it as an uncontrolled pedestrian crossing - yield to pedestrians",
                 "explanation": "If pedestrian lights are out, the crossing reverts to an uncontrolled zebra crossing. Drivers must yield to pedestrians who are on or about to step onto the crossing."
               },
               {
@@ -6734,11 +6734,11 @@
                 "question": "What is the rule for fitting LED headlights that were not original equipment?",
                 "options": [
                   "Allowed as long as they are E-marked and do not dazzle",
-                  "Illegal – headlights must be original type for the vehicle",
+                  "Illegal - headlights must be original type for the vehicle",
                   "Allowed only for off-road use",
                   "Allowed only for low beam, not high beam"
                 ],
-                "answer": "Illegal – headlights must be original type for the vehicle",
+                "answer": "Illegal - headlights must be original type for the vehicle",
                 "explanation": "Retrofit LED bulbs in headlight housings designed for halogen bulbs are illegal in Sweden because they alter the light pattern and can dazzle. Only complete LED headlight units approved for the vehicle are allowed."
               },
               {
@@ -7058,13 +7058,13 @@
                 "category": "Penalties",
                 "question": "What is the penalty for driving without a valid driver's licence (olovlig körning) for the first time?",
                 "options": [
-                  "A fine (day fine) of about 3,000–5,000 SEK",
+                  "A fine (day fine) of about 3,000-5,000 SEK",
                   "Imprisonment up to 6 months",
                   "Only a warning",
                   "Vehicle confiscation"
                 ],
-                "answer": "A fine (day fine) of about 3,000–5,000 SEK",
-                "explanation": "Driving without a licence is punishable by a fine. The amount is based on income; typical day fines result in 3,000–5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
+                "answer": "A fine (day fine) of about 3,000-5,000 SEK",
+                "explanation": "Driving without a licence is punishable by a fine. The amount is based on income; typical day fines result in 3,000-5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
               },
               {
                 "id": 560,
@@ -7132,11 +7132,11 @@
                 "question": "What is the rule for driving a car with a faulty catalytic converter?",
                 "options": [
                   "Legal as long as the car passes the emissions test",
-                  "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                  "Illegal - the catalytic converter is mandatory on cars that originally had one",
                   "Legal for cars older than 20 years",
                   "Only illegal if the car emits visible smoke"
                 ],
-                "answer": "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                "answer": "Illegal - the catalytic converter is mandatory on cars that originally had one",
                 "explanation": "If the car was manufactured with a catalytic converter, it must be present and functional. Removing or disabling it is illegal and will cause the car to fail emissions inspection."
               },
               {
@@ -7158,11 +7158,11 @@
                 "question": "What is the rule regarding washing a car at home with detergents?",
                 "options": [
                   "Allowed as long as the water drains onto the lawn",
-                  "Prohibited – detergents must not enter storm drains",
+                  "Prohibited - detergents must not enter storm drains",
                   "Allowed only with biodegradable soap",
                   "Only prohibited in urban areas"
                 ],
-                "answer": "Prohibited – detergents must not enter storm drains",
+                "answer": "Prohibited - detergents must not enter storm drains",
                 "explanation": "Washing a car with detergents at home is illegal if the wastewater enters storm drains (which flow directly to lakes and streams). You must use a commercial car wash that treats the water."
               },
               {
@@ -7261,7 +7261,7 @@
                 "category": "Miscellaneous",
                 "question": "What is the rule for a driver who needs to drive with a cracked windscreen after a stone chip that has been repaired?",
                 "options": [
-                  "Illegal – any crack requires replacement",
+                  "Illegal - any crack requires replacement",
                   "Legal if the repair is successful and the crack is not in the driver's critical field of view",
                   "Legal only if the crack is smaller than 5 cm",
                   "Legal only for the duration of the journey to a repair shop"
@@ -7379,7 +7379,7 @@
                 "question": "What does the ordinance say about driving a car with a broken odometer (distance counter)?",
                 "options": [
                   "Legal, as long as the speedometer works",
-                  "Illegal – odometer is mandatory",
+                  "Illegal - odometer is mandatory",
                   "Legal only for cars over 10 years old",
                   "Only illegal for leased cars"
                 ],
@@ -7418,7 +7418,7 @@
                 "question": "What does the ordinance say about driving a car with a broken fuel gauge?",
                 "options": [
                   "Legal, as long as you know your fuel level",
-                  "Illegal – fuel gauge is mandatory",
+                  "Illegal - fuel gauge is mandatory",
                   "Legal only for cars with a reserve tank",
                   "Only illegal for rental cars"
                 ],
@@ -7430,12 +7430,12 @@
                 "category": "Miscellaneous",
                 "question": "What is the rule for a driver who needs to make a three-point turn on a road with limited visibility?",
                 "options": [
-                  "Prohibited – find a better location",
+                  "Prohibited - find a better location",
                   "Allowed if no traffic is visible",
                   "Allowed only with a spotter",
                   "Allowed only during daytime"
                 ],
-                "answer": "Prohibited – find a better location",
+                "answer": "Prohibited - find a better location",
                 "explanation": "Making a three-point turn where you cannot see far enough in both directions is dangerous and violates the duty of care. You must find a safer place (e.g., driveway, intersection) to turn."
               },
               {
@@ -7470,11 +7470,11 @@
                 "question": "What is the rule for a driver who is towing a trailer and the trailer's registration plate is not illuminated at night?",
                 "options": [
                   "Legal, the car's plate covers it",
-                  "Illegal – the trailer's plate must be illuminated by its own light",
+                  "Illegal - the trailer's plate must be illuminated by its own light",
                   "Legal if the car's lights are bright enough",
                   "Only illegal if the trailer is over 750 kg"
                 ],
-                "answer": "Illegal – the trailer's plate must be illuminated by its own light",
+                "answer": "Illegal - the trailer's plate must be illuminated by its own light",
                 "explanation": "Trailers must have a working registration plate light that illuminates the plate when the car's headlights are on. This is required for all trailers."
               },
               {
@@ -7574,11 +7574,11 @@
                 "question": "What does the ordinance say about driving a car with a missing headrest?",
                 "options": [
                   "Legal if the seat is unoccupied",
-                  "Illegal – headrests are mandatory on all seats",
+                  "Illegal - headrests are mandatory on all seats",
                   "Legal for rear seats only",
                   "Only illegal if the car was manufactured after 1996"
                 ],
-                "answer": "Illegal – headrests are mandatory on all seats",
+                "answer": "Illegal - headrests are mandatory on all seats",
                 "explanation": "Headrests are required on all seats for safety (whiplash protection). A missing headrest on any seat makes the vehicle unroadworthy."
               },
               {
@@ -8037,7 +8037,7 @@
                     "The rope must be at least 10 metres long"
                   ],
                   "answer": "The rope must be at least 4 metres and at most 6 metres long and clearly marked",
-                  "explanation": "Chapter 4, Section 9: When towing with a flexible device (rope), the distance between vehicles must be 4–6 metres, and the rope must be clearly marked (e.g., with a red flag)."
+                  "explanation": "Chapter 4, Section 9: When towing with a flexible device (rope), the distance between vehicles must be 4-6 metres, and the rope must be clearly marked (e.g., with a red flag)."
                 },
                 {
                   "id": 636,
@@ -8258,7 +8258,7 @@
                     "Must wear a helmet and reflective vest"
                   ],
                   "answer": "Allowed if they follow pedestrian rules and stay on the left side",
-                  "explanation": "Chapter 10, Section 7: Roller skaters and skateboarders are treated as pedestrians and must follow pedestrian rules – on roads without pavement, they should move on the left side."
+                  "explanation": "Chapter 10, Section 7: Roller skaters and skateboarders are treated as pedestrians and must follow pedestrian rules - on roads without pavement, they should move on the left side."
                 },
                 {
                   "id": 653,
@@ -8310,7 +8310,7 @@
                     "Only rigid tow bars are allowed"
                   ],
                   "answer": "The rope must be at least 4 metres and at most 6 metres long, and clearly marked",
-                  "explanation": "Chapter 8, Section 1: When towing with a flexible device (rope), the distance between vehicles must be 4–6 metres, and the rope must be clearly marked (e.g., with a red flag)."
+                  "explanation": "Chapter 8, Section 1: When towing with a flexible device (rope), the distance between vehicles must be 4-6 metres, and the rope must be clearly marked (e.g., with a red flag)."
                 },
                 {
                   "id": 657,
@@ -8378,7 +8378,7 @@
                     "Suspension of the vehicle registration"
                   ],
                   "answer": "A fine (typically 3,000-5,000 SEK)",
-                  "explanation": "Driving without a valid licence (olovlig körning) is subject to a fine. The amount is based on income; typical day fines result in 3,000–5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
+                  "explanation": "Driving without a valid licence (olovlig körning) is subject to a fine. The amount is based on income; typical day fines result in 3,000-5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
                 },
                 {
                   "id": 663,
@@ -8464,7 +8464,7 @@
                     "No penalty if first offense"
                   ],
                   "answer": "Fine and possible driving licence suspension",
-                  "explanation": "A BAC of 0.2–1.0‰ is considered drunk driving (rattfylleri) and results in a fine and licence suspension (usually 1–6 months)."
+                  "explanation": "A BAC of 0.2-1.0‰ is considered drunk driving (rattfylleri) and results in a fine and licence suspension (usually 1-6 months)."
                 },
                 {
                   "id": 670,
@@ -8757,12 +8757,12 @@
                   "category": "Miscellaneous",
                   "question": "What is the rule for a driver who needs to make a three-point turn on a road with limited visibility?",
                   "options": [
-                    "Prohibited – find a better location",
+                    "Prohibited - find a better location",
                     "Allowed if no traffic is visible",
                     "Allowed only with a spotter",
                     "Allowed only during daytime"
                   ],
-                  "answer": "Prohibited – find a better location",
+                  "answer": "Prohibited - find a better location",
                   "explanation": "Making a three-point turn where you cannot see far enough in both directions is dangerous and violates the duty of care. You must find a safer place (e.g., driveway, intersection) to turn."
                 },
                 {
@@ -8785,10 +8785,10 @@
                   "options": [
                     "Allowed for up to 2 minutes",
                     "Allowed only for emergency vehicles",
-                    "Not allowed – no stopping at all",
+                    "Not allowed - no stopping at all",
                     "Allowed if the passenger is ready"
                   ],
-                  "answer": "Not allowed – no stopping at all",
+                  "answer": "Not allowed - no stopping at all",
                   "explanation": "A 'no stopping' sign (red circle with blue interior and red crossed lines) prohibits any stop, even briefly. You cannot pick up or drop off passengers there."
                 },
                 {
@@ -8810,11 +8810,11 @@
                   "question": "What is the rule for a driver who has a broken speedometer?",
                   "options": [
                     "Allowed if you know your speed from other means",
-                    "Not allowed – the speedometer must be functional",
+                    "Not allowed - the speedometer must be functional",
                     "Allowed temporarily for up to 30 days",
                     "Only prohibited on motorways"
                   ],
-                  "answer": "Not allowed – the speedometer must be functional",
+                  "answer": "Not allowed - the speedometer must be functional",
                   "explanation": "Chapter 4, Section 1 requires the vehicle to be in a roadworthy condition. A speedometer is mandatory equipment; driving without a working speedometer is illegal."
                 },
                 {
@@ -8836,11 +8836,11 @@
                   "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                   "options": [
                     "Legal, as side mirrors provide adequate rear view",
-                    "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                    "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                     "Legal only for vans and trucks",
                     "Only illegal if the car is used for towing"
                   ],
-                  "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                  "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                   "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                 },
                 {
@@ -9076,11 +9076,11 @@
                     "question": "What does Chapter 9, Section 8 say about driving a vehicle that cannot maintain a speed of at least 40 km/h on a motorway?",
                     "options": [
                       "It is permitted but must use hazard lights",
-                      "It is prohibited – such vehicles must not use the motorway",
+                      "It is prohibited - such vehicles must not use the motorway",
                       "It is allowed only in the right lane",
                       "It is allowed only during daylight"
                     ],
-                    "answer": "It is prohibited – such vehicles must not use the motorway",
+                    "answer": "It is prohibited - such vehicles must not use the motorway",
                     "explanation": "Vehicles that cannot maintain a minimum speed of approximately 40 km/h (e.g., tractors, mopeds, slow construction equipment) are prohibited from using motorways."
                   },
                   {
@@ -9336,11 +9336,11 @@
                     "question": "What is the rule for using a vehicle's high beams in fog?",
                     "options": [
                       "Permitted and recommended",
-                      "Not permitted – dipped headlights or front fog lights are better",
+                      "Not permitted - dipped headlights or front fog lights are better",
                       "Allowed only on motorways",
                       "Allowed only if no oncoming traffic"
                     ],
-                    "answer": "Not permitted – dipped headlights or front fog lights are better",
+                    "answer": "Not permitted - dipped headlights or front fog lights are better",
                     "explanation": "Using high beams in fog causes glare and reduces visibility due to back-scatter. Dipped headlights and front fog lights are recommended."
                   },
                   {
@@ -9393,7 +9393,7 @@
                       "Studded tyres are prohibited for foreign vehicles"
                     ],
                     "answer": "Must follow the same seasonal restrictions as Swedish vehicles",
-                    "explanation": "Foreign-registered vehicles must comply with Swedish studded tyre regulations (October 1 – April 15, or when winter conditions exist)."
+                    "explanation": "Foreign-registered vehicles must comply with Swedish studded tyre regulations (October 1 - April 15, or when winter conditions exist)."
                   },
                   {
                     "id": 743,
@@ -9414,11 +9414,11 @@
                     "question": "Is it legal to drive a car with a broken horn?",
                     "options": [
                       "Allowed if you use hand signals instead",
-                      "Not allowed – a functional horn is mandatory equipment",
+                      "Not allowed - a functional horn is mandatory equipment",
                       "Allowed for up to 30 days",
                       "Only illegal for commercial vehicles"
                     ],
-                    "answer": "Not allowed – a functional horn is mandatory equipment",
+                    "answer": "Not allowed - a functional horn is mandatory equipment",
                     "explanation": "A warning device (horn) is required on all motor vehicles under Chapter 4, Section 5. Driving without a functioning horn is illegal."
                   },
                   {
@@ -9427,11 +9427,11 @@
                     "question": "What does the ordinance say about driving a car with a missing front windscreen washer fluid?",
                     "options": [
                       "Legal, but must be refilled soon",
-                      "Illegal – the washer system must be functional",
+                      "Illegal - the washer system must be functional",
                       "Legal if you clean the windscreen manually",
                       "Only illegal in winter"
                     ],
-                    "answer": "Illegal – the washer system must be functional",
+                    "answer": "Illegal - the washer system must be functional",
                     "explanation": "Windscreen washers are part of the required equipment to maintain visibility (Chapter 4, Section 3). Driving without washer fluid (or a broken pump) is illegal if it impairs your ability to clean the windscreen."
                   },
                   {
@@ -9479,11 +9479,11 @@
                     "question": "What does the ordinance say about driving through a flooded road?",
                     "options": [
                       "Proceed slowly if water is less than 10 cm deep",
-                      "Never drive through flooded areas – it can be illegal and dangerous",
+                      "Never drive through flooded areas - it can be illegal and dangerous",
                       "Allowed if you have a 4x4",
                       "Only with hazard lights on"
                     ],
-                    "answer": "Never drive through flooded areas – it can be illegal and dangerous",
+                    "answer": "Never drive through flooded areas - it can be illegal and dangerous",
                     "explanation": "The ordinance does not explicitly forbid driving through water, but Chapter 2, Section 1 requires caution. Driving through deep water can cause damage and is considered reckless if it leads to an accident."
                   },
                   {
@@ -9505,11 +9505,11 @@
                     "question": "May a driver flash headlights to warn other drivers of a speed camera?",
                     "options": [
                       "Legal",
-                      "Illegal – considered a disturbance",
+                      "Illegal - considered a disturbance",
                       "Legal only in daylight",
                       "Only illegal if you cause an accident"
                     ],
-                    "answer": "Illegal – considered a disturbance",
+                    "answer": "Illegal - considered a disturbance",
                     "explanation": "Flashing headlights to warn of a speed camera is considered a disturbance and can result in a fine for 'unnecessary use of lights' under Chapter 3, Section 12."
                   },
                   {
@@ -9583,11 +9583,11 @@
                     "question": "What is the rule for a driver who is towing a trailer and the trailer's number plate is not illuminated at night?",
                     "options": [
                       "Legal, the car's plate covers it",
-                      "Illegal – the trailer's plate must be illuminated by its own light",
+                      "Illegal - the trailer's plate must be illuminated by its own light",
                       "Legal if the car's lights are bright enough",
                       "Only illegal if the trailer is over 750 kg"
                     ],
-                    "answer": "Illegal – the trailer's plate must be illuminated by its own light",
+                    "answer": "Illegal - the trailer's plate must be illuminated by its own light",
                     "explanation": "Trailers must have a working registration plate light that illuminates the plate when the car's headlights are on. This is required for all trailers."
                   },
                   {
@@ -9674,11 +9674,11 @@
                     "question": "What is the rule for a driver who needs to reverse on a road because they missed a turn?",
                     "options": [
                       "Reversing is allowed for short distances if no traffic is present",
-                      "Reversing is prohibited – you must find a safe place to turn around",
+                      "Reversing is prohibited - you must find a safe place to turn around",
                       "Allowed only on roads with speed limit under 50 km/h",
                       "Only allowed for emergency vehicles"
                     ],
-                    "answer": "Reversing is prohibited – you must find a safe place to turn around",
+                    "answer": "Reversing is prohibited - you must find a safe place to turn around",
                     "explanation": "Reversing to correct a wrong turn is prohibited because it creates danger. You must continue to a safe location (e.g., a driveway, parking lot) where you can turn around legally."
                   },
                   {
@@ -9778,11 +9778,11 @@
                     "question": "What is the rule for a driver who has a 'Learner' (L) sign displayed after passing the driving test?",
                     "options": [
                       "Legal, but not required",
-                      "Illegal – only learner drivers may display the L sign",
+                      "Illegal - only learner drivers may display the L sign",
                       "Legal only for the first month",
                       "Only allowed for accompanied driving"
                     ],
-                    "answer": "Illegal – only learner drivers may display the L sign",
+                    "answer": "Illegal - only learner drivers may display the L sign",
                     "explanation": "Displaying an L sign when you are not a learner driver (i.e., have a full licence) is not illegal per se, but it can confuse other drivers and police. It is strongly discouraged and could be considered a disturbance."
                   },
                   {
@@ -9790,7 +9790,7 @@
                     "category": "Miscellaneous Driving Situations",
                     "question": "What does the ordinance say about driving a car with a missing jack or toolkit?",
                     "options": [
-                      "Illegal – must carry these items",
+                      "Illegal - must carry these items",
                       "Legal, these are not mandatory",
                       "Only illegal for vehicles over 3.5 tonnes",
                       "Required only for vehicles with space-saver spare tyres"
@@ -9882,11 +9882,11 @@
                     "question": "What is the rule for a driver who wants to make a U-turn on a road with a solid center line?",
                     "options": [
                       "Allowed if no traffic is approaching",
-                      "Prohibited – crossing a solid line for a U-turn is illegal",
+                      "Prohibited - crossing a solid line for a U-turn is illegal",
                       "Allowed only at intersections",
                       "Allowed if you signal properly"
                     ],
-                    "answer": "Prohibited – crossing a solid line for a U-turn is illegal",
+                    "answer": "Prohibited - crossing a solid line for a U-turn is illegal",
                     "explanation": "Crossing a solid center line is prohibited. A U-turn requires crossing the line, so it is not allowed where a solid line is present. You must find a break in the line or an intersection."
                   },
                   {
@@ -9895,7 +9895,7 @@
                     "question": "What does the ordinance say about driving a car with a broken odometer (distance counter)?",
                     "options": [
                       "Legal, as long as the speedometer works",
-                      "Illegal – odometer is mandatory",
+                      "Illegal - odometer is mandatory",
                       "Legal only for cars over 10 years old",
                       "Only illegal for leased cars"
                     ],
@@ -9934,11 +9934,11 @@
                     "question": "What does the ordinance say about driving a car with a missing headrest?",
                     "options": [
                       "Legal if the seat is unoccupied",
-                      "Illegal – headrests are mandatory on all seats",
+                      "Illegal - headrests are mandatory on all seats",
                       "Legal for rear seats only",
                       "Only illegal if the car was manufactured after 1996"
                     ],
-                    "answer": "Illegal – headrests are mandatory on all seats",
+                    "answer": "Illegal - headrests are mandatory on all seats",
                     "explanation": "Headrests are required on all seats for safety (whiplash protection). A missing headrest on any seat makes the vehicle unroadworthy."
                   },
                   {
@@ -10012,11 +10012,11 @@
                     "question": "What is the rule for a driver who wants to park on a road with a 'no stopping' sign?",
                     "options": [
                       "Allowed for up to 2 minutes",
-                      "Not allowed – no stopping at all",
+                      "Not allowed - no stopping at all",
                       "Allowed only for loading",
                       "Allowed only for emergency vehicles"
                     ],
-                    "answer": "Not allowed – no stopping at all",
+                    "answer": "Not allowed - no stopping at all",
                     "explanation": "A 'no stopping' sign (red circle with blue interior and red crossed lines) prohibits any stop, even briefly. You cannot park or stop there for any reason except emergencies."
                   },
                   {
@@ -10103,7 +10103,7 @@
                     "question": "What does the ordinance say about driving a car with a broken fuel gauge?",
                     "options": [
                       "Legal, as long as you know your fuel level",
-                      "Illegal – fuel gauge is mandatory",
+                      "Illegal - fuel gauge is mandatory",
                       "Legal only for cars with a reserve tank",
                       "Only illegal for rental cars"
                     ],
@@ -10128,7 +10128,7 @@
                     "category": "Miscellaneous Driving Situations",
                     "question": "What is the rule for a driver who has a trailer that is wider than the towing vehicle?",
                     "options": [
-                      "Illegal – trailer must be narrower",
+                      "Illegal - trailer must be narrower",
                       "Legal, but must use extended mirrors",
                       "Legal, but must have a special permit",
                       "Only allowed on roads with speed limit below 70 km/h"
@@ -10147,7 +10147,7 @@
                       "To maintain a speed of at least 50 km/h"
                     ],
                     "answer": "To ensure no harm comes to any road user",
-                    "explanation": "Chapter 2, Section 1 – the overarching duty of care: every road user must show consideration and exercise caution to prevent danger or harm. This is the fundamental principle."
+                    "explanation": "Chapter 2, Section 1 - the overarching duty of care: every road user must show consideration and exercise caution to prevent danger or harm. This is the fundamental principle."
                   },
                     {
                       "id": 801,
@@ -10383,12 +10383,12 @@
                       "category": "Vehicle Equipment",
                       "question": "According to Chapter 4, Section 5a, what is the rule for retrofitting LED headlights to a car designed for halogen bulbs?",
                       "options": [
-                        "Illegal – the headlight unit must be type-approved for the vehicle",
+                        "Illegal - the headlight unit must be type-approved for the vehicle",
                         "Legal if the LEDs are E-marked",
                         "Legal with a special permit",
                         "Only illegal for high beams"
                       ],
-                      "answer": "Illegal – the headlight unit must be type-approved for the vehicle",
+                      "answer": "Illegal - the headlight unit must be type-approved for the vehicle",
                       "explanation": "Replacing halogen bulbs with LED bulbs in a headlight housing designed for halogens is illegal because it alters the light pattern and can dazzle. Only complete LED headlight units approved for the specific vehicle are legal."
                     },
                     {
@@ -10579,11 +10579,11 @@
                       "question": "According to Chapter 8, Section 7, what is the rule for towing a broken vehicle with a rigid tow bar that is not marked?",
                       "options": [
                         "Legal if the tow bar is rigid",
-                        "Illegal – all tow bars (rigid or rope) must be clearly marked",
+                        "Illegal - all tow bars (rigid or rope) must be clearly marked",
                         "Legal only if the tow bar is less than 2 metres",
                         "Only illegal at night"
                       ],
-                      "answer": "Illegal – all tow bars (rigid or rope) must be clearly marked",
+                      "answer": "Illegal - all tow bars (rigid or rope) must be clearly marked",
                       "explanation": "Even a rigid tow bar must be marked (e.g., with a red flag or reflective material) to make it visible to other road users, especially at night."
                     },
                     {
@@ -10652,7 +10652,7 @@
                       "question": "What is the rule regarding 'eco-driving' (sparsam körning) in the Traffic Ordinance?",
                       "options": [
                         "Encouraged but not legally required",
-                        "Mandatory – drivers must adopt fuel-efficient driving",
+                        "Mandatory - drivers must adopt fuel-efficient driving",
                         "Only required for professional drivers",
                         "Not mentioned"
                       ],
@@ -10678,11 +10678,11 @@
                       "question": "What is the rule for washing a car on a driveway with a pressure washer if the water goes into the lawn?",
                       "options": [
                         "Allowed if the detergent is biodegradable",
-                        "Prohibited – any runoff containing detergents or oil is illegal",
+                        "Prohibited - any runoff containing detergents or oil is illegal",
                         "Allowed only if the lawn is not near a storm drain",
                         "Only prohibited in urban areas"
                       ],
-                      "answer": "Prohibited – any runoff containing detergents or oil is illegal",
+                      "answer": "Prohibited - any runoff containing detergents or oil is illegal",
                       "explanation": "Even if water goes onto the lawn, detergents and oil can contaminate groundwater. Washing cars at home is illegal unless the wastewater is collected and disposed of properly. Commercial car washes are required."
                     },
                     {
@@ -10691,11 +10691,11 @@
                       "question": "What does the ordinance say about driving with an excessive exhaust smell (e.g., unburnt fuel)?",
                       "options": [
                         "Legal as long as no visible smoke",
-                        "Illegal – strong fuel smell indicates a malfunction that must be repaired",
+                        "Illegal - strong fuel smell indicates a malfunction that must be repaired",
                         "Legal if the car passes emissions test",
                         "Only illegal if it causes dizziness"
                       ],
-                      "answer": "Illegal – strong fuel smell indicates a malfunction that must be repaired",
+                      "answer": "Illegal - strong fuel smell indicates a malfunction that must be repaired",
                       "explanation": "A strong smell of fuel or exhaust indicates a leak or combustion problem. This violates Chapter 4, Section 11 (excessive emissions) and the vehicle is not roadworthy."
                     },
                     {
@@ -10717,11 +10717,11 @@
                       "question": "What is the rule for a driver who has a GPS that shows live speed camera locations?",
                       "options": [
                         "Legal, as long as you don't rely on it",
-                        "Illegal – any device that warns of fixed speed cameras is prohibited",
+                        "Illegal - any device that warns of fixed speed cameras is prohibited",
                         "Legal only if the GPS does not beep",
                         "Only illegal for professional drivers"
                       ],
-                      "answer": "Illegal – any device that warns of fixed speed cameras is prohibited",
+                      "answer": "Illegal - any device that warns of fixed speed cameras is prohibited",
                       "explanation": "The ordinance prohibits devices that alert to fixed speed camera locations. GPS apps with speed camera warnings must have that feature disabled in Sweden."
                     },
                     {
@@ -10730,11 +10730,11 @@
                       "question": "May a driver flash headlights to warn oncoming traffic of a police checkpoint?",
                       "options": [
                         "Legal, freedom of speech",
-                        "Illegal – considered obstructing police duties",
+                        "Illegal - considered obstructing police duties",
                         "Legal only if done once",
                         "Only illegal if you are stopped"
                       ],
-                      "answer": "Illegal – considered obstructing police duties",
+                      "answer": "Illegal - considered obstructing police duties",
                       "explanation": "Flashing headlights to warn other drivers of a police checkpoint can be interpreted as obstructing law enforcement and may result in a fine."
                     },
                     {
@@ -10743,11 +10743,11 @@
                       "question": "What is the rule for a driver who wants to use a 'hands-free' earpiece in both ears?",
                       "options": [
                         "Allowed, but not recommended",
-                        "Prohibited – blocking both ears reduces hearing of traffic sounds",
+                        "Prohibited - blocking both ears reduces hearing of traffic sounds",
                         "Allowed only for phone calls",
                         "Only allowed for professional drivers"
                       ],
-                      "answer": "Prohibited – blocking both ears reduces hearing of traffic sounds",
+                      "answer": "Prohibited - blocking both ears reduces hearing of traffic sounds",
                       "explanation": "Using headphones or earbuds in both ears while driving is illegal because it impairs your ability to hear emergency vehicles, horns, and other warnings. A single earpiece is permitted."
                     },
                     {
@@ -10886,11 +10886,11 @@
                       "question": "May a driver drive a car with a missing front bumper?",
                       "options": [
                         "Allowed if the bumper is not required for safety",
-                        "Not allowed – the vehicle is considered defective",
+                        "Not allowed - the vehicle is considered defective",
                         "Allowed temporarily for 7 days",
                         "Only prohibited on motorways"
                       ],
-                      "answer": "Not allowed – the vehicle is considered defective",
+                      "answer": "Not allowed - the vehicle is considered defective",
                       "explanation": "A bumper is part of the vehicle's safety equipment. Missing bumpers can cause injury to pedestrians and other vehicles, so the car is not roadworthy."
                     },
                     {
@@ -10899,11 +10899,11 @@
                       "question": "What is the rule for a driver who is towing a trailer and the trailer's number plate is not illuminated at night?",
                       "options": [
                         "Legal, the car's plate covers it",
-                        "Illegal – the trailer's plate must be illuminated by its own light",
+                        "Illegal - the trailer's plate must be illuminated by its own light",
                         "Legal if the car's lights are bright enough",
                         "Only illegal if the trailer is over 750 kg"
                       ],
-                      "answer": "Illegal – the trailer's plate must be illuminated by its own light",
+                      "answer": "Illegal - the trailer's plate must be illuminated by its own light",
                       "explanation": "Trailers must have a working registration plate light that illuminates the plate when the car's headlights are on. This is required for all trailers."
                     },
                     {
@@ -10912,11 +10912,11 @@
                       "question": "What does the ordinance say about driving a car with a loose battery that is not secured?",
                       "options": [
                         "Legal if the battery is small",
-                        "Illegal – the battery must be secured to prevent movement",
+                        "Illegal - the battery must be secured to prevent movement",
                         "Legal for cars with sealed batteries",
                         "Only illegal if the battery leaks"
                       ],
-                      "answer": "Illegal – the battery must be secured to prevent movement",
+                      "answer": "Illegal - the battery must be secured to prevent movement",
                       "explanation": "A loose battery can move, short-circuit, or spill acid. This violates Chapter 4, Section 1 (load securing) and is dangerous."
                     },
                     {
@@ -10938,11 +10938,11 @@
                       "question": "What is the rule for a driver who is stopped at a traffic light and wants to pick up a dropped phone from the floor?",
                       "options": [
                         "Allowed quickly, as the vehicle is stationary",
-                        "Prohibited – you must pull over safely first",
+                        "Prohibited - you must pull over safely first",
                         "Allowed only if you put the car in park",
                         "Only allowed if a passenger retrieves it"
                       ],
-                      "answer": "Prohibited – you must pull over safely first",
+                      "answer": "Prohibited - you must pull over safely first",
                       "explanation": "Even at a red light, you are still driving. Reaching for a dropped phone is a distraction and can lead to an accident if the light changes. Pull over to a safe spot before retrieving it."
                     },
                     {
@@ -10964,7 +10964,7 @@
                       "question": "What is the rule for a driver who has a 'green licence plate' (for electric vehicles) parked in a regular parking space?",
                       "options": [
                         "Allowed, green plates have no special parking privileges",
-                        "Prohibited – green plates must park only in EV spaces",
+                        "Prohibited - green plates must park only in EV spaces",
                         "Allowed only if charging",
                         "Only allowed for parking disc zones"
                       ],
@@ -11029,11 +11029,11 @@
                       "question": "What does the ordinance say about driving a car with a missing rear view mirror (interior) if the car has two side mirrors?",
                       "options": [
                         "Legal, two side mirrors provide adequate rear view",
-                        "Illegal – interior mirror is mandatory if the car was originally equipped",
+                        "Illegal - interior mirror is mandatory if the car was originally equipped",
                         "Legal only for vans",
                         "Only illegal for cars with tinted rear windows"
                       ],
-                      "answer": "Illegal – interior mirror is mandatory if the car was originally equipped",
+                      "answer": "Illegal - interior mirror is mandatory if the car was originally equipped",
                       "explanation": "Cars are designed with three mirrors. Removing the interior mirror violates the original equipment requirements and may fail inspection. Two side mirrors are sufficient only if the interior mirror was not originally fitted."
                     },
                     {
@@ -11120,11 +11120,11 @@
                       "question": "What does the ordinance say about driving a car with a broken rear seatbelt buckle?",
                       "options": [
                         "Legal if no passenger sits in that seat",
-                        "Illegal – all seatbelt buckles must function regardless of occupancy",
+                        "Illegal - all seatbelt buckles must function regardless of occupancy",
                         "Legal for up to 30 days",
                         "Only illegal if the car is used for transporting passengers"
                       ],
-                      "answer": "Illegal – all seatbelt buckles must function regardless of occupancy",
+                      "answer": "Illegal - all seatbelt buckles must function regardless of occupancy",
                       "explanation": "The vehicle is required to have functional seatbelts on all seats where they are fitted. A broken buckle makes the vehicle unroadworthy, even if the seat is empty."
                     },
                     {
@@ -11185,11 +11185,11 @@
                       "question": "What is the rule for a driver who wants to park on a road with a 'parking for residents only' sign without a permit?",
                       "options": [
                         "Allowed for up to 2 hours",
-                        "Not allowed – only residents with a permit may park there",
+                        "Not allowed - only residents with a permit may park there",
                         "Allowed if you pay via an app",
                         "Allowed only on weekends"
                       ],
-                      "answer": "Not allowed – only residents with a permit may park there",
+                      "answer": "Not allowed - only residents with a permit may park there",
                       "explanation": "Resident parking zones (boendeparkering) require a permit issued by the municipality. Vehicles without a permit will be fined, even if they are visiting a resident."
                     },
                     {
@@ -11341,11 +11341,11 @@
                       "question": "What does the ordinance say about driving a car with a broken parking brake?",
                       "options": [
                         "Legal if you use wheel chocks",
-                        "Illegal – the parking brake must be functional",
+                        "Illegal - the parking brake must be functional",
                         "Legal only for automatic transmission cars",
                         "Only illegal if the car is parked on a hill"
                       ],
-                      "answer": "Illegal – the parking brake must be functional",
+                      "answer": "Illegal - the parking brake must be functional",
                       "explanation": "The parking brake (handbrake) is mandatory safety equipment. A broken parking brake makes the vehicle unroadworthy because it cannot be secured when parked."
                     },
                     {
@@ -12965,11 +12965,11 @@
                           "question": "What does Chapter 4, Section 1a require for a roof load that exceeds the vehicle's maximum roof load?",
                           "options": [
                             "Legal if secured properly",
-                            "Illegal – must not exceed the manufacturer's roof load limit",
+                            "Illegal - must not exceed the manufacturer's roof load limit",
                             "Legal with a special permit",
                             "Only illegal on motorways"
                           ],
-                          "answer": "Illegal – must not exceed the manufacturer's roof load limit",
+                          "answer": "Illegal - must not exceed the manufacturer's roof load limit",
                           "explanation": "Exceeding the vehicle's specified maximum roof load is illegal and dangerous. It affects handling and stability, violating Chapter 4, Section 1 (load securing)."
                         },
                         {
@@ -13150,11 +13150,11 @@
                           "question": "What does Chapter 9, Section 7 say about driving a vehicle that cannot maintain a speed of at least 40 km/h on a motorway?",
                           "options": [
                             "It is permitted but must use hazard lights",
-                            "It is prohibited – such vehicles must not use the motorway",
+                            "It is prohibited - such vehicles must not use the motorway",
                             "It is allowed only in the right lane",
                             "It is allowed only during daylight"
                           ],
-                          "answer": "It is prohibited – such vehicles must not use the motorway",
+                          "answer": "It is prohibited - such vehicles must not use the motorway",
                           "explanation": "Vehicles that cannot maintain a minimum speed of approximately 40 km/h (e.g., tractors, mopeds, slow construction equipment) are prohibited from using motorways."
                         },
                         {
@@ -13291,11 +13291,11 @@
                           "question": "What does Chapter 8, Section 5a say about towing a trailer with a damaged electrical connection?",
                           "options": [
                             "Allowed if the trailer's lights still work",
-                            "Prohibited – all electrical functions must operate",
+                            "Prohibited - all electrical functions must operate",
                             "Allowed for short distances",
                             "Only prohibited at night"
                           ],
-                          "answer": "Prohibited – all electrical functions must operate",
+                          "answer": "Prohibited - all electrical functions must operate",
                           "explanation": "A trailer must have fully functioning turn signals, brake lights, tail lights, and reflector lights. Driving with a damaged electrical connection is illegal."
                         },
                         {
@@ -13343,11 +13343,11 @@
                           "question": "What does Chapter 3, Section 68a say about the use of warning beacons (amber) on a private car?",
                           "options": [
                             "Allowed for any vehicle to warn of a hazard",
-                            "Prohibited – only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
+                            "Prohibited - only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
                             "Allowed only for breakdowns",
                             "Allowed only for emergency vehicles"
                           ],
-                          "answer": "Prohibited – only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
+                          "answer": "Prohibited - only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
                           "explanation": "Amber flashing beacons are reserved for specific vehicles with permits (e.g., construction, utility, towing). Private cars may not use them."
                         },
                         {
@@ -13533,11 +13533,11 @@
                           "question": "What does the ordinance say about driving with a diesel car that uses AdBlue but the tank is empty?",
                           "options": [
                             "Legal as long as the car runs",
-                            "Illegal – the car's emissions system is compromised",
+                            "Illegal - the car's emissions system is compromised",
                             "Allowed for up to 100 km",
                             "Only illegal if the check engine light is on"
                           ],
-                          "answer": "Illegal – the car's emissions system is compromised",
+                          "answer": "Illegal - the car's emissions system is compromised",
                           "explanation": "If the AdBlue tank is empty, the vehicle's NOx emissions will exceed legal limits. The vehicle is not roadworthy and should not be driven."
                         },
                         {
@@ -13559,11 +13559,11 @@
                           "question": "What is the rule for driving a petrol car with a missing catalytic converter?",
                           "options": [
                             "Legal if the car still passes the emissions test",
-                            "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                            "Illegal - the catalytic converter is mandatory on cars that originally had one",
                             "Legal for cars older than 20 years",
                             "Only illegal if the car emits visible smoke"
                           ],
-                          "answer": "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                          "answer": "Illegal - the catalytic converter is mandatory on cars that originally had one",
                           "explanation": "If the car was manufactured with a catalytic converter, it must be present and functional. Removing or disabling it is illegal and will cause the car to fail emissions inspection."
                         },
                         {
@@ -13714,12 +13714,12 @@
                           "category": "Miscellaneous",
                           "question": "What is the rule regarding the use of a 'magnetic' red flashing light on a private car?",
                           "options": [
-                            "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                            "Prohibited - only emergency vehicles may display blue or red flashing lights",
                             "Allowed for roadside assistance vehicles",
                             "Allowed if you have a special permit",
                             "Only allowed in rural areas"
                           ],
-                          "answer": "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                          "answer": "Prohibited - only emergency vehicles may display blue or red flashing lights",
                           "explanation": "Red or blue flashing lights are reserved for police, ambulance, fire, and other authorised emergency vehicles. Private use is illegal."
                         },
                         {
@@ -13794,7 +13794,7 @@
                           "options": [
                             "Allowed if the pet is small",
                             "Not recommended but legal unless it distracts the driver",
-                            "Prohibited – pets must be restrained (harness, crate, or barrier)",
+                            "Prohibited - pets must be restrained (harness, crate, or barrier)",
                             "Only allowed for dogs"
                           ],
                           "answer": "Not recommended but legal unless it distracts the driver",
@@ -13845,11 +13845,11 @@
                           "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                           "options": [
                             "Legal, as side mirrors provide adequate rear view",
-                            "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                            "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                             "Legal only for vans and trucks",
                             "Only illegal if the car is used for towing"
                           ],
-                          "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                          "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                           "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                         },
                         {
@@ -13976,7 +13976,7 @@
                           "options": [
                             "Allowed if the dog is small",
                             "Not specifically prohibited, but could be considered a distraction",
-                            "Prohibited – dog must be in the back",
+                            "Prohibited - dog must be in the back",
                             "Allowed only if the airbag is deactivated"
                           ],
                           "answer": "Not specifically prohibited, but could be considered a distraction",
@@ -14117,12 +14117,12 @@
                           "category": "Miscellaneous",
                           "question": "What is the rule regarding the use of a 'magnetic' red flashing light on a private car?",
                           "options": [
-                            "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                            "Prohibited - only emergency vehicles may display blue or red flashing lights",
                             "Allowed for roadside assistance vehicles",
                             "Allowed if you have a special permit",
                             "Only allowed in rural areas"
                           ],
-                          "answer": "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                          "answer": "Prohibited - only emergency vehicles may display blue or red flashing lights",
                           "explanation": "Red or blue flashing lights are reserved for police, ambulance, fire, and other authorised emergency vehicles. Private use is illegal."
                         },
                         {
@@ -14197,7 +14197,7 @@
                           "options": [
                             "Allowed if the pet is small",
                             "Not recommended but legal unless it distracts the driver",
-                            "Prohibited – pets must be restrained (harness, crate, or barrier)",
+                            "Prohibited - pets must be restrained (harness, crate, or barrier)",
                             "Only allowed for dogs"
                           ],
                           "answer": "Not recommended but legal unless it distracts the driver",
@@ -14248,11 +14248,11 @@
                           "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                           "options": [
                             "Legal, as side mirrors provide adequate rear view",
-                            "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                            "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                             "Legal only for vans and trucks",
                             "Only illegal if the car is used for towing"
                           ],
-                          "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                          "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                           "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                         },
                         {
@@ -14379,7 +14379,7 @@
                           "options": [
                             "Allowed if the dog is small",
                             "Not specifically prohibited, but could be considered a distraction",
-                            "Prohibited – dog must be in the back",
+                            "Prohibited - dog must be in the back",
                             "Allowed only if the airbag is deactivated"
                           ],
                           "answer": "Not specifically prohibited, but could be considered a distraction",
@@ -14520,12 +14520,12 @@
                           "category": "Miscellaneous",
                           "question": "What is the rule regarding the use of a 'magnetic' red flashing light on a private car?",
                           "options": [
-                            "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                            "Prohibited - only emergency vehicles may display blue or red flashing lights",
                             "Allowed for roadside assistance vehicles",
                             "Allowed if you have a special permit",
                             "Only allowed in rural areas"
                           ],
-                          "answer": "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                          "answer": "Prohibited - only emergency vehicles may display blue or red flashing lights",
                           "explanation": "Red or blue flashing lights are reserved for police, ambulance, fire, and other authorised emergency vehicles. Private use is illegal."
                         },
                         {
@@ -14600,7 +14600,7 @@
                           "options": [
                             "Allowed if the pet is small",
                             "Not recommended but legal unless it distracts the driver",
-                            "Prohibited – pets must be restrained (harness, crate, or barrier)",
+                            "Prohibited - pets must be restrained (harness, crate, or barrier)",
                             "Only allowed for dogs"
                           ],
                           "answer": "Not recommended but legal unless it distracts the driver",
@@ -14651,11 +14651,11 @@
                           "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                           "options": [
                             "Legal, as side mirrors provide adequate rear view",
-                            "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                            "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                             "Legal only for vans and trucks",
                             "Only illegal if the car is used for towing"
                           ],
-                          "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                          "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                           "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                         },
                         {
@@ -14782,7 +14782,7 @@
                           "options": [
                             "Allowed if the dog is small",
                             "Not specifically prohibited, but could be considered a distraction",
-                            "Prohibited – dog must be in the back",
+                            "Prohibited - dog must be in the back",
                             "Allowed only if the airbag is deactivated"
                           ],
                           "answer": "Not specifically prohibited, but could be considered a distraction",
@@ -14923,12 +14923,12 @@
                           "category": "Miscellaneous",
                           "question": "What is the rule regarding the use of a 'magnetic' red flashing light on a private car?",
                           "options": [
-                            "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                            "Prohibited - only emergency vehicles may display blue or red flashing lights",
                             "Allowed for roadside assistance vehicles",
                             "Allowed if you have a special permit",
                             "Only allowed in rural areas"
                           ],
-                          "answer": "Prohibited – only emergency vehicles may display blue or red flashing lights",
+                          "answer": "Prohibited - only emergency vehicles may display blue or red flashing lights",
                           "explanation": "Red or blue flashing lights are reserved for police, ambulance, fire, and other authorised emergency vehicles. Private use is illegal."
                         },
                         {
@@ -15003,7 +15003,7 @@
                           "options": [
                             "Allowed if the pet is small",
                             "Not recommended but legal unless it distracts the driver",
-                            "Prohibited – pets must be restrained (harness, crate, or barrier)",
+                            "Prohibited - pets must be restrained (harness, crate, or barrier)",
                             "Only allowed for dogs"
                           ],
                           "answer": "Not recommended but legal unless it distracts the driver",
@@ -15054,11 +15054,11 @@
                           "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                           "options": [
                             "Legal, as side mirrors provide adequate rear view",
-                            "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                            "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                             "Legal only for vans and trucks",
                             "Only illegal if the car is used for towing"
                           ],
-                          "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                          "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                           "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                         },
                         {
@@ -15185,7 +15185,7 @@
                           "options": [
                             "Allowed if the dog is small",
                             "Not specifically prohibited, but could be considered a distraction",
-                            "Prohibited – dog must be in the back",
+                            "Prohibited - dog must be in the back",
                             "Allowed only if the airbag is deactivated"
                           ],
                           "answer": "Not specifically prohibited, but could be considered a distraction",
@@ -15889,11 +15889,11 @@
                             "question": "What does Chapter 9, Section 8 say about driving a vehicle that cannot maintain a speed of at least 40 km/h on a motorway?",
                             "options": [
                               "It is permitted but must use hazard lights",
-                              "It is prohibited – such vehicles must not use the motorway",
+                              "It is prohibited - such vehicles must not use the motorway",
                               "It is allowed only in the right lane",
                               "It is allowed only during daylight"
                             ],
-                            "answer": "It is prohibited – such vehicles must not use the motorway",
+                            "answer": "It is prohibited - such vehicles must not use the motorway",
                             "explanation": "Vehicles that cannot maintain a minimum speed of approximately 40 km/h (e.g., tractors, mopeds, slow construction equipment) are prohibited from using motorways."
                           },
                           {
@@ -16169,11 +16169,11 @@
                             "question": "What does Chapter 8, Section 5a say about towing a trailer with a damaged electrical connection?",
                             "options": [
                               "Allowed if the trailer's lights still work",
-                              "Prohibited – all electrical functions must operate",
+                              "Prohibited - all electrical functions must operate",
                               "Allowed for short distances",
                               "Only prohibited at night"
                             ],
-                            "answer": "Prohibited – all electrical functions must operate",
+                            "answer": "Prohibited - all electrical functions must operate",
                             "explanation": "A trailer must have fully functioning turn signals, brake lights, tail lights, and reflector lights. Driving with a damaged electrical connection is illegal."
                           },
                           {
@@ -16324,13 +16324,13 @@
                             "category": "Penalties",
                             "question": "What is the penalty for driving without a valid driver's licence (olovlig körning) for the first time?",
                             "options": [
-                              "A fine (day fine) of about 3,000–5,000 SEK",
+                              "A fine (day fine) of about 3,000-5,000 SEK",
                               "Imprisonment up to 6 months",
                               "Only a warning",
                               "Vehicle confiscation"
                             ],
-                            "answer": "A fine (day fine) of about 3,000–5,000 SEK",
-                            "explanation": "Driving without a licence is punishable by a fine. The amount is based on income; typical day fines result in 3,000–5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
+                            "answer": "A fine (day fine) of about 3,000-5,000 SEK",
+                            "explanation": "Driving without a licence is punishable by a fine. The amount is based on income; typical day fines result in 3,000-5,000 SEK. Repeated or aggravated cases may lead to imprisonment."
                           },
                           {
                             "id": 1287,
@@ -16886,12 +16886,12 @@
                             "category": "Miscellaneous",
                             "question": "What is the rule for a driver who needs to make a three-point turn on a road with limited visibility?",
                             "options": [
-                              "Prohibited – find a better location",
+                              "Prohibited - find a better location",
                               "Allowed if no traffic is visible",
                               "Allowed only with a spotter",
                               "Allowed only during daytime"
                             ],
-                            "answer": "Prohibited – find a better location",
+                            "answer": "Prohibited - find a better location",
                             "explanation": "Making a three-point turn where you cannot see far enough in both directions is dangerous and violates the duty of care. You must find a safer place (e.g., driveway, intersection) to turn."
                           },
                           {
@@ -16914,10 +16914,10 @@
                             "options": [
                               "Allowed for up to 2 minutes",
                               "Allowed only for emergency vehicles",
-                              "Not allowed – no stopping at all",
+                              "Not allowed - no stopping at all",
                               "Allowed if the passenger is ready"
                             ],
-                            "answer": "Not allowed – no stopping at all",
+                            "answer": "Not allowed - no stopping at all",
                             "explanation": "A 'no stopping' sign (red circle with blue interior and red crossed lines) prohibits any stop, even briefly. You cannot pick up or drop off passengers there."
                           },
                           {
@@ -16939,11 +16939,11 @@
                             "question": "What is the rule for a driver who has a broken speedometer?",
                             "options": [
                               "Allowed if you know your speed from other means",
-                              "Not allowed – the speedometer must be functional",
+                              "Not allowed - the speedometer must be functional",
                               "Allowed temporarily for up to 30 days",
                               "Only prohibited on motorways"
                             ],
-                            "answer": "Not allowed – the speedometer must be functional",
+                            "answer": "Not allowed - the speedometer must be functional",
                             "explanation": "Chapter 4, Section 1 requires the vehicle to be in a roadworthy condition. A speedometer is mandatory equipment; driving without a working speedometer is illegal."
                           },
                           {
@@ -16965,11 +16965,11 @@
                             "question": "What does the ordinance say about driving a car with a missing rearview mirror (interior mirror) but functional side mirrors?",
                             "options": [
                               "Legal, as side mirrors provide adequate rear view",
-                              "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                              "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                               "Legal only for vans and trucks",
                               "Only illegal if the car is used for towing"
                             ],
-                            "answer": "Illegal – interior mirror is mandatory if the car was originally equipped with one",
+                            "answer": "Illegal - interior mirror is mandatory if the car was originally equipped with one",
                             "explanation": "Cars are required to have at least two mirrors providing rear visibility. If the interior mirror is missing, two side mirrors are sufficient, but most cars are designed with all three. Removal may violate equipment regulations."
                           },
                           {
@@ -17043,11 +17043,11 @@
                               "question": "According to Chapter 3, Section 14a, what is the rule for driving in a car with summer tyres on a snowy road?",
                               "options": [
                                 "Legal but risky",
-                                "Illegal – tyres must be adapted to winter conditions from December 1 to March 31",
+                                "Illegal - tyres must be adapted to winter conditions from December 1 to March 31",
                                 "Legal if you have chains",
                                 "Only illegal on motorways"
                               ],
-                              "answer": "Illegal – tyres must be adapted to winter conditions from December 1 to March 31",
+                              "answer": "Illegal - tyres must be adapted to winter conditions from December 1 to March 31",
                               "explanation": "During winter conditions (snow, ice, slush) between December 1 and March 31, tyres must be winter tyres (M+S or studded). Summer tyres are not permitted during these conditions."
                             },
                             {
@@ -17233,11 +17233,11 @@
                               "question": "What does Chapter 3, Section 68a say about the use of warning beacons (amber) on a private car?",
                               "options": [
                                 "Allowed for any vehicle to warn of a hazard",
-                                "Prohibited – only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
+                                "Prohibited - only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
                                 "Allowed only for breakdowns",
                                 "Allowed only for emergency vehicles"
                               ],
-                              "answer": "Prohibited – only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
+                              "answer": "Prohibited - only authorised vehicles (e.g., road maintenance, tow trucks) may use amber beacons",
                               "explanation": "Amber flashing beacons are reserved for specific vehicles with permits (e.g., construction, utility, towing). Private cars may not use them."
                             },
                             {
@@ -17332,11 +17332,11 @@
                               "question": "What is the rule for driving a diesel car that uses AdBlue but the tank is empty?",
                               "options": [
                                 "Legal as long as the car runs",
-                                "Illegal – the car's emissions system is compromised",
+                                "Illegal - the car's emissions system is compromised",
                                 "Allowed for up to 100 km",
                                 "Only illegal if the check engine light is on"
                               ],
-                              "answer": "Illegal – the car's emissions system is compromised",
+                              "answer": "Illegal - the car's emissions system is compromised",
                               "explanation": "If the AdBlue tank is empty, the vehicle's NOx emissions will exceed legal limits. The vehicle is not roadworthy and should not be driven."
                             },
                             {
@@ -17358,11 +17358,11 @@
                               "question": "What is the rule for driving a petrol car with a missing catalytic converter?",
                               "options": [
                                 "Legal if the car still passes the emissions test",
-                                "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                                "Illegal - the catalytic converter is mandatory on cars that originally had one",
                                 "Legal for cars older than 20 years",
                                 "Only illegal if the car emits visible smoke"
                               ],
-                              "answer": "Illegal – the catalytic converter is mandatory on cars that originally had one",
+                              "answer": "Illegal - the catalytic converter is mandatory on cars that originally had one",
                               "explanation": "If the car was manufactured with a catalytic converter, it must be present and functional. Removing or disabling it is illegal and will cause the car to fail emissions inspection."
                             },
                             {
@@ -17384,7 +17384,7 @@
                               "question": "What is the rule for a driver who has a 'green licence plate' (for electric vehicles) parked in a regular parking space?",
                               "options": [
                                 "Allowed, green plates have no special parking privileges",
-                                "Prohibited – green plates must park only in EV spaces",
+                                "Prohibited - green plates must park only in EV spaces",
                                 "Allowed only if charging",
                                 "Only allowed for parking disc zones"
                               ],
@@ -17514,11 +17514,11 @@
                               "question": "What does the ordinance say about driving a car with a broken rear seatbelt buckle?",
                               "options": [
                                 "Legal if no passenger sits in that seat",
-                                "Illegal – all seatbelt buckles must function regardless of occupancy",
+                                "Illegal - all seatbelt buckles must function regardless of occupancy",
                                 "Legal for up to 30 days",
                                 "Only illegal if the car is used for transporting passengers"
                               ],
-                              "answer": "Illegal – all seatbelt buckles must function regardless of occupancy",
+                              "answer": "Illegal - all seatbelt buckles must function regardless of occupancy",
                               "explanation": "The vehicle is required to have functional seatbelts on all seats where they are fitted. A broken buckle makes the vehicle unroadworthy, even if the seat is empty."
                             },
                             {
@@ -17579,11 +17579,11 @@
                               "question": "What is the rule for a driver who wants to park on a road with a 'parking for residents only' sign without a permit?",
                               "options": [
                                 "Allowed for up to 2 hours",
-                                "Not allowed – only residents with a permit may park there",
+                                "Not allowed - only residents with a permit may park there",
                                 "Allowed if you pay via an app",
                                 "Allowed only on weekends"
                               ],
-                              "answer": "Not allowed – only residents with a permit may park there",
+                              "answer": "Not allowed - only residents with a permit may park there",
                               "explanation": "Resident parking zones (boendeparkering) require a permit issued by the municipality. Vehicles without a permit will be fined, even if they are visiting a resident."
                             },
                             {
@@ -17735,11 +17735,11 @@
                               "question": "What does the ordinance say about driving a car with a broken parking brake?",
                               "options": [
                                 "Legal if you use wheel chocks",
-                                "Illegal – the parking brake must be functional",
+                                "Illegal - the parking brake must be functional",
                                 "Legal only for automatic transmission cars",
                                 "Only illegal if the car is parked on a hill"
                               ],
-                              "answer": "Illegal – the parking brake must be functional",
+                              "answer": "Illegal - the parking brake must be functional",
                               "explanation": "The parking brake (handbrake) is mandatory safety equipment. A broken parking brake makes the vehicle unroadworthy because it cannot be secured when parked."
                             },
                             {

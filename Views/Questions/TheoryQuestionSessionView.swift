@@ -9,9 +9,16 @@ struct TheoryQuestionSessionView: View {
     @Binding var isPresented: Bool
 
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(TheoryQuestionCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TheoryQuestionSessionStore.self) private var sessionStore
+
+    @State private var showExitConfirmation = false
+
+    private var cardBackground: Color {
+        ListCardStyle.cardBackground(colorScheme: colorScheme)
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -19,19 +26,18 @@ struct TheoryQuestionSessionView: View {
                 ScreenTitleBar(
                     title: l10n.text(.questionsTitle),
                     showsBackButton: !sessionStore.finished,
-                    onBack: { isPresented = false }
+                    onBack: { showExitConfirmation = true }
                 )
 
                 if !sessionStore.questions.isEmpty, !sessionStore.finished {
                     HStack {
                         Spacer()
-                        Button(l10n.text(.questionsStartOver)) {
-                            sessionStore.restartSession(catalog: catalog)
-                        }
-                        .font(.caption.weight(.medium))
+                        QuestionFavoriteButton(
+                            questionID: sessionStore.questions[sessionStore.currentIndex].source.id
+                        )
                     }
                     .padding(.horizontal, 16)
-                    .padding(.top, 14)
+                    .padding(.top, 12)
                 }
             }
 
@@ -58,83 +64,116 @@ struct TheoryQuestionSessionView: View {
                 sessionStore.recordIfNeeded(historyStore: historyStore)
             }
         }
+        .alert(l10n.text(.testExitAlertTitle), isPresented: $showExitConfirmation) {
+            Button(l10n.text(.commonCancel), role: .cancel) {}
+            Button(l10n.text(.commonOK)) {
+                sessionStore.clear()
+                isPresented = false
+            }
+        } message: {
+            Text(l10n.text(.testExitAlertMessage))
+        }
     }
 
     private var activeQuestion: some View {
         let item = sessionStore.questions[sessionStore.currentIndex]
 
-        return ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                VStack(spacing: 6) {
-                    ProgressView(
-                        value: Double(sessionStore.currentIndex + 1),
-                        total: Double(sessionStore.questions.count)
-                    )
-                    Text("\(sessionStore.currentIndex + 1)/\(sessionStore.questions.count)")
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity)
-                }
-                .padding(.horizontal)
+        return VStack(spacing: 0) {
+            TestSessionProgressHeader(
+                currentIndex: sessionStore.currentIndex,
+                totalCount: sessionStore.questions.count
+            )
 
-                Text(item.source.category)
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.secondary)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                    .background(Color(.systemGray5), in: Capsule())
-                    .padding(.horizontal)
+            questionCard(for: item.source)
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.top, 12)
+                .padding(.bottom, ListCardStyle.rowSpacing)
 
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text("\(item.source.id)")
-                        .font(.headline.weight(.semibold))
-                        .foregroundStyle(.secondary)
+            QuestionAnswersDivider(topPadding: 12)
 
-                    Text(item.source.question)
-                        .font(.headline)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .padding(.horizontal)
-
-                VStack(spacing: 12) {
-                    ForEach(Array(item.options.enumerated()), id: \.element.id) { index, option in
-                        QuizOptionButton(
-                            number: index + 1,
-                            title: option.title,
-                            state: optionState(for: option, question: item)
-                        ) {
-                            sessionStore.select(optionID: option.id, for: item)
+            ScrollView {
+                VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(Array(item.options.enumerated()), id: \.element.id) { index, option in
+                            QuizOptionButton(
+                                number: index + 1,
+                                title: option.title,
+                                state: optionState(for: option, question: item),
+                                isInteractive: sessionStore.selectedID == nil
+                            ) {
+                                sessionStore.select(optionID: option.id, for: item)
+                            }
                         }
-                        .disabled(sessionStore.selectedID != nil)
+                    }
+
+                    if sessionStore.selectedID != nil {
+                        explanationSection(for: item.source)
                     }
                 }
-                .padding(.horizontal)
-
-                if sessionStore.selectedID != nil {
-                    Text(item.source.explanation)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding()
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(Color(.systemGray6), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-                        .padding(.horizontal)
-
-                    Button(
-                        sessionStore.currentIndex < sessionStore.questions.count - 1
-                            ? l10n.text(.testNextQuestion)
-                            : l10n.text(.testShowResults)
-                    ) {
-                        sessionStore.advance()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal)
-                }
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.bottom, 8)
             }
-            .padding(.top, 8)
-            .padding(.bottom, 24)
+            .frame(maxHeight: .infinity, alignment: .top)
+            .scrollContentBackground(.hidden)
+            .scrollIndicators(.hidden)
+            .id(item.source.id)
+
+            questionNavigationBar
+                .frame(height: 72)
+                .background(Theme.screenBackground)
         }
+    }
+
+    private func questionCard(for question: TheoryQuestion) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(question.category)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 4)
+                .background(Color(.systemGray5), in: Capsule())
+
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Text("\(question.id)")
+                    .font(.headline.weight(.semibold))
+                    .foregroundStyle(.secondary)
+
+                Text(question.question)
+                    .font(.headline)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .listCardStyle(background: cardBackground, colorScheme: colorScheme)
+    }
+
+    private func explanationSection(for question: TheoryQuestion) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(l10n.text(.questionsExplanation))
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
+
+            Text(question.explanation)
+                .font(.subheadline)
+                .foregroundStyle(.primary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.systemGray6), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private var questionNavigationBar: some View {
+        TestQuestionNavigationBar(
+            canGoBack: sessionStore.currentIndex > 0,
+            canGoForward: sessionStore.selectedID != nil,
+            forwardTitle: sessionStore.currentIndex < sessionStore.questions.count - 1
+                ? l10n.text(.testNextQuestion)
+                : l10n.text(.testShowResults),
+            onBack: { sessionStore.goBack() },
+            onForward: { sessionStore.advance() }
+        )
     }
 
     private var sessionResult: some View {
@@ -163,7 +202,7 @@ struct TheoryQuestionSessionView: View {
 
             Spacer()
 
-            Button(l10n.text(.questionsEnd)) {
+            Button(l10n.text(.commonDone)) {
                 isPresented = false
             }
             .buttonStyle(.borderedProminent)

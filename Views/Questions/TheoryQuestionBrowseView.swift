@@ -31,16 +31,27 @@ struct TheoryQuestionBrowseView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ScreenTitleBar(
-                title: l10n.text(.questionsTitle),
-                subtitle: l10n.text(.studyOf, index + 1, questions.count),
-                showsBackButton: true
-            )
+            ZStack {
+                ScreenTitleBar(
+                    title: l10n.text(.questionsTitle),
+                    subtitle: l10n.text(.studyOf, index + 1, questions.count),
+                    showsBackButton: true
+                )
+
+                HStack {
+                    Spacer()
+                    QuestionFavoriteButton(questionID: question.id)
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 12)
+            }
 
             questionCard
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
                 .padding(.bottom, ListCardStyle.rowSpacing)
+
+            QuestionAnswersDivider(topPadding: 12)
 
             ScrollView {
                 VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {

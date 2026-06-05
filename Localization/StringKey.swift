@@ -10,11 +10,27 @@ enum StringKey: String, CaseIterable {
     // Tabs
     case tabStudy = "tab.study"
     case tabCategories = "tab.categories"
+    case tabGoal = "tab.goal"
     case tabHome = "tab.home"
     case tabTests = "tab.tests"
+    case tabPractice = "tab.practice"
     case tabSigns = "tab.signs"
     case tabQuestions = "tab.questions"
     case tabSettings = "tab.settings"
+
+    case practiceTitle = "practice.title"
+
+    // Favorites
+    case favoritesTitle = "favorites.title"
+    case favoritesAddSign = "favorites.add_sign"
+    case favoritesRemoveSign = "favorites.remove_sign"
+    case favoritesAddQuestion = "favorites.add_question"
+    case favoritesRemoveQuestion = "favorites.remove_question"
+    case favoritesEmptySigns = "favorites.empty_signs"
+    case favoritesEmptyQuestions = "favorites.empty_questions"
+    case favoritesAddedSign = "favorites.added_sign"
+    case favoritesAddedQuestion = "favorites.added_question"
+    case favoritesDontShowAgain = "favorites.dont_show_again"
 
     // Welcome
     case welcomeTitlePrefix = "welcome.title_prefix"
@@ -40,6 +56,29 @@ enum StringKey: String, CaseIterable {
     case homeKeepLearning = "home.keep_learning"
     case homeExploreDescription = "home.explore_description"
     case homeComingSoon = "home.coming_soon"
+    case homeLicenseStepsTitle = "home.license_steps_title"
+    case homeLicenseStepsProgress = "home.license_steps_progress"
+
+    // Driving license steps
+    case licenseStepNumber = "license.step_number"
+    case licenseMarkDone = "license.mark_done"
+    case licenseMarkNotDone = "license.mark_not_done"
+    case licensePermitTitle = "license.permit.title"
+    case licensePermitDetail = "license.permit.detail"
+    case licenseEyeCheckTitle = "license.eye_check.title"
+    case licenseEyeCheckDetail = "license.eye_check.detail"
+    case licenseRisk1Title = "license.risk1.title"
+    case licenseRisk1Detail = "license.risk1.detail"
+    case licenseRisk2Title = "license.risk2.title"
+    case licenseRisk2Detail = "license.risk2.detail"
+    case licenseTheoryTestTitle = "license.theory_test.title"
+    case licenseTheoryTestDetail = "license.theory_test.detail"
+    case licenseDrivingLessonsTitle = "license.driving_lessons.title"
+    case licenseDrivingLessonsDetail = "license.driving_lessons.detail"
+    case licenseDrivingTestTitle = "license.driving_test.title"
+    case licenseDrivingTestDetail = "license.driving_test.detail"
+    case licensePickUpTitle = "license.pick_up.title"
+    case licensePickUpDetail = "license.pick_up.detail"
 
     // Signs tab (study cards)
     case studyTitle = "study.title"
@@ -93,6 +132,8 @@ enum StringKey: String, CaseIterable {
     case testIncorrectCount = "test.incorrect_count"
     case testScoreSummary = "test.score_summary"
     case testCorrectLabel = "test.correct_label"
+    case testExitAlertTitle = "test.exit_alert_title"
+    case testExitAlertMessage = "test.exit_alert_message"
 
     // Questions
     case questionsTitle = "questions.title"

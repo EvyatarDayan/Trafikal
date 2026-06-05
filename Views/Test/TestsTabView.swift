@@ -49,10 +49,8 @@ struct TestsTabView: View {
         .appRootScreen()
         .appScreenBackground()
         .onAppear {
-            resumeSessionIfNeeded()
-        }
-        .onDisappear {
             dismissFinishedSessionsIfNeeded()
+            restoreInProgressSessionIfNeeded()
         }
         .onChange(of: showSignSession) { _, isShowing in
             if !isShowing {
@@ -65,7 +63,9 @@ struct TestsTabView: View {
             }
         }
         .onChange(of: mode) { _, _ in
-            resumeSessionIfNeeded()
+            showSignSession = false
+            showQuestionSession = false
+            dismissFinishedSessionsIfNeeded()
         }
         .navigationDestination(isPresented: $showHistory) {
             HistoryView(initialFilter: mode == .signs ? .signs : .questions)
@@ -205,23 +205,17 @@ struct TestsTabView: View {
         }
     }
 
-    private func resumeSessionIfNeeded() {
-        dismissFinishedSessionsIfNeeded()
+    private func restoreInProgressSessionIfNeeded() {
+        guard !showSignSession, !showQuestionSession else { return }
 
         switch mode {
         case .signs:
-            showQuestionSession = false
             if signSessionStore.hasResumableSession {
                 showSignSession = true
-            } else {
-                showSignSession = false
             }
         case .questions:
-            showSignSession = false
             if questionSessionStore.hasResumableSession {
                 showQuestionSession = true
-            } else {
-                showQuestionSession = false
             }
         }
     }

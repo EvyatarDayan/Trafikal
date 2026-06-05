@@ -62,7 +62,7 @@
       "Fordonet som kom först"
     ],
     "answer": "Fordonet kommer från höger",
-    "explanation": "3 kap 18 §: När två fordonsbanor korsar varandra har föraren väjningsplikt för fordon som närmar sig från höger, utom där 21–23 §§ (t.ex. avfart från fastighet, rondellregler) gäller."
+    "explanation": "3 kap 18 §: När två fordonsbanor korsar varandra har föraren väjningsplikt för fordon som närmar sig från höger, utom där 21-23 §§ (t.ex. avfart från fastighet, rondellregler) gäller."
   },
   {
     "id": 6,
@@ -309,7 +309,7 @@
       "Ja, om du använder varningsblinkers"
     ],
     "answer": "Nej, det är strängt förbjudet",
-    "explanation": "3 kap. 46 § och 9 kap. 1–2 §§: Det är under alla omständigheter förbjudet att backa och vända på motorvägar och körfält."
+    "explanation": "3 kap. 46 § och 9 kap. 1-2 §§: Det är under alla omständigheter förbjudet att backa och vända på motorvägar och körfält."
   },
   {
     "id": 25,
@@ -335,7 +335,7 @@
       "Fordonets last och skick"
     ],
     "answer": "Din egen körkomfort",
-    "explanation": "3 kap. 14 § Hastigheten ska anpassas till väg, terräng, väder, sikt, fordonsskick och last samt allmänna trafikförhållanden – inte till personlig komfort."
+    "explanation": "3 kap. 14 § Hastigheten ska anpassas till väg, terräng, väder, sikt, fordonsskick och last samt allmänna trafikförhållanden - inte till personlig komfort."
   },
   {
     "id": 27,
@@ -374,7 +374,7 @@
       "0,8‰"
     ],
     "answer": "0,2‰",
-    "explanation": "Den svenska BAC-gränsen är 0,2 promille (0,02%). Detta är en av de strängaste i världen – all påvisbar alkohol kan leda till åtal för rattfylleri."
+    "explanation": "Den svenska BAC-gränsen är 0,2 promille (0,02%). Detta är en av de strängaste i världen - all påvisbar alkohol kan leda till åtal för rattfylleri."
   },
   {
     "id": 30,
@@ -530,7 +530,7 @@
       "Snabba upp för att rensa korsningen"
     ],
     "answer": "Fortsätt med försiktighet och ge efter som vid en korsning med högerregel",
-    "explanation": "Ett blinkande gult ljus betyder att trafikljuset är ur funktion eller avstängt. Du måste behandla korsningen som om den inte hade några signaler – följ vägskyltar eller, om ingen, högerregeln."
+    "explanation": "Ett blinkande gult ljus betyder att trafikljuset är ur funktion eller avstängt. Du måste behandla korsningen som om den inte hade några signaler - följ vägskyltar eller, om ingen, högerregeln."
   },
   {
     "id": 42,
@@ -751,7 +751,7 @@
       "Prioritet framför mötande trafik"
     ],
     "answer": "Stoppa helt och fortsätt sedan bara när det är säkert",
-    "explanation": "En 'STOPP'-skylt (triangulär med röd kant – egentligen är den åttakantig i Sverige, men förordningen beskriver stoppplikt) kräver ett punkt vid hållplatslinjen. Efter att ha stoppat kan du fortsätta när det är säkert. Detta är från 3 kap 19 §."
+    "explanation": "En 'STOPP'-skylt (triangulär med röd kant - egentligen är den åttakantig i Sverige, men förordningen beskriver stoppplikt) kräver ett punkt vid hållplatslinjen. Efter att ha stoppat kan du fortsätta när det är säkert. Detta är från 3 kap 19 §."
   },
   {
     "id": 59,
@@ -829,7 +829,7 @@
       "0,8‰"
     ],
     "answer": "0,2‰",
-    "explanation": "BAC-gränsen för alla motorfordonsförare i Sverige, inklusive tunga fordon, är 0,2 promille. Det finns ingen speciell högre gräns för yrkesförare – samma strikta gräns gäller."
+    "explanation": "BAC-gränsen för alla motorfordonsförare i Sverige, inklusive tunga fordon, är 0,2 promille. Det finns ingen speciell högre gräns för yrkesförare - samma strikta gräns gäller."
   },
   {
     "id": 65,
@@ -959,7 +959,7 @@
       "Endast om fordonet brinner"
     ],
     "answer": "Endast när fordonet är helt inaktiverat och inte kan flyttas",
-    "explanation": "En varningstriangel måste placeras när ett fordon stoppas på grund av haveri eller olycka och inte kan flyttas till en säker plats. Den bör placeras minst 50–100 meter bakom fordonet på en motorväg."
+    "explanation": "En varningstriangel måste placeras när ett fordon stoppas på grund av haveri eller olycka och inte kan flyttas till en säker plats. Den bör placeras minst 50-100 meter bakom fordonet på en motorväg."
   },
   {
     "id": 75,
@@ -1250,7 +1250,7 @@
   {
     "id": 97,
     "category": "Trafikregler",
-    "question": "När får du använda dubbdäck under sommarmånaderna (maj–september)?",
+    "question": "När får du använda dubbdäck under sommarmånaderna (maj-september)?",
     "options": [
       "Aldrig",
       "Endast om du kör till ett garage för att få dem borttagna",
@@ -2436,11 +2436,11 @@
     "question": "Vad betyder en blå cirkel med en vit pil som pekar rakt fram?",
     "options": [
       "Enkelriktad gata",
-      "Obligatorisk riktning – endast rakt fram",
+      "Obligatorisk riktning - endast rakt fram",
       "Prioriterad väg",
       "Inget inträde"
     ],
-    "answer": "Obligatorisk riktning – endast rakt fram",
+    "answer": "Obligatorisk riktning - endast rakt fram",
     "explanation": "En blå cirkel med en vit pil indikerar en obligatorisk färdriktning. Rak pil betyder att du måste gå rakt."
   },
   {
@@ -2740,7 +2740,7 @@
       "Inga speciella krav"
     ],
     "answer": "Både A och B",
-    "explanation": "8 kap. 1: Vid bogsering med en flexibel anordning (rep) ska avståndet mellan fordonen vara 4–6 meter, och repet ska vara tydligt markerat (t.ex. med röd flagga)."
+    "explanation": "8 kap. 1: Vid bogsering med en flexibel anordning (rep) ska avståndet mellan fordonen vara 4-6 meter, och repet ska vara tydligt markerat (t.ex. med röd flagga)."
   },
   {
     "id": 212,
@@ -2831,7 +2831,7 @@
       "Måste bära hjälm och reflexväst"
     ],
     "answer": "Tillåtet om de följer fotgängarreglerna och håller sig på vänster sida",
-    "explanation": "Kapitel 10, Avsnitt 7: Rullskridskoåkare och skateboardåkare behandlas som fotgängare och måste följa fotgängaresregler – på vägar utan trottoar ska de röra sig på vänster sida."
+    "explanation": "Kapitel 10, Avsnitt 7: Rullskridskoåkare och skateboardåkare behandlas som fotgängare och måste följa fotgängaresregler - på vägar utan trottoar ska de röra sig på vänster sida."
   },
   {
     "id": 219,
@@ -2922,7 +2922,7 @@
       "Slut på hastighetsbegränsning 70 km/h"
     ],
     "answer": "Minsta hastighet 70 km/h",
-    "explanation": "Kapitel 11, avsnitt 4: En blå cirkel med ett vitt nummer indikerar en lägsta tillåtna hastighet. Röd kant med blå insida och nummer är inte standard; faktiskt, lägsta hastighet är blå cirkel. Men texten säger röd cirkel? – Rättelse: Lägsta hastighetsskylt är en blå cirkel med vitt nummer. Ingen röd kant. Så den här frågan är knepig. För att undvika förvirring håller vi oss till standarden: Blå cirkel = lägsta hastighet."
+    "explanation": "Kapitel 11, avsnitt 4: En blå cirkel med ett vitt nummer indikerar en lägsta tillåtna hastighet. Röd kant med blå insida och nummer är inte standard; faktiskt, lägsta hastighet är blå cirkel. Men texten säger röd cirkel? - Rättelse: Lägsta hastighetsskylt är en blå cirkel med vitt nummer. Ingen röd kant. Så den här frågan är knepig. För att undvika förvirring håller vi oss till standarden: Blå cirkel = lägsta hastighet."
   },
   {
     "id": 226,
@@ -3000,7 +3000,7 @@
       "Inget straff vid första förseelsen"
     ],
     "answer": "Böter och eventuell körkortsindragning",
-    "explanation": "Enligt trafikbrottslagen anses ett BAC på 0,2–1,0‰ som rattfylleri (rattfylleri) och ger böter och körkortsavstängning (vanligtvis 1–6 månader)."
+    "explanation": "Enligt trafikbrottslagen anses ett BAC på 0,2-1,0‰ som rattfylleri (rattfylleri) och ger böter och körkortsavstängning (vanligtvis 1-6 månader)."
   },
   {
     "id": 232,
@@ -3060,11 +3060,11 @@
     "question": "Vad är regeln för att köra genom en översvämmad väg?",
     "options": [
       "Fortsätt långsamt om vattnet är mindre än 10 cm djupt",
-      "Kör aldrig genom översvämmade områden – det kan vara olagligt och farligt",
+      "Kör aldrig genom översvämmade områden - det kan vara olagligt och farligt",
       "Tillåtet om du har en 4x4",
       "Endast med varningsblinkers tända"
     ],
-    "answer": "Kör aldrig genom översvämmade områden – det kan vara olagligt och farligt",
+    "answer": "Kör aldrig genom översvämmade områden - det kan vara olagligt och farligt",
     "explanation": "Förordningen förbjuder inte uttryckligen körning genom vatten, men 2 kap. 1 § kräver försiktighet. Att köra genom djupt vatten kan orsaka skador och anses vara hänsynslöst om det leder till en olycka."
   },
   {
@@ -3273,7 +3273,7 @@
       "Beror på fordonet"
     ],
     "answer": "Beror på fordonet",
-    "explanation": "Den maximala dragbelastningen anges av fordonstillverkaren och får inte överskridas. Det är vanligtvis mellan 50–100 kg för personbilar."
+    "explanation": "Den maximala dragbelastningen anges av fordonstillverkaren och får inte överskridas. Det är vanligtvis mellan 50-100 kg för personbilar."
   },
   {
     "id": 253,
@@ -3281,11 +3281,11 @@
     "question": "Vad säger förordningen om att endast använda vinterdäck på framaxeln?",
     "options": [
       "Tillåtet endast för bakhjulsdrivna bilar",
-      "Förbjudet – vinterdäck måste monteras på alla axlar om de används alls",
+      "Förbjudet - vinterdäck måste monteras på alla axlar om de används alls",
       "Tillåtet, men endast på framhjulsdrivna bilar",
       "Ingen begränsning"
     ],
-    "answer": "Förbjudet – vinterdäck måste monteras på alla axlar om de används alls",
+    "answer": "Förbjudet - vinterdäck måste monteras på alla axlar om de används alls",
     "explanation": "Förordningen kräver inte uttryckligen alla axlar, men trafiksäkerhetsreglerna (3 kap. 14 §) innebär att felaktiga däck minskar stabiliteten. Polisen anser att vinterdäck på endast en axel är osäkra."
   },
   {
@@ -3294,11 +3294,11 @@
     "question": "Vad är regeln när det gäller att köra med en sprucken bromsljuslins?",
     "options": [
       "Tillåtet om glödlampan fortfarande fungerar",
-      "Ej tillåtet – linsen måste vara intakt och inte missfärgad",
+      "Ej tillåtet - linsen måste vara intakt och inte missfärgad",
       "Tillåtet tillfälligt i 7 dagar",
       "Ingen regel"
     ],
-    "answer": "Ej tillåtet – linsen måste vara intakt och inte missfärgad",
+    "answer": "Ej tillåtet - linsen måste vara intakt och inte missfärgad",
     "explanation": "Kapitel 4, avsnitt 5 kräver att lamporna fungerar korrekt. En sprucken lins kan tillåta vatten att tränga in och kan ändra ljusets färg eller intensitet, vilket gör det olagligt."
   },
   {
@@ -3333,11 +3333,11 @@
     "question": "Vad är regeln för att köra bil med trasig hastighetsmätare?",
     "options": [
       "Tillåtet om du känner din hastighet från andra sätt",
-      "Inte tillåtet – hastighetsmätaren måste fungera",
+      "Inte tillåtet - hastighetsmätaren måste fungera",
       "Tillåtet tillfälligt i upp till 30 dagar",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Inte tillåtet – hastighetsmätaren måste fungera",
+    "answer": "Inte tillåtet - hastighetsmätaren måste fungera",
     "explanation": "Enligt 4 kap 1 § ska fordonet vara i trafikdugligt skick. En hastighetsmätare är obligatorisk utrustning; körning utan fungerande hastighetsmätare är olagligt."
   },
   {
@@ -3398,11 +3398,11 @@
     "question": "Vad säger förordningen om att använda helljusstrålkastare i dimma?",
     "options": [
       "Tillåtet och rekommenderat",
-      "Inte tillåtet – halvljus eller dimljus är bättre",
+      "Inte tillåtet - halvljus eller dimljus är bättre",
       "Tillåtet endast på motorvägar",
       "Tillåtet endast om ingen mötande trafik"
     ],
-    "answer": "Inte tillåtet – halvljus eller dimljus är bättre",
+    "answer": "Inte tillåtet - halvljus eller dimljus är bättre",
     "explanation": "Att använda helljus i dimma orsakar bländning och minskar sikten på grund av bakåtspridning. Halvljus och främre dimljus rekommenderas."
   },
   {
@@ -3437,11 +3437,11 @@
     "question": "Vad säger förordningen om att köra bil som avger alltför mycket rök?",
     "options": [
       "Tillåts i upp till 30 sekunder",
-      "Förbjudet – synlig rök i mer än 5 sekunder är olagligt",
+      "Förbjudet - synlig rök i mer än 5 sekunder är olagligt",
       "Tillåtet om röken är vit (ånga)",
       "Ingen begränsning"
     ],
-    "answer": "Förbjudet – synlig rök i mer än 5 sekunder är olagligt",
+    "answer": "Förbjudet - synlig rök i mer än 5 sekunder är olagligt",
     "explanation": "Kapitel 4, § 11: Fordonet får inte avge synlig rök under mer än några sekunder (vanligtvis 5 sekunder). Överdriven rök indikerar ett fel."
   },
   {
@@ -3455,7 +3455,7 @@
       "Använd varningsblinkers istället"
     ],
     "answer": "Placera den så långt bakom som möjligt, åtminstone synligt",
-    "explanation": "Den allmänna regeln är 50–100 meter. Om vägen är för smal, placera den på ett säkert avstånd där den kan ses, vanligtvis före en kurva."
+    "explanation": "Den allmänna regeln är 50-100 meter. Om vägen är för smal, placera den på ett säkert avstånd där den kan ses, vanligtvis före en kurva."
   },
   {
     "id": 267,
@@ -3489,11 +3489,11 @@
     "question": "Vad är regeln för att köra bil med en saknad stötfångare?",
     "options": [
       "Tillåtet om stötfångaren inte krävs för säkerhets skull",
-      "Ej tillåtet – fordonet anses vara defekt",
+      "Ej tillåtet - fordonet anses vara defekt",
       "Tillåtet tillfälligt i 7 dagar",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Ej tillåtet – fordonet anses vara defekt",
+    "answer": "Ej tillåtet - fordonet anses vara defekt",
     "explanation": "En stötfångare är en del av fordonets säkerhetsutrustning. Saknade stötfångare kan orsaka skador på fotgängare och andra fordon, så bilen är inte trafikduglig."
   },
   {
@@ -3528,11 +3528,11 @@
     "question": "Vad är regeln gällande att köra bil med sprucket bakljus (rött) som fortfarande fungerar?",
     "options": [
       "Lagligt om ljuset är synligt",
-      "Olagligt – linsen måste vara intakt och ofärgad",
+      "Olagligt - linsen måste vara intakt och ofärgad",
       "Lagligt i upp till 1 månad",
       "Endast olagligt på natten"
     ],
-    "answer": "Olagligt – linsen måste vara intakt och ofärgad",
+    "answer": "Olagligt - linsen måste vara intakt och ofärgad",
     "explanation": "En sprucken lins kan släppa in fukt och kan ändra ljuseffekten. Standarden för fordonsbesiktning kräver intakta linser för alla lampor."
   },
   {
@@ -3593,11 +3593,11 @@
     "question": "Vad säger förordningen om att köra genom ett rött ljus som just blivit rött?",
     "options": [
       "Tillåtet om du gick in innan det blev rött",
-      "Förbjudet – du måste stanna vid stopplinjen även om den blir röd när du är nära",
+      "Förbjudet - du måste stanna vid stopplinjen även om den blir röd när du är nära",
       "Tillåtet om ingen annan trafik förekommer",
       "Endast förbjudet för tunga fordon"
     ],
-    "answer": "Förbjudet – du måste stanna vid stopplinjen även om den blir röd när du är nära",
+    "answer": "Förbjudet - du måste stanna vid stopplinjen även om den blir röd när du är nära",
     "explanation": "Du måste stanna vid rött ljus. Om du passerar stopplinjen efter att ljuset blivit rött är det en överträdelse, oavsett hur nära du var."
   },
   {
@@ -3606,11 +3606,11 @@
     "question": "Vad är regeln om att blinka dina strålkastare för att varna andra förare för en fartkamera?",
     "options": [
       "Rättslig",
-      "Olagligt – betraktas som en störning",
+      "Olagligt - betraktas som en störning",
       "Lagligt endast i dagsljus",
       "Endast olagligt om du orsakar en olycka"
     ],
-    "answer": "Olagligt – betraktas som en störning",
+    "answer": "Olagligt - betraktas som en störning",
     "explanation": "Blinkande strålkastare för att varna för en fartkamera anses vara en störning och kan ge böter för \"onödig användning av ljus\" enligt 3 kap. 12 §."
   },
   {
@@ -3645,11 +3645,11 @@
     "question": "Vad är regeln när det gäller användningen av en GPS som visar live fartkameror?",
     "options": [
       "Lagligt, så länge du inte använder det för att undvika kameror",
-      "Olagligt – alla enheter som varnar för fartkameror är förbjudna",
+      "Olagligt - alla enheter som varnar för fartkameror är förbjudna",
       "Lagligt endast om GPS:en inte piper",
       "Endast olagligt för yrkesförare"
     ],
-    "answer": "Olagligt – alla enheter som varnar för fartkameror är förbjudna",
+    "answer": "Olagligt - alla enheter som varnar för fartkameror är förbjudna",
     "explanation": "Förordningen förbjuder enheter som varnar för fasta fartkameror. GPS-appar med fartkameravarningar måste ha den funktionen inaktiverad i Sverige."
   },
   {
@@ -3671,11 +3671,11 @@
     "question": "Vad säger förordningen om att köra med en omatchad däckstorlek på samma axel?",
     "options": [
       "Tillåtet om skillnaden är mindre än 5 %",
-      "Förbjudet – däck på samma axel måste vara identiska i storlek, typ och slitbanemönster",
+      "Förbjudet - däck på samma axel måste vara identiska i storlek, typ och slitbanemönster",
       "Tillåtet endast för bakaxel",
       "Ingen regel"
     ],
-    "answer": "Förbjudet – däck på samma axel måste vara identiska i storlek, typ och slitbanemönster",
+    "answer": "Förbjudet - däck på samma axel måste vara identiska i storlek, typ och slitbanemönster",
     "explanation": "Felmatchade däck på samma axel kan orsaka hanteringsproblem. Förordningen om fordonsutrustning kräver samma storlek, konstruktion och slitbanemönster på varje axel."
   },
   {
@@ -3710,11 +3710,11 @@
     "question": "Vad säger förordningen om att köra en bil med ett defekt avgassystem som orsakar höga poppljud?",
     "options": [
       "Tillåtet om bilen klarar besiktning",
-      "Olagligt – avgaserna får inte avge för mycket ljud",
+      "Olagligt - avgaserna får inte avge för mycket ljud",
       "Tillåtet endast under dagtid",
       "Ingen specifik regel"
     ],
-    "answer": "Olagligt – avgaserna får inte avge för mycket ljud",
+    "answer": "Olagligt - avgaserna får inte avge för mycket ljud",
     "explanation": "4 kap 10 § kräver att fordonet uppfyller bullergränserna. Ett defekt avgas som producerar knäppande ljud är sannolikt över gränsen och olagligt."
   },
   {
@@ -3723,11 +3723,11 @@
     "question": "Vad är regeln för att köra en bil som läcker olja på vägen?",
     "options": [
       "Tillåtet så länge du fyller på olja",
-      "Olagligt – läckande olja skapar en fara för andra trafikanter",
+      "Olagligt - läckande olja skapar en fara för andra trafikanter",
       "Tillåtet för en kort bit till garage",
       "Endast olagligt om läckan är allvarlig"
     ],
-    "answer": "Olagligt – läckande olja skapar en fara för andra trafikanter",
+    "answer": "Olagligt - läckande olja skapar en fara för andra trafikanter",
     "explanation": "Olja på vägen minskar dragkraften och är en miljöfara. Att framföra ett fordon som aktivt läcker olja är förbjudet enligt 4 kap. 1 §."
   },
   {
@@ -3749,11 +3749,11 @@
     "question": "Vad säger förordningen om att köra med ett släp som har trasigt bromsljus?",
     "options": [
       "Tillåtet om dragfordonets lampor är synliga",
-      "Olagligt – alla obligatoriska lampor på släpet måste fungera",
+      "Olagligt - alla obligatoriska lampor på släpet måste fungera",
       "Tillåtet i upp till 7 dagar",
       "Endast olagligt på natten"
     ],
-    "answer": "Olagligt – alla obligatoriska lampor på släpet måste fungera",
+    "answer": "Olagligt - alla obligatoriska lampor på släpet måste fungera",
     "explanation": "4 kap. 5 § gäller även för släpvagnar. En släpvagn måste ha fungerande bromsljus, blinkers och bakljus."
   },
   {
@@ -3801,11 +3801,11 @@
     "question": "Vad är regeln när det gäller att köra en bil med bruten signalhorn?",
     "options": [
       "Tillåtet, eftersom horn inte krävs",
-      "Ej tillåtet – ett fungerande horn är obligatorisk utrustning",
+      "Ej tillåtet - ett fungerande horn är obligatorisk utrustning",
       "Tillåtet om du istället använder handsignaler",
       "Krävs endast för fordon över 3,5 ton"
     ],
-    "answer": "Ej tillåtet – ett fungerande horn är obligatorisk utrustning",
+    "answer": "Ej tillåtet - ett fungerande horn är obligatorisk utrustning",
     "explanation": "En varningsanordning (horn) krävs på alla motorfordon enligt 4 kap. 5 §. Att köra utan fungerande tuta är olagligt."
   },
   {
@@ -3996,11 +3996,11 @@
     "question": "Vad är regeln för att köra när man är överdrivet trött (utmattad)?",
     "options": [
       "Tillåtet så länge du inte blundar",
-      "Förbjudet – det anses vara vårdslös körning",
+      "Förbjudet - det anses vara vårdslös körning",
       "Tillåtet om du dricker kaffe",
       "Endast förbjudet för yrkesförare"
     ],
-    "answer": "Förbjudet – det anses vara vårdslös körning",
+    "answer": "Förbjudet - det anses vara vårdslös körning",
     "explanation": "Att köra överdrivet trött bryter mot 2 kap 1 § (aktsamhetsplikt). Det kan leda till påföljder som liknar rattfylleri, särskilt om det orsakar en olycka."
   },
   {
@@ -4217,11 +4217,11 @@
     "question": "Vad är regeln för att använda dimbakljus vid god sikt?",
     "options": [
       "Tillåts öka synligheten",
-      "Förbjudet – det kan blända följande förare",
+      "Förbjudet - det kan blända följande förare",
       "Tillåtet endast på motorvägar",
       "Tillåtet endast under dagsljus"
     ],
-    "answer": "Förbjudet – det kan blända följande förare",
+    "answer": "Förbjudet - det kan blända följande förare",
     "explanation": "Dimljusen bak är extremt ljusa. Att använda dem i normal sikt är olagligt och kan leda till böter. De är reserverade för sikt under 100 meter."
   },
   {
@@ -4827,12 +4827,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för användning av ett \"magnetiskt\" rött blinkande ljus på en privatbil?",
     "options": [
-      "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+      "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
       "Tillåtet för vägassistansfordon",
       "Tillåtet om du har ett särskilt tillstånd",
       "Endast tillåtet på landsbygden"
     ],
-    "answer": "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+    "answer": "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
     "explanation": "Rött eller blått blinkande ljus är reserverat för polis, ambulans, brand och andra auktoriserade utryckningsfordon. Privat användning är olagligt."
   },
   {
@@ -4907,7 +4907,7 @@
     "options": [
       "Tillåtet om husdjuret är litet",
       "Rekommenderas inte men lagligt om det inte distraherar föraren",
-      "Förbjudet – husdjur måste hållas fast (sele, låda eller barriär)",
+      "Förbjudet - husdjur måste hållas fast (sele, låda eller barriär)",
       "Endast tillåtet för hundar"
     ],
     "answer": "Rekommenderas inte men lagligt om det inte distraherar föraren",
@@ -4958,11 +4958,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -5089,7 +5089,7 @@
     "options": [
       "Tillåtet om hunden är liten",
       "Inte specifikt förbjudet, men kan betraktas som en distraktion",
-      "Förbjudet – hunden måste vara i ryggen",
+      "Förbjudet - hunden måste vara i ryggen",
       "Tillåtet endast om krockkudden är avaktiverad"
     ],
     "answer": "Inte specifikt förbjudet, men kan betraktas som en distraktion",
@@ -5179,7 +5179,7 @@
     "question": "Vad säger förordningen om att köra bil med trasig vägmätare (avståndsräknare)?",
     "options": [
       "Lagligt, så länge hastighetsmätaren fungerar",
-      "Olagligt – vägmätaren är obligatorisk utrustning",
+      "Olagligt - vägmätaren är obligatorisk utrustning",
       "Lagligt men måste repareras inom 1 år",
       "Endast olagligt om bilen är leasad"
     ],
@@ -5197,7 +5197,7 @@
       "Att hålla en hastighet på minst 50 km/h"
     ],
     "answer": "För att säkerställa att ingen trafikant skadas",
-    "explanation": "2 kap 1 § – den övergripande aktsamhetsplikten: varje trafikant ska visa hänsyn och iaktta försiktighet för att förhindra fara eller skada. Detta är den grundläggande principen."
+    "explanation": "2 kap 1 § - den övergripande aktsamhetsplikten: varje trafikant ska visa hänsyn och iaktta försiktighet för att förhindra fara eller skada. Detta är den grundläggande principen."
   },
   {
     "id": 401,
@@ -5335,11 +5335,11 @@
     "question": "Vad säger förordningen om att köra ett fordon som avger alltför mycket rök?",
     "options": [
       "Tillåtet om det är en diesel",
-      "Ej tillåtet – fordonet måste repareras omedelbart",
+      "Ej tillåtet - fordonet måste repareras omedelbart",
       "Tillåtet i upp till 30 dagar",
       "Endast förbjudet i tätorter"
     ],
-    "answer": "Ej tillåtet – fordonet måste repareras omedelbart",
+    "answer": "Ej tillåtet - fordonet måste repareras omedelbart",
     "explanation": "4 kap 11 § förbjuder synlig rök som varar mer än några sekunder. Ett sådant fordon är inte trafiksäkert och måste repareras."
   },
   {
@@ -5465,11 +5465,11 @@
     "question": "Vad säger 3 kap 61 § om att lämna ett fordon utan uppsikt med nycklar i tändningen?",
     "options": [
       "Tillåtet i säkra områden",
-      "Förbjudet – du måste ta bort nycklarna och låsa fordonet",
+      "Förbjudet - du måste ta bort nycklarna och låsa fordonet",
       "Tillåtet om fordonet är inom synhåll",
       "Endast förbjudet för kommersiella fordon"
     ],
-    "answer": "Förbjudet – du måste ta bort nycklarna och låsa fordonet",
+    "answer": "Förbjudet - du måste ta bort nycklarna och låsa fordonet",
     "explanation": "3 kap 61 §: När föraren lämnar ett fordon obevakat ska föraren se till att det inte kan flyttas av en obehörig person. Detta inkluderar att ta ur tändningsnyckeln."
   },
   {
@@ -5530,11 +5530,11 @@
     "question": "Vad säger förordningen om att köra med ett släp som inte har bromsar men som överstiger fordonets rekommenderade dragvikt?",
     "options": [
       "Tillåtet om du kör långsamt",
-      "Olagligt – släpvagnen måste vara inom fordonets godkända dragkapacitet",
+      "Olagligt - släpvagnen måste vara inom fordonets godkända dragkapacitet",
       "Tillåtet endast för släp under 750 kg",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Olagligt – släpvagnen måste vara inom fordonets godkända dragkapacitet",
+    "answer": "Olagligt - släpvagnen måste vara inom fordonets godkända dragkapacitet",
     "explanation": "Att dra en släpvagn som överstiger fordonets högsta tillåtna dragvikt (anges i registreringshandlingarna) är olagligt och farligt, oavsett bromsnärvaro."
   },
   {
@@ -5543,11 +5543,11 @@
     "question": "Vad är regeln för en förare som av misstag passerar en \"stopp\"-skylt utan att stanna?",
     "options": [
       "Ingen överträdelse om ingen annan trafik förekom",
-      "Överträdelse oavsett trafik – du ska stanna vid skylten",
+      "Överträdelse oavsett trafik - du ska stanna vid skylten",
       "Bara en kränkning om en polis ser det",
       "Tillåtet om du saktade ner till en krypning"
     ],
-    "answer": "Överträdelse oavsett trafik – du ska stanna vid skylten",
+    "answer": "Överträdelse oavsett trafik - du ska stanna vid skylten",
     "explanation": "En \"stopp\"-skylt kräver ett helt stopp vid stopplinjen, även om ingen annan trafik är närvarande. Att rulla igenom är ett brott och medför böter."
   },
   {
@@ -5678,7 +5678,7 @@
       "Dubbdäck är förbjudna för utländska fordon"
     ],
     "answer": "Måste följa samma säsongsrestriktioner som svenska fordon",
-    "explanation": "Utlandsregistrerade fordon ska uppfylla svenska dubbdäcksregler (1 oktober – 15 april, eller när vinterförhållanden råder)."
+    "explanation": "Utlandsregistrerade fordon ska uppfylla svenska dubbdäcksregler (1 oktober - 15 april, eller när vinterförhållanden råder)."
   },
   {
     "id": 438,
@@ -5725,11 +5725,11 @@
     "question": "Vad säger 3 kap 76 § om att använda ett fordon för att skjuta ett annat fordon på allmän väg?",
     "options": [
       "Tillåtet med styv dragkrok",
-      "Förbjudet – tryckning är inte tillåten",
+      "Förbjudet - tryckning är inte tillåten",
       "Tillåtet endast i nödsituationer",
       "Tillåtet endast för korta sträckor"
     ],
-    "answer": "Förbjudet – tryckning är inte tillåten",
+    "answer": "Förbjudet - tryckning är inte tillåten",
     "explanation": "Det är förbjudet att skjuta ett fordon med ett annat fordon (t.ex. stötfångare till stötfångare). Endast bogsering med godkänd dragkrok eller lina är tillåten."
   },
   {
@@ -5867,12 +5867,12 @@
     "category": "Trafikregler",
     "question": "Vad säger förordningen om att köra bil med sprucken eller saknad sidospegel?",
     "options": [
-      "Olagligt – båda sidospeglarna måste vara intakta och funktionella",
+      "Olagligt - båda sidospeglarna måste vara intakta och funktionella",
       "Lagligt om innerbackspegeln fungerar",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt om bilen ursprungligen var utrustad med sidospeglar"
     ],
-    "answer": "Olagligt – båda sidospeglarna måste vara intakta och funktionella",
+    "answer": "Olagligt - båda sidospeglarna måste vara intakta och funktionella",
     "explanation": "Alla originalspeglar måste finnas med och fungera. En sprucken spegel som förvränger synen är inte acceptabel. Saknade sidospeglar är ett trafiksäkerhetsbrott."
   },
   {
@@ -5893,12 +5893,12 @@
     "category": "Trafikregler",
     "question": "Vad säger förordningen om att köra med släp som är längre än 12 meter (husvagn)?",
     "options": [
-      "Olagligt – maximal släpvagnslängd är 12 meter",
+      "Olagligt - maximal släpvagnslängd är 12 meter",
       "Lagligt om den sammanlagda längden inte överstiger 18,75 meter",
       "Lagligt endast med ett särskilt tillstånd",
       "Olagligt för personbilar, tillåtet för lastbilar"
     ],
-    "answer": "Olagligt – maximal släpvagnslängd är 12 meter",
+    "answer": "Olagligt - maximal släpvagnslängd är 12 meter",
     "explanation": "Ingen släpvagn (inklusive husvagnar) får vara längre än 12 meter. I kombination med personbil får den totala längden inte överstiga 18,75 meter."
   },
   {
@@ -5933,7 +5933,7 @@
     "question": "Vad säger förordningen om att köra med ett barn i framsätet utan bältesstol om barnet är över 135 cm långt?",
     "options": [
       "Tillåtet eftersom säkerhetsbältet kommer att sitta korrekt",
-      "Ej tillåtet – barn under 15 år måste alltid använda en booster",
+      "Ej tillåtet - barn under 15 år måste alltid använda en booster",
       "Tillåtet endast om barnet väger mer än 36 kg",
       "Endast tillåtet för korta resor"
     ],
@@ -5998,11 +5998,11 @@
     "question": "Vad säger 3 kap 80 § om att köra med en felaktig hastighetsmätare?",
     "options": [
       "Lagligt så länge du uppskattar din hastighet",
-      "Olagligt – hastighetsmätaren måste vara korrekt inom vissa gränser",
+      "Olagligt - hastighetsmätaren måste vara korrekt inom vissa gränser",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt för kommersiella fordon"
     ],
-    "answer": "Olagligt – hastighetsmätaren måste vara korrekt inom vissa gränser",
+    "answer": "Olagligt - hastighetsmätaren måste vara korrekt inom vissa gränser",
     "explanation": "En fungerande hastighetsmätare är obligatorisk utrustning. Den måste vara exakt inom +10% / -0% (dvs. får inte underläsas hastighet). En trasig hastighetsmätare gör fordonet okörbart."
   },
   {
@@ -6050,11 +6050,11 @@
     "question": "Vad är regeln för en förare som har en \"Learner\" (L)-skylt som visas efter att ha klarat förarprovet?",
     "options": [
       "Lagligt, men inte obligatoriskt",
-      "Olagligt – endast elevförare får visa L-tecknet",
+      "Olagligt - endast elevförare får visa L-tecknet",
       "Lagligt endast den första månaden",
       "Endast tillåtet för åtföljd körning"
     ],
-    "answer": "Olagligt – endast elevförare får visa L-tecknet",
+    "answer": "Olagligt - endast elevförare får visa L-tecknet",
     "explanation": "Att visa ett L-tecken när du inte är elev förare (dvs. har ett fullständigt körkort) är inte olagligt i sig, men det kan förvirra andra förare och polis. Det avråds starkt och kan betraktas som en störning."
   },
   {
@@ -6102,11 +6102,11 @@
     "question": "Vad är regeln för en förare som behöver backa på en väg för att de missat en sväng?",
     "options": [
       "Backning är tillåten korta sträckor om ingen trafik förekommer",
-      "Backning är förbjuden – du måste hitta en säker plats att vända",
+      "Backning är förbjuden - du måste hitta en säker plats att vända",
       "Tillåtet endast på vägar med hastighetsbegränsningar under 50 km/h",
       "Endast tillåtet för utryckningsfordon"
     ],
-    "answer": "Backning är förbjuden – du måste hitta en säker plats att vända",
+    "answer": "Backning är förbjuden - du måste hitta en säker plats att vända",
     "explanation": "Backning för att korrigera en felaktig sväng är förbjuden eftersom det skapar fara. Du måste fortsätta till en säker plats (t.ex. en uppfart, parkeringsplats) där du kan vända om lagligt."
   },
   {
@@ -6115,7 +6115,7 @@
     "question": "Vad säger förordningen om att köra bil med takräcke som inte är i bruk (tom)?",
     "options": [
       "Lagligt så länge det sitter ordentligt fast",
-      "Illegal – måste tas bort när den inte används för att minska buller och bränsleförbrukning",
+      "Illegal - måste tas bort när den inte används för att minska buller och bränsleförbrukning",
       "Lagligt endast på motorvägar",
       "Endast olagligt om det låter"
     ],
@@ -6154,11 +6154,11 @@
     "question": "Vad säger förordningen om att köra bil med ett trasigt bältesspänne på passagerarsätet?",
     "options": [
       "Lagligt om ingen passagerare sitter i det sätet",
-      "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+      "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt om bilen används för att transportera passagerare"
     ],
-    "answer": "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+    "answer": "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
     "explanation": "Fordonet ska ha fungerande säkerhetsbälten på alla säten där de är monterade. Ett trasigt spänne gör fordonet okörbart även om sätet är tomt."
   },
   {
@@ -6180,11 +6180,11 @@
     "question": "Vad säger förordningen om att köra bil med sprucken eller trasig helljus?",
     "options": [
       "Lagligt så länge halvljus fungerar",
-      "Olagligt – alla strålkastare måste vara funktionella",
+      "Olagligt - alla strålkastare måste vara funktionella",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt på natten"
     ],
-    "answer": "Olagligt – alla strålkastare måste vara funktionella",
+    "answer": "Olagligt - alla strålkastare måste vara funktionella",
     "explanation": "Helljus är obligatorisk utrustning. Ett trasigt helljus innebär att bilen inte uppfyller belysningskraven och inte är trafikduglig, särskilt för nattkörning på oupplysta vägar."
   },
   {
@@ -6219,11 +6219,11 @@
     "question": "Vad säger förordningen om att köra en bil med bruten tuta?",
     "options": [
       "Lagligt i upp till 30 dagar",
-      "Olagligt – ett fungerande horn är obligatoriskt",
+      "Olagligt - ett fungerande horn är obligatoriskt",
       "Lagligt om du istället använder handsignaler",
       "Endast olagligt för kommersiella fordon"
     ],
-    "answer": "Olagligt – ett fungerande horn är obligatoriskt",
+    "answer": "Olagligt - ett fungerande horn är obligatoriskt",
     "explanation": "Hornet är obligatorisk utrustning enligt kapitel 4. Ett trasigt horn betyder att fordonet inte uppfyller trafiksäkerhetskraven."
   },
   {
@@ -6257,7 +6257,7 @@
     "category": "Trafikregler",
     "question": "Vad säger förordningen om att köra bil med en saknad domkraft eller verktygslåda?",
     "options": [
-      "Olagligt – måste bära dessa föremål",
+      "Olagligt - måste bära dessa föremål",
       "Lagligt, dessa är inte obligatoriska",
       "Endast olagligt för fordon över 3,5 ton",
       "Krävs endast för fordon med platsbesparande reservdäck"
@@ -6311,10 +6311,10 @@
     "options": [
       "Tillåts i upp till 2 minuter",
       "Tillåtet endast för utryckningsfordon",
-      "Inte tillåtet – inget stopp alls",
+      "Inte tillåtet - inget stopp alls",
       "Tillåtet om passageraren är redo"
     ],
-    "answer": "Inte tillåtet – inget stopp alls",
+    "answer": "Inte tillåtet - inget stopp alls",
     "explanation": "En \"stoppningsförbud\"-skylt (röd cirkel med blå insida och röda korsade linjer) förbjuder alla stopp, även kortvarigt. Du kan inte hämta eller lämna passagerare där."
   },
   {
@@ -6362,11 +6362,11 @@
     "question": "Vad säger förordningen om att köra bil med lös ratt?",
     "options": [
       "Lagligt så länge du kan styra",
-      "Olagligt – för stort spel i styrningen är en säkerhetsbrist",
+      "Olagligt - för stort spel i styrningen är en säkerhetsbrist",
       "Lagligt för hastigheter under 50 km/h",
       "Endast olagligt för fordon över 10 år gamla"
     ],
-    "answer": "Olagligt – för stort spel i styrningen är en säkerhetsbrist",
+    "answer": "Olagligt - för stort spel i styrningen är en säkerhetsbrist",
     "explanation": "En lös ratt (för stort fritt spel) gör fordonet ofärdigt och farligt. Det bryter mot kapitel 4, avsnitt 2 (styrningen måste vara effektiv)."
   },
   {
@@ -6375,11 +6375,11 @@
     "question": "Vad är regeln för en förare som behöver göra en U-sväng på en väg med heldragen mittlinje?",
     "options": [
       "Tillåtet om ingen trafik närmar sig",
-      "Förbjudet – att korsa en heldragen linje för en U-sväng är olagligt",
+      "Förbjudet - att korsa en heldragen linje för en U-sväng är olagligt",
       "Allowed only at intersections",
       "Tillåtet om du signalerar ordentligt"
     ],
-    "answer": "Förbjudet – att korsa en heldragen linje för en U-sväng är olagligt",
+    "answer": "Förbjudet - att korsa en heldragen linje för en U-sväng är olagligt",
     "explanation": "Det är förbjudet att korsa en heldragen mittlinje. En U-sväng kräver att man korsar linjen, så det är inte tillåtet där en heldragen linje finns. Du måste hitta ett avbrott i linjen eller en korsning."
   },
   {
@@ -6427,11 +6427,11 @@
     "question": "Vad säger förordningen om att köra en bil med ett felaktigt låsningsfritt bromssystem (ABS)?",
     "options": [
       "Lagligt om de vanliga bromsarna fortfarande fungerar",
-      "Olagligt – ABS är obligatoriskt på alla bilar som säljs efter 2004",
+      "Olagligt - ABS är obligatoriskt på alla bilar som säljs efter 2004",
       "Lagligt, men varningslampan får inte lysa",
       "Endast olagligt för kommersiella fordon"
     ],
-    "answer": "Olagligt – ABS är obligatoriskt på alla bilar som säljs efter 2004",
+    "answer": "Olagligt - ABS är obligatoriskt på alla bilar som säljs efter 2004",
     "explanation": "För personbilar som först registrerats efter 1 juli 2004 är ABS obligatoriskt. Ett felaktigt ABS-ljus betyder att bilen inte är trafikduglig."
   },
   {
@@ -6439,7 +6439,7 @@
     "category": "Trafikregler",
     "question": "Vad är regeln för en förare som behöver förvandlas till en fastighet över en heldragen vit linje?",
     "options": [
-      "Inte tillåtet – heldragen linje förbjuder korsning",
+      "Inte tillåtet - heldragen linje förbjuder korsning",
       "Tillåtet vid svängning in på en uppfart, med försiktighet",
       "Tillåtet endast om ingen trafik kommer",
       "Tillåtet endast för utryckningsfordon"
@@ -6584,7 +6584,7 @@
     "options": [
       "Endast föraren av utryckningsfordonet",
       "Polismannen i fordonet",
-      "Ingen – utryckningsfordon måste följa alla regler",
+      "Ingen - utryckningsfordon måste följa alla regler",
       "Föraren, men bara vid användning av blåljus och siren"
     ],
     "answer": "Föraren, men bara vid användning av blåljus och siren",
@@ -6687,11 +6687,11 @@
     "question": "Vad säger 3 kap 14a § om att köra bil med sommardäck på snöig väg?",
     "options": [
       "Lagligt men riskabelt",
-      "Olagligt – däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
+      "Olagligt - däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
       "Lagligt om du har kedjor",
       "Endast olagligt på motorvägar"
     ],
-    "answer": "Olagligt – däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
+    "answer": "Olagligt - däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
     "explanation": "Under vinterförhållanden (snö, is, slask) mellan 1 december och 31 mars måste däcken vara vinterdäck (M+S eller dubbade). Sommardäck är inte tillåtna under dessa förhållanden."
   },
   {
@@ -6700,11 +6700,11 @@
     "question": "Vad är regeln för en förare som närmar sig ett \"övergångsställe med trafikljus\" när ljusen inte fungerar?",
     "options": [
       "Stanna och vänta på en polis",
-      "Behandla det som ett okontrollerat övergångsställe – ge efter för fotgängare",
+      "Behandla det som ett okontrollerat övergångsställe - ge efter för fotgängare",
       "Fortsätt med försiktighet men fotgängare måste ge efter",
       "Använd högerregeln"
     ],
-    "answer": "Behandla det som ett okontrollerat övergångsställe – ge efter för fotgängare",
+    "answer": "Behandla det som ett okontrollerat övergångsställe - ge efter för fotgängare",
     "explanation": "Om fotgängarljusen är släckta, återgår övergångsstället till ett okontrollerat övergångsställe. Förare måste ge efter för fotgängare som är på eller ska kliva upp på övergångsstället."
   },
   {
@@ -6934,11 +6934,11 @@
     "question": "Vad är regeln för montering av LED-strålkastare som inte var originalutrustning?",
     "options": [
       "Tillåtet så länge de är E-märkta och inte bländar",
-      "Olagligt – strålkastare måste vara originaltyp för fordonet",
+      "Olagligt - strålkastare måste vara originaltyp för fordonet",
       "Tillåtet endast för terrängbruk",
       "Tillåtet endast för halvljus, inte helljus"
     ],
-    "answer": "Olagligt – strålkastare måste vara originaltyp för fordonet",
+    "answer": "Olagligt - strålkastare måste vara originaltyp för fordonet",
     "explanation": "Eftermontering av LED-lampor i strålkastarhus avsedda för halogenlampor är olagligt i Sverige eftersom de förändrar ljusbilden och kan blända. Endast kompletta LED-strålkastarenheter som är godkända för fordonet är tillåtna."
   },
   {
@@ -7258,13 +7258,13 @@
     "category": "Påföljder",
     "question": "Vad är straffet för att köra utan giltigt körkort för första gången?",
     "options": [
-      "Böter (dagsböter) på cirka 3 000–5 000 kr",
+      "Böter (dagsböter) på cirka 3 000-5 000 kr",
       "Fängelse upp till 6 månader",
       "Bara en varning",
       "Fordonsförverkande"
     ],
-    "answer": "Böter (dagsböter) på cirka 3 000–5 000 kr",
-    "explanation": "Att köra utan körkort är straffbart med böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000–5 000 kr. Upprepade eller grova fall kan leda till fängelse."
+    "answer": "Böter (dagsböter) på cirka 3 000-5 000 kr",
+    "explanation": "Att köra utan körkort är straffbart med böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000-5 000 kr. Upprepade eller grova fall kan leda till fängelse."
   },
   {
     "id": 560,
@@ -7337,11 +7337,11 @@
     "question": "Vad är regeln för att köra en bil med en trasig katalysator?",
     "options": [
       "Lagligt så länge bilen klarar avgasprovet",
-      "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+      "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
       "Lagligt för bilar äldre än 20 år",
       "Endast olagligt om bilen avger synlig rök"
     ],
-    "answer": "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+    "answer": "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
     "explanation": "Om bilen har tillverkats med en katalysator måste den vara närvarande och fungerande. Att ta bort eller inaktivera det är olagligt och kommer att leda till att bilen misslyckas med utsläppsinspektionen."
   },
   {
@@ -7363,11 +7363,11 @@
     "question": "Vad är regeln om att tvätta en bil hemma med tvättmedel?",
     "options": [
       "Tillåtet så länge vattnet rinner ut på gräsmattan",
-      "Förbjudet – tvättmedel får inte komma ut i stormavlopp",
+      "Förbjudet - tvättmedel får inte komma ut i stormavlopp",
       "Tillåtet endast med biologiskt nedbrytbar tvål",
       "Endast förbjudet i tätorter"
     ],
-    "answer": "Förbjudet – tvättmedel får inte komma ut i stormavlopp",
+    "answer": "Förbjudet - tvättmedel får inte komma ut i stormavlopp",
     "explanation": "Att tvätta en bil med tvättmedel hemma är olagligt om avloppsvattnet kommer ut i stormavlopp (som rinner direkt till sjöar och vattendrag). Du måste använda en kommersiell biltvätt som behandlar vattnet."
   },
   {
@@ -7466,7 +7466,7 @@
     "category": "Diverse",
     "question": "Vad är regeln för en förare som behöver köra med sprucken vindruta efter ett stenskott som har reparerats?",
     "options": [
-      "Olagligt – alla sprickor måste bytas ut",
+      "Olagligt - alla sprickor måste bytas ut",
       "Lagligt om reparationen lyckas och sprickan inte är i förarens kritiska synfält",
       "Lagligt endast om sprickan är mindre än 5 cm",
       "Lagligt endast under hela resan till en verkstad"
@@ -7584,7 +7584,7 @@
     "question": "Vad säger förordningen om att köra bil med trasig vägmätare (avståndsräknare)?",
     "options": [
       "Lagligt, så länge hastighetsmätaren fungerar",
-      "Olagligt – vägmätare är obligatorisk",
+      "Olagligt - vägmätare är obligatorisk",
       "Lagligt endast för bilar över 10 år gamla",
       "Endast olagligt för leasade bilar"
     ],
@@ -7623,7 +7623,7 @@
     "question": "Vad säger förordningen om att köra bil med trasig bränslemätare?",
     "options": [
       "Lagligt, så länge du vet din bränslenivå",
-      "Olagligt – bränslemätare är obligatorisk",
+      "Olagligt - bränslemätare är obligatorisk",
       "Lagligt endast för bilar med reservtank",
       "Endast olagligt för hyrbilar"
     ],
@@ -7635,12 +7635,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för en förare som behöver göra en trepunktssväng på en väg med begränsad sikt?",
     "options": [
-      "Förbjudet – hitta en bättre plats",
+      "Förbjudet - hitta en bättre plats",
       "Tillåtet om ingen trafik är synlig",
       "Tillåtet endast med en spotter",
       "Tillåtet endast under dagtid"
     ],
-    "answer": "Förbjudet – hitta en bättre plats",
+    "answer": "Förbjudet - hitta en bättre plats",
     "explanation": "Att göra en trepunktssväng där man inte kan se tillräckligt långt åt båda hållen är farligt och bryter mot aktsamhetsplikten. Du måste hitta en säkrare plats (t.ex. uppfart, korsning) att svänga."
   },
   {
@@ -7675,11 +7675,11 @@
     "question": "Vad är regeln för en förare som drar släp och släpets registreringsskylt inte är upplyst på natten?",
     "options": [
       "Lagligt, bilens skylt täcker det",
-      "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+      "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
       "Lagligt om bilens lampor är tillräckligt starka",
       "Endast olagligt om släpet väger över 750 kg"
     ],
-    "answer": "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+    "answer": "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
     "explanation": "Släpvagnar ska ha en fungerande registreringsskyltslampa som lyser upp skylten när bilens strålkastare är tända. Detta krävs för alla släpvagnar."
   },
   {
@@ -7779,11 +7779,11 @@
     "question": "Vad säger förordningen om att köra bil med saknat nackstöd?",
     "options": [
       "Lagligt om sätet är obesatt",
-      "Olagligt – nackstöd är obligatoriska på alla säten",
+      "Olagligt - nackstöd är obligatoriska på alla säten",
       "Lagligt endast för baksäten",
       "Endast olagligt om bilen är tillverkad efter 1996"
     ],
-    "answer": "Olagligt – nackstöd är obligatoriska på alla säten",
+    "answer": "Olagligt - nackstöd är obligatoriska på alla säten",
     "explanation": "Nackstöd krävs på alla säten för säkerheten (whiplash-skydd). Ett saknat nackstöd på alla säten gör fordonet okörbart."
   },
   {
@@ -8252,7 +8252,7 @@
       "Repet ska vara minst 10 meter långt"
     ],
     "answer": "Repet ska vara minst 4 meter och högst 6 meter långt och tydligt markerat",
-    "explanation": "4 kap. 9 §: Vid bogsering med flexibel anordning (rep) ska avståndet mellan fordon vara 4–6 meter och repet ska vara tydligt markerat (t.ex. med röd flagga)."
+    "explanation": "4 kap. 9 §: Vid bogsering med flexibel anordning (rep) ska avståndet mellan fordon vara 4-6 meter och repet ska vara tydligt markerat (t.ex. med röd flagga)."
   },
   {
     "id": 636,
@@ -8473,7 +8473,7 @@
       "Måste bära hjälm och reflexväst"
     ],
     "answer": "Tillåtet om de följer fotgängarreglerna och håller sig på vänster sida",
-    "explanation": "Kapitel 10, Avsnitt 7: Rullskridskoåkare och skateboardåkare behandlas som fotgängare och måste följa fotgängaresregler – på vägar utan trottoar ska de röra sig på vänster sida."
+    "explanation": "Kapitel 10, Avsnitt 7: Rullskridskoåkare och skateboardåkare behandlas som fotgängare och måste följa fotgängaresregler - på vägar utan trottoar ska de röra sig på vänster sida."
   },
   {
     "id": 653,
@@ -8525,7 +8525,7 @@
       "Endast styva dragkrokar är tillåtna"
     ],
     "answer": "Repet ska vara minst 4 meter och högst 6 meter långt och tydligt markerat",
-    "explanation": "8 kap. 1: Vid bogsering med en flexibel anordning (rep) ska avståndet mellan fordonen vara 4–6 meter, och repet ska vara tydligt markerat (t.ex. med röd flagga)."
+    "explanation": "8 kap. 1: Vid bogsering med en flexibel anordning (rep) ska avståndet mellan fordonen vara 4-6 meter, och repet ska vara tydligt markerat (t.ex. med röd flagga)."
   },
   {
     "id": 657,
@@ -8603,7 +8603,7 @@
       "Upphävande av fordonsregistreringen"
     ],
     "answer": "Böter (vanligtvis 3 000-5 000 SEK)",
-    "explanation": "Att köra utan giltigt körkort är böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000–5 000 kr. Upprepade eller grova fall kan leda till fängelse."
+    "explanation": "Att köra utan giltigt körkort är böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000-5 000 kr. Upprepade eller grova fall kan leda till fängelse."
   },
   {
     "id": 663,
@@ -8694,7 +8694,7 @@
       "Inget straff vid första förseelsen"
     ],
     "answer": "Böter och eventuell körkortsindragning",
-    "explanation": "En BAC på 0,2–1,0‰ anses vara rattfylleri och resulterar i böter och körkortsavstängning (vanligtvis 1–6 månader)."
+    "explanation": "En BAC på 0,2-1,0‰ anses vara rattfylleri och resulterar i böter och körkortsavstängning (vanligtvis 1-6 månader)."
   },
   {
     "id": 670,
@@ -8987,12 +8987,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för en förare som behöver göra en trepunktssväng på en väg med begränsad sikt?",
     "options": [
-      "Förbjudet – hitta en bättre plats",
+      "Förbjudet - hitta en bättre plats",
       "Tillåtet om ingen trafik är synlig",
       "Tillåtet endast med en spotter",
       "Tillåtet endast under dagtid"
     ],
-    "answer": "Förbjudet – hitta en bättre plats",
+    "answer": "Förbjudet - hitta en bättre plats",
     "explanation": "Att göra en trepunktssväng där man inte kan se tillräckligt långt åt båda hållen är farligt och bryter mot aktsamhetsplikten. Du måste hitta en säkrare plats (t.ex. uppfart, korsning) att svänga."
   },
   {
@@ -9015,10 +9015,10 @@
     "options": [
       "Tillåts i upp till 2 minuter",
       "Tillåtet endast för utryckningsfordon",
-      "Inte tillåtet – inget stopp alls",
+      "Inte tillåtet - inget stopp alls",
       "Tillåtet om passageraren är redo"
     ],
-    "answer": "Inte tillåtet – inget stopp alls",
+    "answer": "Inte tillåtet - inget stopp alls",
     "explanation": "En \"stoppningsförbud\"-skylt (röd cirkel med blå insida och röda korsade linjer) förbjuder alla stopp, även kortvarigt. Du kan inte hämta eller lämna passagerare där."
   },
   {
@@ -9040,11 +9040,11 @@
     "question": "Vad är regeln för en förare som har en trasig hastighetsmätare?",
     "options": [
       "Tillåtet om du känner din hastighet från andra sätt",
-      "Inte tillåtet – hastighetsmätaren måste fungera",
+      "Inte tillåtet - hastighetsmätaren måste fungera",
       "Tillåtet tillfälligt i upp till 30 dagar",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Inte tillåtet – hastighetsmätaren måste fungera",
+    "answer": "Inte tillåtet - hastighetsmätaren måste fungera",
     "explanation": "Enligt 4 kap 1 § ska fordonet vara i trafikdugligt skick. En hastighetsmätare är obligatorisk utrustning; körning utan fungerande hastighetsmätare är olagligt."
   },
   {
@@ -9066,11 +9066,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -9326,11 +9326,11 @@
     "question": "Vad säger 9 kap 8 § om att köra ett fordon som inte kan hålla en hastighet på minst 40 km/h på motorväg?",
     "options": [
       "Det är tillåtet men måste använda varningsblinkers",
-      "Det är förbjudet – sådana fordon får inte köra motorvägen",
+      "Det är förbjudet - sådana fordon får inte köra motorvägen",
       "Det är endast tillåtet i höger körfält",
       "Det är endast tillåtet under dagsljus"
     ],
-    "answer": "Det är förbjudet – sådana fordon får inte köra motorvägen",
+    "answer": "Det är förbjudet - sådana fordon får inte köra motorvägen",
     "explanation": "Fordon som inte kan hålla en minimihastighet på cirka 40 km/h (t.ex. traktorer, mopeder, långsamma anläggningsmaskiner) är förbjudna att köra motorvägar."
   },
   {
@@ -9586,11 +9586,11 @@
     "question": "Vad är regeln för att använda ett fordons helljus i dimma?",
     "options": [
       "Tillåtet och rekommenderat",
-      "Inte tillåtet – halvljus eller främre dimljus är bättre",
+      "Inte tillåtet - halvljus eller främre dimljus är bättre",
       "Tillåtet endast på motorvägar",
       "Tillåtet endast om ingen mötande trafik"
     ],
-    "answer": "Inte tillåtet – halvljus eller främre dimljus är bättre",
+    "answer": "Inte tillåtet - halvljus eller främre dimljus är bättre",
     "explanation": "Att använda helljus i dimma orsakar bländning och minskar sikten på grund av bakåtspridning. Halvljus och främre dimljus rekommenderas."
   },
   {
@@ -9643,7 +9643,7 @@
       "Dubbdäck är förbjudna för utländska fordon"
     ],
     "answer": "Måste följa samma säsongsrestriktioner som svenska fordon",
-    "explanation": "Utlandsregistrerade fordon ska uppfylla svenska dubbdäcksregler (1 oktober – 15 april, eller när vinterförhållanden råder)."
+    "explanation": "Utlandsregistrerade fordon ska uppfylla svenska dubbdäcksregler (1 oktober - 15 april, eller när vinterförhållanden råder)."
   },
   {
     "id": 743,
@@ -9664,11 +9664,11 @@
     "question": "Är det lagligt att köra bil med trasigt horn?",
     "options": [
       "Tillåtet om du istället använder handsignaler",
-      "Ej tillåtet – ett fungerande horn är obligatorisk utrustning",
+      "Ej tillåtet - ett fungerande horn är obligatorisk utrustning",
       "Tillåtet i upp till 30 dagar",
       "Endast olagligt för kommersiella fordon"
     ],
-    "answer": "Ej tillåtet – ett fungerande horn är obligatorisk utrustning",
+    "answer": "Ej tillåtet - ett fungerande horn är obligatorisk utrustning",
     "explanation": "En varningsanordning (horn) krävs på alla motorfordon enligt 4 kap. 5 §. Att köra utan fungerande tuta är olagligt."
   },
   {
@@ -9677,11 +9677,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad spolarvätska fram?",
     "options": [
       "Lagligt, men måste fyllas på snart",
-      "Olagligt – tvättsystemet måste vara funktionellt",
+      "Olagligt - tvättsystemet måste vara funktionellt",
       "Lagligt om du rengör vindrutan manuellt",
       "Endast olagligt på vintern"
     ],
-    "answer": "Olagligt – tvättsystemet måste vara funktionellt",
+    "answer": "Olagligt - tvättsystemet måste vara funktionellt",
     "explanation": "Vindrutespolare är en del av den utrustning som krävs för att bibehålla sikten (4 kap. 3 §). Att köra utan spolarvätska (eller en trasig pump) är olagligt om det försämrar din förmåga att rengöra vindrutan."
   },
   {
@@ -9729,11 +9729,11 @@
     "question": "Vad säger förordningen om att köra genom en översvämmad väg?",
     "options": [
       "Fortsätt långsamt om vattnet är mindre än 10 cm djupt",
-      "Kör aldrig genom översvämmade områden – det kan vara olagligt och farligt",
+      "Kör aldrig genom översvämmade områden - det kan vara olagligt och farligt",
       "Tillåtet om du har en 4x4",
       "Endast med varningsblinkers tända"
     ],
-    "answer": "Kör aldrig genom översvämmade områden – det kan vara olagligt och farligt",
+    "answer": "Kör aldrig genom översvämmade områden - det kan vara olagligt och farligt",
     "explanation": "Förordningen förbjuder inte uttryckligen körning genom vatten, men 2 kap. 1 § kräver försiktighet. Att köra genom djupt vatten kan orsaka skador och anses vara hänsynslöst om det leder till en olycka."
   },
   {
@@ -9755,11 +9755,11 @@
     "question": "Får en förare blinka med strålkastare för att varna andra förare för en fartkamera?",
     "options": [
       "Rättslig",
-      "Olagligt – betraktas som en störning",
+      "Olagligt - betraktas som en störning",
       "Lagligt endast i dagsljus",
       "Endast olagligt om du orsakar en olycka"
     ],
-    "answer": "Olagligt – betraktas som en störning",
+    "answer": "Olagligt - betraktas som en störning",
     "explanation": "Blinkande strålkastare för att varna för en fartkamera anses vara en störning och kan ge böter för \"onödig användning av ljus\" enligt 3 kap. 12 §."
   },
   {
@@ -9833,11 +9833,11 @@
     "question": "Vad är regeln för en förare som drar släp och släpets registreringsskylt inte är upplyst på natten?",
     "options": [
       "Lagligt, bilens skylt täcker det",
-      "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+      "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
       "Lagligt om bilens lampor är tillräckligt starka",
       "Endast olagligt om släpet väger över 750 kg"
     ],
-    "answer": "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+    "answer": "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
     "explanation": "Släpvagnar ska ha en fungerande registreringsskyltslampa som lyser upp skylten när bilens strålkastare är tända. Detta krävs för alla släpvagnar."
   },
   {
@@ -9924,11 +9924,11 @@
     "question": "Vad är regeln för en förare som behöver backa på en väg för att de missat en sväng?",
     "options": [
       "Backning är tillåten korta sträckor om ingen trafik förekommer",
-      "Backning är förbjuden – du måste hitta en säker plats att vända",
+      "Backning är förbjuden - du måste hitta en säker plats att vända",
       "Tillåtet endast på vägar med hastighetsbegränsningar under 50 km/h",
       "Endast tillåtet för utryckningsfordon"
     ],
-    "answer": "Backning är förbjuden – du måste hitta en säker plats att vända",
+    "answer": "Backning är förbjuden - du måste hitta en säker plats att vända",
     "explanation": "Backning för att korrigera en felaktig sväng är förbjuden eftersom det skapar fara. Du måste fortsätta till en säker plats (t.ex. en uppfart, parkeringsplats) där du kan vända om lagligt."
   },
   {
@@ -10028,11 +10028,11 @@
     "question": "Vad är regeln för en förare som har en \"Learner\" (L)-skylt som visas efter att ha klarat förarprovet?",
     "options": [
       "Lagligt, men inte obligatoriskt",
-      "Olagligt – endast elevförare får visa L-tecknet",
+      "Olagligt - endast elevförare får visa L-tecknet",
       "Lagligt endast den första månaden",
       "Endast tillåtet för åtföljd körning"
     ],
-    "answer": "Olagligt – endast elevförare får visa L-tecknet",
+    "answer": "Olagligt - endast elevförare får visa L-tecknet",
     "explanation": "Att visa ett L-tecken när du inte är elev förare (dvs. har ett fullständigt körkort) är inte olagligt i sig, men det kan förvirra andra förare och polis. Det avråds starkt och kan betraktas som en störning."
   },
   {
@@ -10040,7 +10040,7 @@
     "category": "Diverse körsituationer",
     "question": "Vad säger förordningen om att köra bil med en saknad domkraft eller verktygslåda?",
     "options": [
-      "Olagligt – måste bära dessa föremål",
+      "Olagligt - måste bära dessa föremål",
       "Lagligt, dessa är inte obligatoriska",
       "Endast olagligt för fordon över 3,5 ton",
       "Krävs endast för fordon med platsbesparande reservdäck"
@@ -10132,11 +10132,11 @@
     "question": "Vad är regeln för en förare som vill göra en U-sväng på en väg med heldragen mittlinje?",
     "options": [
       "Tillåtet om ingen trafik närmar sig",
-      "Förbjudet – att korsa en heldragen linje för en U-sväng är olagligt",
+      "Förbjudet - att korsa en heldragen linje för en U-sväng är olagligt",
       "Tillåtet endast i korsningar",
       "Tillåtet om du signalerar ordentligt"
     ],
-    "answer": "Förbjudet – att korsa en heldragen linje för en U-sväng är olagligt",
+    "answer": "Förbjudet - att korsa en heldragen linje för en U-sväng är olagligt",
     "explanation": "Det är förbjudet att korsa en heldragen mittlinje. En U-sväng kräver att man korsar linjen, så det är inte tillåtet där en heldragen linje finns. Du måste hitta ett avbrott i linjen eller en korsning."
   },
   {
@@ -10145,7 +10145,7 @@
     "question": "Vad säger förordningen om att köra bil med trasig vägmätare (avståndsräknare)?",
     "options": [
       "Lagligt, så länge hastighetsmätaren fungerar",
-      "Olagligt – vägmätare är obligatorisk",
+      "Olagligt - vägmätare är obligatorisk",
       "Lagligt endast för bilar över 10 år gamla",
       "Endast olagligt för leasade bilar"
     ],
@@ -10184,11 +10184,11 @@
     "question": "Vad säger förordningen om att köra bil med saknat nackstöd?",
     "options": [
       "Lagligt om sätet är obesatt",
-      "Olagligt – nackstöd är obligatoriska på alla säten",
+      "Olagligt - nackstöd är obligatoriska på alla säten",
       "Lagligt endast för baksäten",
       "Endast olagligt om bilen är tillverkad efter 1996"
     ],
-    "answer": "Olagligt – nackstöd är obligatoriska på alla säten",
+    "answer": "Olagligt - nackstöd är obligatoriska på alla säten",
     "explanation": "Nackstöd krävs på alla säten för säkerheten (whiplash-skydd). Ett saknat nackstöd på alla säten gör fordonet okörbart."
   },
   {
@@ -10262,11 +10262,11 @@
     "question": "Vad är regeln för en förare som vill parkera på en väg med en skylt för att inte stanna?",
     "options": [
       "Tillåts i upp till 2 minuter",
-      "Inte tillåtet – inget stopp alls",
+      "Inte tillåtet - inget stopp alls",
       "Tillåtet endast för lastning",
       "Tillåtet endast för utryckningsfordon"
     ],
-    "answer": "Inte tillåtet – inget stopp alls",
+    "answer": "Inte tillåtet - inget stopp alls",
     "explanation": "En \"stoppningsförbud\"-skylt (röd cirkel med blå insida och röda korsade linjer) förbjuder alla stopp, även kortvarigt. Du kan inte parkera eller stanna där av någon anledning förutom nödsituationer."
   },
   {
@@ -10353,7 +10353,7 @@
     "question": "Vad säger förordningen om att köra bil med trasig bränslemätare?",
     "options": [
       "Lagligt, så länge du vet din bränslenivå",
-      "Olagligt – bränslemätare är obligatorisk",
+      "Olagligt - bränslemätare är obligatorisk",
       "Lagligt endast för bilar med reservtank",
       "Endast olagligt för hyrbilar"
     ],
@@ -10378,7 +10378,7 @@
     "category": "Diverse körsituationer",
     "question": "Vad är regeln för en förare som har en släpvagn som är bredare än dragfordonet?",
     "options": [
-      "Olagligt – släpvagnen måste vara smalare",
+      "Olagligt - släpvagnen måste vara smalare",
       "Lagligt, men måste använda förlängda speglar",
       "Lagligt, men måste ha ett särskilt tillstånd",
       "Endast tillåtet på vägar med hastighetsbegränsningar under 70 km/h"
@@ -10397,7 +10397,7 @@
       "Att hålla en hastighet på minst 50 km/h"
     ],
     "answer": "För att säkerställa att ingen trafikant skadas",
-    "explanation": "2 kap 1 § – den övergripande aktsamhetsplikten: varje trafikant ska visa hänsyn och iaktta försiktighet för att förhindra fara eller skada. Detta är den grundläggande principen."
+    "explanation": "2 kap 1 § - den övergripande aktsamhetsplikten: varje trafikant ska visa hänsyn och iaktta försiktighet för att förhindra fara eller skada. Detta är den grundläggande principen."
   },
   {
     "id": 801,
@@ -10638,12 +10638,12 @@
     "category": "Fordonsutrustning",
     "question": "Vilken är enligt 4 kap 5a § regeln för eftermontering av LED-strålkastare på en bil avsedd för halogenlampor?",
     "options": [
-      "Olagligt – strålkastarenheten måste vara typgodkänd för fordonet",
+      "Olagligt - strålkastarenheten måste vara typgodkänd för fordonet",
       "Lagligt om lysdioderna är E-märkta",
       "Lagligt med särskilt tillstånd",
       "Endast olagligt för helljus"
     ],
-    "answer": "Olagligt – strålkastarenheten måste vara typgodkänd för fordonet",
+    "answer": "Olagligt - strålkastarenheten måste vara typgodkänd för fordonet",
     "explanation": "Att byta ut halogenlampor mot LED-lampor i ett strålkastarhus designat för halogener är olagligt eftersom det förändrar ljusmönstret och kan blända. Endast kompletta LED-strålkastarenheter som är godkända för det specifika fordonet är lagliga."
   },
   {
@@ -10834,11 +10834,11 @@
     "question": "Vad gäller enligt 8 kap 7 § för att dra ett trasigt fordon med en stel dragkrok som inte är markerad?",
     "options": [
       "Lagligt om dragkroken är stel",
-      "Olagligt – alla dragkrokar (stela eller rep) måste vara tydligt märkta",
+      "Olagligt - alla dragkrokar (stela eller rep) måste vara tydligt märkta",
       "Lagligt endast om dragkroken är mindre än 2 meter",
       "Endast olagligt på natten"
     ],
-    "answer": "Olagligt – alla dragkrokar (stela eller rep) måste vara tydligt märkta",
+    "answer": "Olagligt - alla dragkrokar (stela eller rep) måste vara tydligt märkta",
     "explanation": "Även en styv dragkrok måste märkas (t.ex. med en röd flagga eller reflekterande material) för att göra den synlig för andra trafikanter, särskilt på natten."
   },
   {
@@ -10912,7 +10912,7 @@
     "question": "Vad är regeln om sparsam körning i trafikförordningen?",
     "options": [
       "Uppmuntras men inte lagstadgat",
-      "Obligatoriskt – förare måste anta bränslesnål körning",
+      "Obligatoriskt - förare måste anta bränslesnål körning",
       "Krävs endast för yrkesförare",
       "Inte nämnt"
     ],
@@ -10938,11 +10938,11 @@
     "question": "Vad är regeln för att tvätta en bil på en uppfart med högtryckstvätt om vattnet går ut i gräsmattan?",
     "options": [
       "Tillåtet om tvättmedlet är biologiskt nedbrytbart",
-      "Förbjudet – all avrinning som innehåller rengöringsmedel eller olja är olaglig",
+      "Förbjudet - all avrinning som innehåller rengöringsmedel eller olja är olaglig",
       "Tillåtet endast om gräsmattan inte är nära ett stormavlopp",
       "Endast förbjudet i tätorter"
     ],
-    "answer": "Förbjudet – all avrinning som innehåller rengöringsmedel eller olja är olaglig",
+    "answer": "Förbjudet - all avrinning som innehåller rengöringsmedel eller olja är olaglig",
     "explanation": "Även om vatten rinner ut på gräsmattan kan rengöringsmedel och olja förorena grundvattnet. Det är olagligt att tvätta bilar hemma om inte avloppsvattnet samlas upp och kasseras på rätt sätt. Kommersiella biltvättar krävs."
   },
   {
@@ -10951,11 +10951,11 @@
     "question": "Vad säger förordningen om att köra med en överdriven avgaslukt (t.ex. oförbränt bränsle)?",
     "options": [
       "Lagligt så länge ingen synlig rök",
-      "Olagligt – stark bränslelukt indikerar ett fel som måste repareras",
+      "Olagligt - stark bränslelukt indikerar ett fel som måste repareras",
       "Lagligt om bilen klarar avgasprov",
       "Endast olagligt om det orsakar yrsel"
     ],
-    "answer": "Olagligt – stark bränslelukt indikerar ett fel som måste repareras",
+    "answer": "Olagligt - stark bränslelukt indikerar ett fel som måste repareras",
     "explanation": "En stark lukt av bränsle eller avgaser indikerar ett läckage eller förbränningsproblem. Detta strider mot 4 kap. 11 § (överdrivna utsläpp) och fordonet är inte trafikdugligt."
   },
   {
@@ -10977,11 +10977,11 @@
     "question": "Vad är regeln för en förare som har en GPS som visar snabba fartkameror?",
     "options": [
       "Lagligt, så länge du inte litar på det",
-      "Olagligt – alla enheter som varnar för fasta fartkameror är förbjudna",
+      "Olagligt - alla enheter som varnar för fasta fartkameror är förbjudna",
       "Lagligt endast om GPS:en inte piper",
       "Endast olagligt för yrkesförare"
     ],
-    "answer": "Olagligt – alla enheter som varnar för fasta fartkameror är förbjudna",
+    "answer": "Olagligt - alla enheter som varnar för fasta fartkameror är förbjudna",
     "explanation": "Förordningen förbjuder enheter som varnar för fasta fartkameror. GPS-appar med fartkameravarningar måste ha den funktionen inaktiverad i Sverige."
   },
   {
@@ -10990,11 +10990,11 @@
     "question": "Får en förare blinka med strålkastare för att varna mötande trafik för en poliskontroll?",
     "options": [
       "Lagligt, yttrandefrihet",
-      "Olagligt – anses hindra polisens uppgifter",
+      "Olagligt - anses hindra polisens uppgifter",
       "Lagligt endast om det görs en gång",
       "Endast olagligt om du blir stoppad"
     ],
-    "answer": "Olagligt – anses hindra polisens uppgifter",
+    "answer": "Olagligt - anses hindra polisens uppgifter",
     "explanation": "Blinkande strålkastare för att varna andra förare för en poliskontroll kan tolkas som att det hindrar brottsbekämpning och kan leda till böter."
   },
   {
@@ -11003,11 +11003,11 @@
     "question": "Vad är regeln för en förare som vill använda en \"handsfree\" hörsnäcka i båda öronen?",
     "options": [
       "Tillåtet, men rekommenderas inte",
-      "Förbjudet – blockering av båda öronen minskar hörseln av trafikljud",
+      "Förbjudet - blockering av båda öronen minskar hörseln av trafikljud",
       "Tillåtet endast för telefonsamtal",
       "Endast tillåtet för yrkesförare"
     ],
-    "answer": "Förbjudet – blockering av båda öronen minskar hörseln av trafikljud",
+    "answer": "Förbjudet - blockering av båda öronen minskar hörseln av trafikljud",
     "explanation": "Att använda hörlurar eller öronsnäckor i båda öronen när du kör är olagligt eftersom det försämrar din förmåga att höra utryckningsfordon, tutningar och andra varningar. En enda hörlur är tillåten."
   },
   {
@@ -11146,11 +11146,11 @@
     "question": "Får en förare köra bil med saknad främre stötfångare?",
     "options": [
       "Tillåtet om stötfångaren inte krävs för säkerhets skull",
-      "Ej tillåtet – fordonet anses vara defekt",
+      "Ej tillåtet - fordonet anses vara defekt",
       "Tillåtet tillfälligt i 7 dagar",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Ej tillåtet – fordonet anses vara defekt",
+    "answer": "Ej tillåtet - fordonet anses vara defekt",
     "explanation": "En stötfångare är en del av fordonets säkerhetsutrustning. Saknade stötfångare kan orsaka skador på fotgängare och andra fordon, så bilen är inte trafikduglig."
   },
   {
@@ -11159,11 +11159,11 @@
     "question": "Vad är regeln för en förare som drar släp och släpets registreringsskylt inte är upplyst på natten?",
     "options": [
       "Lagligt, bilens skylt täcker det",
-      "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+      "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
       "Lagligt om bilens lampor är tillräckligt starka",
       "Endast olagligt om släpet väger över 750 kg"
     ],
-    "answer": "Olagligt – släpvagnens skylt ska vara upplyst av sitt eget ljus",
+    "answer": "Olagligt - släpvagnens skylt ska vara upplyst av sitt eget ljus",
     "explanation": "Släpvagnar ska ha en fungerande registreringsskyltslampa som lyser upp skylten när bilens strålkastare är tända. Detta krävs för alla släpvagnar."
   },
   {
@@ -11172,11 +11172,11 @@
     "question": "Vad säger förordningen om att köra bil med löst batteri som inte är säkrat?",
     "options": [
       "Lagligt om batteriet är litet",
-      "Olagligt – batteriet måste säkras för att förhindra rörelse",
+      "Olagligt - batteriet måste säkras för att förhindra rörelse",
       "Lagligt för bilar med förseglade batterier",
       "Endast olagligt om batteriet läcker"
     ],
-    "answer": "Olagligt – batteriet måste säkras för att förhindra rörelse",
+    "answer": "Olagligt - batteriet måste säkras för att förhindra rörelse",
     "explanation": "Ett löst batteri kan röra sig, kortsluta eller spilla syra. Detta bryter mot kapitel 4, avsnitt 1 (lastsäkring) och är farligt."
   },
   {
@@ -11198,11 +11198,11 @@
     "question": "Vad är regeln för en förare som stoppas vid ett trafikljus och vill plocka upp en tappad telefon från golvet?",
     "options": [
       "Tillåts snabbt, eftersom fordonet står stilla",
-      "Förbjudet – du måste dra över säkert först",
+      "Förbjudet - du måste dra över säkert först",
       "Tillåtet endast om du ställer bilen i parken",
       "Endast tillåtet om en passagerare hämtar det"
     ],
-    "answer": "Förbjudet – du måste dra över säkert först",
+    "answer": "Förbjudet - du måste dra över säkert först",
     "explanation": "Även vid rött ljus kör du fortfarande. Att sträcka sig efter en tappad telefon är en distraktion och kan leda till en olycka om ljuset ändras. Dra över till en säker plats innan du hämtar den."
   },
   {
@@ -11224,7 +11224,7 @@
     "question": "Vad är regeln för en förare som har en \"grön registreringsskylt\" (för elfordon) parkerad på en vanlig parkeringsplats?",
     "options": [
       "Tillåtet, gröna skyltar har inga speciella parkeringsprivilegier",
-      "Förbjudet – gröna skyltar får endast parkeras på elbilar",
+      "Förbjudet - gröna skyltar får endast parkeras på elbilar",
       "Tillåts endast vid laddning",
       "Endast tillåtet för p-skivzoner"
     ],
@@ -11289,11 +11289,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (interiör) om bilen har två sidospeglar?",
     "options": [
       "Lagligt, två sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen var originalutrustad",
+      "Olagligt - innerspegel är obligatoriskt om bilen var originalutrustad",
       "Lagligt endast för skåpbilar",
       "Endast olagligt för bilar med tonade bakrutor"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen var originalutrustad",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen var originalutrustad",
     "explanation": "Bilar är designade med tre speglar. Att ta bort innerspegeln bryter mot originalutrustningskraven och kan misslyckas med inspektionen. Två sidospeglar räcker endast om innerspegeln inte var originalmonterad."
   },
   {
@@ -11380,11 +11380,11 @@
     "question": "Vad säger förordningen om att köra bil med ett trasigt bakre bältesspänne?",
     "options": [
       "Lagligt om ingen passagerare sitter i det sätet",
-      "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+      "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt om bilen används för att transportera passagerare"
     ],
-    "answer": "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+    "answer": "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
     "explanation": "Fordonet ska ha fungerande säkerhetsbälten på alla säten där de är monterade. Ett trasigt spänne gör fordonet okörbart även om sätet är tomt."
   },
   {
@@ -11445,11 +11445,11 @@
     "question": "Vad är regeln för en förare som vill parkera på en väg med en skylt \"parkering endast för boende\" utan tillstånd?",
     "options": [
       "Tillåts i upp till 2 timmar",
-      "Ej tillåtet – endast boende med tillstånd får parkera där",
+      "Ej tillåtet - endast boende med tillstånd får parkera där",
       "Tillåtet om du betalar via en app",
       "Tillåtet endast på helger"
     ],
-    "answer": "Ej tillåtet – endast boende med tillstånd får parkera där",
+    "answer": "Ej tillåtet - endast boende med tillstånd får parkera där",
     "explanation": "Boendeparkering kräver tillstånd utfärdat av kommunen. Fordon utan tillstånd får böter, även om de besöker en boende."
   },
   {
@@ -11601,11 +11601,11 @@
     "question": "Vad säger förordningen om att köra bil med trasig parkeringsbroms?",
     "options": [
       "Lagligt om du använder klossar",
-      "Olagligt – parkeringsbromsen måste fungera",
+      "Olagligt - parkeringsbromsen måste fungera",
       "Lagligt endast för bilar med automatväxellåda",
       "Endast olagligt om bilen står parkerad på en backe"
     ],
-    "answer": "Olagligt – parkeringsbromsen måste fungera",
+    "answer": "Olagligt - parkeringsbromsen måste fungera",
     "explanation": "Parkeringsbromsen (handbromsen) är obligatorisk säkerhetsutrustning. En trasig parkeringsbroms gör fordonet okörbart eftersom det inte kan säkras när det parkeras."
   },
   {
@@ -13265,11 +13265,11 @@
     "question": "Vad kräver 4 kap 1a § för en taklast som överstiger fordonets maximala taklast?",
     "options": [
       "Lagligt om det säkras ordentligt",
-      "Olagligt – får inte överskrida tillverkarens taklastgräns",
+      "Olagligt - får inte överskrida tillverkarens taklastgräns",
       "Lagligt med särskilt tillstånd",
       "Endast olagligt på motorvägar"
     ],
-    "answer": "Olagligt – får inte överskrida tillverkarens taklastgräns",
+    "answer": "Olagligt - får inte överskrida tillverkarens taklastgräns",
     "explanation": "Att överskrida fordonets angivna maximala taklast är olagligt och farligt. Det påverkar hantering och stabilitet, bryter mot kapitel 4, avsnitt 1 (lastsäkring)."
   },
   {
@@ -13460,11 +13460,11 @@
     "question": "Vad säger 9 kap 7 § om att köra ett fordon som inte kan hålla en hastighet på minst 40 km/h på motorväg?",
     "options": [
       "Det är tillåtet men måste använda varningsblinkers",
-      "Det är förbjudet – sådana fordon får inte köra motorvägen",
+      "Det är förbjudet - sådana fordon får inte köra motorvägen",
       "Det är endast tillåtet i höger körfält",
       "Det är endast tillåtet under dagsljus"
     ],
-    "answer": "Det är förbjudet – sådana fordon får inte köra motorvägen",
+    "answer": "Det är förbjudet - sådana fordon får inte köra motorvägen",
     "explanation": "Fordon som inte kan hålla en minimihastighet på cirka 40 km/h (t.ex. traktorer, mopeder, långsamma anläggningsmaskiner) är förbjudna att köra motorvägar."
   },
   {
@@ -13616,11 +13616,11 @@
     "question": "Vad säger 8 kap 5a § om att dra en släpvagn med skadad elanslutning?",
     "options": [
       "Tillåtet om släpvagnens lampor fortfarande fungerar",
-      "Förbjudet – alla elektriska funktioner måste fungera",
+      "Förbjudet - alla elektriska funktioner måste fungera",
       "Tillåtet för korta avstånd",
       "Endast förbjudet på natten"
     ],
-    "answer": "Förbjudet – alla elektriska funktioner måste fungera",
+    "answer": "Förbjudet - alla elektriska funktioner måste fungera",
     "explanation": "En släpvagn måste ha fullt fungerande blinkers, bromsljus, bakljus och reflektorljus. Att köra med skadad elanslutning är olagligt."
   },
   {
@@ -13668,11 +13668,11 @@
     "question": "Vad säger 3 kap 68a § om användningen av varningsljus (bärnsten) på en privat bil?",
     "options": [
       "Tillåtet för alla fordon att varna för en fara",
-      "Förbjudet – endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
+      "Förbjudet - endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
       "Tillåtet endast för haverier",
       "Tillåtet endast för utryckningsfordon"
     ],
-    "answer": "Förbjudet – endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
+    "answer": "Förbjudet - endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
     "explanation": "Bärnstensfärgade varningsljus är reserverade för specifika fordon med tillstånd (t.ex. konstruktion, allmännytta, bogsering). Privata bilar får inte använda dem."
   },
   {
@@ -13863,11 +13863,11 @@
     "question": "Vad säger förordningen om att köra med en dieselbil som använder AdBlue men tanken är tom?",
     "options": [
       "Lagligt så länge bilen går",
-      "Olagligt – bilens avgassystem äventyras",
+      "Olagligt - bilens avgassystem äventyras",
       "Tillåten för upp till 100 km",
       "Endast olagligt om kontrollampan lyser"
     ],
-    "answer": "Olagligt – bilens avgassystem äventyras",
+    "answer": "Olagligt - bilens avgassystem äventyras",
     "explanation": "Om AdBlue-tanken är tom kommer fordonets NOx-utsläpp att överskrida de lagliga gränserna. Fordonet är inte trafiksäkert och ska inte köras."
   },
   {
@@ -13889,11 +13889,11 @@
     "question": "Vad är regeln för att köra en bensinbil med en saknad katalysator?",
     "options": [
       "Lagligt om bilen ändå klarar avgasprovet",
-      "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+      "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
       "Lagligt för bilar äldre än 20 år",
       "Endast olagligt om bilen avger synlig rök"
     ],
-    "answer": "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+    "answer": "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
     "explanation": "Om bilen har tillverkats med en katalysator måste den vara närvarande och fungerande. Att ta bort eller inaktivera det är olagligt och kommer att leda till att bilen misslyckas med utsläppsinspektionen."
   },
   {
@@ -14044,12 +14044,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för användning av ett \"magnetiskt\" rött blinkande ljus på en privatbil?",
     "options": [
-      "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+      "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
       "Tillåtet för vägassistansfordon",
       "Tillåtet om du har ett särskilt tillstånd",
       "Endast tillåtet på landsbygden"
     ],
-    "answer": "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+    "answer": "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
     "explanation": "Rött eller blått blinkande ljus är reserverat för polis, ambulans, brand och andra auktoriserade utryckningsfordon. Privat användning är olagligt."
   },
   {
@@ -14124,7 +14124,7 @@
     "options": [
       "Tillåtet om husdjuret är litet",
       "Rekommenderas inte men lagligt om det inte distraherar föraren",
-      "Förbjudet – husdjur måste hållas fast (sele, låda eller barriär)",
+      "Förbjudet - husdjur måste hållas fast (sele, låda eller barriär)",
       "Endast tillåtet för hundar"
     ],
     "answer": "Rekommenderas inte men lagligt om det inte distraherar föraren",
@@ -14175,11 +14175,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -14306,7 +14306,7 @@
     "options": [
       "Tillåtet om hunden är liten",
       "Inte specifikt förbjudet, men kan betraktas som en distraktion",
-      "Förbjudet – hunden måste vara i ryggen",
+      "Förbjudet - hunden måste vara i ryggen",
       "Tillåtet endast om krockkudden är avaktiverad"
     ],
     "answer": "Inte specifikt förbjudet, men kan betraktas som en distraktion",
@@ -14447,12 +14447,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för användning av ett \"magnetiskt\" rött blinkande ljus på en privatbil?",
     "options": [
-      "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+      "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
       "Tillåtet för vägassistansfordon",
       "Tillåtet om du har ett särskilt tillstånd",
       "Endast tillåtet på landsbygden"
     ],
-    "answer": "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+    "answer": "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
     "explanation": "Rött eller blått blinkande ljus är reserverat för polis, ambulans, brand och andra auktoriserade utryckningsfordon. Privat användning är olagligt."
   },
   {
@@ -14527,7 +14527,7 @@
     "options": [
       "Tillåtet om husdjuret är litet",
       "Rekommenderas inte men lagligt om det inte distraherar föraren",
-      "Förbjudet – husdjur måste hållas fast (sele, låda eller barriär)",
+      "Förbjudet - husdjur måste hållas fast (sele, låda eller barriär)",
       "Endast tillåtet för hundar"
     ],
     "answer": "Rekommenderas inte men lagligt om det inte distraherar föraren",
@@ -14578,11 +14578,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -14709,7 +14709,7 @@
     "options": [
       "Tillåtet om hunden är liten",
       "Inte specifikt förbjudet, men kan betraktas som en distraktion",
-      "Förbjudet – hunden måste vara i ryggen",
+      "Förbjudet - hunden måste vara i ryggen",
       "Tillåtet endast om krockkudden är avaktiverad"
     ],
     "answer": "Inte specifikt förbjudet, men kan betraktas som en distraktion",
@@ -14850,12 +14850,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för användning av ett \"magnetiskt\" rött blinkande ljus på en privatbil?",
     "options": [
-      "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+      "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
       "Tillåtet för vägassistansfordon",
       "Tillåtet om du har ett särskilt tillstånd",
       "Endast tillåtet på landsbygden"
     ],
-    "answer": "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+    "answer": "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
     "explanation": "Rött eller blått blinkande ljus är reserverat för polis, ambulans, brand och andra auktoriserade utryckningsfordon. Privat användning är olagligt."
   },
   {
@@ -14930,7 +14930,7 @@
     "options": [
       "Tillåtet om husdjuret är litet",
       "Rekommenderas inte men lagligt om det inte distraherar föraren",
-      "Förbjudet – husdjur måste hållas fast (sele, låda eller barriär)",
+      "Förbjudet - husdjur måste hållas fast (sele, låda eller barriär)",
       "Endast tillåtet för hundar"
     ],
     "answer": "Rekommenderas inte men lagligt om det inte distraherar föraren",
@@ -14981,11 +14981,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -15112,7 +15112,7 @@
     "options": [
       "Tillåtet om hunden är liten",
       "Inte specifikt förbjudet, men kan betraktas som en distraktion",
-      "Förbjudet – hunden måste vara i ryggen",
+      "Förbjudet - hunden måste vara i ryggen",
       "Tillåtet endast om krockkudden är avaktiverad"
     ],
     "answer": "Inte specifikt förbjudet, men kan betraktas som en distraktion",
@@ -15253,12 +15253,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för användning av ett \"magnetiskt\" rött blinkande ljus på en privatbil?",
     "options": [
-      "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+      "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
       "Tillåtet för vägassistansfordon",
       "Tillåtet om du har ett särskilt tillstånd",
       "Endast tillåtet på landsbygden"
     ],
-    "answer": "Förbjudet – endast utryckningsfordon får visa blått eller rött blinkande ljus",
+    "answer": "Förbjudet - endast utryckningsfordon får visa blått eller rött blinkande ljus",
     "explanation": "Rött eller blått blinkande ljus är reserverat för polis, ambulans, brand och andra auktoriserade utryckningsfordon. Privat användning är olagligt."
   },
   {
@@ -15333,7 +15333,7 @@
     "options": [
       "Tillåtet om husdjuret är litet",
       "Rekommenderas inte men lagligt om det inte distraherar föraren",
-      "Förbjudet – husdjur måste hållas fast (sele, låda eller barriär)",
+      "Förbjudet - husdjur måste hållas fast (sele, låda eller barriär)",
       "Endast tillåtet för hundar"
     ],
     "answer": "Rekommenderas inte men lagligt om det inte distraherar föraren",
@@ -15384,11 +15384,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -15515,7 +15515,7 @@
     "options": [
       "Tillåtet om hunden är liten",
       "Inte specifikt förbjudet, men kan betraktas som en distraktion",
-      "Förbjudet – hunden måste vara i ryggen",
+      "Förbjudet - hunden måste vara i ryggen",
       "Tillåtet endast om krockkudden är avaktiverad"
     ],
     "answer": "Inte specifikt förbjudet, men kan betraktas som en distraktion",
@@ -16229,11 +16229,11 @@
     "question": "Vad säger 9 kap 8 § om att köra ett fordon som inte kan hålla en hastighet på minst 40 km/h på motorväg?",
     "options": [
       "Det är tillåtet men måste använda varningsblinkers",
-      "Det är förbjudet – sådana fordon får inte köra motorvägen",
+      "Det är förbjudet - sådana fordon får inte köra motorvägen",
       "Det är endast tillåtet i höger körfält",
       "Det är endast tillåtet under dagsljus"
     ],
-    "answer": "Det är förbjudet – sådana fordon får inte köra motorvägen",
+    "answer": "Det är förbjudet - sådana fordon får inte köra motorvägen",
     "explanation": "Fordon som inte kan hålla en minimihastighet på cirka 40 km/h (t.ex. traktorer, mopeder, långsamma anläggningsmaskiner) är förbjudna att köra motorvägar."
   },
   {
@@ -16554,11 +16554,11 @@
     "question": "Vad säger 8 kap 5a § om att dra en släpvagn med skadad elanslutning?",
     "options": [
       "Tillåtet om släpvagnens lampor fortfarande fungerar",
-      "Förbjudet – alla elektriska funktioner måste fungera",
+      "Förbjudet - alla elektriska funktioner måste fungera",
       "Tillåtet för korta avstånd",
       "Endast förbjudet på natten"
     ],
-    "answer": "Förbjudet – alla elektriska funktioner måste fungera",
+    "answer": "Förbjudet - alla elektriska funktioner måste fungera",
     "explanation": "En släpvagn måste ha fullt fungerande blinkers, bromsljus, bakljus och reflektorljus. Att köra med skadad elanslutning är olagligt."
   },
   {
@@ -16709,13 +16709,13 @@
     "category": "Påföljder",
     "question": "Vad är straffet för att köra utan giltigt körkort för första gången?",
     "options": [
-      "Böter (dagsböter) på cirka 3 000–5 000 kr",
+      "Böter (dagsböter) på cirka 3 000-5 000 kr",
       "Fängelse upp till 6 månader",
       "Bara en varning",
       "Fordonsförverkande"
     ],
-    "answer": "Böter (dagsböter) på cirka 3 000–5 000 kr",
-    "explanation": "Att köra utan körkort är straffbart med böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000–5 000 kr. Upprepade eller grova fall kan leda till fängelse."
+    "answer": "Böter (dagsböter) på cirka 3 000-5 000 kr",
+    "explanation": "Att köra utan körkort är straffbart med böter. Beloppet baseras på inkomst; typiska dagsböter ger 3 000-5 000 kr. Upprepade eller grova fall kan leda till fängelse."
   },
   {
     "id": 1287,
@@ -17281,12 +17281,12 @@
     "category": "Diverse",
     "question": "Vad är regeln för en förare som behöver göra en trepunktssväng på en väg med begränsad sikt?",
     "options": [
-      "Förbjudet – hitta en bättre plats",
+      "Förbjudet - hitta en bättre plats",
       "Tillåtet om ingen trafik är synlig",
       "Tillåtet endast med en spotter",
       "Tillåtet endast under dagtid"
     ],
-    "answer": "Förbjudet – hitta en bättre plats",
+    "answer": "Förbjudet - hitta en bättre plats",
     "explanation": "Att göra en trepunktssväng där man inte kan se tillräckligt långt åt båda hållen är farligt och bryter mot aktsamhetsplikten. Du måste hitta en säkrare plats (t.ex. uppfart, korsning) att svänga."
   },
   {
@@ -17309,10 +17309,10 @@
     "options": [
       "Tillåts i upp till 2 minuter",
       "Tillåtet endast för utryckningsfordon",
-      "Inte tillåtet – inget stopp alls",
+      "Inte tillåtet - inget stopp alls",
       "Tillåtet om passageraren är redo"
     ],
-    "answer": "Inte tillåtet – inget stopp alls",
+    "answer": "Inte tillåtet - inget stopp alls",
     "explanation": "En \"stoppningsförbud\"-skylt (röd cirkel med blå insida och röda korsade linjer) förbjuder alla stopp, även kortvarigt. Du kan inte hämta eller lämna passagerare där."
   },
   {
@@ -17334,11 +17334,11 @@
     "question": "Vad är regeln för en förare som har en trasig hastighetsmätare?",
     "options": [
       "Tillåtet om du känner din hastighet från andra sätt",
-      "Inte tillåtet – hastighetsmätaren måste fungera",
+      "Inte tillåtet - hastighetsmätaren måste fungera",
       "Tillåtet tillfälligt i upp till 30 dagar",
       "Endast förbjudet på motorvägar"
     ],
-    "answer": "Inte tillåtet – hastighetsmätaren måste fungera",
+    "answer": "Inte tillåtet - hastighetsmätaren måste fungera",
     "explanation": "Enligt 4 kap 1 § ska fordonet vara i trafikdugligt skick. En hastighetsmätare är obligatorisk utrustning; körning utan fungerande hastighetsmätare är olagligt."
   },
   {
@@ -17360,11 +17360,11 @@
     "question": "Vad säger förordningen om att köra bil med saknad backspegel (innerbackspegel) men funktionella sidospeglar?",
     "options": [
       "Lagligt, eftersom sidospeglar ger tillräcklig sikt bakåt",
-      "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+      "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
       "Lagligt endast för skåpbilar och lastbilar",
       "Endast olagligt om bilen används för bogsering"
     ],
-    "answer": "Olagligt – innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
+    "answer": "Olagligt - innerspegel är obligatoriskt om bilen ursprungligen var utrustad med en sådan",
     "explanation": "Bilar måste ha minst två speglar som ger sikt bakåt. Om innerspegeln saknas räcker det med två sidospeglar, men de flesta bilar är designade med alla tre. Borttagning kan bryta mot utrustningsreglerna."
   },
   {
@@ -17438,11 +17438,11 @@
     "question": "Vad gäller enligt 3 kap 14 a § vid körning i bil med sommardäck på snöig väg?",
     "options": [
       "Lagligt men riskabelt",
-      "Olagligt – däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
+      "Olagligt - däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
       "Lagligt om du har kedjor",
       "Endast olagligt på motorvägar"
     ],
-    "answer": "Olagligt – däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
+    "answer": "Olagligt - däck måste anpassas till vinterförhållanden från 1 december till 31 mars",
     "explanation": "Under vinterförhållanden (snö, is, slask) mellan 1 december och 31 mars måste däcken vara vinterdäck (M+S eller dubbade). Sommardäck är inte tillåtna under dessa förhållanden."
   },
   {
@@ -17633,11 +17633,11 @@
     "question": "Vad säger 3 kap 68a § om användningen av varningsljus (bärnsten) på en privat bil?",
     "options": [
       "Tillåtet för alla fordon att varna för en fara",
-      "Förbjudet – endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
+      "Förbjudet - endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
       "Tillåtet endast för haverier",
       "Tillåtet endast för utryckningsfordon"
     ],
-    "answer": "Förbjudet – endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
+    "answer": "Förbjudet - endast auktoriserade fordon (t.ex. vägunderhåll, bärgningsbilar) får använda bärnstensfärgade varningar",
     "explanation": "Bärnstensfärgade varningsljus är reserverade för specifika fordon med tillstånd (t.ex. konstruktion, allmännytta, bogsering). Privata bilar får inte använda dem."
   },
   {
@@ -17737,11 +17737,11 @@
     "question": "Vad är regeln för att köra en dieselbil som använder AdBlue men tanken är tom?",
     "options": [
       "Lagligt så länge bilen går",
-      "Olagligt – bilens avgassystem äventyras",
+      "Olagligt - bilens avgassystem äventyras",
       "Tillåten för upp till 100 km",
       "Endast olagligt om kontrollampan lyser"
     ],
-    "answer": "Olagligt – bilens avgassystem äventyras",
+    "answer": "Olagligt - bilens avgassystem äventyras",
     "explanation": "Om AdBlue-tanken är tom kommer fordonets NOx-utsläpp att överskrida de lagliga gränserna. Fordonet är inte trafiksäkert och ska inte köras."
   },
   {
@@ -17763,11 +17763,11 @@
     "question": "Vad är regeln för att köra en bensinbil med en saknad katalysator?",
     "options": [
       "Lagligt om bilen ändå klarar avgasprovet",
-      "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+      "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
       "Lagligt för bilar äldre än 20 år",
       "Endast olagligt om bilen avger synlig rök"
     ],
-    "answer": "Olagligt – katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
+    "answer": "Olagligt - katalysatorn är obligatorisk på bilar som ursprungligen hade en sådan",
     "explanation": "Om bilen har tillverkats med en katalysator måste den vara närvarande och fungerande. Att ta bort eller inaktivera det är olagligt och kommer att leda till att bilen misslyckas med utsläppsinspektionen."
   },
   {
@@ -17789,7 +17789,7 @@
     "question": "Vad är regeln för en förare som har en \"grön registreringsskylt\" (för elfordon) parkerad på en vanlig parkeringsplats?",
     "options": [
       "Tillåtet, gröna skyltar har inga speciella parkeringsprivilegier",
-      "Förbjudet – gröna skyltar får endast parkeras på elbilar",
+      "Förbjudet - gröna skyltar får endast parkeras på elbilar",
       "Tillåts endast vid laddning",
       "Endast tillåtet för p-skivzoner"
     ],
@@ -17919,11 +17919,11 @@
     "question": "Vad säger förordningen om att köra bil med ett trasigt bakre bältesspänne?",
     "options": [
       "Lagligt om ingen passagerare sitter i det sätet",
-      "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+      "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
       "Lagligt i upp till 30 dagar",
       "Endast olagligt om bilen används för att transportera passagerare"
     ],
-    "answer": "Olagligt – alla säkerhetsbältesspännen måste fungera oavsett användning",
+    "answer": "Olagligt - alla säkerhetsbältesspännen måste fungera oavsett användning",
     "explanation": "Fordonet ska ha fungerande säkerhetsbälten på alla säten där de är monterade. Ett trasigt spänne gör fordonet okörbart även om sätet är tomt."
   },
   {
@@ -17984,11 +17984,11 @@
     "question": "Vad är regeln för en förare som vill parkera på en väg med en skylt \"parkering endast för boende\" utan tillstånd?",
     "options": [
       "Tillåts i upp till 2 timmar",
-      "Ej tillåtet – endast boende med tillstånd får parkera där",
+      "Ej tillåtet - endast boende med tillstånd får parkera där",
       "Tillåtet om du betalar via en app",
       "Tillåtet endast på helger"
     ],
-    "answer": "Ej tillåtet – endast boende med tillstånd får parkera där",
+    "answer": "Ej tillåtet - endast boende med tillstånd får parkera där",
     "explanation": "Boendeparkering kräver tillstånd utfärdat av kommunen. Fordon utan tillstånd får böter, även om de besöker en boende."
   },
   {
@@ -18140,11 +18140,11 @@
     "question": "Vad säger förordningen om att köra bil med trasig parkeringsbroms?",
     "options": [
       "Lagligt om du använder klossar",
-      "Olagligt – parkeringsbromsen måste fungera",
+      "Olagligt - parkeringsbromsen måste fungera",
       "Lagligt endast för bilar med automatväxellåda",
       "Endast olagligt om bilen står parkerad på en backe"
     ],
-    "answer": "Olagligt – parkeringsbromsen måste fungera",
+    "answer": "Olagligt - parkeringsbromsen måste fungera",
     "explanation": "Parkeringsbromsen (handbromsen) är obligatorisk säkerhetsutrustning. En trasig parkeringsbroms gör fordonet okörbart eftersom det inte kan säkras när det parkeras."
   },
   {

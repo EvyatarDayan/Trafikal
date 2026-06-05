@@ -6,32 +6,54 @@
 import SwiftUI
 
 struct TheoryQuestionListView: View {
+    private enum ListingMode: Equatable {
+        case all
+        case category(String)
+        case favorites
+    }
+
     @Environment(LocalizationManager.self) private var l10n
     @Environment(\.colorScheme) private var colorScheme
     @Environment(TheoryQuestionCatalog.self) private var catalog
+    @Environment(FavoritesStore.self) private var favorites
 
-    private let category: String?
+    private let listingMode: ListingMode
 
     @State private var searchText = ""
 
     init(category: String?) {
-        self.category = category
+        if let category {
+            listingMode = .category(category)
+        } else {
+            listingMode = .all
+        }
+    }
+
+    init(favorites: ()) {
+        listingMode = .favorites
     }
 
     private var allQuestions: [TheoryQuestion] {
-        if let category {
-            catalog.questions(in: category)
-        } else {
+        switch listingMode {
+        case .all:
             catalog.questions
+        case .category(let category):
+            catalog.questions(in: category)
+        case .favorites:
+            favorites.favoriteQuestions(in: catalog)
         }
     }
 
     private var screenTitle: String {
         let count = allQuestions.count
-        if let category {
+        switch listingMode {
+        case .all:
+            return "\(l10n.text(.questionsAllQuestions)) (\(count))"
+        case .category(let category):
             return "\(category) (\(count))"
+        case .favorites:
+            return "\(l10n.text(.favoritesTitle)) (\(count))"
         }
-        return "\(l10n.text(.questionsAllQuestions)) (\(count))"
     }
 
     private var filteredQuestions: [TheoryQuestion] {
@@ -62,25 +84,36 @@ struct TheoryQuestionListView: View {
                 .padding(.bottom, 12)
                 .background(Theme.screenBackground)
 
-            ScrollView {
-                LazyVStack(spacing: ListCardStyle.rowSpacing) {
-                    ForEach(filteredQuestions) { question in
-                        NavigationLink {
-                            TheoryQuestionBrowseView(
-                                questions: filteredQuestions,
-                                startIndex: filteredQuestions.firstIndex(of: question) ?? 0
-                            )
-                        } label: {
-                            questionRow(question)
+            Group {
+                if filteredQuestions.isEmpty, listingMode == .favorites {
+                    ContentUnavailableView(
+                        l10n.text(.favoritesTitle),
+                        systemImage: "heart",
+                        description: Text(l10n.text(.favoritesEmptyQuestions))
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: ListCardStyle.rowSpacing) {
+                            ForEach(filteredQuestions) { question in
+                                NavigationLink {
+                                    TheoryQuestionBrowseView(
+                                        questions: filteredQuestions,
+                                        startIndex: filteredQuestions.firstIndex(of: question) ?? 0
+                                    )
+                                } label: {
+                                    questionRow(question)
+                                }
+                                .buttonStyle(.plain)
+                            }
                         }
-                        .buttonStyle(.plain)
+                        .padding(.horizontal, ListCardStyle.horizontalPadding)
+                        .padding(.top, ListCardStyle.rowSpacing)
+                        .padding(.bottom, 16)
                     }
+                    .scrollContentBackground(.hidden)
                 }
-                .padding(.horizontal, ListCardStyle.horizontalPadding)
-                .padding(.top, ListCardStyle.rowSpacing)
-                .padding(.bottom, 16)
             }
-            .scrollContentBackground(.hidden)
         }
         .toolbar(.hidden, for: .navigationBar)
         .appScreenBackground()

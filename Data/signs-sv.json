@@ -3144,7 +3144,7 @@
       "code": "C44",
       "category": "prohibition",
       "name": "Ingen trafik med andra motorfordon med dubbdäck än mopeder klass II",
-      "meaning": "Dubbdäck och människors hälsa Dubbarna river upp partiklar som är farliga för människors hälsa. Detta är den viktigaste anledningen till förbudet mot dubbdäck mellan 16 april–30 september om inte rådande eller förväntade väglag är vintrigt. På vissa vägsträckor i storstäder är luftkvaliteten så dålig att dubbdäck är helt förbjudna. Detta förbud är markerat med vägskylt och gäller även under vintern.",
+      "meaning": "Dubbdäck och människors hälsa Dubbarna river upp partiklar som är farliga för människors hälsa. Detta är den viktigaste anledningen till förbudet mot dubbdäck mellan 16 april-30 september om inte rådande eller förväntade väglag är vintrigt. På vissa vägsträckor i storstäder är luftkvaliteten så dålig att dubbdäck är helt förbjudna. Detta förbud är markerat med vägskylt och gäller även under vintern.",
       "keywords": [
         "motor",
         "vehicles",
@@ -3617,7 +3617,7 @@
       "code": "D7-1",
       "category": "mandatory",
       "name": "Obligatoriska stigar för fotgängare, cyklister och mopedförare",
-      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? – Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på – Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
+      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? - Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på - Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
       "keywords": [
         "compulsory",
         "paths",
@@ -3639,7 +3639,7 @@
       "code": "D7-2",
       "category": "mandatory",
       "name": "Obligatoriska stigar för fotgängare, cyklister och mopedförare",
-      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? – Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på – Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
+      "meaning": "Förtydligande om att korsa cykelbana Ett problem är att cykelbanan i juridisk mening vanligtvis inte korsar vägen som bilarna kör på. Att obligatoriska skyltar för cykelväg uppsatta på var sida om vägen innebär inte automatiskt att cykelbanan korsar vägen. För det mesta slutar cykelbanan före vägkorsningen och börjar igen på andra sidan. Det är ovanligt att en oavbruten cykelbana korsar en väg avsedd för bilar. Observera också att en cykelpassage eller en cykelöverfart alltid innebär att cykelbanan är avbruten. Med andra ord, om du ser vägmarkeringen för cykelpassage/korsning kan du vara säker på att cykelbanan slutar före Hur vet jag om jag korsar en oavbruten cykelbana? - Tyvärr är det väldigt svårt att veta, eftersom en oavbruten cykelbana saknar en standardiserad design. Frågar du experterna på Transportstyrelsen hänvisar de till kommunens detaljplan. Ska jag stanna och kolla kommunens detaljplan på - Nej, det bästa man kan göra är att agera på säkraste sätt. Minska hastigheten och låt cyklisterna korsa ro",
       "keywords": [
         "compulsory",
         "paths",
@@ -3720,7 +3720,7 @@
       "code": "E11-10",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3742,7 +3742,7 @@
       "code": "E11-2",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3764,7 +3764,7 @@
       "code": "E11-3",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3786,7 +3786,7 @@
       "code": "E11-4",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3808,7 +3808,7 @@
       "code": "E11-5",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3830,7 +3830,7 @@
       "code": "E11-6",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3852,7 +3852,7 @@
       "code": "E11-7",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3874,7 +3874,7 @@
       "code": "E11-8",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -3896,7 +3896,7 @@
       "code": "E11-9",
       "category": "information",
       "name": "Rekommenderad lägre hastighet",
-      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning – om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
+      "meaning": "Det är inte lämpligt att köra snabbare än den hastighet som visas. Skylten är rådgivande, inte en hastighetsbegränsning - om en maxgräns vore obligatorisk skulle en hastighetsgräns (C31)-skylt användas istället. Den placeras ofta nära farthinder.",
       "keywords": [
         "recommended",
         "lower",
@@ -4417,7 +4417,7 @@
       "difficulty": 1,
       "examTip": null,
       "name": "Parkering",
-      "meaning": "Mer om stopp och parkering En enda blå parkeringsskylt innebär att parkering är tillåten max 24 timmar på vardagar. På lördagar (inklusive dagar före helgdagar) och söndagar (inklusive helgdagar) finns ingen tidsbegränsning. Observera att det ofta finns ytterligare paneler som anger en tidsgräns. En parkeringsskiva är ett alternativ till en parkeringsbiljett. En extra panel indikerar användningen av en parkeringsskiva. Ställ in parkeringsskivan på din ankomsttid (närmaste efterföljande halvtimme). Ankomsttiden är när du kommer till parkeringsplatsen och börjar parkera, inte när du tänker komma tillbaka för att hämta bilen. Börja parkera 13.02 – ställ p-skivan på 13.30. Börja parkera 14.40 – ställ p-skivan på 15.00. Det är förbjudet att lämna bilnycklarna i en parkerad bil. Det ska till exempel vara omöjligt för ett barn att starta bilen och orsaka en olycka. På sommaren kan det bli väldigt varmt i bilen. Lämna aldrig barn eller husdjur ensamma i en parkerad bil under sommaren.",
+      "meaning": "Mer om stopp och parkering En enda blå parkeringsskylt innebär att parkering är tillåten max 24 timmar på vardagar. På lördagar (inklusive dagar före helgdagar) och söndagar (inklusive helgdagar) finns ingen tidsbegränsning. Observera att det ofta finns ytterligare paneler som anger en tidsgräns. En parkeringsskiva är ett alternativ till en parkeringsbiljett. En extra panel indikerar användningen av en parkeringsskiva. Ställ in parkeringsskivan på din ankomsttid (närmaste efterföljande halvtimme). Ankomsttiden är när du kommer till parkeringsplatsen och börjar parkera, inte när du tänker komma tillbaka för att hämta bilen. Börja parkera 13.02 - ställ p-skivan på 13.30. Börja parkera 14.40 - ställ p-skivan på 15.00. Det är förbjudet att lämna bilnycklarna i en parkerad bil. Det ska till exempel vara omöjligt för ett barn att starta bilen och orsaka en olycka. På sommaren kan det bli väldigt varmt i bilen. Lämna aldrig barn eller husdjur ensamma i en parkerad bil under sommaren.",
       "keywords": [
         "parking",
         "stopping",
@@ -6319,7 +6319,7 @@
       "code": "T10",
       "category": "additional",
       "name": "Hörselskada",
-      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen – varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
+      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen - varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
       "keywords": [
         "hearing",
         "impaired",
@@ -6723,7 +6723,7 @@
       "difficulty": 1,
       "examTip": "Tilläggsskyltar modifierar skylten ovanför eller bredvid dem.",
       "name": "Synskadad",
-      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen – varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
+      "meaning": "När du stannar för en synskadad person vid ett övergångsställe Stanna i god tid före övergångsstället. Var försiktig med att göra oväsen - varva inte motorn och tuta bara i nödsituationer. Börja inte köra igen så fort den synskadade har lämnat ditt körfält, utan vänta tills de har korsat klart vägen. Detta för att du inte ska förvirra personen med ljudet av din accelererande bil.",
       "keywords": [
         "visually",
         "impaired",

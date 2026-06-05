@@ -453,8 +453,8 @@ struct AboutView: View {
     private static let commonsSignsURL = URL(string: "https://commons.wikimedia.org/wiki/Road_signs_in_Sweden")!
 
     private var versionString: String {
-        let short = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "—"
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "—"
+        let short = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "-"
         return l10n.text(.settingsAboutVersionFormat, short, build)
     }
 

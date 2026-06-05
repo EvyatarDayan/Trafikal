@@ -132,7 +132,7 @@ private struct WelcomeStartButtonStyle: ButtonStyle {
     WelcomeView(
         titlePrefix: "Welcome to",
         titleBrand: "Trafikal",
-        subtitle: "Your complete companion for mastering the Swedish theory exam. Learn road signs, practice exam-style questions, and build confidence with quizzes - all available offline, whenever you're ready.",
+        subtitle: "Your complete companion for mastering the Swedish theory exam. Learn road signs, practice exam-style questions, and build confidence with tests - all available offline, whenever you're ready.",
         startTitle: "Start",
         onStart: {}
     )

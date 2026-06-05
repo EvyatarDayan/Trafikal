@@ -7,14 +7,18 @@ import SwiftUI
 
 private enum SignListRoute: Hashable {
     case allSigns
+    case favorites
     case category(SignCategory)
 }
 
-/// Signs tab root content (list of practice options).
+/// Signs practice browse root (all signs and categories).
 struct SignsTabRoot: View {
+    var showsTitleBar: Bool = true
+
     @Environment(LocalizationManager.self) private var l10n
     @Environment(\.colorScheme) private var colorScheme
     @Environment(SignCatalog.self) private var catalog
+    @Environment(FavoritesStore.self) private var favorites
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
@@ -22,7 +26,9 @@ struct SignsTabRoot: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ScreenTitleBar(title: l10n.text(.studyTitle))
+            if showsTitleBar {
+                ScreenTitleBar(title: l10n.text(.studyTitle))
+            }
 
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
@@ -40,6 +46,11 @@ struct SignsTabRoot: View {
                     .buttonStyle(.plain)
 
                     sectionHeader(l10n.text(.studyQuickStart))
+
+                    NavigationLink(value: SignListRoute.favorites) {
+                        favoritesRow
+                    }
+                    .buttonStyle(.plain)
 
                     ForEach(SignCategory.allCases) { category in
                         let items = catalog.signs(in: category)
@@ -61,12 +72,12 @@ struct SignsTabRoot: View {
             }
             .scrollContentBackground(.hidden)
         }
-        .appRootScreen()
-        .appScreenBackground()
         .navigationDestination(for: SignListRoute.self) { route in
             switch route {
             case .allSigns:
                 CategoryDetailView(allSigns: ())
+            case .favorites:
+                CategoryDetailView(favorites: ())
             case .category(let category):
                 CategoryDetailView(category: category)
             }
@@ -104,6 +115,30 @@ struct SignsTabRoot: View {
     }
 
     /// First sign in list order, except Supplementary (additional) which uses the second.
+    private var favoritesRow: some View {
+        HStack(alignment: .center, spacing: 16) {
+            Image(systemName: "heart.fill")
+                .font(.title2)
+                .foregroundStyle(.red)
+                .frame(width: 48, height: 48)
+
+            Text(l10n.text(.favoritesTitle))
+                .font(.body.weight(.medium))
+                .foregroundStyle(.primary)
+
+            Spacer(minLength: 0)
+
+            Text("\(favorites.signCodes.count)")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+
+            Image(systemName: "chevron.right")
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.tertiary)
+        }
+        .listCardStyle(background: cardBackground, colorScheme: colorScheme)
+    }
+
     private func categoryPreviewSign(for category: SignCategory, in signs: [Sign]) -> Sign? {
         guard !signs.isEmpty else { return nil }
         if category == .additional, signs.count > 1 {

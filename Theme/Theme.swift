@@ -9,8 +9,14 @@ enum Theme {
     /// Light gray background used across the app (Settings-style grouped gray).
     static let screenBackground = Color(.systemGroupedBackground)
 
-    /// Welcome screen background (matches TakeItEasy welcome layout).
-    static let welcomeBackground = Color(red: 242 / 255, green: 242 / 255, blue: 247 / 255)
+    /// Welcome screen background - light gray in light mode, grouped dark in dark mode.
+    static var welcomeBackground: Color {
+        Color(uiColor: UIColor { traits in
+            traits.userInterfaceStyle == .dark
+                ? .systemGroupedBackground
+                : UIColor(red: 242 / 255, green: 242 / 255, blue: 247 / 255, alpha: 1)
+        })
+    }
 }
 
 extension View {

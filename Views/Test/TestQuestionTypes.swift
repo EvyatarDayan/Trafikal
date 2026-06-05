@@ -46,61 +46,74 @@ enum QuizOptionState {
 }
 
 struct QuizOptionButton: View {
+    @Environment(\.colorScheme) private var colorScheme
+
     let number: Int
     let title: String
     let state: QuizOptionState
+    var isInteractive: Bool = true
     let action: () -> Void
 
+    private var cardBackground: Color {
+        ListCardStyle.cardBackground(colorScheme: colorScheme)
+    }
+
     var body: some View {
-        Button(action: action) {
-            HStack(spacing: 12) {
+        Button {
+            guard isInteractive else { return }
+            action()
+        } label: {
+            HStack(alignment: .center, spacing: 12) {
                 Text("\(number)")
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(.secondary)
-                    .frame(width: 22, alignment: .center)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(numberForeground)
+                    .frame(width: 26, height: 26)
+                    .background(numberBackground, in: Circle())
 
                 Text(title)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.body)
+                    .foregroundStyle(.primary)
+                    .fixedSize(horizontal: false, vertical: true)
 
-                if state == .correct {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.green)
-                } else if state == .incorrect {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(.red)
-                }
+                Spacer(minLength: 0)
             }
-            .padding()
-            .background(backgroundColor, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            .listCardStyle(
+                background: cardBackground,
+                horizontalPadding: 12,
+                verticalPadding: 12,
+                colorScheme: colorScheme
+            )
             .overlay {
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .strokeBorder(borderColor, lineWidth: borderWidth)
+                if let borderColor = overlayBorderColor {
+                    RoundedRectangle(cornerRadius: ListCardStyle.cornerRadius, style: .continuous)
+                        .strokeBorder(borderColor, lineWidth: 1.5)
+                }
             }
         }
         .buttonStyle(.plain)
+        .allowsHitTesting(isInteractive)
     }
 
-    private var backgroundColor: Color {
+    private var numberForeground: Color {
         switch state {
-        case .neutral: Color(.systemGray6)
-        case .correct: Color.green.opacity(0.2)
-        case .incorrect: Color.red.opacity(0.2)
+        case .neutral: .secondary
+        case .correct, .incorrect: .white
         }
     }
 
-    private var borderColor: Color {
+    private var numberBackground: Color {
         switch state {
-        case .neutral: Color(.systemGray3)
+        case .neutral: Color(.systemGray5)
         case .correct: .green
         case .incorrect: .red
         }
     }
 
-    private var borderWidth: CGFloat {
+    private var overlayBorderColor: Color? {
         switch state {
-        case .neutral: 1.5
-        case .correct, .incorrect: 2
+        case .neutral: nil
+        case .correct: Color.green.opacity(0.45)
+        case .incorrect: Color.red.opacity(0.45)
         }
     }
 }

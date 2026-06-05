@@ -6,11 +6,18 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
+    private enum ListingMode: Equatable {
+        case allSigns
+        case category(SignCategory)
+        case favorites
+    }
+
     @Environment(LocalizationManager.self) private var l10n
     @Environment(\.colorScheme) private var colorScheme
     @Environment(SignCatalog.self) private var catalog
+    @Environment(FavoritesStore.self) private var favorites
 
-    private let category: SignCategory?
+    private let listingMode: ListingMode
 
     @State private var searchText = ""
 
@@ -21,28 +28,39 @@ struct CategoryDetailView: View {
     private let rowHorizontalPadding: CGFloat = 14
 
     init(category: SignCategory) {
-        self.category = category
+        listingMode = .category(category)
     }
 
-    /// All signs in catalog order (Signs tab — “All traffic signs”).
+    /// All signs in catalog order (Signs tab - “All traffic signs”).
     init(allSigns: ()) {
-        self.category = nil
+        listingMode = .allSigns
+    }
+
+    init(favorites: ()) {
+        listingMode = .favorites
     }
 
     private var allSigns: [Sign] {
-        if let category {
-            catalog.signs(in: category)
-        } else {
+        switch listingMode {
+        case .allSigns:
             catalog.signs
+        case .category(let category):
+            catalog.signs(in: category)
+        case .favorites:
+            favorites.favoriteSigns(in: catalog)
         }
     }
 
     private var screenTitle: String {
         let count = allSigns.count
-        if let category {
+        switch listingMode {
+        case .allSigns:
+            return "\(l10n.text(.studyAllSigns)) (\(count))"
+        case .category(let category):
             return "\(category.title) (\(count))"
+        case .favorites:
+            return "\(l10n.text(.favoritesTitle)) (\(count))"
         }
-        return "\(l10n.text(.studyAllSigns)) (\(count))"
     }
 
     private var filteredSigns: [Sign] {
@@ -68,25 +86,36 @@ struct CategoryDetailView: View {
                 .padding(.bottom, 12)
                 .background(Theme.screenBackground)
 
-            ScrollView {
-                LazyVStack(spacing: rowSpacing) {
-                    ForEach(filteredSigns) { sign in
-                        NavigationLink {
-                            StudyCardView(
-                                signs: filteredSigns,
-                                startIndex: filteredSigns.firstIndex(of: sign) ?? 0
-                            )
-                        } label: {
-                            signRow(sign)
+            Group {
+                if filteredSigns.isEmpty, listingMode == .favorites {
+                    ContentUnavailableView(
+                        l10n.text(.favoritesTitle),
+                        systemImage: "heart",
+                        description: Text(l10n.text(.favoritesEmptySigns))
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: rowSpacing) {
+                            ForEach(filteredSigns) { sign in
+                                NavigationLink {
+                                    StudyCardView(
+                                        signs: filteredSigns,
+                                        startIndex: filteredSigns.firstIndex(of: sign) ?? 0
+                                    )
+                                } label: {
+                                    signRow(sign)
+                                }
+                                .buttonStyle(.plain)
+                            }
                         }
-                        .buttonStyle(.plain)
+                        .padding(.horizontal, listHorizontalPadding)
+                        .padding(.top, listVerticalPadding)
+                        .padding(.bottom, listVerticalPadding + 8)
                     }
+                    .scrollContentBackground(.hidden)
                 }
-                .padding(.horizontal, listHorizontalPadding)
-                .padding(.top, listVerticalPadding)
-                .padding(.bottom, listVerticalPadding + 8)
             }
-            .scrollContentBackground(.hidden)
         }
         .toolbar(.hidden, for: .navigationBar)
         .appScreenBackground()

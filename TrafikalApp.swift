@@ -11,6 +11,8 @@ struct TrafikalApp: App {
     private let catalog = SignCatalog.shared
     private let theoryCatalog = TheoryQuestionCatalog.shared
     private let testHistory = TestHistoryStore.shared
+    private let favorites = FavoritesStore.shared
+    private let licenseProgress = DrivingLicenseProgressStore.shared
     private let localization = LocalizationManager.shared
 
     init() {
@@ -31,6 +33,8 @@ struct TrafikalApp: App {
                 .environment(catalog)
                 .environment(theoryCatalog)
                 .environment(testHistory)
+                .environment(favorites)
+                .environment(licenseProgress)
                 .environment(localization)
                 .environment(TestSessionStore.shared)
                 .environment(TheoryQuestionSessionStore.shared)

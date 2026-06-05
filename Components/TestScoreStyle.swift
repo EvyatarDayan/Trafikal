@@ -6,7 +6,7 @@
 import SwiftUI
 
 enum TestScoreStyle {
-    /// 0–30% red, 31–70% orange, 71–100% green.
+    /// 0-30% red, 31-70% orange, 71-100% green.
     static func foregroundStyle(for percent: Int) -> Color {
         let clamped = min(max(percent, 0), 100)
         switch clamped {

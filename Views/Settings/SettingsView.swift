@@ -163,17 +163,11 @@ struct SettingsView: View {
                 }
             }
         } label: {
-            HStack(spacing: 6) {
-                Text(l10n.language.flagEmoji)
-                    .frame(width: 28, alignment: .center)
-                Text(l10n.language.nativeDisplayName)
-                    .frame(width: 72, alignment: .leading)
-            }
-            .font(.body)
-            .foregroundStyle(.primary)
+            Text(l10n.language.flagEmoji)
+                .font(.body)
+                .frame(width: 28, alignment: .center)
         }
         .menuIndicator(.hidden)
-        .frame(width: 106, alignment: .leading)
     }
 
     private var darkModeRow: some View {

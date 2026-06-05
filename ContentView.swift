@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var selectedTab = 2
 
     private let menuHeight: CGFloat = 40
-    private let menuButtonSpacing: CGFloat = -40
+    private let menuButtonSpacing: CGFloat = -48
 
     var body: some View {
         GeometryReader { geometry in
@@ -47,6 +47,7 @@ struct ContentView: View {
                 }
             }
         }
+        .favoriteAddedConfirmationOverlay()
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 
@@ -56,22 +57,23 @@ struct ContentView: View {
         }
     }
 
-    @ViewBuilder
     private var tabContent: some View {
-        switch selectedTab {
-        case 0:
-            NavigationStack { SignsTabRoot() }
-        case 1:
-            NavigationStack { QuestionsTabRoot() }
-        case 2:
-            NavigationStack { HomeTabView() }
-        case 3:
-            NavigationStack { TestsTabView() }
-        case 4:
-            NavigationStack { SettingsView() }
-        default:
-            NavigationStack { HomeTabView() }
+        ZStack {
+            tabRoot(GoalTabView(), tab: 0)
+            tabRoot(PracticeTabView(), tab: 1)
+            tabRoot(HomeTabView(), tab: 2)
+            tabRoot(TestsTabView(), tab: 3)
+            tabRoot(SettingsView(), tab: 4)
         }
+    }
+
+    private func tabRoot<Content: View>(_ content: Content, tab: Int) -> some View {
+        NavigationStack {
+            content
+        }
+        .opacity(selectedTab == tab ? 1 : 0)
+        .allowsHitTesting(selectedTab == tab)
+        .accessibilityHidden(selectedTab != tab)
     }
 
     private func customTabBar(width: CGFloat, bottomInset: CGFloat) -> some View {
@@ -90,15 +92,15 @@ struct ContentView: View {
 
             HStack(spacing: menuButtonSpacing) {
                 TabBarButton(
-                    icon: "signpost.right.fill",
-                    label: l10n.text(.tabStudy),
+                    icon: "flag.checkered",
+                    label: l10n.text(.tabGoal),
                     isSelected: selectedTab == 0,
                     action: { selectedTab = 0 }
                 )
 
                 TabBarButton(
-                    icon: "text.book.closed.fill",
-                    label: l10n.text(.tabQuestions),
+                    icon: "books.vertical.fill",
+                    label: l10n.text(.tabPractice),
                     isSelected: selectedTab == 1,
                     action: { selectedTab = 1 }
                 )
@@ -137,5 +139,7 @@ struct ContentView: View {
         .environment(TestSessionStore.shared)
         .environment(TheoryQuestionCatalog.shared)
         .environment(TheoryQuestionSessionStore.shared)
+        .environment(FavoritesStore.shared)
+        .environment(DrivingLicenseProgressStore.shared)
         .environment(LocalizationManager.shared)
 }

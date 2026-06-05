@@ -14,6 +14,7 @@ final class TheoryQuestionSessionStore {
     private(set) var questionsPerSession = 10
     private(set) var currentIndex = 0
     private(set) var selectedID: String?
+    private var answers: [String?] = []
     private(set) var score = 0
     private(set) var finished = false
     private(set) var didRecordCurrentSession = false
@@ -34,6 +35,7 @@ final class TheoryQuestionSessionStore {
         }
 
         questions = pool.prefix(count).map { TheoryQuizQuestion.make(from: $0) }
+        answers = Array(repeating: nil, count: questions.count)
         currentIndex = 0
         selectedID = nil
         score = 0
@@ -47,6 +49,7 @@ final class TheoryQuestionSessionStore {
 
     func clear() {
         questions = []
+        answers = []
         currentIndex = 0
         selectedID = nil
         score = 0
@@ -61,21 +64,34 @@ final class TheoryQuestionSessionStore {
     }
 
     func select(optionID: String, for question: TheoryQuizQuestion) {
-        guard selectedID == nil else { return }
+        guard currentIndex < answers.count, answers[currentIndex] == nil else { return }
+        answers[currentIndex] = optionID
         selectedID = optionID
-        if optionID == question.correctOptionID {
-            score += 1
-        }
+        recalculateScore()
     }
 
     func advance() {
-        guard !questions.isEmpty else { return }
+        guard !questions.isEmpty, answers[currentIndex] != nil else { return }
 
         if currentIndex < questions.count - 1 {
             currentIndex += 1
-            selectedID = nil
+            selectedID = answers[currentIndex]
         } else {
             finished = true
+        }
+    }
+
+    func goBack() {
+        guard currentIndex > 0 else { return }
+        currentIndex -= 1
+        selectedID = answers[currentIndex]
+    }
+
+    private func recalculateScore() {
+        score = answers.enumerated().reduce(0) { partial, entry in
+            let (index, answer) = entry
+            guard let answer, index < questions.count else { return partial }
+            return partial + (answer == questions[index].correctOptionID ? 1 : 0)
         }
     }
 }

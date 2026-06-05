@@ -17,6 +17,26 @@ enum ListCardStyle {
     }
 }
 
+/// Divider between a fixed question prompt and scrollable answers.
+struct QuestionAnswersDivider: View {
+    @Environment(\.colorScheme) private var colorScheme
+
+    var topPadding: CGFloat = 0
+
+    var body: some View {
+        Rectangle()
+            .fill(dividerColor)
+            .frame(height: 2)
+            .padding(.horizontal, ListCardStyle.horizontalPadding)
+            .padding(.top, topPadding)
+            .padding(.bottom, 20)
+    }
+
+    private var dividerColor: Color {
+        colorScheme == .light ? Color(.systemGray4) : Color(.systemGray3)
+    }
+}
+
 extension View {
     func listCardStyle(
         background: Color,

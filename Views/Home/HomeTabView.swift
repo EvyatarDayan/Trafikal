@@ -27,8 +27,6 @@ struct HomeTabView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            pageHeader
-
             ScrollView {
                 VStack(spacing: 28) {
                     signOfTodaySection
@@ -43,27 +41,17 @@ struct HomeTabView: View {
         .appScreenBackground()
     }
 
-    private var pageHeader: some View {
-        ZStack(alignment: .topLeading) {
-            homeTitle("Trafikal", font: .system(size: 40, weight: .bold))
-                .padding(.top, 13)
-
-            temporaryRandomSignButton
-        }
-        .padding(.horizontal, horizontalPadding)
-        .padding(.top, 15)
-        .padding(.bottom, 8)
-    }
-
-    /// TEMP: debug control for sign-of-the-day — delete when no longer needed.
+    /// TEMP: debug control for sign-of-the-day - delete when no longer needed.
     private var temporaryRandomSignButton: some View {
         Button {
             pickRandomSignOfToday()
         } label: {
             Image(systemName: "dice.fill")
-                .font(.body.weight(.semibold))
+                .font(.system(size: 20, weight: .semibold))
+                .foregroundStyle(Color.accentColor)
+                .frame(width: 22, height: 22)
         }
-        .buttonStyle(.bordered)
+        .buttonStyle(.plain)
         .accessibilityLabel("Random sign of the day")
     }
 
@@ -76,9 +64,9 @@ struct HomeTabView: View {
         signOfTodayOverride = pool.randomElement()
     }
 
-    private func homeTitle(_ text: String, font: Font) -> some View {
+    private func homeSectionTitle(_ text: String) -> some View {
         Text(text)
-            .font(font)
+            .font(.title3.bold())
             .foregroundStyle(.primary)
             .frame(maxWidth: .infinity, alignment: .center)
     }
@@ -86,7 +74,7 @@ struct HomeTabView: View {
     @ViewBuilder
     private var signOfTodaySection: some View {
         VStack(spacing: 14) {
-            homeTitle("🔥 \(l10n.text(.homeSignOfToday))", font: .title3.bold())
+            homeSectionTitle(l10n.text(.homeSignOfToday))
 
             if let error = catalog.loadError {
                 HomeFeaturedCard(cornerRadius: cardCornerRadius) {
@@ -110,6 +98,11 @@ struct HomeTabView: View {
 
     private func signOfTodayCardContent(sign: Sign) -> some View {
         SignSummaryCard(sign: sign, maxImageSide: 150, nameLineLimit: 1, imageShadow: true)
+            .overlay(alignment: .topLeading) {
+                temporaryRandomSignButton
+                    .padding(ListCardStyle.rowHorizontalPadding)
+                    .padding(.top, 6)
+            }
             .overlay(alignment: .topTrailing) {
                 NavigationLink {
                     StudyCardView(signs: [sign])
@@ -131,7 +124,7 @@ struct HomeTabView: View {
     @ViewBuilder
     private var testStatisticsSection: some View {
         VStack(spacing: 14) {
-            homeTitle(l10n.text(.homeTestStatistics), font: .title3.bold())
+            homeSectionTitle(l10n.text(.homeTestStatistics))
 
             HomeCard(elevated: true, cornerRadius: cardCornerRadius) {
                 if historyStore.testsCompleted == 0 {
@@ -261,5 +254,6 @@ private struct HomeCard<Content: View>: View {
     }
     .environment(SignCatalog.shared)
     .environment(TestHistoryStore.shared)
+    .environment(DrivingLicenseProgressStore.shared)
     .environment(LocalizationManager.shared)
 }

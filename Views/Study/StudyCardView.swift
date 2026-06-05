@@ -31,11 +31,20 @@ struct StudyCardView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ScreenTitleBar(
-                title: l10n.text(.studyTitle),
-                subtitle: l10n.text(.studyOf, index + 1, signs.count),
-                showsBackButton: true
-            )
+            ZStack {
+                ScreenTitleBar(
+                    title: l10n.text(.studyTitle),
+                    subtitle: l10n.text(.studyOf, index + 1, signs.count),
+                    showsBackButton: true
+                )
+
+                HStack {
+                    Spacer()
+                    SignFavoriteButton(signCode: sign.code)
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 12)
+            }
 
             signCard
                 .padding(.horizontal, ListCardStyle.horizontalPadding)

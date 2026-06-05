@@ -14,6 +14,7 @@ struct TestSessionView: View {
     @Environment(TestSessionStore.self) private var sessionStore
 
     @State private var showingSignDetails = false
+    @State private var showExitConfirmation = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -21,19 +22,18 @@ struct TestSessionView: View {
                 ScreenTitleBar(
                     title: l10n.text(.signsTitle),
                     showsBackButton: !sessionStore.finished,
-                    onBack: { isPresented = false }
+                    onBack: { showExitConfirmation = true }
                 )
 
                 if !sessionStore.questions.isEmpty, !sessionStore.finished {
                     HStack {
                         Spacer()
-                        Button(l10n.text(.signsStartOver)) {
-                            sessionStore.restartTest(catalog: catalog)
-                        }
-                        .font(.caption.weight(.medium))
+                        SignFavoriteButton(
+                            signCode: sessionStore.questions[sessionStore.currentIndex].correct.code
+                        )
                     }
                     .padding(.horizontal, 16)
-                    .padding(.top, 14)
+                    .padding(.top, 12)
                 }
             }
 
@@ -45,10 +45,7 @@ struct TestSessionView: View {
                         description: Text(error)
                     )
                 } else if sessionStore.questions.isEmpty, !sessionStore.finished {
-                    ProgressView(l10n.text(.signsPreparing))
-                        .task {
-                            sessionStore.startTest(catalog: catalog)
-                        }
+                    Color.clear
                 } else if sessionStore.finished {
                     testResult
                 } else {
@@ -66,85 +63,104 @@ struct TestSessionView: View {
         .onChange(of: sessionStore.currentIndex) { _, _ in
             showingSignDetails = false
         }
+        .alert(l10n.text(.testExitAlertTitle), isPresented: $showExitConfirmation) {
+            Button(l10n.text(.commonCancel), role: .cancel) {}
+            Button(l10n.text(.commonOK)) {
+                sessionStore.clear()
+                isPresented = false
+            }
+        } message: {
+            Text(l10n.text(.testExitAlertMessage))
+        }
     }
 
     private var activeTest: some View {
         let question = sessionStore.questions[sessionStore.currentIndex]
 
-        return VStack(alignment: .leading, spacing: 20) {
-            VStack(spacing: 6) {
-                ProgressView(
-                    value: Double(sessionStore.currentIndex + 1),
-                    total: Double(sessionStore.questions.count)
-                )
-                Text("\(sessionStore.currentIndex + 1)/\(sessionStore.questions.count)")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(.secondary)
-                    .frame(maxWidth: .infinity)
-            }
-            .padding(.horizontal)
+        return VStack(spacing: 0) {
+            TestSessionProgressHeader(
+                currentIndex: sessionStore.currentIndex,
+                totalCount: sessionStore.questions.count
+            )
 
-            Text(l10n.text(.signsWhatDoesSignMean))
-                .font(.headline)
-                .padding(.horizontal)
+            signPromptCard(for: question.correct)
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.top, 12)
+                .padding(.bottom, ListCardStyle.rowSpacing)
+                .sheet(isPresented: $showingSignDetails) {
+                    SignDetailSheet(sign: question.correct)
+                }
 
-            HStack {
-                Spacer()
-                SignImageView(sign: question.correct)
-                    .overlay(alignment: .trailing) {
-                        if sessionStore.selectedID != nil {
-                            Button {
-                                showingSignDetails = true
-                            } label: {
-                                Image("Info")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .scaledToFit()
-                                    .frame(width: 28, height: 28)
-                                    .foregroundStyle(Color.accentColor)
+            QuestionAnswersDivider()
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(Array(question.options.enumerated()), id: \.element.id) { index, option in
+                            QuizOptionButton(
+                                number: index + 1,
+                                title: option.title,
+                                state: optionState(for: option, question: question),
+                                isInteractive: sessionStore.selectedID == nil
+                            ) {
+                                sessionStore.select(optionID: option.id, for: question)
                             }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel(l10n.text(.homeDetails))
-                            .offset(x: 40)
                         }
                     }
-                Spacer()
-            }
-            .padding(.vertical)
-            .sheet(isPresented: $showingSignDetails) {
-                SignDetailSheet(sign: question.correct)
-            }
 
-            VStack(spacing: 12) {
-                ForEach(Array(question.options.enumerated()), id: \.element.id) { index, option in
-                    QuizOptionButton(
-                        number: index + 1,
-                        title: option.title,
-                        state: optionState(for: option, question: question)
-                    ) {
-                        sessionStore.select(optionID: option.id, for: question)
+                    if sessionStore.selectedID != nil {
+                        signMeaningSection(for: question.correct)
                     }
-                    .disabled(sessionStore.selectedID != nil)
                 }
+                .padding(.horizontal, ListCardStyle.horizontalPadding)
+                .padding(.bottom, 8)
             }
-            .padding(.horizontal)
+            .frame(maxHeight: .infinity, alignment: .top)
+            .scrollContentBackground(.hidden)
+            .scrollIndicators(.hidden)
 
-            if sessionStore.selectedID != nil {
-                Button(
-                    sessionStore.currentIndex < sessionStore.questions.count - 1
-                        ? l10n.text(.testNextQuestion)
-                        : l10n.text(.testShowResults)
-                ) {
-                    sessionStore.advance()
-                }
-                .buttonStyle(.borderedProminent)
-                .frame(maxWidth: .infinity)
-                .padding(.horizontal)
-            }
-
-            Spacer()
+            questionNavigationBar
+                .frame(height: 72)
+                .background(Theme.screenBackground)
         }
-        .padding(.top, 8)
+    }
+
+    private func signPromptCard(for sign: Sign) -> some View {
+        SignSummaryCard(
+            sign: sign,
+            maxImageSide: 150,
+            promptText: l10n.text(.signsWhatDoesSignMean),
+            showsInfoButton: sessionStore.selectedID != nil,
+            onInfoTap: { showingSignDetails = true }
+        )
+    }
+
+    private func signMeaningSection(for sign: Sign) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(l10n.text(.studyMeaning))
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
+
+            Text(sign.meaning)
+                .font(.subheadline)
+                .foregroundStyle(.primary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.systemGray6), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+    }
+
+    private var questionNavigationBar: some View {
+        TestQuestionNavigationBar(
+            canGoBack: sessionStore.currentIndex > 0,
+            canGoForward: sessionStore.selectedID != nil,
+            forwardTitle: sessionStore.currentIndex < sessionStore.questions.count - 1
+                ? l10n.text(.testNextQuestion)
+                : l10n.text(.testShowResults),
+            onBack: { sessionStore.goBack() },
+            onForward: { sessionStore.advance() }
+        )
     }
 
     private var testResult: some View {
@@ -173,7 +189,7 @@ struct TestSessionView: View {
 
             Spacer()
 
-            Button(l10n.text(.signsEnd)) {
+            Button(l10n.text(.commonDone)) {
                 isPresented = false
             }
             .buttonStyle(.borderedProminent)

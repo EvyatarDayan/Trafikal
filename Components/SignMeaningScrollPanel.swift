@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// Scrollable meaning panel with edge fades — shared by sign study and test detail sheets.
+/// Scrollable meaning panel with edge fades - shared by sign study and test detail sheets.
 struct SignMeaningScrollPanel: View {
     @Environment(LocalizationManager.self) private var l10n
 

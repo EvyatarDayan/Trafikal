@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// Bottom sheet with full sign description — matches the history detail sheet pattern.
+/// Bottom sheet with full sign description - matches the history detail sheet pattern.
 struct SignDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(LocalizationManager.self) private var l10n
