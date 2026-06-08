@@ -19,6 +19,8 @@ final class TestSessionStore {
     private(set) var finished = false
     private(set) var didRecordCurrentTest = false
 
+    private var progressStore: SignProgressStore?
+
     /// In-memory only - cleared when the app terminates or the user ends the test.
     var hasResumableSession: Bool {
         !questions.isEmpty && !finished
@@ -26,17 +28,31 @@ final class TestSessionStore {
 
     private init() {}
 
-    func startTest(catalog: SignCatalog, questionCount: Int = 10) {
+    func ensureProgressStore(_ store: SignProgressStore = .shared) {
+        progressStore = store
+    }
+
+    func startTest(
+        catalog: SignCatalog,
+        progressStore: SignProgressStore = .shared,
+        questionCount: Int = 10
+    ) {
         questionsPerTest = questionCount
-        let pool = catalog.shuffledForQuiz
-        let count = min(questionsPerTest, pool.count)
+        ensureProgressStore(progressStore)
+
+        let selectedSigns = catalog.generateSmartQuiz(
+            totalSigns: questionCount,
+            progressStore: progressStore
+        )
+        let count = min(questionsPerTest, selectedSigns.count)
         guard count >= 2 else {
             clear()
             return
         }
 
-        questions = pool.prefix(count).map { sign in
-            QuizQuestion.makeSmart(correct: sign, from: pool)
+        let distractorPool = catalog.signs
+        questions = selectedSigns.prefix(count).map { sign in
+            QuizQuestion.makeSmart(correct: sign, from: distractorPool)
         }
         answers = Array(repeating: nil, count: questions.count)
         currentIndex = 0
@@ -46,8 +62,15 @@ final class TestSessionStore {
         didRecordCurrentTest = false
     }
 
-    func restartTest(catalog: SignCatalog) {
-        startTest(catalog: catalog, questionCount: questionsPerTest)
+    func restartTest(
+        catalog: SignCatalog,
+        progressStore: SignProgressStore = .shared
+    ) {
+        startTest(
+            catalog: catalog,
+            progressStore: progressStore,
+            questionCount: questionsPerTest
+        )
     }
 
     func clear() {
@@ -58,6 +81,7 @@ final class TestSessionStore {
         score = 0
         finished = false
         didRecordCurrentTest = false
+        progressStore = nil
     }
 
     func select(optionID: String, for question: QuizQuestion) {
@@ -65,6 +89,13 @@ final class TestSessionStore {
         answers[currentIndex] = optionID
         selectedID = optionID
         recalculateScore()
+
+        let isCorrect = optionID == question.correct.id
+        activeProgressStore.recordAnswer(signCode: question.correct.code, correct: isCorrect)
+    }
+
+    private var activeProgressStore: SignProgressStore {
+        progressStore ?? SignProgressStore.shared
     }
 
     func advance() {

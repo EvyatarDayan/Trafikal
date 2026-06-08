@@ -72,6 +72,24 @@ final class SignCatalog {
         signs.shuffled()
     }
 
+    /// Builds a quiz that repeats missed signs first, then unseen and learning signs.
+    func generateSmartQuiz(
+        totalSigns: Int,
+        progressStore: SignProgressStore
+    ) -> [Sign] {
+        let reviewSignCodes = progressStore.signCodesNeedingReview()
+        let priorities = Dictionary(
+            uniqueKeysWithValues: signs.map { ($0.id, progressStore.selectionPriority(for: $0.id)) }
+        )
+        return SmartQuizGenerator.generateSmartQuiz(
+            from: signs,
+            reviewItemIDs: reviewSignCodes,
+            idFor: { $0.id },
+            priorityFor: { priorities[$0, default: .unseen] },
+            totalItems: totalSigns
+        )
+    }
+
     /// Same sign all day for every user (deterministic from date + catalog).
     func signOfToday(on date: Date = Date(), calendar: Calendar = .current) -> Sign? {
         guard !signs.isEmpty else { return nil }

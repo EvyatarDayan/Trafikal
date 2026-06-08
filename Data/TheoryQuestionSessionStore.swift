@@ -19,15 +19,30 @@ final class TheoryQuestionSessionStore {
     private(set) var finished = false
     private(set) var didRecordCurrentSession = false
 
+    private var progressStore: TheoryQuestionProgressStore?
+
     var hasResumableSession: Bool {
         !questions.isEmpty && !finished
     }
 
     private init() {}
 
-    func startSession(catalog: TheoryQuestionCatalog, questionCount: Int = 10) {
+    func ensureProgressStore(_ store: TheoryQuestionProgressStore = .shared) {
+        progressStore = store
+    }
+
+    func startSession(
+        catalog: TheoryQuestionCatalog,
+        progressStore: TheoryQuestionProgressStore = .shared,
+        questionCount: Int = 10
+    ) {
         questionsPerSession = questionCount
-        let pool = catalog.shuffledForQuiz
+        ensureProgressStore(progressStore)
+
+        let pool = catalog.generateSmartQuiz(
+            totalQuestions: questionCount,
+            progressStore: progressStore
+        )
         let count = min(questionsPerSession, pool.count)
         guard count >= 1 else {
             clear()
@@ -43,8 +58,15 @@ final class TheoryQuestionSessionStore {
         didRecordCurrentSession = false
     }
 
-    func restartSession(catalog: TheoryQuestionCatalog) {
-        startSession(catalog: catalog, questionCount: questionsPerSession)
+    func restartSession(
+        catalog: TheoryQuestionCatalog,
+        progressStore: TheoryQuestionProgressStore = .shared
+    ) {
+        startSession(
+            catalog: catalog,
+            progressStore: progressStore,
+            questionCount: questionsPerSession
+        )
     }
 
     func clear() {
@@ -55,6 +77,7 @@ final class TheoryQuestionSessionStore {
         score = 0
         finished = false
         didRecordCurrentSession = false
+        progressStore = nil
     }
 
     func recordIfNeeded(historyStore: TestHistoryStore) {
@@ -68,6 +91,13 @@ final class TheoryQuestionSessionStore {
         answers[currentIndex] = optionID
         selectedID = optionID
         recalculateScore()
+
+        let isCorrect = optionID == question.correctOptionID
+        activeProgressStore.recordAnswer(questionID: question.source.id, correct: isCorrect)
+    }
+
+    private var activeProgressStore: TheoryQuestionProgressStore {
+        progressStore ?? TheoryQuestionProgressStore.shared
     }
 
     func advance() {

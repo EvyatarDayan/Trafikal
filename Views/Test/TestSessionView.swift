@@ -15,6 +15,7 @@ struct TestSessionView: View {
 
     @State private var showingSignDetails = false
     @State private var showExitConfirmation = false
+    @State private var showConfetti = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -55,6 +56,12 @@ struct TestSessionView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .appScreenBackground()
+        .confettiOnPerfectTestResult(
+            finished: sessionStore.finished,
+            score: sessionStore.score,
+            total: sessionStore.questions.count,
+            showConfetti: $showConfetti
+        )
         .onChange(of: sessionStore.finished) { _, isFinished in
             if isFinished {
                 sessionStore.recordIfNeeded(historyStore: historyStore)
@@ -129,7 +136,7 @@ struct TestSessionView: View {
         SignSummaryCard(
             sign: sign,
             maxImageSide: 150,
-            promptText: l10n.text(.signsWhatDoesSignMean),
+            showsSignName: false,
             showsInfoButton: sessionStore.selectedID != nil,
             onInfoTap: { showingSignDetails = true }
         )

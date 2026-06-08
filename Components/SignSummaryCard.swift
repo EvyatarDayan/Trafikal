@@ -16,6 +16,7 @@ struct SignSummaryCard: View {
     var imageShadow: Bool = false
     /// When set, shown instead of the sign name (e.g. test quiz prompt).
     var promptText: String?
+    var showsSignName: Bool = true
     var showsInfoButton: Bool = false
     var onInfoTap: (() -> Void)?
 
@@ -41,12 +42,19 @@ struct SignSummaryCard: View {
                 .padding(.vertical, 4)
                 .background(Color(.systemGray5), in: Capsule())
 
-            if promptText == nil {
+            if showsSignName, promptText == nil {
                 signName
             }
         }
         .frame(maxWidth: .infinity)
         .listCardStyle(background: cardBackground, colorScheme: colorScheme)
+        .overlay(alignment: .topTrailing) {
+            if showsInfoButton, let onInfoTap {
+                infoButton(action: onInfoTap)
+                    .padding(.top, 10)
+                    .padding(.trailing, 10)
+            }
+        }
     }
 
     @ViewBuilder
@@ -77,20 +85,15 @@ struct SignSummaryCard: View {
                 image
             }
         }
-        .overlay(alignment: .trailing) {
-            if showsInfoButton, let onInfoTap {
-                Button(action: onInfoTap) {
-                    Image("Info")
-                        .resizable()
-                        .renderingMode(.template)
-                        .scaledToFit()
-                        .frame(width: 28, height: 28)
-                        .foregroundStyle(Color.accentColor)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel(l10n.text(.homeDetails))
-                .offset(x: 40)
-            }
+    }
+
+    private func infoButton(action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: "info.circle")
+                .font(.title2)
+                .foregroundStyle(Color.accentColor)
         }
+        .buttonStyle(.plain)
+        .accessibilityLabel(l10n.text(.homeDetails))
     }
 }

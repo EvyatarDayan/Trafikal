@@ -16,60 +16,64 @@ struct WelcomeView: View {
     private var metrics: WelcomeMetrics { .current }
 
     var body: some View {
-        ZStack {
-            Theme.welcomeBackground.ignoresSafeArea()
+        GeometryReader { geometry in
+            ZStack {
+                Theme.welcomeBackground.ignoresSafeArea()
 
-            VStack(spacing: 0) {
-                Spacer()
+                VStack(spacing: 0) {
+                    Spacer()
 
-                VStack(spacing: metrics.contentSpacing) {
-                    logo
+                    VStack(spacing: metrics.contentSpacing) {
+                        logo
 
-                    VStack(spacing: 10) {
-                        VStack(spacing: 4) {
-                            Text(titlePrefix)
-                            Text(titleBrand)
-                        }
-                        .font(.system(size: metrics.titleSize, weight: .bold, design: .rounded))
-                        .foregroundStyle(.primary)
-                        .multilineTextAlignment(.center)
-
-                        Text(subtitle)
-                            .font(.system(size: metrics.subtitleSize))
-                            .foregroundStyle(.secondary)
+                        VStack(spacing: 10) {
+                            VStack(spacing: 4) {
+                                Text(titlePrefix)
+                                Text(titleBrand)
+                            }
+                            .font(.system(size: metrics.titleSize, weight: .bold, design: .rounded))
+                            .foregroundStyle(.primary)
                             .multilineTextAlignment(.center)
-                            .lineSpacing(4)
-                            .padding(.top, 20)
-                            .padding(.bottom, 10)
-                            .frame(maxWidth: metrics.subtitleMaxWidth)
-                    }
-                    .padding(.horizontal, metrics.horizontalPadding)
 
-                    Button(action: onStart) {
-                        Text(startTitle)
-                            .font(.system(size: metrics.startLabelSize, weight: .semibold, design: .rounded))
-                            .foregroundStyle(.white)
-                            .frame(width: metrics.startButtonSize, height: metrics.startButtonSize)
-                            .background(
-                                Circle()
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [Color.accentColor, Color.accentColor.opacity(0.82)],
-                                            startPoint: .top,
-                                            endPoint: .bottom
+                            Text(subtitle)
+                                .font(.system(size: metrics.subtitleSize))
+                                .foregroundStyle(.secondary)
+                                .multilineTextAlignment(.center)
+                                .lineSpacing(4)
+                                .padding(.top, 20)
+                                .padding(.bottom, 10)
+                                .frame(maxWidth: metrics.subtitleMaxWidth)
+                        }
+                        .padding(.horizontal, metrics.horizontalPadding)
+
+                        Button(action: onStart) {
+                            Text(startTitle)
+                                .font(.system(size: metrics.startLabelSize, weight: .semibold, design: .rounded))
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, metrics.startButtonVerticalPadding)
+                                .background(
+                                    Capsule(style: .continuous)
+                                        .fill(
+                                            LinearGradient(
+                                                colors: [Color.accentColor, Color.accentColor.opacity(0.82)],
+                                                startPoint: .top,
+                                                endPoint: .bottom
+                                            )
                                         )
-                                    )
-                            )
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white.opacity(0.35), lineWidth: 2)
-                                    .blendMode(.overlay)
-                            )
+                                )
+                                .overlay(
+                                    Capsule(style: .continuous)
+                                        .stroke(Color.white.opacity(0.35), lineWidth: 2)
+                                        .blendMode(.overlay)
+                                )
+                        }
+                        .buttonStyle(WelcomeStartButtonStyle())
+                        .frame(width: geometry.size.width * metrics.startButtonWidthRatio)
                     }
-                    .buttonStyle(WelcomeStartButtonStyle())
-                }
 
-                Spacer()
+                    Spacer()
+                }
             }
         }
     }
@@ -88,7 +92,8 @@ private struct WelcomeMetrics {
     let contentSpacing: CGFloat
     let titleSize: CGFloat
     let subtitleSize: CGFloat
-    let startButtonSize: CGFloat
+    let startButtonWidthRatio: CGFloat
+    let startButtonVerticalPadding: CGFloat
     let startLabelSize: CGFloat
     let horizontalPadding: CGFloat
     let subtitleMaxWidth: CGFloat
@@ -100,7 +105,8 @@ private struct WelcomeMetrics {
                 contentSpacing: 48,
                 titleSize: 38,
                 subtitleSize: 22,
-                startButtonSize: 168,
+                startButtonWidthRatio: 0.8,
+                startButtonVerticalPadding: 22,
                 startLabelSize: 32,
                 horizontalPadding: 64,
                 subtitleMaxWidth: 560
@@ -111,7 +117,8 @@ private struct WelcomeMetrics {
                 contentSpacing: 32,
                 titleSize: 28,
                 subtitleSize: 17,
-                startButtonSize: 120,
+                startButtonWidthRatio: 0.8,
+                startButtonVerticalPadding: 18,
                 startLabelSize: 24,
                 horizontalPadding: 36,
                 subtitleMaxWidth: .infinity
@@ -123,7 +130,7 @@ private struct WelcomeMetrics {
 private struct WelcomeStartButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.94 : 1)
+            .scaleEffect(configuration.isPressed ? 0.97 : 1)
             .animation(.easeInOut(duration: 0.15), value: configuration.isPressed)
     }
 }

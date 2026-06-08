@@ -59,6 +59,24 @@ final class TheoryQuestionCatalog {
         questions.shuffled()
     }
 
+    /// Builds a quiz that repeats missed questions first, then unseen and learning questions.
+    func generateSmartQuiz(
+        totalQuestions: Int,
+        progressStore: TheoryQuestionProgressStore
+    ) -> [TheoryQuestion] {
+        let reviewQuestionIDs = progressStore.questionIDsNeedingReview()
+        let priorities = Dictionary(
+            uniqueKeysWithValues: questions.map { ($0.id, progressStore.selectionPriority(for: $0.id)) }
+        )
+        return SmartQuizGenerator.generateSmartQuiz(
+            from: questions,
+            reviewItemIDs: reviewQuestionIDs,
+            idFor: { $0.id },
+            priorityFor: { priorities[$0, default: .unseen] },
+            totalItems: totalQuestions
+        )
+    }
+
     /// Distinct category names from the loaded question bank, largest categories first.
     var categories: [String] {
         var counts: [String: Int] = [:]

@@ -15,6 +15,8 @@ struct TheoryQuestionSessionView: View {
     @Environment(TheoryQuestionSessionStore.self) private var sessionStore
 
     @State private var showExitConfirmation = false
+    @State private var showConfetti = false
+    @State private var showingQuestionDetails = false
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
@@ -59,10 +61,19 @@ struct TheoryQuestionSessionView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .appScreenBackground()
+        .confettiOnPerfectTestResult(
+            finished: sessionStore.finished,
+            score: sessionStore.score,
+            total: sessionStore.questions.count,
+            showConfetti: $showConfetti
+        )
         .onChange(of: sessionStore.finished) { _, isFinished in
             if isFinished {
                 sessionStore.recordIfNeeded(historyStore: historyStore)
             }
+        }
+        .onChange(of: sessionStore.currentIndex) { _, _ in
+            showingQuestionDetails = false
         }
         .alert(l10n.text(.testExitAlertTitle), isPresented: $showExitConfirmation) {
             Button(l10n.text(.commonCancel), role: .cancel) {}
@@ -84,10 +95,17 @@ struct TheoryQuestionSessionView: View {
                 totalCount: sessionStore.questions.count
             )
 
-            questionCard(for: item.source)
-                .padding(.horizontal, ListCardStyle.horizontalPadding)
-                .padding(.top, 12)
-                .padding(.bottom, ListCardStyle.rowSpacing)
+            questionCard(
+                for: item.source,
+                showsInfoButton: sessionStore.selectedID != nil,
+                onInfoTap: { showingQuestionDetails = true }
+            )
+            .padding(.horizontal, ListCardStyle.horizontalPadding)
+            .padding(.top, 12)
+            .padding(.bottom, ListCardStyle.rowSpacing)
+            .sheet(isPresented: $showingQuestionDetails) {
+                TheoryQuestionDetailSheet(question: item.source)
+            }
 
             QuestionAnswersDivider(topPadding: 12)
 
@@ -105,10 +123,6 @@ struct TheoryQuestionSessionView: View {
                             }
                         }
                     }
-
-                    if sessionStore.selectedID != nil {
-                        explanationSection(for: item.source)
-                    }
                 }
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.bottom, 8)
@@ -124,7 +138,11 @@ struct TheoryQuestionSessionView: View {
         }
     }
 
-    private func questionCard(for question: TheoryQuestion) -> some View {
+    private func questionCard(
+        for question: TheoryQuestion,
+        showsInfoButton: Bool,
+        onInfoTap: @escaping () -> Void
+    ) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(question.category)
                 .font(.caption.weight(.semibold))
@@ -146,22 +164,19 @@ struct TheoryQuestionSessionView: View {
             }
         }
         .listCardStyle(background: cardBackground, colorScheme: colorScheme)
-    }
-
-    private func explanationSection(for question: TheoryQuestion) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(l10n.text(.questionsExplanation))
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.secondary)
-
-            Text(question.explanation)
-                .font(.subheadline)
-                .foregroundStyle(.primary)
-                .fixedSize(horizontal: false, vertical: true)
+        .overlay(alignment: .topTrailing) {
+            if showsInfoButton {
+                Button(action: onInfoTap) {
+                    Image(systemName: "info.circle")
+                        .font(.title2)
+                        .foregroundStyle(Color.accentColor)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(l10n.text(.questionsExplanation))
+                .padding(.top, 10)
+                .padding(.trailing, 10)
+            }
         }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.systemGray6), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 
     private var questionNavigationBar: some View {

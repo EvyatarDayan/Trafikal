@@ -14,6 +14,7 @@ private enum PracticeTabMode: String, CaseIterable, Identifiable {
 
 struct PracticeTabView: View {
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(AppTabRouter.self) private var tabRouter
 
     @State private var mode: PracticeTabMode = .signs
 
@@ -45,6 +46,34 @@ struct PracticeTabView: View {
         }
         .appRootScreen()
         .appScreenBackground()
+        .onAppear {
+            handlePendingPracticeModeIfNeeded()
+        }
+        .onChange(of: tabRouter.pendingPracticeMode) { _, pendingMode in
+            guard pendingMode != nil else { return }
+            handlePendingPracticeModeIfNeeded()
+        }
+        .onChange(of: tabRouter.selectedTab) { _, selectedTab in
+            guard selectedTab == AppMainTab.practice.rawValue else { return }
+            handlePendingPracticeModeIfNeeded()
+        }
+    }
+
+    @discardableResult
+    private func handlePendingPracticeModeIfNeeded() -> Bool {
+        guard tabRouter.selectedTab == AppMainTab.practice.rawValue,
+              let pendingMode = tabRouter.consumePendingPracticeMode() else {
+            return false
+        }
+
+        switch pendingMode {
+        case .signs:
+            mode = .signs
+        case .questions:
+            mode = .questions
+        }
+
+        return true
     }
 
     private var modePicker: some View {
@@ -63,5 +92,6 @@ struct PracticeTabView: View {
     .environment(SignCatalog.shared)
     .environment(TheoryQuestionCatalog.shared)
     .environment(FavoritesStore.shared)
+    .environment(AppTabRouter.shared)
     .environment(LocalizationManager.shared)
 }

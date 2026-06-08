@@ -7,12 +7,14 @@ import SwiftUI
 
 struct HomeTabView: View {
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(AppTabRouter.self) private var tabRouter
     @Environment(SignCatalog.self) private var catalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(\.colorScheme) private var colorScheme
 
     private let horizontalPadding: CGFloat = 24
     private let cardCornerRadius: CGFloat = 16
+    private let heroGray = Color(.darkGray)
 
     // TEMP: remove with `temporaryRandomSignButton` when done testing sign-of-the-day.
     @State private var signOfTodayOverride: Sign?
@@ -25,15 +27,35 @@ struct HomeTabView: View {
         historyStore.recentAggregate(limit: 10)
     }
 
+    private var recentFiveTests: RecentTestAggregate? {
+        historyStore.recentAggregate(limit: 5)
+    }
+
+    private var examReadinessPercent: Int {
+        recentFiveTests?.averagePercent ?? 0
+    }
+
+    private var examReadinessLevel: ExamReadinessLevel {
+        ExamReadinessLevel.from(percent: examReadinessPercent)
+    }
+
     var body: some View {
         VStack(spacing: 0) {
+            Text(l10n.text(.tabHome))
+                .font(.largeTitle.weight(.bold))
+                .foregroundStyle(heroGray)
+                .frame(maxWidth: .infinity)
+                .padding(.top, 28)
+
             ScrollView {
                 VStack(spacing: 28) {
+                    quickActionsSection
                     signOfTodaySection
+                    examReadinessSection
                     testStatisticsSection
                 }
                 .padding(.horizontal, horizontalPadding)
-                .padding(.top, 8)
+                .padding(.top, 20)
                 .padding(.bottom, 24)
             }
         }
@@ -46,13 +68,12 @@ struct HomeTabView: View {
         Button {
             pickRandomSignOfToday()
         } label: {
-            Image(systemName: "dice.fill")
-                .font(.system(size: 20, weight: .semibold))
+            Text(l10n.text(.homeShuffle))
+                .font(.subheadline.weight(.semibold))
                 .foregroundStyle(Color.accentColor)
-                .frame(width: 22, height: 22)
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("Random sign of the day")
+        .accessibilityLabel(l10n.text(.homeShuffle))
     }
 
     private func pickRandomSignOfToday() {
@@ -69,6 +90,17 @@ struct HomeTabView: View {
             .font(.title3.bold())
             .foregroundStyle(.primary)
             .frame(maxWidth: .infinity, alignment: .center)
+    }
+
+    private var quickActionsSection: some View {
+        HomeFeaturedCard(cornerRadius: cardCornerRadius) {
+            HomeQuickActionsGrid(
+                onSignTest: { tabRouter.openSignTest() },
+                onQuestionTest: { tabRouter.openQuestionTest() },
+                onPracticeSigns: { tabRouter.openPracticeSigns() },
+                onPracticeQuestions: { tabRouter.openPracticeQuestions() }
+            )
+        }
     }
 
     @ViewBuilder
@@ -97,28 +129,42 @@ struct HomeTabView: View {
     }
 
     private func signOfTodayCardContent(sign: Sign) -> some View {
-        SignSummaryCard(sign: sign, maxImageSide: 150, nameLineLimit: 1, imageShadow: true)
+        SignSummaryCard(sign: sign, maxImageSide: 120, nameLineLimit: 1, imageShadow: true)
             .overlay(alignment: .topLeading) {
                 temporaryRandomSignButton
                     .padding(ListCardStyle.rowHorizontalPadding)
                     .padding(.top, 6)
+                    .padding(.leading, 10)
             }
             .overlay(alignment: .topTrailing) {
                 NavigationLink {
                     StudyCardView(signs: [sign])
                 } label: {
-                    Image("Info")
-                        .resizable()
-                        .renderingMode(.template)
-                        .scaledToFit()
-                        .frame(width: 22, height: 22)
+                    Text(l10n.text(.homeInfo))
+                        .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Color.accentColor)
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel(l10n.text(.homeDetails))
+                .accessibilityLabel(l10n.text(.homeInfo))
                 .padding(ListCardStyle.rowHorizontalPadding)
                 .padding(.top, 6)
+                .padding(.trailing, 10)
             }
+    }
+
+    @ViewBuilder
+    private var examReadinessSection: some View {
+        VStack(spacing: 14) {
+            homeSectionTitle(l10n.text(.homeExamReadinessTitle))
+
+            HomeFeaturedCard(cornerRadius: cardCornerRadius) {
+                ExamReadinessIndicator(
+                    percent: examReadinessPercent,
+                    level: examReadinessLevel,
+                    hasTests: recentFiveTests != nil
+                )
+            }
+        }
     }
 
     @ViewBuilder
@@ -255,5 +301,6 @@ private struct HomeCard<Content: View>: View {
     .environment(SignCatalog.shared)
     .environment(TestHistoryStore.shared)
     .environment(DrivingLicenseProgressStore.shared)
+    .environment(AppTabRouter.shared)
     .environment(LocalizationManager.shared)
 }

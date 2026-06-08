@@ -7,9 +7,9 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(AppTabRouter.self) private var tabRouter
     @AppStorage("isDarkMode") private var isDarkMode = false
     @State private var hasCompletedWelcome = false
-    @State private var selectedTab = 2
 
     private let menuHeight: CGFloat = 40
     private let menuButtonSpacing: CGFloat = -48
@@ -59,9 +59,9 @@ struct ContentView: View {
 
     private var tabContent: some View {
         ZStack {
-            tabRoot(GoalTabView(), tab: 0)
+            tabRoot(HomeTabView(), tab: 0)
             tabRoot(PracticeTabView(), tab: 1)
-            tabRoot(HomeTabView(), tab: 2)
+            tabRoot(GoalTabView(), tab: 2)
             tabRoot(TestsTabView(), tab: 3)
             tabRoot(SettingsView(), tab: 4)
         }
@@ -71,9 +71,9 @@ struct ContentView: View {
         NavigationStack {
             content
         }
-        .opacity(selectedTab == tab ? 1 : 0)
-        .allowsHitTesting(selectedTab == tab)
-        .accessibilityHidden(selectedTab != tab)
+        .opacity(tabRouter.selectedTab == tab ? 1 : 0)
+        .allowsHitTesting(tabRouter.selectedTab == tab)
+        .accessibilityHidden(tabRouter.selectedTab != tab)
     }
 
     private func customTabBar(width: CGFloat, bottomInset: CGFloat) -> some View {
@@ -92,38 +92,38 @@ struct ContentView: View {
 
             HStack(spacing: menuButtonSpacing) {
                 TabBarButton(
-                    icon: "flag.checkered",
-                    label: l10n.text(.tabGoal),
-                    isSelected: selectedTab == 0,
-                    action: { selectedTab = 0 }
+                    icon: "house.fill",
+                    label: l10n.text(.tabHome),
+                    isSelected: tabRouter.selectedTab == 0,
+                    action: { tabRouter.selectedTab = 0 }
                 )
 
                 TabBarButton(
                     icon: "books.vertical.fill",
                     label: l10n.text(.tabPractice),
-                    isSelected: selectedTab == 1,
-                    action: { selectedTab = 1 }
+                    isSelected: tabRouter.selectedTab == 1,
+                    action: { tabRouter.selectedTab = 1 }
                 )
 
                 TabBarButton(
-                    icon: "house.fill",
-                    label: l10n.text(.tabHome),
-                    isSelected: selectedTab == 2,
-                    action: { selectedTab = 2 }
+                    icon: "flag.checkered",
+                    label: l10n.text(.tabGoal),
+                    isSelected: tabRouter.selectedTab == 2,
+                    action: { tabRouter.selectedTab = 2 }
                 )
 
                 TabBarButton(
                     icon: "list.clipboard.fill",
                     label: l10n.text(.tabTests),
-                    isSelected: selectedTab == 3,
-                    action: { selectedTab = 3 }
+                    isSelected: tabRouter.selectedTab == 3,
+                    action: { tabRouter.selectedTab = 3 }
                 )
 
                 TabBarButton(
                     icon: "gearshape.fill",
                     label: l10n.text(.tabSettings),
-                    isSelected: selectedTab == 4,
-                    action: { selectedTab = 4 }
+                    isSelected: tabRouter.selectedTab == 4,
+                    action: { tabRouter.selectedTab = 4 }
                 )
             }
             .frame(width: width, height: menuHeight)
@@ -139,7 +139,10 @@ struct ContentView: View {
         .environment(TestSessionStore.shared)
         .environment(TheoryQuestionCatalog.shared)
         .environment(TheoryQuestionSessionStore.shared)
+        .environment(TheoryQuestionProgressStore.shared)
+        .environment(SignProgressStore.shared)
         .environment(FavoritesStore.shared)
         .environment(DrivingLicenseProgressStore.shared)
         .environment(LocalizationManager.shared)
+        .environment(AppTabRouter.shared)
 }

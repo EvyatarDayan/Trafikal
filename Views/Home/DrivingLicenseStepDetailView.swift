@@ -7,16 +7,8 @@ import SwiftUI
 
 struct DrivingLicenseStepDetailView: View {
     @Environment(LocalizationManager.self) private var l10n
-    @Environment(DrivingLicenseProgressStore.self) private var progressStore
-    @Environment(\.colorScheme) private var colorScheme
 
     let step: DrivingLicenseStep
-
-    private let detailImageMaxWidth: CGFloat = 280
-
-    private var isCompleted: Bool {
-        progressStore.isCompleted(step)
-    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -37,32 +29,6 @@ struct DrivingLicenseStepDetailView: View {
                         .foregroundStyle(.primary)
                         .tint(Color.accentColor)
                         .fixedSize(horizontal: false, vertical: true)
-
-                    if let imageName = step.detailImageName {
-                        Image(imageName)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: ListCardStyle.cornerRadius, style: .continuous))
-                            .compositingGroup()
-                            .frame(maxWidth: detailImageMaxWidth)
-                            .frame(maxWidth: .infinity)
-                            .trafikalDropShadow(colorScheme: colorScheme)
-                            .padding(.top, 8)
-                            .padding(.bottom, 8)
-                    }
-
-                    Button {
-                        progressStore.toggle(step)
-                    } label: {
-                        Label(
-                            l10n.text(isCompleted ? .licenseMarkNotDone : .licenseMarkDone),
-                            systemImage: isCompleted ? "circle" : "checkmark.circle.fill"
-                        )
-                        .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(isCompleted ? Color(.systemGray3) : .green)
-                    .controlSize(.large)
                 }
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 8)

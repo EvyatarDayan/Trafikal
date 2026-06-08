@@ -20,17 +20,21 @@ private enum TestQuestionCount: Int, CaseIterable {
 
 struct TestsTabView: View {
     @Environment(LocalizationManager.self) private var l10n
+    @Environment(AppTabRouter.self) private var tabRouter
     @Environment(SignCatalog.self) private var signCatalog
     @Environment(TheoryQuestionCatalog.self) private var theoryCatalog
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(TestSessionStore.self) private var signSessionStore
     @Environment(TheoryQuestionSessionStore.self) private var questionSessionStore
+    @Environment(TheoryQuestionProgressStore.self) private var questionProgressStore
+    @Environment(SignProgressStore.self) private var signProgressStore
 
     @State private var mode: TestTabMode = .signs
     @State private var selectedQuestionCount: TestQuestionCount = .ten
     @State private var showSignSession = false
     @State private var showQuestionSession = false
     @State private var showHistory = false
+    @State private var isHandlingShortcut = false
 
     private let buttonWidth: CGFloat = 280
     private let accentBlue = Color.accentColor
@@ -49,8 +53,17 @@ struct TestsTabView: View {
         .appRootScreen()
         .appScreenBackground()
         .onAppear {
+            if handlePendingTestLaunchIfNeeded() { return }
             dismissFinishedSessionsIfNeeded()
             restoreInProgressSessionIfNeeded()
+        }
+        .onChange(of: tabRouter.pendingTestLaunch) { _, launch in
+            guard launch != nil else { return }
+            handlePendingTestLaunchIfNeeded()
+        }
+        .onChange(of: tabRouter.selectedTab) { _, selectedTab in
+            guard selectedTab == AppMainTab.tests.rawValue else { return }
+            handlePendingTestLaunchIfNeeded()
         }
         .onChange(of: showSignSession) { _, isShowing in
             if !isShowing {
@@ -63,6 +76,7 @@ struct TestsTabView: View {
             }
         }
         .onChange(of: mode) { _, _ in
+            guard !isHandlingShortcut else { return }
             showSignSession = false
             showQuestionSession = false
             dismissFinishedSessionsIfNeeded()
@@ -197,12 +211,61 @@ struct TestsTabView: View {
         let count = selectedQuestionCount.rawValue
         switch mode {
         case .signs:
-            signSessionStore.startTest(catalog: signCatalog, questionCount: count)
-            showSignSession = true
+            startSignTest(questionCount: count)
         case .questions:
-            questionSessionStore.startSession(catalog: theoryCatalog, questionCount: count)
-            showQuestionSession = true
+            startQuestionTest(questionCount: count)
         }
+    }
+
+    @discardableResult
+    private func handlePendingTestLaunchIfNeeded() -> Bool {
+        guard tabRouter.selectedTab == AppMainTab.tests.rawValue,
+              let launch = tabRouter.consumePendingTestLaunch() else {
+            return false
+        }
+
+        isHandlingShortcut = true
+        defer { isHandlingShortcut = false }
+
+        showSignSession = false
+        showQuestionSession = false
+        signSessionStore.clear()
+        questionSessionStore.clear()
+
+        switch launch.kind {
+        case .signs:
+            mode = .signs
+            selectedQuestionCount = questionCountMatching(launch.questionCount)
+            startSignTest(questionCount: launch.questionCount)
+        case .questions:
+            mode = .questions
+            selectedQuestionCount = questionCountMatching(launch.questionCount)
+            startQuestionTest(questionCount: launch.questionCount)
+        }
+
+        return true
+    }
+
+    private func questionCountMatching(_ count: Int) -> TestQuestionCount {
+        TestQuestionCount(rawValue: count) ?? .ten
+    }
+
+    private func startSignTest(questionCount: Int) {
+        signSessionStore.startTest(
+            catalog: signCatalog,
+            progressStore: signProgressStore,
+            questionCount: questionCount
+        )
+        showSignSession = true
+    }
+
+    private func startQuestionTest(questionCount: Int) {
+        questionSessionStore.startSession(
+            catalog: theoryCatalog,
+            progressStore: questionProgressStore,
+            questionCount: questionCount
+        )
+        showQuestionSession = true
     }
 
     private func restoreInProgressSessionIfNeeded() {
@@ -211,10 +274,12 @@ struct TestsTabView: View {
         switch mode {
         case .signs:
             if signSessionStore.hasResumableSession {
+                signSessionStore.ensureProgressStore(signProgressStore)
                 showSignSession = true
             }
         case .questions:
             if questionSessionStore.hasResumableSession {
+                questionSessionStore.ensureProgressStore(questionProgressStore)
                 showQuestionSession = true
             }
         }
@@ -277,5 +342,8 @@ struct TestsTabView: View {
     .environment(TestHistoryStore.shared)
     .environment(TestSessionStore.shared)
     .environment(TheoryQuestionSessionStore.shared)
+    .environment(TheoryQuestionProgressStore.shared)
+    .environment(SignProgressStore.shared)
+    .environment(AppTabRouter.shared)
     .environment(LocalizationManager.shared)
 }

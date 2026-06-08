@@ -56,10 +56,9 @@ enum DrivingLicenseStep: String, CaseIterable, Identifiable {
         }
     }
 
-    var detailImageName: String? {
-        switch self {
-        case .pickUpLicense: "License"
-        default: nil
-        }
+    var previousSteps: [DrivingLicenseStep] {
+        let all = Self.allCases
+        guard let index = all.firstIndex(of: self) else { return [] }
+        return Array(all.prefix(index))
     }
 }
