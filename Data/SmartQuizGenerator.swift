@@ -6,6 +6,9 @@
 import Foundation
 
 enum SmartQuizGenerator {
+    /// Max share of a quiz devoted to repeat-review items; the rest explores new material.
+    private static let defaultMaxReviewShare = 0.4
+
     private static let remainderRatios: [(QuestionSelectionPriority, Double)] = [
         (.unseen, 0.70),
         (.learning, 0.30),
@@ -16,27 +19,34 @@ enum SmartQuizGenerator {
         .needsReview, .unseen, .learning, .mastered
     ]
 
-    /// Builds a quiz that heavily favors missed items, then unseen, then learning.
-    /// Mastered items are only used when nothing else is available.
+    /// Builds a quiz that repeats a capped number of missed items, then prioritizes unseen material.
+    /// Unseen and learning pools prefer items seen longest ago (or never) for better catalog coverage.
     static func generateSmartQuiz<Item, ID>(
         from items: [Item],
         reviewItemIDs: [ID],
         idFor: (Item) -> ID,
         priorityFor: (ID) -> QuestionSelectionPriority,
-        totalItems: Int
+        totalItems: Int,
+        maxReviewItems: Int? = nil,
+        lastSeenAt: ((ID) -> Date?)? = nil
     ) -> [Item] where ID: Hashable {
         guard !items.isEmpty, totalItems > 0 else { return [] }
 
         let targetCount = min(totalItems, items.count)
-        let reviewIDSet = Set(reviewItemIDs)
+        let reviewCap = min(
+            reviewItemIDs.count,
+            maxReviewItems ?? defaultReviewCap(for: targetCount)
+        )
+        let cappedReviewIDs = Array(reviewItemIDs.prefix(reviewCap))
+        let reviewIDSet = Set(cappedReviewIDs)
         let itemsByID = Dictionary(uniqueKeysWithValues: items.map { (idFor($0), $0) })
 
         var selected: [Item] = []
         var selectedIDs = Set<ID>()
         selected.reserveCapacity(targetCount)
 
-        // 1. Always include missed items first, in priority order.
-        for itemID in reviewItemIDs {
+        // 1. Include the highest-priority missed items, capped so new material still appears.
+        for itemID in cappedReviewIDs {
             guard selected.count < targetCount else { break }
             guard let item = itemsByID[itemID] else { continue }
             guard selectedIDs.insert(itemID).inserted else { continue }
@@ -47,10 +57,11 @@ enum SmartQuizGenerator {
             from: items,
             idFor: idFor,
             priorityFor: priorityFor,
-            excludingIDs: selectedIDs.union(reviewIDSet)
+            excludingIDs: selectedIDs.union(reviewIDSet),
+            lastSeenAt: lastSeenAt
         )
 
-        // 2. Fill the rest with unseen and learning only.
+        // 2. Fill the rest with unseen and learning first.
         if selected.count < targetCount {
             let remaining = targetCount - selected.count
             let targets = remainderQuotaTargets(for: remaining)
@@ -85,11 +96,16 @@ enum SmartQuizGenerator {
         return selected.shuffled()
     }
 
+    static func defaultReviewCap(for targetCount: Int) -> Int {
+        max(1, Int((Double(targetCount) * defaultMaxReviewShare).rounded(.down)))
+    }
+
     private static func priorityPools<Item, ID>(
         from items: [Item],
         idFor: (Item) -> ID,
         priorityFor: (ID) -> QuestionSelectionPriority,
-        excludingIDs: Set<ID>
+        excludingIDs: Set<ID>,
+        lastSeenAt: ((ID) -> Date?)? = nil
     ) -> [QuestionSelectionPriority: [Item]] where ID: Hashable {
         var pools = Dictionary(
             uniqueKeysWithValues: QuestionSelectionPriority.allCases.map { ($0, [Item]()) }
@@ -101,10 +117,45 @@ enum SmartQuizGenerator {
         }
 
         for priority in QuestionSelectionPriority.allCases {
-            pools[priority]?.shuffle()
+            guard var pool = pools[priority], !pool.isEmpty else { continue }
+
+            if let lastSeenAt, priority == .unseen || priority == .learning {
+                pool.sort { lhs, rhs in
+                    prefersEarlierCoverage(
+                        idFor(lhs),
+                        idFor(rhs),
+                        lastSeenAt: lastSeenAt
+                    )
+                }
+            } else {
+                pool.shuffle()
+            }
+
+            pools[priority] = pool
         }
 
         return pools
+    }
+
+    /// `true` when `left` should appear before `right` (never-seen first, then oldest).
+    private static func prefersEarlierCoverage<ID: Hashable>(
+        _ left: ID,
+        _ right: ID,
+        lastSeenAt: (ID) -> Date?
+    ) -> Bool {
+        let leftDate = lastSeenAt(left)
+        let rightDate = lastSeenAt(right)
+
+        switch (leftDate, rightDate) {
+        case (nil, nil):
+            return false
+        case (nil, _):
+            return true
+        case (_, nil):
+            return false
+        case let (left?, right?):
+            return left < right
+        }
     }
 
     private static func remainderQuotaTargets(for count: Int) -> [QuestionSelectionPriority: Int] {

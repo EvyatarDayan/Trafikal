@@ -8,12 +8,14 @@ import Foundation
 enum QuizHistoryKind: String, Codable, Sendable, Hashable {
     case signs
     case questions
+    case simulation
 }
 
 enum HistoryFilter: String, CaseIterable, Identifiable {
     case all
     case signs
     case questions
+    case simulation
 
     var id: String { rawValue }
 
@@ -22,6 +24,7 @@ enum HistoryFilter: String, CaseIterable, Identifiable {
         case .all: true
         case .signs: kind == .signs
         case .questions: kind == .questions
+        case .simulation: kind == .simulation
         }
     }
 
@@ -30,6 +33,7 @@ enum HistoryFilter: String, CaseIterable, Identifiable {
         case .all: nil
         case .signs: .signs
         case .questions: .questions
+        case .simulation: .simulation
         }
     }
 
@@ -38,6 +42,7 @@ enum HistoryFilter: String, CaseIterable, Identifiable {
         case .all: l10n.text(.historyFilterAll)
         case .signs: l10n.text(.historyFilterSigns)
         case .questions: l10n.text(.historyFilterQuestions)
+        case .simulation: l10n.text(.historyFilterSimulation)
         }
     }
 }

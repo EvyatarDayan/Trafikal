@@ -14,6 +14,7 @@ struct HistoryView: View {
 
     @State private var filter: HistoryFilter
     @State private var selectedEntry: TestHistoryEntry?
+    @State private var showingMistakes = false
 
     init(initialFilter: HistoryFilter = .all) {
         self.initialFilter = initialFilter
@@ -29,7 +30,8 @@ struct HistoryView: View {
             ScreenTitleBar(
                 title: l10n.text(.historyTitle),
                 subtitle: l10n.text(.historyCompletedTests),
-                showsBackButton: true
+                showsBackButton: true,
+                backButtonTitle: l10n.text(.commonDone)
             )
 
             Picker("", selection: $filter) {
@@ -69,8 +71,29 @@ struct HistoryView: View {
         }
         .appScreenBackground()
         .toolbar(.hidden, for: .navigationBar)
-        .sheet(item: $selectedEntry) { entry in
-            TestHistoryDetailSheet(entry: entry, l10n: l10n)
+        .sheet(item: $selectedEntry, onDismiss: { showingMistakes = false }) { entry in
+            Group {
+                if showingMistakes {
+                    TestHistoryMistakesView(entry: entry) {
+                        showingMistakes = false
+                    }
+                } else {
+                    TestHistoryDetailSheet(
+                        entry: entry,
+                        l10n: l10n,
+                        onViewMistakes: { showingMistakes = true }
+                    )
+                }
+            }
+            .presentationDetents(showingMistakes ? [.large] : [.height(400)])
+            .presentationDragIndicator(.visible)
+            .presentationBackground {
+                (showingMistakes
+                    ? Theme.quizScreenBackground(colorScheme: colorScheme)
+                    : Theme.screenBackground
+                )
+                .ignoresSafeArea()
+            }
         }
     }
 
@@ -137,13 +160,19 @@ private struct TestHistoryRowView: View {
     }
 
     private var scoreBadge: some View {
-        ZStack {
+        let color = TestScoreStyle.simulationForegroundStyle(for: entry.percentCorrect)
+
+        return ZStack {
             RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(TestScoreStyle.badgeBackground(for: entry.percentCorrect))
-                .frame(width: 50, height: 50)
-            Text("\(entry.percentCorrect)%")
-                .font(.caption.weight(.bold))
-                .foregroundStyle(TestScoreStyle.foregroundStyle(for: entry.percentCorrect))
+                .fill(TestScoreStyle.simulationBadgeBackground(for: entry.percentCorrect))
+                .frame(width: 56, height: 56)
+            VStack(spacing: 2) {
+                Text(l10n.text(entry.passed ? .simulationPassLabel : .simulationFailLabel))
+                    .font(.caption2.weight(.bold))
+                Text("\(entry.percentCorrect)%")
+                    .font(.caption.weight(.bold))
+            }
+            .foregroundStyle(color)
         }
     }
 
@@ -168,6 +197,7 @@ private struct TestHistoryDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
     let entry: TestHistoryEntry
     let l10n: LocalizationManager
+    let onViewMistakes: () -> Void
 
     private var formattedDateTime: String {
         let formatter = DateFormatter()
@@ -178,45 +208,74 @@ private struct TestHistoryDetailSheet: View {
     }
 
     var body: some View {
-        VStack(spacing: 16) {
-            ScrollView {
-                VStack(spacing: 14) {
-                    Text(entry.title(using: l10n))
-                        .font(.title3.weight(.semibold))
-                        .multilineTextAlignment(.center)
+        VStack(spacing: 12) {
+            VStack(spacing: 12) {
+                Text(entry.title(using: l10n))
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(Theme.appBlue)
+                    .multilineTextAlignment(.center)
 
-                    Rectangle()
-                        .fill(Color.primary.opacity(0.35))
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 1)
-
-                    Text(entry.detail(using: l10n))
-                        .font(.title2.weight(.bold))
-                        .multilineTextAlignment(.center)
-
-                    Text(l10n.text(.historyPercentCorrect, entry.percentCorrect))
-                        .font(.headline)
-                        .foregroundStyle(.secondary)
-
-                    Text(formattedDateTime)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(maxWidth: .infinity)
+                Rectangle()
+                    .fill(Color.primary.opacity(0.35))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 1)
             }
-
-            Button(l10n.text(.historyGotIt)) {
-                dismiss()
-            }
-            .buttonStyle(.borderedProminent)
             .frame(maxWidth: .infinity)
+
+            VStack(spacing: 10) {
+                Text(formattedDateTime)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+
+                TestResultsPieChart(
+                    historyDetailCorrect: entry.score,
+                    total: entry.totalQuestions
+                )
+                .padding(.vertical, 12)
+
+                HStack(spacing: 16) {
+                    legendDot(
+                        color: .green,
+                        label: l10n.text(.testCorrectCount, entry.score)
+                    )
+                    legendDot(
+                        color: .red.opacity(0.85),
+                        label: l10n.text(.testIncorrectCount, entry.totalQuestions - entry.score)
+                    )
+                }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+
+            HStack(spacing: 12) {
+                Button(l10n.text(.historyGotIt)) {
+                    dismiss()
+                }
+                .buttonStyle(.borderedProminent)
+                .frame(maxWidth: .infinity)
+
+                Button(l10n.text(.historyViewMistakes)) {
+                    onViewMistakes()
+                }
+                .buttonStyle(.borderedProminent)
+                .frame(maxWidth: .infinity)
+                .disabled(!entry.hasMistakes)
+            }
         }
         .padding(.horizontal, 28)
-        .padding(.top, 32)
+        .padding(.top, 24)
         .padding(.bottom, 16)
-        .presentationDetents([.height(320)])
-        .presentationDragIndicator(.visible)
+    }
+
+    private func legendDot(color: Color, label: String) -> some View {
+        HStack(spacing: 6) {
+            Circle()
+                .fill(color)
+                .frame(width: 8, height: 8)
+            Text(label)
+        }
     }
 }
 

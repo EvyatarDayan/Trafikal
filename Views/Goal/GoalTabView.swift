@@ -11,7 +11,6 @@ struct GoalTabView: View {
     @Environment(\.colorScheme) private var colorScheme
 
     private let horizontalPadding: CGFloat = 24
-    private let heroGray = Color(.darkGray)
     private let licenseImageMaxWidth: CGFloat = 240
     private let bottomFadeHeight: CGFloat = 50
 
@@ -28,12 +27,12 @@ struct GoalTabView: View {
                     VStack(spacing: 4) {
                         Text(l10n.text(.tabGoal))
                             .font(.largeTitle.weight(.bold))
-                            .foregroundStyle(heroGray)
+                            .foregroundStyle(Theme.appBlue)
                             .frame(maxWidth: .infinity, alignment: .center)
 
                         Text(l10n.text(.goalSubtitle))
                             .font(.title3.bold())
-                            .foregroundStyle(.primary)
+                            .foregroundStyle(Theme.appBlue)
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
                     .padding(.top, 28)

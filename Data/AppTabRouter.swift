@@ -22,6 +22,7 @@ struct PendingTestLaunch: Equatable, Sendable {
     enum Kind: Sendable {
         case signs
         case questions
+        case simulate
     }
 
     let kind: Kind
@@ -47,6 +48,11 @@ final class AppTabRouter {
     func openQuestionTest(questionCount: Int = 10) {
         selectedTab = AppMainTab.tests.rawValue
         pendingTestLaunch = PendingTestLaunch(kind: .questions, questionCount: questionCount)
+    }
+
+    func openSimulationTest() {
+        selectedTab = AppMainTab.tests.rawValue
+        pendingTestLaunch = PendingTestLaunch(kind: .simulate, questionCount: 0)
     }
 
     func openPracticeSigns() {

@@ -62,7 +62,8 @@ final class TheoryQuestionCatalog {
     /// Builds a quiz that repeats missed questions first, then unseen and learning questions.
     func generateSmartQuiz(
         totalQuestions: Int,
-        progressStore: TheoryQuestionProgressStore
+        progressStore: TheoryQuestionProgressStore,
+        maxReviewItems: Int? = nil
     ) -> [TheoryQuestion] {
         let reviewQuestionIDs = progressStore.questionIDsNeedingReview()
         let priorities = Dictionary(
@@ -73,7 +74,9 @@ final class TheoryQuestionCatalog {
             reviewItemIDs: reviewQuestionIDs,
             idFor: { $0.id },
             priorityFor: { priorities[$0, default: .unseen] },
-            totalItems: totalQuestions
+            totalItems: totalQuestions,
+            maxReviewItems: maxReviewItems,
+            lastSeenAt: { progressStore.progress(for: $0).lastAnsweredAt }
         )
     }
 

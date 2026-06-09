@@ -22,6 +22,7 @@ struct DrivingLicenseStepDetailView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     Text(l10n.text(step.titleKey))
                         .font(.title2.weight(.bold))
+                        .foregroundStyle(Theme.appBlue)
                         .fixedSize(horizontal: false, vertical: true)
 
                     detailText

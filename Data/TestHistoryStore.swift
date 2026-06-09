@@ -83,9 +83,19 @@ final class TestHistoryStore {
         return pool.map(\.percentCorrect).max()
     }
 
-    func record(score: Int, totalQuestions: Int, kind: QuizHistoryKind) {
+    func record(
+        score: Int,
+        totalQuestions: Int,
+        kind: QuizHistoryKind,
+        mistakes: [TestHistoryMistake] = []
+    ) {
         guard totalQuestions > 0 else { return }
-        let entry = TestHistoryEntry(score: score, totalQuestions: totalQuestions, kind: kind)
+        let entry = TestHistoryEntry(
+            score: score,
+            totalQuestions: totalQuestions,
+            kind: kind,
+            mistakes: mistakes
+        )
         entries.insert(entry, at: 0)
         save()
     }

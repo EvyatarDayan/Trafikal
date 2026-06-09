@@ -18,6 +18,7 @@ struct TestResultsPieChart: View {
 
     /// Donut chart styling used on Home test statistics and session result screens.
     static let statisticsSize: CGFloat = 180
+    static let historyDetailSize: CGFloat = 130
     static let statisticsDropShadow = true
 
     init(
@@ -39,6 +40,15 @@ struct TestResultsPieChart: View {
             correct: correct,
             total: total,
             size: Self.statisticsSize,
+            dropShadow: Self.statisticsDropShadow
+        )
+    }
+
+    init(historyDetailCorrect correct: Int, total: Int) {
+        self.init(
+            correct: correct,
+            total: total,
+            size: Self.historyDetailSize,
             dropShadow: Self.statisticsDropShadow
         )
     }
@@ -85,12 +95,20 @@ struct TestResultsPieChart: View {
         .overlay {
             VStack(spacing: 2) {
                 Text("\(percentCorrect)%")
-                    .font(.title.bold())
+                    .font(percentFont)
                 Text(l10n.text(.testCorrectLabel))
-                    .font(.caption)
+                    .font(labelFont)
                     .foregroundStyle(.secondary)
             }
         }
+    }
+
+    private var percentFont: Font {
+        size < 160 ? .title3.weight(.bold) : .title.weight(.bold)
+    }
+
+    private var labelFont: Font {
+        size < 160 ? .caption2 : .caption
     }
 }
 

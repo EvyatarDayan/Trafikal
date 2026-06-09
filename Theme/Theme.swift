@@ -9,6 +9,14 @@ enum Theme {
     /// Light gray background used across the app (Settings-style grouped gray).
     static let screenBackground = Color(.systemGroupedBackground)
 
+    /// Test and review-mistakes screens: pure black in dark mode so cards read clearly.
+    static func quizScreenBackground(colorScheme: ColorScheme) -> Color {
+        colorScheme == .dark ? .black : screenBackground
+    }
+
+    /// Primary app blue (#175e9b).
+    static let appBlue = Color(red: 23 / 255, green: 94 / 255, blue: 155 / 255)
+
     /// Welcome screen background - light gray in light mode, grouped dark in dark mode.
     static var welcomeBackground: Color {
         Color(uiColor: UIColor { traits in

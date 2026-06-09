@@ -18,13 +18,11 @@ struct PracticeTabView: View {
 
     @State private var mode: PracticeTabMode = .signs
 
-    private let heroGray = Color(.darkGray)
-
     var body: some View {
         VStack(spacing: 0) {
             Text(l10n.text(.practiceTitle))
                 .font(.largeTitle.weight(.bold))
-                .foregroundStyle(heroGray)
+                .foregroundStyle(Theme.appBlue)
                 .frame(maxWidth: .infinity)
                 .padding(.top, 28)
 

@@ -31,8 +31,8 @@ struct WelcomeView: View {
                                 Text(titlePrefix)
                                 Text(titleBrand)
                             }
-                            .font(.system(size: metrics.titleSize, weight: .bold, design: .rounded))
-                            .foregroundStyle(.primary)
+                        .font(.system(size: metrics.titleSize, weight: .bold, design: .rounded))
+                        .foregroundStyle(Theme.appBlue)
                             .multilineTextAlignment(.center)
 
                             Text(subtitle)
@@ -56,7 +56,10 @@ struct WelcomeView: View {
                                     Capsule(style: .continuous)
                                         .fill(
                                             LinearGradient(
-                                                colors: [Color.accentColor, Color.accentColor.opacity(0.82)],
+                                                colors: [
+                                                    Theme.appBlue,
+                                                    Theme.appBlue.opacity(0.82)
+                                                ],
                                                 startPoint: .top,
                                                 endPoint: .bottom
                                             )

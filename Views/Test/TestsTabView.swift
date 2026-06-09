@@ -8,6 +8,7 @@ import SwiftUI
 private enum TestTabMode: String, CaseIterable, Identifiable {
     case signs
     case questions
+    case simulate
 
     var id: String { rawValue }
 }
@@ -15,7 +16,7 @@ private enum TestTabMode: String, CaseIterable, Identifiable {
 private enum TestQuestionCount: Int, CaseIterable {
     case ten = 10
     case thirty = 30
-    case sixtyFive = 65
+    case fifty = 50
 }
 
 struct TestsTabView: View {
@@ -28,17 +29,18 @@ struct TestsTabView: View {
     @Environment(TheoryQuestionSessionStore.self) private var questionSessionStore
     @Environment(TheoryQuestionProgressStore.self) private var questionProgressStore
     @Environment(SignProgressStore.self) private var signProgressStore
+    @Environment(SimulationSessionStore.self) private var simulationSessionStore
 
     @State private var mode: TestTabMode = .signs
     @State private var selectedQuestionCount: TestQuestionCount = .ten
     @State private var showSignSession = false
     @State private var showQuestionSession = false
+    @State private var showSimulationSession = false
     @State private var showHistory = false
     @State private var isHandlingShortcut = false
 
     private let buttonWidth: CGFloat = 280
     private let accentBlue = Color.accentColor
-    private let heroGray = Color(.darkGray)
 
     var body: some View {
         Group {
@@ -46,6 +48,8 @@ struct TestsTabView: View {
                 TestSessionView(isPresented: $showSignSession)
             } else if showQuestionSession {
                 TheoryQuestionSessionView(isPresented: $showQuestionSession)
+            } else if showSimulationSession {
+                SimulationSessionView(isPresented: $showSimulationSession)
             } else {
                 startScreen
             }
@@ -75,14 +79,20 @@ struct TestsTabView: View {
                 dismissFinishedQuestionSessionIfNeeded()
             }
         }
+        .onChange(of: showSimulationSession) { _, isShowing in
+            if !isShowing {
+                dismissFinishedSimulationSessionIfNeeded()
+            }
+        }
         .onChange(of: mode) { _, _ in
             guard !isHandlingShortcut else { return }
             showSignSession = false
             showQuestionSession = false
+            showSimulationSession = false
             dismissFinishedSessionsIfNeeded()
         }
         .navigationDestination(isPresented: $showHistory) {
-            HistoryView(initialFilter: mode == .signs ? .signs : .questions)
+            HistoryView(initialFilter: historyFilter)
         }
     }
 
@@ -93,7 +103,7 @@ struct TestsTabView: View {
 
                 Text(l10n.text(.testsTitle))
                     .font(.largeTitle.weight(.bold))
-                    .foregroundStyle(heroGray)
+                    .foregroundStyle(Theme.appBlue)
 
                 modePicker
                     .padding(.top, 20)
@@ -110,8 +120,10 @@ struct TestsTabView: View {
                     .padding(.horizontal, 36)
 
                 VStack(spacing: 12) {
-                    questionCountPicker
-                        .padding(.bottom, 12)
+                    if mode != .simulate {
+                        questionCountPicker
+                            .padding(.bottom, 12)
+                    }
 
                     Button {
                         startNewQuiz()
@@ -123,15 +135,19 @@ struct TestsTabView: View {
                     Button {
                         showHistory = true
                     } label: {
-                        Text(l10n.text(.signsPreviousResults))
+                        Text(previousResultsTitle)
+                            .font(.headline.weight(.semibold))
+                            .foregroundStyle(accentBlue)
                     }
-                    .buttonStyle(SecondaryActionButtonStyle(width: buttonWidth, tint: accentBlue))
+                    .buttonStyle(.plain)
+                    .padding(.top, 8)
                 }
                 .padding(.top, 25)
 
                 if let last = historyStore.lastEntry(kind: historyKind) {
                     lastQuizSection(entry: last)
                         .padding(.top, 44)
+                        .padding(.horizontal, 36)
                 }
 
                 Spacer(minLength: 32)
@@ -144,6 +160,7 @@ struct TestsTabView: View {
         Picker("", selection: $mode) {
             Text(l10n.text(.tabSigns)).tag(TestTabMode.signs)
             Text(l10n.text(.tabQuestions)).tag(TestTabMode.questions)
+            Text(l10n.text(.testsTabSimulate)).tag(TestTabMode.simulate)
         }
         .pickerStyle(.segmented)
     }
@@ -175,23 +192,33 @@ struct TestsTabView: View {
     }
 
     private var instructionsText: Text {
-        let count = selectedQuestionCount.rawValue
         let markdown: String
         switch mode {
         case .signs:
-            markdown = l10n.text(.signsInstructions, count)
+            markdown = l10n.text(.signsInstructions, selectedQuestionCount.rawValue)
         case .questions:
-            markdown = l10n.text(.questionsInstructions, count)
+            markdown = l10n.text(.questionsInstructions, selectedQuestionCount.rawValue)
+        case .simulate:
+            markdown = l10n.text(.simulationInstructions)
         }
 
-        if let attributed = try? AttributedString(
+        if var attributed = try? AttributedString(
             markdown: markdown,
             options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace)
         ) {
+            applyAppBlueToBoldText(&attributed)
             return Text(attributed)
         }
 
         return Text(markdown)
+    }
+
+    private func applyAppBlueToBoldText(_ attributed: inout AttributedString) {
+        for run in attributed.runs {
+            guard let intent = run.inlinePresentationIntent,
+                  intent.contains(.stronglyEmphasized) else { continue }
+            attributed[run.range].foregroundColor = Theme.appBlue
+        }
     }
 
     private var startButtonTitle: String {
@@ -200,20 +227,46 @@ struct TestsTabView: View {
             l10n.text(.signsStartNew)
         case .questions:
             l10n.text(.questionsStartNew)
+        case .simulate:
+            l10n.text(.simulationStartNew)
+        }
+    }
+
+    private var previousResultsTitle: String {
+        switch mode {
+        case .signs:
+            l10n.text(.signsPreviousResults)
+        case .questions:
+            l10n.text(.questionsPreviousResults)
+        case .simulate:
+            l10n.text(.simulationPreviousResults)
         }
     }
 
     private var historyKind: QuizHistoryKind {
-        mode == .signs ? .signs : .questions
+        switch mode {
+        case .signs: .signs
+        case .questions: .questions
+        case .simulate: .simulation
+        }
+    }
+
+    private var historyFilter: HistoryFilter {
+        switch mode {
+        case .signs: .signs
+        case .questions: .questions
+        case .simulate: .simulation
+        }
     }
 
     private func startNewQuiz() {
-        let count = selectedQuestionCount.rawValue
         switch mode {
         case .signs:
-            startSignTest(questionCount: count)
+            startSignTest(questionCount: selectedQuestionCount.rawValue)
         case .questions:
-            startQuestionTest(questionCount: count)
+            startQuestionTest(questionCount: selectedQuestionCount.rawValue)
+        case .simulate:
+            startSimulation()
         }
     }
 
@@ -229,8 +282,10 @@ struct TestsTabView: View {
 
         showSignSession = false
         showQuestionSession = false
+        showSimulationSession = false
         signSessionStore.clear()
         questionSessionStore.clear()
+        simulationSessionStore.clear()
 
         switch launch.kind {
         case .signs:
@@ -241,6 +296,9 @@ struct TestsTabView: View {
             mode = .questions
             selectedQuestionCount = questionCountMatching(launch.questionCount)
             startQuestionTest(questionCount: launch.questionCount)
+        case .simulate:
+            mode = .simulate
+            startSimulation()
         }
 
         return true
@@ -268,8 +326,19 @@ struct TestsTabView: View {
         showQuestionSession = true
     }
 
+    private func startSimulation() {
+        simulationSessionStore.clear()
+        simulationSessionStore.startSession(
+            signCatalog: signCatalog,
+            theoryCatalog: theoryCatalog,
+            signProgress: signProgressStore,
+            questionProgress: questionProgressStore
+        )
+        showSimulationSession = true
+    }
+
     private func restoreInProgressSessionIfNeeded() {
-        guard !showSignSession, !showQuestionSession else { return }
+        guard !showSignSession, !showQuestionSession, !showSimulationSession else { return }
 
         switch mode {
         case .signs:
@@ -282,12 +351,21 @@ struct TestsTabView: View {
                 questionSessionStore.ensureProgressStore(questionProgressStore)
                 showQuestionSession = true
             }
+        case .simulate:
+            if simulationSessionStore.hasResumableSession {
+                simulationSessionStore.ensureProgressStores(
+                    signProgress: signProgressStore,
+                    questionProgress: questionProgressStore
+                )
+                showSimulationSession = true
+            }
         }
     }
 
     private func dismissFinishedSessionsIfNeeded() {
         dismissFinishedSignSessionIfNeeded()
         dismissFinishedQuestionSessionIfNeeded()
+        dismissFinishedSimulationSessionIfNeeded()
     }
 
     private func dismissFinishedSignSessionIfNeeded() {
@@ -302,17 +380,29 @@ struct TestsTabView: View {
         showQuestionSession = false
     }
 
-    private func lastQuizSection(entry: TestHistoryEntry) -> some View {
-        VStack(spacing: 18) {
-            Text(lastQuizLabel(for: entry.date))
-                .font(.body.weight(.medium))
-                .foregroundStyle(.primary)
+    private func dismissFinishedSimulationSessionIfNeeded() {
+        guard simulationSessionStore.finished else { return }
+        simulationSessionStore.clear()
+        showSimulationSession = false
+    }
 
-            TestResultsPieChart(
-                statisticsCorrect: entry.score,
-                total: entry.totalQuestions
-            )
-            .padding(.top, 12)
+    private func lastQuizSection(entry: TestHistoryEntry) -> some View {
+        HomeCard(elevated: true, cornerRadius: 16) {
+            VStack(spacing: 18) {
+                Text(lastQuizLabel(for: entry.date))
+                    .font(.body.weight(.medium))
+                    .foregroundStyle(.primary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 8)
+
+                TestResultsPieChart(
+                    statisticsCorrect: entry.score,
+                    total: entry.totalQuestions
+                )
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 16)
+            }
         }
     }
 
@@ -322,6 +412,8 @@ struct TestsTabView: View {
             l10n.text(.signsYourLastQuiz, formattedDate(date))
         case .questions:
             l10n.text(.questionsYourLastQuiz, formattedDate(date))
+        case .simulate:
+            l10n.text(.simulationYourLastQuiz, formattedDate(date))
         }
     }
 
@@ -344,6 +436,7 @@ struct TestsTabView: View {
     .environment(TheoryQuestionSessionStore.shared)
     .environment(TheoryQuestionProgressStore.shared)
     .environment(SignProgressStore.shared)
+    .environment(SimulationSessionStore.shared)
     .environment(AppTabRouter.shared)
     .environment(LocalizationManager.shared)
 }

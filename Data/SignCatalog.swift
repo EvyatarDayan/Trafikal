@@ -75,7 +75,8 @@ final class SignCatalog {
     /// Builds a quiz that repeats missed signs first, then unseen and learning signs.
     func generateSmartQuiz(
         totalSigns: Int,
-        progressStore: SignProgressStore
+        progressStore: SignProgressStore,
+        maxReviewItems: Int? = nil
     ) -> [Sign] {
         let reviewSignCodes = progressStore.signCodesNeedingReview()
         let priorities = Dictionary(
@@ -86,7 +87,9 @@ final class SignCatalog {
             reviewItemIDs: reviewSignCodes,
             idFor: { $0.id },
             priorityFor: { priorities[$0, default: .unseen] },
-            totalItems: totalSigns
+            totalItems: totalSigns,
+            maxReviewItems: maxReviewItems,
+            lastSeenAt: { progressStore.progress(for: $0).lastAnsweredAt }
         )
     }
 

@@ -17,7 +17,7 @@ struct DrivingLicenseStepsSection: View {
             if showsTitle {
                 Text(l10n.text(.homeLicenseStepsTitle))
                     .font(.title3.bold())
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(Theme.appBlue)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding(.top, 12)
             }

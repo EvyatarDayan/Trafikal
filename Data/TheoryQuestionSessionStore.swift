@@ -82,8 +82,22 @@ final class TheoryQuestionSessionStore {
 
     func recordIfNeeded(historyStore: TestHistoryStore) {
         guard finished, !didRecordCurrentSession, !questions.isEmpty else { return }
-        historyStore.record(score: score, totalQuestions: questions.count, kind: .questions)
+        historyStore.record(
+            score: score,
+            totalQuestions: questions.count,
+            kind: .questions,
+            mistakes: mistakesForHistory()
+        )
         didRecordCurrentSession = true
+    }
+
+    func mistakesForHistory() -> [TestHistoryMistake] {
+        answers.enumerated().compactMap { index, answer in
+            guard let answer, index < questions.count else { return nil }
+            let question = questions[index]
+            guard answer != question.correctOptionID else { return nil }
+            return TestHistoryMistake.from(theory: question, selectedID: answer)
+        }
     }
 
     func select(optionID: String, for question: TheoryQuizQuestion) {

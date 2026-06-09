@@ -37,7 +37,7 @@ struct TheoryQuestionDetailSheet: View {
         return VStack(alignment: .leading, spacing: 0) {
             Text(l10n.text(.questionsExplanation))
                 .font(.headline.weight(.semibold))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Theme.appBlue)
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
                 .padding(.bottom, 8)

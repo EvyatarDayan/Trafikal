@@ -19,7 +19,7 @@ struct SignMeaningScrollPanel: View {
         VStack(alignment: .leading, spacing: 0) {
             Text(l10n.text(.studyMeaning))
                 .font(.headline.weight(.semibold))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(Theme.appBlue)
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
                 .padding(.bottom, 8)

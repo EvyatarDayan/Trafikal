@@ -121,6 +121,7 @@ struct SettingsView: View {
         Text(l10n.text(.settingsTitle))
             .font(.title2)
             .fontWeight(.semibold)
+            .foregroundStyle(Theme.appBlue)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding(.horizontal)
             .padding(.top, 15)

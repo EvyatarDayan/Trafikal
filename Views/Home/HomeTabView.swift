@@ -9,12 +9,14 @@ struct HomeTabView: View {
     @Environment(LocalizationManager.self) private var l10n
     @Environment(AppTabRouter.self) private var tabRouter
     @Environment(SignCatalog.self) private var catalog
+    @Environment(TheoryQuestionCatalog.self) private var theoryCatalog
+    @Environment(SignProgressStore.self) private var signProgressStore
+    @Environment(TheoryQuestionProgressStore.self) private var questionProgressStore
     @Environment(TestHistoryStore.self) private var historyStore
     @Environment(\.colorScheme) private var colorScheme
 
     private let horizontalPadding: CGFloat = 24
     private let cardCornerRadius: CGFloat = 16
-    private let heroGray = Color(.darkGray)
 
     // TEMP: remove with `temporaryRandomSignButton` when done testing sign-of-the-day.
     @State private var signOfTodayOverride: Sign?
@@ -39,13 +41,22 @@ struct HomeTabView: View {
         ExamReadinessLevel.from(percent: examReadinessPercent)
     }
 
+    private var signCoverage: MaterialCoverage {
+        signProgressStore.coverage(among: catalog.signs.map(\.id))
+    }
+
+    private var questionCoverage: MaterialCoverage {
+        questionProgressStore.coverage(among: theoryCatalog.questions.map(\.id))
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             Text(l10n.text(.tabHome))
                 .font(.largeTitle.weight(.bold))
-                .foregroundStyle(heroGray)
+                .foregroundStyle(Theme.appBlue)
                 .frame(maxWidth: .infinity)
                 .padding(.top, 28)
+                .padding(.bottom, 12)
 
             ScrollView {
                 VStack(spacing: 28) {
@@ -53,6 +64,7 @@ struct HomeTabView: View {
                     signOfTodaySection
                     examReadinessSection
                     testStatisticsSection
+                    materialCoverageSection
                 }
                 .padding(.horizontal, horizontalPadding)
                 .padding(.top, 20)
@@ -88,7 +100,7 @@ struct HomeTabView: View {
     private func homeSectionTitle(_ text: String) -> some View {
         Text(text)
             .font(.title3.bold())
-            .foregroundStyle(.primary)
+            .foregroundStyle(Theme.appBlue)
             .frame(maxWidth: .infinity, alignment: .center)
     }
 
@@ -97,6 +109,7 @@ struct HomeTabView: View {
             HomeQuickActionsGrid(
                 onSignTest: { tabRouter.openSignTest() },
                 onQuestionTest: { tabRouter.openQuestionTest() },
+                onSimulationTest: { tabRouter.openSimulationTest() },
                 onPracticeSigns: { tabRouter.openPracticeSigns() },
                 onPracticeQuestions: { tabRouter.openPracticeQuestions() }
             )
@@ -150,6 +163,32 @@ struct HomeTabView: View {
                 .padding(.top, 6)
                 .padding(.trailing, 10)
             }
+    }
+
+    @ViewBuilder
+    private var materialCoverageSection: some View {
+        VStack(spacing: 14) {
+            homeSectionTitle(l10n.text(.homeMaterialCoverageTitle))
+
+            HomeCard(elevated: true, cornerRadius: cardCornerRadius) {
+                VStack(alignment: .leading, spacing: 20) {
+                    Text(l10n.text(.homeMaterialCoverageSubtitle))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    MaterialCoverageRow(
+                        title: l10n.text(.homeMaterialCoverageSigns),
+                        coverage: signCoverage
+                    )
+
+                    MaterialCoverageRow(
+                        title: l10n.text(.homeMaterialCoverageQuestions),
+                        coverage: questionCoverage
+                    )
+                }
+            }
+        }
     }
 
     @ViewBuilder
@@ -270,35 +309,14 @@ private struct HomeFeaturedCard<Content: View>: View {
     }
 }
 
-private struct HomeCard<Content: View>: View {
-    @Environment(\.colorScheme) private var colorScheme
-    var elevated: Bool = false
-    var cornerRadius: CGFloat = 12
-    @ViewBuilder let content: Content
-
-    private var cardBackground: Color {
-        colorScheme == .light ? Color(.systemBackground) : Color(.secondarySystemBackground)
-    }
-
-    var body: some View {
-        content
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(cardBackground, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-            .shadow(
-                color: .black.opacity(elevated ? (colorScheme == .light ? 0.1 : 0.28) : 0.05),
-                radius: elevated ? 12 : 4,
-                x: 0,
-                y: elevated ? 5 : 1
-            )
-    }
-}
-
 #Preview {
     NavigationStack {
         HomeTabView()
     }
     .environment(SignCatalog.shared)
+    .environment(TheoryQuestionCatalog.shared)
+    .environment(SignProgressStore.shared)
+    .environment(TheoryQuestionProgressStore.shared)
     .environment(TestHistoryStore.shared)
     .environment(DrivingLicenseProgressStore.shared)
     .environment(AppTabRouter.shared)

@@ -45,6 +45,15 @@ final class TheoryQuestionProgressStore {
         return progress.wrongCount * 10 + max(0, 2 - progress.correctStreak)
     }
 
+    func coverage(among questionIDs: [Int]) -> MaterialCoverage {
+        let seen = questionIDs.reduce(into: 0) { count, questionID in
+            if progress(for: questionID).lastAnsweredAt != nil {
+                count += 1
+            }
+        }
+        return MaterialCoverage(seen: seen, total: questionIDs.count)
+    }
+
     func selectionPriority(for questionID: Int) -> QuestionSelectionPriority {
         guard let progress = progressByQuestionID[questionID] else {
             return .unseen

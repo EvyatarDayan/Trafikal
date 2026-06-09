@@ -125,7 +125,21 @@ final class TestSessionStore {
 
     func recordIfNeeded(historyStore: TestHistoryStore) {
         guard finished, !didRecordCurrentTest, !questions.isEmpty else { return }
-        historyStore.record(score: score, totalQuestions: questions.count, kind: .signs)
+        historyStore.record(
+            score: score,
+            totalQuestions: questions.count,
+            kind: .signs,
+            mistakes: mistakesForHistory()
+        )
         didRecordCurrentTest = true
+    }
+
+    func mistakesForHistory() -> [TestHistoryMistake] {
+        answers.enumerated().compactMap { index, answer in
+            guard let answer, index < questions.count else { return nil }
+            let question = questions[index]
+            guard answer != question.correct.id else { return nil }
+            return TestHistoryMistake.from(sign: question, selectedID: answer)
+        }
     }
 }

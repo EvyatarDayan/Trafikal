@@ -44,6 +44,7 @@ struct TrafikalApp: App {
                 .environment(localization)
                 .environment(TestSessionStore.shared)
                 .environment(TheoryQuestionSessionStore.shared)
+                .environment(SimulationSessionStore.shared)
         }
     }
 }

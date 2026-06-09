@@ -90,6 +90,7 @@ struct HelpSupportView: View {
                 VStack(alignment: .center, spacing: 16) {
                     Text(l10n.text(.settingsSupportIntroTitle))
                         .font(.title3.bold())
+                        .foregroundStyle(Theme.appBlue)
 
                     Text(l10n.text(.settingsSupportIntroLine1))
                         .font(.body)
@@ -467,6 +468,7 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(l10n.text(.settingsAboutAppHeading))
                             .font(.title2.bold())
+                            .foregroundStyle(Theme.appBlue)
 
                         Text(l10n.text(.settingsAboutBody))
                             .font(.body)
@@ -479,6 +481,7 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(l10n.text(.aboutSignImagesTitle))
                             .font(.title2.bold())
+                            .foregroundStyle(Theme.appBlue)
 
                         Text(l10n.text(.aboutSignImagesBody))
                             .font(.body)
@@ -494,6 +497,7 @@ struct AboutView: View {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("About ABASHELARI")
                             .font(.title2.bold())
+                            .foregroundStyle(Theme.appBlue)
 
                         Text(AboutAbashelariCopy.paragraph1)
                             .font(.body)

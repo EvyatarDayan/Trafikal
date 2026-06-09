@@ -22,4 +22,13 @@ enum TestScoreStyle {
     static func badgeBackground(for percent: Int) -> Color {
         foregroundStyle(for: percent).opacity(0.15)
     }
+
+    /// Green at 80%+ (simulation pass mark), red below.
+    static func simulationForegroundStyle(for percent: Int) -> Color {
+        percent >= SimulationSessionStore.passMarkPercent ? .green : Color.red.opacity(0.85)
+    }
+
+    static func simulationBadgeBackground(for percent: Int) -> Color {
+        simulationForegroundStyle(for: percent).opacity(0.15)
+    }
 }

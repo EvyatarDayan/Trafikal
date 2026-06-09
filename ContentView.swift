@@ -141,6 +141,7 @@ struct ContentView: View {
         .environment(TheoryQuestionSessionStore.shared)
         .environment(TheoryQuestionProgressStore.shared)
         .environment(SignProgressStore.shared)
+        .environment(SimulationSessionStore.shared)
         .environment(FavoritesStore.shared)
         .environment(DrivingLicenseProgressStore.shared)
         .environment(LocalizationManager.shared)

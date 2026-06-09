@@ -34,6 +34,15 @@ final class SignProgressStore {
             .map(\.signCode)
     }
 
+    func coverage(among signCodes: [String]) -> MaterialCoverage {
+        let seen = signCodes.reduce(into: 0) { count, signCode in
+            if progress(for: signCode).lastAnsweredAt != nil {
+                count += 1
+            }
+        }
+        return MaterialCoverage(seen: seen, total: signCodes.count)
+    }
+
     func selectionPriority(for signCode: String) -> QuestionSelectionPriority {
         guard let progress = progressBySignCode[signCode] else {
             return .unseen
