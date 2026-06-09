@@ -8,17 +8,28 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(LocalizationManager.self) private var l10n
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(SignCatalog.self) private var signCatalog
+    @Environment(TheoryQuestionCatalog.self) private var theoryCatalog
+    @Environment(FavoritesStore.self) private var favoritesStore
+    @Environment(TestHistoryStore.self) private var historyStore
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("dailyNotificationEnabled") private var dailyNotificationEnabled = false
     @AppStorage("dailyNotificationHour") private var dailyNotificationHour = 9
     @AppStorage("dailyNotificationMinute") private var dailyNotificationMinute = 0
-    @Environment(TestHistoryStore.self) private var historyStore
 
     @State private var showClearHistoryConfirmation = false
     @State private var showingNotificationSettings = false
+    @State private var showingExportFavoritesSheet = false
+    @State private var exportItems: [Any] = []
+    @State private var isExportingFavorites = false
+    @State private var exportFavoritesMessage: String?
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
+    }
+
+    private var hasFavorites: Bool {
+        !favoritesStore.signCodes.isEmpty || !favoritesStore.questionIDs.isEmpty
     }
 
     var body: some View {
@@ -31,16 +42,12 @@ struct SettingsView: View {
                         settingsSectionHeader(l10n.text(.settingsPreferences))
                         settingsCard(darkModeRow)
                         settingsCard(languageRow)
-                    }
-
-                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
-                        settingsSectionHeader(l10n.text(.settingsNotificationsSection))
                         settingsCard(notificationsRow)
                     }
 
                     VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
-                        settingsSectionHeader(l10n.text(.settingsTestHistory))
-                        settingsCard(clearHistoryRow)
+                        settingsSectionHeader(l10n.text(.settingsExportSection))
+                        settingsCard(exportFavoritesRow)
                     }
 
                     VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
@@ -48,6 +55,11 @@ struct SettingsView: View {
                         settingsCard(helpSupportRow)
                         settingsCard(termsPrivacyRow)
                         settingsCard(aboutRow)
+                    }
+
+                    VStack(alignment: .leading, spacing: ListCardStyle.rowSpacing) {
+                        settingsSectionHeader(l10n.text(.historyTitle))
+                        settingsCard(clearHistoryRow)
                     }
                 }
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
@@ -69,6 +81,19 @@ struct SettingsView: View {
         .sheet(isPresented: $showingNotificationSettings) {
             NotificationScheduleView()
         }
+        .sheet(isPresented: $showingExportFavoritesSheet) {
+            ShareSheet(activityItems: exportItems)
+        }
+        .alert(l10n.text(.settingsExportFavoritesAlertTitle), isPresented: Binding(
+            get: { exportFavoritesMessage != nil },
+            set: { if !$0 { exportFavoritesMessage = nil } }
+        )) {
+            Button(l10n.text(.commonOK), role: .cancel) {
+                exportFavoritesMessage = nil
+            }
+        } message: {
+            Text(exportFavoritesMessage ?? "")
+        }
     }
 
     private var formattedNotificationTime: String {
@@ -81,6 +106,24 @@ struct SettingsView: View {
         }
 
         return date.formatted(date: .omitted, time: .shortened)
+    }
+
+    private var exportFavoritesRow: some View {
+        Button {
+            exportFavorites()
+        } label: {
+            settingsRow(
+                icon: "square.and.arrow.up.fill",
+                iconColor: .green,
+                title: l10n.text(.settingsExportFavoritesTitle),
+                subtitle: l10n.text(.settingsExportFavoritesSubtitle)
+            ) {
+                settingsChevron
+            }
+        }
+        .buttonStyle(.plain)
+        .disabled(!hasFavorites || isExportingFavorites)
+        .opacity(hasFavorites ? 1 : 0.5)
     }
 
     private var notificationsRow: some View {
@@ -256,6 +299,82 @@ struct SettingsView: View {
             .foregroundStyle(.tertiary)
     }
 
+    private func exportFavorites() {
+        guard hasFavorites else {
+            exportFavoritesMessage = l10n.text(.settingsExportFavoritesEmpty)
+            return
+        }
+
+        isExportingFavorites = true
+        let content = makeFavoritesExportContent()
+        let fileName = "Trafikal_Favorites_\(FavoritesExporter.dateStamp()).pdf"
+
+        Task {
+            do {
+                let fileURL = try await Task.detached {
+                    try FavoritesExporter.createPDF(content: content, fileName: fileName)
+                }.value
+
+                exportItems = [fileURL]
+                showingExportFavoritesSheet = true
+            } catch {
+                exportFavoritesMessage = l10n.text(
+                    .settingsExportFavoritesFailed,
+                    error.localizedDescription
+                )
+            }
+            isExportingFavorites = false
+        }
+    }
+
+    private func makeFavoritesExportContent() -> FavoritesExportContent {
+        let signs = favoritesStore.favoriteSigns(in: signCatalog)
+            .sorted { $0.code.localizedCompare($1.code) == .orderedAscending }
+            .map {
+                FavoritesSignExportItem(
+                    code: $0.code,
+                    name: $0.name,
+                    category: $0.category.title,
+                    meaning: $0.meaning,
+                    imagePNGData: FavoritesExporter.pngData(for: $0)
+                )
+            }
+
+        let questions = favoritesStore.favoriteQuestions(in: theoryCatalog)
+            .sorted { $0.id < $1.id }
+            .map {
+                FavoritesQuestionExportItem(
+                    id: $0.id,
+                    category: $0.category,
+                    question: $0.question,
+                    answer: $0.answer,
+                    explanation: $0.explanation
+                )
+            }
+
+        let labels = FavoritesExportContent.Labels(
+            documentTitle: l10n.text(.settingsExportFavoritesPDFTitle),
+            summaryFormat: l10n.text(.settingsExportFavoritesPDFSummary),
+            signsSectionTitle: l10n.text(.tabSigns),
+            questionsSectionTitle: l10n.text(.tabQuestions),
+            codeLabel: l10n.text(.settingsExportFavoritesPDFCode),
+            nameLabel: l10n.text(.settingsExportFavoritesPDFName),
+            categoryLabel: l10n.text(.settingsExportFavoritesPDFCategory),
+            meaningLabel: l10n.text(.settingsExportFavoritesPDFMeaning),
+            questionLabel: l10n.text(.settingsExportFavoritesPDFQuestion),
+            answerLabel: l10n.text(.settingsExportFavoritesPDFAnswer),
+            explanationLabel: l10n.text(.settingsExportFavoritesPDFExplanation)
+        )
+
+        return FavoritesExportContent(
+            signs: signs,
+            questions: questions,
+            labels: labels,
+            exportedAt: Date(),
+            locale: l10n.locale
+        )
+    }
+
     private func settingsRow<Trailing: View>(
         icon: String,
         iconColor: Color,
@@ -291,5 +410,8 @@ struct SettingsView: View {
         SettingsView()
     }
     .environment(TestHistoryStore.shared)
+    .environment(SignCatalog.shared)
+    .environment(TheoryQuestionCatalog.shared)
+    .environment(FavoritesStore.shared)
     .environment(LocalizationManager.shared)
 }

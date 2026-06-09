@@ -22,6 +22,7 @@ struct SimulationSessionView: View {
     @State private var showExitConfirmation = false
     @State private var showTimeUpAlert = false
     @State private var showConfetti = false
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
@@ -127,15 +128,36 @@ struct SimulationSessionView: View {
     }
 
     private var activeItem: some View {
-        let item = sessionStore.items[sessionStore.currentIndex]
-
-        return VStack(spacing: 0) {
+        VStack(spacing: 0) {
             SimulationSessionProgressHeader(
                 currentIndex: sessionStore.currentIndex,
                 totalCount: sessionStore.items.count,
                 remainingSeconds: sessionStore.remainingSeconds
             )
 
+            ZStack {
+                simulationQuestionPage
+                    .transition(.browseSlide(navigationDirection))
+            }
+            .clipped()
+            .frame(maxHeight: .infinity)
+            .animation(.browsePage, value: sessionStore.currentIndex)
+
+            questionNavigationBar
+                .browseNavigationSlot()
+        }
+        .swipeNavigation(
+            onPrevious: goToPreviousQuestion,
+            onNext: goToNextQuestion,
+            canGoPrevious: sessionStore.currentIndex > 0,
+            canGoNext: sessionStore.selectedID != nil
+        )
+    }
+
+    private var simulationQuestionPage: some View {
+        let item = sessionStore.items[sessionStore.currentIndex]
+
+        return VStack(spacing: 0) {
             promptCard(for: item)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
@@ -153,12 +175,8 @@ struct SimulationSessionView: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .scrollContentBackground(.hidden)
             .scrollIndicators(.hidden)
-            .id(item.id)
-
-            questionNavigationBar
-                .frame(height: 72)
-                .background(Theme.screenBackground)
         }
+        .id(sessionStore.currentIndex)
     }
 
     @ViewBuilder
@@ -267,9 +285,25 @@ struct SimulationSessionView: View {
             forwardTitle: sessionStore.currentIndex < sessionStore.items.count - 1
                 ? l10n.text(.testNextQuestion)
                 : l10n.text(.testShowResults),
-            onBack: { sessionStore.goBack() },
-            onForward: { sessionStore.advance() }
+            onBack: goToPreviousQuestion,
+            onForward: goToNextQuestion
         )
+    }
+
+    private func goToNextQuestion() {
+        guard sessionStore.selectedID != nil else { return }
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            sessionStore.advance()
+        }
+    }
+
+    private func goToPreviousQuestion() {
+        guard sessionStore.currentIndex > 0 else { return }
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            sessionStore.goBack()
+        }
     }
 
     private var sessionResult: some View {

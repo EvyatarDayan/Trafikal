@@ -16,6 +16,7 @@ struct TestSessionView: View {
     @State private var showingSignDetails = false
     @State private var showExitConfirmation = false
     @State private var showConfetti = false
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
 
     var body: some View {
         VStack(spacing: 0) {
@@ -82,14 +83,35 @@ struct TestSessionView: View {
     }
 
     private var activeTest: some View {
-        let question = sessionStore.questions[sessionStore.currentIndex]
-
-        return VStack(spacing: 0) {
+        VStack(spacing: 0) {
             TestSessionProgressHeader(
                 currentIndex: sessionStore.currentIndex,
                 totalCount: sessionStore.questions.count
             )
 
+            ZStack {
+                testQuestionPage
+                    .transition(.browseSlide(navigationDirection))
+            }
+            .clipped()
+            .frame(maxHeight: .infinity)
+            .animation(.browsePage, value: sessionStore.currentIndex)
+
+            questionNavigationBar
+                .browseNavigationSlot()
+        }
+        .swipeNavigation(
+            onPrevious: goToPreviousQuestion,
+            onNext: goToNextQuestion,
+            canGoPrevious: sessionStore.currentIndex > 0,
+            canGoNext: sessionStore.selectedID != nil
+        )
+    }
+
+    private var testQuestionPage: some View {
+        let question = sessionStore.questions[sessionStore.currentIndex]
+
+        return VStack(spacing: 0) {
             signPromptCard(for: question.correct)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
@@ -125,11 +147,8 @@ struct TestSessionView: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .scrollContentBackground(.hidden)
             .scrollIndicators(.hidden)
-
-            questionNavigationBar
-                .frame(height: 72)
-                .background(Theme.screenBackground)
         }
+        .id(sessionStore.currentIndex)
     }
 
     private func signPromptCard(for sign: Sign) -> some View {
@@ -165,9 +184,25 @@ struct TestSessionView: View {
             forwardTitle: sessionStore.currentIndex < sessionStore.questions.count - 1
                 ? l10n.text(.testNextQuestion)
                 : l10n.text(.testShowResults),
-            onBack: { sessionStore.goBack() },
-            onForward: { sessionStore.advance() }
+            onBack: goToPreviousQuestion,
+            onForward: goToNextQuestion
         )
+    }
+
+    private func goToNextQuestion() {
+        guard sessionStore.selectedID != nil else { return }
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            sessionStore.advance()
+        }
+    }
+
+    private func goToPreviousQuestion() {
+        guard sessionStore.currentIndex > 0 else { return }
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            sessionStore.goBack()
+        }
     }
 
     private var testResult: some View {

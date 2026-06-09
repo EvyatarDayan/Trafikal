@@ -227,37 +227,27 @@ struct HomeTabView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
                 } else {
-                    VStack(spacing: 20) {
-                        if let recent = recentTenTests {
-                            TestResultsPieChart(
-                                statisticsCorrect: recent.correctCount,
-                                total: recent.totalQuestions
-                            )
-                            .frame(maxWidth: .infinity)
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                        if let last = historyStore.lastEntry() {
+                            statTile(title: l10n.text(.homeLastTest)) {
+                                Text("\(last.percentCorrect)%")
+                                    .foregroundStyle(TestScoreStyle.foregroundStyle(for: last.percentCorrect))
+                            }
                         }
-
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                            if let last = historyStore.lastEntry() {
-                                statTile(title: l10n.text(.homeLastTest)) {
-                                    Text("\(last.percentCorrect)%")
-                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: last.percentCorrect))
-                                }
+                        if let recent = recentTenTests {
+                            statTile(title: l10n.text(.homeRecentAverage)) {
+                                Text("\(recent.averagePercent)%")
+                                    .foregroundStyle(TestScoreStyle.foregroundStyle(for: recent.averagePercent))
                             }
-                            if let recent = recentTenTests {
-                                statTile(title: l10n.text(.homeRecentAverage)) {
-                                    Text("\(recent.averagePercent)%")
-                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: recent.averagePercent))
-                                }
-                            }
-                            statTile(
-                                title: l10n.text(.homeTestsTaken),
-                                value: "\(historyStore.testsCompleted)"
-                            )
-                            if let best = historyStore.bestPercent() {
-                                statTile(title: l10n.text(.homeBestScore)) {
-                                    Text("\(best)%")
-                                        .foregroundStyle(TestScoreStyle.foregroundStyle(for: best))
-                                }
+                        }
+                        statTile(
+                            title: l10n.text(.homeTestsTaken),
+                            value: "\(historyStore.testsCompleted)"
+                        )
+                        if let best = historyStore.bestPercent() {
+                            statTile(title: l10n.text(.homeBestScore)) {
+                                Text("\(best)%")
+                                    .foregroundStyle(TestScoreStyle.foregroundStyle(for: best))
                             }
                         }
                     }
@@ -284,7 +274,7 @@ struct HomeTabView: View {
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            Color(.systemGray5),
+            Color.green.opacity(0.1),
             in: RoundedRectangle(cornerRadius: ListCardStyle.cornerRadius, style: .continuous)
         )
     }

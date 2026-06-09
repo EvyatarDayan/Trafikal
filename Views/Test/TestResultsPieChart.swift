@@ -72,22 +72,30 @@ struct TestResultsPieChart: View {
 
     private var chart: some View {
         Chart {
-            if correct > 0 {
+            if total == 0 {
                 SectorMark(
-                    angle: .value("Correct", correct),
-                    innerRadius: .ratio(innerRadiusRatio),
-                    angularInset: incorrect > 0 ? 2 : 0
+                    angle: .value("Empty", 1),
+                    innerRadius: .ratio(innerRadiusRatio)
                 )
-                .foregroundStyle(.green)
-            }
+                .foregroundStyle(Color(.systemGray5))
+            } else {
+                if correct > 0 {
+                    SectorMark(
+                        angle: .value("Correct", correct),
+                        innerRadius: .ratio(innerRadiusRatio),
+                        angularInset: incorrect > 0 ? 2 : 0
+                    )
+                    .foregroundStyle(.green)
+                }
 
-            if incorrect > 0 {
-                SectorMark(
-                    angle: .value("Incorrect", incorrect),
-                    innerRadius: .ratio(innerRadiusRatio),
-                    angularInset: correct > 0 ? 2 : 0
-                )
-                .foregroundStyle(Color.red.opacity(0.85))
+                if incorrect > 0 {
+                    SectorMark(
+                        angle: .value("Incorrect", incorrect),
+                        innerRadius: .ratio(innerRadiusRatio),
+                        angularInset: correct > 0 ? 2 : 0
+                    )
+                    .foregroundStyle(Color.red.opacity(0.85))
+                }
             }
         }
         .chartLegend(.hidden)

@@ -160,9 +160,7 @@ private struct TestHistoryRowView: View {
     }
 
     private var scoreBadge: some View {
-        let color = TestScoreStyle.simulationForegroundStyle(for: entry.percentCorrect)
-
-        return ZStack {
+        ZStack {
             RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .fill(TestScoreStyle.simulationBadgeBackground(for: entry.percentCorrect))
                 .frame(width: 56, height: 56)
@@ -172,7 +170,7 @@ private struct TestHistoryRowView: View {
                 Text("\(entry.percentCorrect)%")
                     .font(.caption.weight(.bold))
             }
-            .foregroundStyle(color)
+            .foregroundStyle(colorScheme == .light ? Color.black : Color(.white))
         }
     }
 

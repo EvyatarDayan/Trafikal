@@ -37,17 +37,13 @@ struct TestQuestionNavigationBar: View {
     let onForward: () -> Void
 
     var body: some View {
-        HStack(spacing: 16) {
-            Button(l10n.text(.studyPrevious), action: onBack)
-                .buttonStyle(.borderedProminent)
-                .disabled(!canGoBack)
-                .frame(maxWidth: .infinity)
-
-            Button(forwardTitle, action: onForward)
-                .buttonStyle(.borderedProminent)
-                .disabled(!canGoForward)
-                .frame(maxWidth: .infinity)
-        }
-        .padding(.horizontal, 24)
+        BrowseNavigationBar(
+            previousTitle: l10n.text(.studyPrevious),
+            nextTitle: forwardTitle,
+            canGoPrevious: canGoBack,
+            canGoNext: canGoForward,
+            onPrevious: onBack,
+            onNext: onForward
+        )
     }
 }

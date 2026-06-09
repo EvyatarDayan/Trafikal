@@ -144,11 +144,9 @@ struct TestsTabView: View {
                 }
                 .padding(.top, 25)
 
-                if let last = historyStore.lastEntry(kind: historyKind) {
-                    lastQuizSection(entry: last)
-                        .padding(.top, 44)
-                        .padding(.horizontal, 36)
-                }
+                lastQuizSection(entry: historyStore.lastEntry(kind: historyKind))
+                    .padding(.top, 44)
+                    .padding(.horizontal, 36)
 
                 Spacer(minLength: 32)
             }
@@ -386,10 +384,10 @@ struct TestsTabView: View {
         showSimulationSession = false
     }
 
-    private func lastQuizSection(entry: TestHistoryEntry) -> some View {
+    private func lastQuizSection(entry: TestHistoryEntry?) -> some View {
         HomeCard(elevated: true, cornerRadius: 16) {
             VStack(spacing: 18) {
-                Text(lastQuizLabel(for: entry.date))
+                Text(entry.map { lastQuizLabel(for: $0.date) } ?? l10n.text(.testsYourLastResults))
                     .font(.body.weight(.medium))
                     .foregroundStyle(.primary)
                     .multilineTextAlignment(.center)
@@ -397,12 +395,20 @@ struct TestsTabView: View {
                     .padding(.top, 8)
 
                 TestResultsPieChart(
-                    statisticsCorrect: entry.score,
-                    total: entry.totalQuestions
+                    statisticsCorrect: entry?.score ?? 0,
+                    total: entry?.totalQuestions ?? 0
                 )
                 .frame(maxWidth: .infinity)
-                .padding(.bottom, 16)
+
+                if entry == nil {
+                    Text(l10n.text(.testsLastResultsEmpty))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 8)
+                }
             }
+            .padding(.bottom, 16)
         }
     }
 

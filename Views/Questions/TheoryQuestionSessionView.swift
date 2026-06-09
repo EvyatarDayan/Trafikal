@@ -17,6 +17,7 @@ struct TheoryQuestionSessionView: View {
     @State private var showExitConfirmation = false
     @State private var showConfetti = false
     @State private var showingQuestionDetails = false
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
@@ -87,14 +88,35 @@ struct TheoryQuestionSessionView: View {
     }
 
     private var activeQuestion: some View {
-        let item = sessionStore.questions[sessionStore.currentIndex]
-
-        return VStack(spacing: 0) {
+        VStack(spacing: 0) {
             TestSessionProgressHeader(
                 currentIndex: sessionStore.currentIndex,
                 totalCount: sessionStore.questions.count
             )
 
+            ZStack {
+                testQuestionPage
+                    .transition(.browseSlide(navigationDirection))
+            }
+            .clipped()
+            .frame(maxHeight: .infinity)
+            .animation(.browsePage, value: sessionStore.currentIndex)
+
+            questionNavigationBar
+                .browseNavigationSlot()
+        }
+        .swipeNavigation(
+            onPrevious: goToPreviousQuestion,
+            onNext: goToNextQuestion,
+            canGoPrevious: sessionStore.currentIndex > 0,
+            canGoNext: sessionStore.selectedID != nil
+        )
+    }
+
+    private var testQuestionPage: some View {
+        let item = sessionStore.questions[sessionStore.currentIndex]
+
+        return VStack(spacing: 0) {
             questionCard(
                 for: item.source,
                 showsInfoButton: sessionStore.selectedID != nil,
@@ -130,12 +152,8 @@ struct TheoryQuestionSessionView: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .scrollContentBackground(.hidden)
             .scrollIndicators(.hidden)
-            .id(item.source.id)
-
-            questionNavigationBar
-                .frame(height: 72)
-                .background(Theme.screenBackground)
         }
+        .id(sessionStore.currentIndex)
     }
 
     private func questionCard(
@@ -186,9 +204,25 @@ struct TheoryQuestionSessionView: View {
             forwardTitle: sessionStore.currentIndex < sessionStore.questions.count - 1
                 ? l10n.text(.testNextQuestion)
                 : l10n.text(.testShowResults),
-            onBack: { sessionStore.goBack() },
-            onForward: { sessionStore.advance() }
+            onBack: goToPreviousQuestion,
+            onForward: goToNextQuestion
         )
+    }
+
+    private func goToNextQuestion() {
+        guard sessionStore.selectedID != nil else { return }
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            sessionStore.advance()
+        }
+    }
+
+    private func goToPreviousQuestion() {
+        guard sessionStore.currentIndex > 0 else { return }
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            sessionStore.goBack()
+        }
     }
 
     private var sessionResult: some View {

@@ -14,6 +14,7 @@ struct TheoryQuestionBrowseView: View {
     let startIndex: Int
 
     @State private var index: Int
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
 
     init(questions: [TheoryQuestion], startIndex: Int = 0) {
         self.questions = questions
@@ -46,6 +47,29 @@ struct TheoryQuestionBrowseView: View {
                 .padding(.top, 12)
             }
 
+            ZStack {
+                questionPage
+                    .transition(.browseSlide(navigationDirection))
+            }
+            .clipped()
+            .frame(maxHeight: .infinity)
+            .animation(.browsePage, value: index)
+
+            navigationSection
+                .browseNavigationSlot()
+        }
+        .appScreenBackground()
+        .toolbar(.hidden, for: .navigationBar)
+        .swipeNavigation(
+            onPrevious: previous,
+            onNext: next,
+            canGoPrevious: index > 0,
+            canGoNext: index < questions.count - 1
+        )
+    }
+
+    private var questionPage: some View {
+        VStack(spacing: 0) {
             questionCard
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
@@ -68,14 +92,8 @@ struct TheoryQuestionBrowseView: View {
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .scrollContentBackground(.hidden)
-            .id(question.id)
-
-            navigationSection
-                .frame(height: 72)
-                .background(Theme.screenBackground)
         }
-        .appScreenBackground()
-        .toolbar(.hidden, for: .navigationBar)
+        .id(index)
     }
 
     private var questionCard: some View {
@@ -148,31 +166,29 @@ struct TheoryQuestionBrowseView: View {
     }
 
     private var navigationSection: some View {
-        HStack(spacing: 16) {
-            Button(l10n.text(.studyPrevious)) {
-                previous()
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(index == 0)
-            .frame(maxWidth: .infinity)
-
-            Button(l10n.text(.studyNext)) {
-                next()
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(index >= questions.count - 1)
-            .frame(maxWidth: .infinity)
-        }
-        .padding(.horizontal, 24)
+        BrowseNavigationBar(
+            previousTitle: l10n.text(.studyPrevious),
+            nextTitle: l10n.text(.studyNext),
+            canGoPrevious: index > 0,
+            canGoNext: index < questions.count - 1,
+            onPrevious: previous,
+            onNext: next
+        )
     }
 
     private func next() {
         guard index < questions.count - 1 else { return }
-        index += 1
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            index += 1
+        }
     }
 
     private func previous() {
         guard index > 0 else { return }
-        index -= 1
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            index -= 1
+        }
     }
 }

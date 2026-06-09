@@ -13,6 +13,7 @@ struct TestHistoryMistakesView: View {
     let onBack: () -> Void
 
     @State private var currentIndex = 0
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
     @State private var showingSignDetails = false
     @State private var showingQuestionDetails = false
 
@@ -46,7 +47,16 @@ struct TestHistoryMistakesView: View {
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
-                mistakeContent(for: mistakes[currentIndex])
+                ZStack {
+                    mistakePage
+                        .transition(.browseSlide(navigationDirection))
+                }
+                .clipped()
+                .frame(maxHeight: .infinity)
+                .animation(.browsePage, value: currentIndex)
+
+                navigationBar
+                    .browseNavigationSlot(background: screenBackground)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -54,15 +64,22 @@ struct TestHistoryMistakesView: View {
             screenBackground
                 .ignoresSafeArea()
         }
+        .swipeNavigation(
+            onPrevious: goToPrevious,
+            onNext: goToNext,
+            canGoPrevious: currentIndex > 0,
+            canGoNext: currentIndex < mistakes.count - 1
+        )
         .onChange(of: currentIndex) { _, _ in
             showingSignDetails = false
             showingQuestionDetails = false
         }
     }
 
-    @ViewBuilder
-    private func mistakeContent(for mistake: TestHistoryMistake) -> some View {
-        VStack(spacing: 0) {
+    private var mistakePage: some View {
+        let mistake = mistakes[currentIndex]
+
+        return VStack(spacing: 0) {
             promptSection(for: mistake)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
@@ -93,12 +110,8 @@ struct TestHistoryMistakesView: View {
             .frame(maxHeight: .infinity, alignment: .top)
             .scrollContentBackground(.hidden)
             .scrollIndicators(.hidden)
-            .id(mistake.id)
-
-            navigationBar
-                .frame(height: 72)
-                .background(screenBackground)
         }
+        .id(currentIndex)
     }
 
     @ViewBuilder
@@ -183,15 +196,25 @@ struct TestHistoryMistakesView: View {
             canGoBack: currentIndex > 0,
             canGoForward: currentIndex < mistakes.count - 1,
             forwardTitle: l10n.text(.testNextQuestion),
-            onBack: {
-                guard currentIndex > 0 else { return }
-                currentIndex -= 1
-            },
-            onForward: {
-                guard currentIndex < mistakes.count - 1 else { return }
-                currentIndex += 1
-            }
+            onBack: goToPrevious,
+            onForward: goToNext
         )
+    }
+
+    private func goToNext() {
+        guard currentIndex < mistakes.count - 1 else { return }
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            currentIndex += 1
+        }
+    }
+
+    private func goToPrevious() {
+        guard currentIndex > 0 else { return }
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            currentIndex -= 1
+        }
     }
 
     private func optionState(for option: TestHistoryMistakeOption, mistake: TestHistoryMistake) -> QuizOptionState {

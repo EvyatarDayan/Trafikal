@@ -39,7 +39,7 @@ struct ContentView: View {
                         titleBrand: l10n.text(.welcomeTitleBrand),
                         subtitle: l10n.text(.welcomeSubtitle),
                         startTitle: l10n.text(.welcomeStart),
-                        logoImageName: "Trafical",
+                        logoImageName: "Trafikal",
                         onStart: completeWelcome
                     )
                     .transition(.opacity)

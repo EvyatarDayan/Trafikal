@@ -10,7 +10,7 @@ struct WelcomeView: View {
     let titleBrand: String
     let subtitle: String
     let startTitle: String
-    var logoImageName: String = "Trafical"
+    var logoImageName: String = "Trafikal"
     let onStart: () -> Void
 
     private var metrics: WelcomeMetrics { .current }

@@ -9,11 +9,11 @@ struct StudyCardView: View {
     @Environment(LocalizationManager.self) private var l10n
 
     private let signImageMaxSide: CGFloat = 200
-
     let signs: [Sign]
     let startIndex: Int
 
     @State private var index: Int
+    @State private var navigationDirection: BrowseNavigationDirection = .forward
 
     init(signs: [Sign], startIndex: Int = 0) {
         self.signs = signs
@@ -46,7 +46,30 @@ struct StudyCardView: View {
                 .padding(.top, 12)
             }
 
-            signCard
+            ZStack {
+                studyPage
+                    .transition(.browseSlide(navigationDirection))
+            }
+            .clipped()
+            .frame(maxHeight: .infinity)
+            .animation(.browsePage, value: index)
+
+            navigationSection
+                .browseNavigationSlot()
+        }
+        .toolbar(.hidden, for: .navigationBar)
+        .appScreenBackground()
+        .swipeNavigation(
+            onPrevious: previous,
+            onNext: next,
+            canGoPrevious: index > 0,
+            canGoNext: index < signs.count - 1
+        )
+    }
+
+    private var studyPage: some View {
+        VStack(spacing: 0) {
+            SignSummaryCard(sign: sign, maxImageSide: signImageMaxSide)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.top, 12)
                 .padding(.bottom, ListCardStyle.rowSpacing)
@@ -55,46 +78,34 @@ struct StudyCardView: View {
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding(.horizontal, ListCardStyle.horizontalPadding)
                 .padding(.bottom, 8)
-
-            navigationSection
-                .frame(height: 72)
-                .background(Theme.screenBackground)
         }
-        .toolbar(.hidden, for: .navigationBar)
-        .appScreenBackground()
-        .id(sign.id)
-    }
-
-    private var signCard: some View {
-        SignSummaryCard(sign: sign, maxImageSide: signImageMaxSide)
+        .id(index)
     }
 
     private var navigationSection: some View {
-        HStack(spacing: 16) {
-            Button(l10n.text(.studyPrevious)) {
-                previous()
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(index == 0)
-            .frame(maxWidth: .infinity)
-
-            Button(l10n.text(.studyNext)) {
-                next()
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(index >= signs.count - 1)
-            .frame(maxWidth: .infinity)
-        }
-        .padding(.horizontal, 24)
+        BrowseNavigationBar(
+            previousTitle: l10n.text(.studyPrevious),
+            nextTitle: l10n.text(.studyNext),
+            canGoPrevious: index > 0,
+            canGoNext: index < signs.count - 1,
+            onPrevious: previous,
+            onNext: next
+        )
     }
 
     private func next() {
         guard index < signs.count - 1 else { return }
-        index += 1
+        navigationDirection = .forward
+        withAnimation(.browsePage) {
+            index += 1
+        }
     }
 
     private func previous() {
         guard index > 0 else { return }
-        index -= 1
+        navigationDirection = .backward
+        withAnimation(.browsePage) {
+            index -= 1
+        }
     }
 }
