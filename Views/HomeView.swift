@@ -103,7 +103,7 @@ struct SignsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(catalog.signs.count)")
+            Text(catalog.signs.count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
@@ -128,7 +128,7 @@ struct SignsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(favorites.signCodes.count)")
+            Text(favorites.signCodes.count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
@@ -166,7 +166,7 @@ struct SignsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(count)")
+            Text(count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 

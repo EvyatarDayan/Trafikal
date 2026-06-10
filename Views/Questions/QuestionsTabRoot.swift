@@ -90,7 +90,7 @@ struct QuestionsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(catalog.questions.count)")
+            Text(catalog.questions.count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
@@ -114,7 +114,7 @@ struct QuestionsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(favorites.questionIDs.count)")
+            Text(favorites.questionIDs.count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
@@ -140,7 +140,7 @@ struct QuestionsTabRoot: View {
 
             Spacer(minLength: 0)
 
-            Text("\(count)")
+            Text(count.ungroupedDisplayString)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 

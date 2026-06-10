@@ -98,24 +98,26 @@ struct TheoryQuestionBrowseView: View {
 
     private var questionCard: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(question.category)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
-                .lineLimit(1)
-                .truncationMode(.tail)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 4)
-                .background(Color(.systemGray5), in: Capsule())
-
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text("\(question.id)")
+            HStack(alignment: .center, spacing: 8) {
+                Text(question.id.ungroupedDisplayString)
                     .font(.headline.weight(.semibold))
                     .foregroundStyle(.secondary)
 
-                Text(question.question)
-                    .font(.headline)
-                    .fixedSize(horizontal: false, vertical: true)
+                Text(question.category)
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
+                    .background(Color(.systemGray5), in: Capsule())
+
+                Spacer(minLength: 0)
             }
+
+            Text(question.question)
+                .font(.headline)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .listCardStyle(background: cardBackground, colorScheme: colorScheme)
     }

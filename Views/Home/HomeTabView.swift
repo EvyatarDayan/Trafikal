@@ -175,6 +175,8 @@ struct HomeTabView: View {
                     Text(l10n.text(.homeMaterialCoverageSubtitle))
                         .font(.caption)
                         .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.75)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     MaterialCoverageRow(
@@ -267,6 +269,8 @@ struct HomeTabView: View {
             Text(title)
                 .font(.caption)
                 .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
             value()
                 .font(.title3.weight(.bold))
                 .frame(maxWidth: .infinity, alignment: .leading)

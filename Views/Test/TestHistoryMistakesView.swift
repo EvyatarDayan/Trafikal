@@ -152,7 +152,7 @@ struct TestHistoryMistakesView: View {
                 .background(Color(.systemGray5), in: Capsule())
 
             HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text("\(question.id)")
+                Text(question.id.ungroupedDisplayString)
                     .font(.headline.weight(.semibold))
                     .foregroundStyle(.secondary)
 

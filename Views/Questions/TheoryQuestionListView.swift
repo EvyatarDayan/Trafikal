@@ -46,13 +46,14 @@ struct TheoryQuestionListView: View {
 
     private var screenTitle: String {
         let count = allQuestions.count
+        let countLabel = count.ungroupedDisplayString
         switch listingMode {
         case .all:
-            return "\(l10n.text(.questionsAllQuestions)) (\(count))"
+            return "\(l10n.text(.questionsAllQuestions)) (\(countLabel))"
         case .category(let category):
-            return "\(category) (\(count))"
+            return "\(category) (\(countLabel))"
         case .favorites:
-            return "\(l10n.text(.favoritesTitle)) (\(count))"
+            return "\(l10n.text(.favoritesTitle)) (\(countLabel))"
         }
     }
 
@@ -69,6 +70,10 @@ struct TheoryQuestionListView: View {
 
     private var cardBackground: Color {
         ListCardStyle.cardBackground(colorScheme: colorScheme)
+    }
+
+    private var categoryIconBackground: Color {
+        colorScheme == .light ? Color(.systemGray6) : Color(.systemGray5)
     }
 
     var body: some View {
@@ -121,26 +126,28 @@ struct TheoryQuestionListView: View {
 
     private func questionRow(_ question: TheoryQuestion) -> some View {
         HStack(alignment: .center, spacing: 16) {
-            Image(systemName: TheoryQuestionCategoryStyle.systemImage(for: question.category))
-                .font(.system(size: 36))
-                .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
-                .frame(width: 88, height: 88)
+            ZStack(alignment: .topLeading) {
+                Image(systemName: TheoryQuestionCategoryStyle.systemImage(for: question.category))
+                    .font(.system(size: 36))
+                    .foregroundStyle(TheoryQuestionCategoryStyle.accentColor(for: question.category))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text("\(question.id)")
-                    .font(.caption.bold())
+                Text(question.id.ungroupedDisplayString)
+                    .font(.caption2.bold())
                     .foregroundStyle(.secondary)
-                Text(question.question)
-                    .font(.body.weight(.medium))
-                    .foregroundStyle(.primary)
-                    .lineLimit(2)
-                Text(question.category)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(2)
+                    .padding(6)
             }
+            .frame(width: 88, height: 88)
+            .background(
+                categoryIconBackground,
+                in: RoundedRectangle(cornerRadius: ListCardStyle.cornerRadius, style: .continuous)
+            )
 
-            Spacer(minLength: 0)
+            Text(question.question)
+                .font(.body.weight(.medium))
+                .foregroundStyle(.primary)
+                .lineLimit(3)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
             Image(systemName: "chevron.right")
                 .font(.caption.weight(.semibold))
